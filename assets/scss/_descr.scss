@@ -1,0 +1,32 @@
+.descr {
+  background-color: $second-blue;
+  padding: rem(71 0 65);
+  color: #fff;
+  h2 {
+    margin-bottom: rem(42);
+  }
+  h3 {
+    max-width: rem(647);
+    margin: 0 auto rem(45);
+    text-align: center;
+  }
+  p {
+    margin-bottom: rem(28);
+  }
+}
+
+.descr__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.descr__img {
+  min-width: 46.237%;
+  margin-right: rem(77);
+}
+
+.descr__list {
+  margin-top: rem(40);
+  flex-basis: 100%;
+}

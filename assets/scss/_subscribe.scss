@@ -1,0 +1,15 @@
+.subscribe {
+
+}
+
+.subscribe__group {
+    margin-bottom: rem(15);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.subscribe__text {
+    margin-bottom: 4px;
+}

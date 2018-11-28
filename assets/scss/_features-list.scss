@@ -1,0 +1,27 @@
+$features-border-color: #fbe608;
+
+.features-list {
+  padding-top: rem(37);
+  border-top: rem(6) solid $features-border-color;
+  font-size: rem(16);
+}
+
+.features-list__item {
+  padding-left: rem(40);
+  position: relative;
+  line-height: 1.5;
+  &:not(:last-child) {
+    margin-bottom: rem(15);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: rem(27);
+    height: rem(27);
+    background: url('../images/list-okay.png') center center no-repeat;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,10 @@
+.form__input {
+    display: block;
+    width: 100%;
+    height: rem(40);
+    border-radius: $global-radius;
+    border: 1px solid $input-border-color;
+    background: #fff;
+    box-shadow: none;
+    padding: rem(10 13);
+}

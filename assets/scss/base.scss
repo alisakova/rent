@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 14px;
+  font: normal 4.375vw/1.5714 $main-font;
+}
+body,
+html {
+  height: 100%;
+  background: #fff;
+}
+
+body {
+  min-height: 100%;
+  font: inherit;
+  color: $font-color;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.container {
+  padding: rem(0 $container-padding);
+  max-width: rem(1170, $desktop-font-size);
+  margin: 0 auto;
+}
+
+a {
+  color: $ui-second-color;
+  text-decoration: none;
+  transition: $transition;
+}
+
+img {
+  max-width: 100%;
+}
+
+%second-link {
+  //magenta links
+  color: $ui-color;
+
+  &:hover {
+    color: $ui-color-hover;
+  }
+}
+
+h1 {
+  font-size: rem(46);
+  font-weight: 300;
+  margin: rem(0 0 37);
+  line-height: 1.2666;
+}
+
+h2 {
+  font-size: rem(36);
+  font-weight: 300;
+  margin: rem(0 0 20);
+  line-height: 1.3333;
+  text-align: center;
+}
+
+h3 {
+  font-size: rem(22);
+  font-weight: normal;
+  margin: rem(0 0 18);
+  line-height: 1.4444;
+}
+
+h4 {
+  font: {
+    size: rem(16);
+    weight: normal;
+  }
+  margin: rem(0 0 14);
+  line-height: 1.75;
+  text-align: center;
+  color: #fff;
+}
+
+p {
+  font-size: rem(16);
+  margin-top: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.blue {
+  color: $ui-second-color;
+}
+
+@media (min-width: $bp-tablet) {
+  html {
+    font-size: 3.6458vw;
+  }
+}
+
+@media (min-width: $bp-tablet + ($bp-desktop - $bp-tablet) / 2) {
+  html {
+    font-size: 2.539vw;
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  html {
+    font-size: $desktop-font-size + px;
+  }
+}

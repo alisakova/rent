@@ -1,0 +1,7 @@
+[data-accordion="panel"] {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: all 250ms ease;
+    will-change: height;
+}

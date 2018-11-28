@@ -1,0 +1,37 @@
+.statistics {
+  color: #fff;
+  background: $ui-color;
+  padding: rem(65 0);
+  h2 {
+    margin-bottom: rem(45);
+  }
+}
+
+.statistics__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.statistics__item {
+  max-width: rem(208);
+  // &:not(:last-child) {
+  //   margin-right: rem(125);
+  // }
+  // &:nth-last-child(2) {
+  //   margin-right: rem(87);
+  // }
+  &_small {
+    max-width: rem(140);
+  }
+}
+
+.statistics__number {
+  text-transform: uppercase;
+  font: {
+    size: rem(46);
+    weight: 300;
+  }
+  line-height: 0.74;
+  margin-bottom: rem(28);
+}

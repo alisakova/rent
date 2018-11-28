@@ -1,0 +1,18 @@
+$companies-bg: #779dce;
+
+.companies {
+  background: $companies-bg;
+  padding: rem(26 0 23);
+}
+
+.companies__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.companies__item {
+  &:not(:last-child) {
+    margin-right: rem(60);
+  }
+}

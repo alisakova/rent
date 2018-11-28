@@ -1,0 +1,26 @@
+.descr-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h4 {
+    font: {
+      size: rem(18);
+      weight: 500;
+    }
+    color: #000;
+    text-align: left;
+    margin-bottom: rem(45);
+  }
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-top: rem(-80);
+  }
+}
+
+.descr-block__img {
+  min-width: 38%;
+}
+
+.descr-block__content {
+  max-width: 48.685%;
+}

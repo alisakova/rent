@@ -1,0 +1,42 @@
+.intro {
+    padding: rem(25 0 0);
+
+    a {
+        @extend %second-link;
+    }
+}
+
+.intro__image {
+    position: relative;
+    //left: rem(-46);
+}
+
+.intro__image--second {
+    width: rem(140);
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+@media (max-width: $bp-desktop - 1) {
+    .intro__image--second {
+        & ~ img {
+            position: relative;
+            left: rem(-46)
+        }
+    }
+}
+
+@media (min-width: $bp-desktop) {
+    .intro {
+        .container {
+            display: flex;
+        }
+    }
+
+    .intro__image {
+        min-width: 40%;
+    }
+}
