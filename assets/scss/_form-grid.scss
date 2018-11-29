@@ -1,0 +1,11 @@
+.form-grid {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: rem(0 -15);
+}
+
+.form-grid__col {
+  flex: 0 0 50%;
+  padding: rem(0 15);
+}

@@ -1,0 +1,43 @@
+.contact-us {
+  background: $section-bg;
+  padding: rem(76 0 79);
+  h2 {
+    margin-bottom: rem(42);
+  }
+  h3 {
+    margin-bottom: rem(44);
+  }
+  p {
+    &:not(:last-child) {
+      margin-bottom: rem(46);
+    }
+  }
+}
+
+.contact-us__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contact-us__form {
+  min-width: 57.2%;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    border: {
+      top-left-radius: 3px;
+      top-right-radius: 3px;
+    }
+    background: $ui-color;
+  }
+}
+
+.contact-us__content {
+  margin-right: rem(90);
+}

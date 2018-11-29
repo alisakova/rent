@@ -3,6 +3,14 @@ $companies-bg: #779dce;
 .companies {
   background: $companies-bg;
   padding: rem(26 0 23);
+  h4 {
+    font: {
+      size: rem(16);
+      weight: normal;
+    }
+    text-align: center;
+    color: #fff;
+  }
 }
 
 .companies__container {

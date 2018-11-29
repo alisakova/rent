@@ -1,0 +1,30 @@
+.step {
+  h4 {
+    margin-bottom: rem(28);
+  }
+  position: relative;
+  padding-left: rem(67);
+  margin: {
+    bottom: rem(56);
+    right: rem(49);
+  }
+  max-width: 41.5%;
+}
+
+.step__count {
+  width: rem(40);
+  height: rem(40);
+  background: $ui-second-color;
+  color: $marker-color;
+  font: {
+    size: rem(18);
+    weight: 500;
+  }
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

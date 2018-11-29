@@ -1,7 +1,7 @@
 // ----
 // rem mixins
 // ----
-$rem-base: 14 !default;
+$rem-base: 16 !default;
 
 @function strip-unit($num) {
   @return $num / ($num * 0 + 1);

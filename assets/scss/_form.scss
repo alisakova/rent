@@ -1,10 +1,26 @@
 .form__input {
-    display: block;
-    width: 100%;
-    height: rem(40);
-    border-radius: $global-radius;
-    border: 1px solid $input-border-color;
-    background: #fff;
-    box-shadow: none;
-    padding: rem(10 13);
+  display: block;
+  width: 100%;
+  height: rem(61);
+  border-radius: $global-radius;
+  border: 1px solid $input-border-color;
+  background: $input-bg;
+  box-shadow: none;
+  padding: rem(10 15 10);
+  color: #000;
+  line-height: 1.75;
+  font: {
+    family: $main-font;
+    weight: normal;
+  }
+}
+
+.form__item {
+  margin-bottom: rem(18);
+}
+
+.form__label {
+  display: block;
+  margin-bottom: rem(8);
+  color: #000;
 }

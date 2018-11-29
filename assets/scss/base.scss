@@ -74,13 +74,12 @@ h3 {
 
 h4 {
   font: {
-    size: rem(16);
-    weight: normal;
+    size: rem(18);
+    weight: 500;
   }
   margin: rem(0 0 14);
-  line-height: 1.75;
-  text-align: center;
-  color: #fff;
+  line-height: 1.4;
+  color: #000;
 }
 
 p {
@@ -111,6 +110,21 @@ ul {
 }
 
 @media (min-width: $bp-desktop) {
+  h1 {
+    font-size: rem(46);
+  }
+  h2 {
+    font-size: rem(36);
+  }
+  h3 {
+    font-size: rem(22);
+  }
+  h4 {
+    font-size: rem(16);
+  }
+  p {
+    font-size: rem(16);
+  }
   html {
     font-size: $desktop-font-size + px;
   }

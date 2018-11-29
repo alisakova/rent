@@ -3,12 +3,6 @@
   align-items: center;
   justify-content: space-between;
   h4 {
-    font: {
-      size: rem(18);
-      weight: 500;
-    }
-    color: #000;
-    text-align: left;
     margin-bottom: rem(45);
   }
   &:nth-child(even) {

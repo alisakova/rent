@@ -1,0 +1,43 @@
+.select2-container {
+  min-width: 100%;
+  .select2-selection--single {
+    height: rem(61);
+    padding: rem(22 15 23);
+    border-radius: $global-radius;
+    border: 1px solid $input-border-color;
+    background: $input-bg;
+    .select2-selection__arrow {
+      top: 50%;
+      transform: translateY(-50%);
+      right: rem(25);
+      b {
+        border: none;
+        background: url('../images/down-arrow.svg') no-repeat center center;
+        background-size: contain;
+        width: rem(11);
+        height: rem(7);
+      }
+    }
+  }
+}
+
+.select2-container--default {
+  .select2-selection--single {
+    .select2-selection__rendered {
+      font-size: rem(16);
+      color: #000;
+      line-height: 1;
+      width: 100%;
+      padding: {
+        right: rem(40);
+        left: 0;
+      }
+    }
+  }
+  &.select2-container--open
+  .select2-selection--single
+  .select2-selection__arrow b {
+    border: none;
+    transform: scale(-1);
+  }
+}
