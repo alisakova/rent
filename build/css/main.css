@@ -962,3 +962,33 @@ ul {
   -webkit-transform: scale(-1);
   transform: scale(-1)
 }
+.footer h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1.625rem
+}
+.footer__copyrights {
+  background: #3e75ba;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: .875rem;
+  color: #fff
+}
+.footer__main {
+  padding: 4.375rem 0 6.5rem
+}
+.footer__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between
+}
+.footer__logo {
+  width: 10.4375rem
+}
+.footer__logo a {
+  display: block
+}
+.footer__logo img {
+  display: block;
+  width: 100%
+}

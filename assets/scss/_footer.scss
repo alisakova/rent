@@ -1,0 +1,38 @@
+.footer {
+  h4 {
+    font: {
+      size: rem(16);
+      weight: normal;
+    }
+    margin-bottom: rem(26);
+  }
+}
+
+.footer__copyrights {
+  background: $second-blue;
+  padding: rem(16 0);
+  text-align: center;
+  font-size: rem(14);
+  color: #fff;
+}
+
+.footer__main {
+  padding: rem(70 0 104);
+}
+
+.footer__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  width: rem(167);
+  a {
+    display: block;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}
