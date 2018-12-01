@@ -10,6 +10,7 @@
   font-size: rem(16);
   color: $second-blue;
   background: #fff;
+  white-space: nowrap;
   &:hover {
     border-color: $ui-second-color;
   }

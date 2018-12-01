@@ -10,6 +10,10 @@ $companies-bg: #779dce;
     }
     text-align: center;
     color: #fff;
+    @media (max-width: 600px) {
+      display: none;
+      padding: rem(14 0 19, 14);
+    }
   }
 }
 
@@ -17,10 +21,22 @@ $companies-bg: #779dce;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    margin-right: rem(-20);
+  }
 }
 
 .companies__item {
   &:not(:last-child) {
     margin-right: rem(60);
+    @media (max-width: 600px) {
+      margin-right: rem(20);
+    }
+  }
+  @media (max-width: 600px) {
+    max-width: 25%;
+    min-width: 25%;
+    margin-right: rem(20);
   }
 }

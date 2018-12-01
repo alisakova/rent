@@ -2,6 +2,9 @@
   h4 {
     margin-bottom: rem(15);
     font-size: rem(18);
+    @media (max-width: 600px) {
+      font-size: rem(16, 14);
+    }
   }
   position: relative;
   padding-left: rem(67);
@@ -10,6 +13,16 @@
     right: rem(55);
   }
   max-width: 40.9%;
+  @media (max-width: 710px) {
+    margin-right: rem(40);
+  }
+  @media (max-width: 540px) {
+    max-width: none;
+    margin: {
+      bottom: rem(29, 14);
+      right: 0;
+    }
+  }
 }
 
 .step__count {

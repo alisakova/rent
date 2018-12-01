@@ -3,9 +3,18 @@
   align-items: center;
   justify-content: flex-start;
   margin: rem(0 -15);
+  @media (max-width: 600px) {
+    margin: 0;
+    flex-direction: column;
+  }
 }
 
 .form-grid__col {
   flex: 0 0 50%;
   padding: rem(0 15);
+  @media (max-width: 600px) {
+    flex: 0 0 100%;
+    width: 100%;
+    padding: 0;
+  }
 }

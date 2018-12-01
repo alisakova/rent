@@ -5,18 +5,26 @@
   h4 {
     font-size: rem(18);
     margin-bottom: rem(38);
+    @media (max-width: 600px) {
+      margin-bottom: 9px;
+    }
   }
-  // &:nth-child(odd) {
-  //   .descr-block__content {
-  //     margin-bottom: rem(60);
-  //   }
-  // }
   &:nth-child(even) {
     flex-direction: row-reverse;
     margin-top: rem(-80);
     .descr-block__content {
       margin-top: rem(120);
+      @media (max-width: 600px) {
+        margin-top: 0;
+      }
     }
+    @media (max-width: 600px) {
+      margin-top: 0;
+      flex-direction: column-reverse;
+    }
+  }
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
   }
 }
 
@@ -24,15 +32,39 @@
   min-width: 35.8%;
   &_width-467 {
     min-width: 41%;
+    @media (max-width: 600px) {
+      min-width: rem(286, 14);
+    }
   }
   &_width-443 {
     min-width: 38.9%;
+    @media (max-width: 600px) {
+      min-width: rem(286, 14);
+    }
   }
   &_width-365 {
     min-width: 32%;
+    @media (max-width: 600px) {
+      min-width: rem(286, 14);
+    }
+  }
+  @media (max-width: 600px) {
+    min-width: rem(286, 14);
+    height: rem(246, 14);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 }
 
 .descr-block__content {
   max-width: 48.685%;
+  @media (max-width: 600px) {
+    margin-bottom: rem(32, 14);
+  }
+  @media (max-width: 540px) {
+    max-width: none;
+  }
 }

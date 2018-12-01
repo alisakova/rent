@@ -1,39 +1,37 @@
-// .intro {
-//   padding: rem(25 0 0, 14);
-//
-//   a {
-//     @extend %second-link;
-//   }
-// }
-//
-// .intro__image {
-//   position: relative;
-//   //left: rem(-46);
-// }
-//
-// .intro__image--second {
-//   width: rem(140, 14);
-//   height: auto;
-//   position: absolute;
-//   right: 0;
-//   bottom: 0;
-//   z-index: 1;
-// }
-
 .intro {
   h1 {
     margin-bottom: rem(33);
     letter-spacing: 0.6px;
+    @media (max-width: 600px) {
+      margin-bottom: rem(20, 14);
+    }
   }
   h3 {
     margin-bottom: rem(18);
     line-height: 1.36;
+    @media (max-width: 600px) {
+      margin-bottom: rem(20, 14);
+    }
   }
   p {
     margin-bottom: rem(36);
+    @media (max-width: 600px) {
+      margin-bottom: rem(20, 14);
+    }
   }
   a {
     color: $ui-color;
+  }
+  padding: rem(70 0 0);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 600px) {
+    padding: rem(30 0 0, 14);
   }
 }
 
@@ -49,14 +47,45 @@
     right: rem(120);
     top: rem(20);
     width: rem(481);
+    @media (max-width: 1080px) {
+      width: rem(400);
+    }
+    @media (max-width: 900px) {
+      right: rem(50);
+      width: rem(350);
+    }
+    @media (max-width: 600px) {
+      left: rem(80);
+    }
+    @media (max-width: 540px) {
+      left: 0;
+      width: rem(300, 14);
+    }
+    @media (max-width: 375px) {
+      left: rem(-50);
+      width: rem(250, 15);
+    }
   }
-}
-
-.intro {
-  padding: rem(70 0 0);
-  .container {
-    display: flex;
-    justify-content: space-between;
+  @media (max-width: 1300px) {
+    right: rem(-30);
+  }
+  @media (max-width: 1080px) {
+    right: 0;
+    width: rem(300);
+  }
+  @media (max-width: 900px) {
+    width: rem(250);
+  }
+  @media (max-width: 600px) {
+    bottom: 0;
+    right: rem(100);
+    width: rem(180, 14);
+  }
+  @media (max-width: 475px) {
+    right: rem(-15, 14);
+    width: rem(139, 14);
+    height: rem(271, 14);
+    object-fit: cover;
   }
 }
 
@@ -69,6 +98,14 @@
 .intro__text {
   max-width: 44.3%;
   padding-bottom: rem(62);
+  @media (max-width: 750px) {
+    max-width: 50%;
+  }
+  @media (max-width: 600px) {
+    padding-bottom: 0;
+    max-width: none;
+    margin-bottom: rem(18);
+  }
 }
 
 .intro__author {
@@ -86,6 +123,19 @@
   font-size: rem(14);
   color: #fff;
   border-radius: 50%;
+  @media (max-width: 1080px) {
+    right: 0;
+  }
+  @media (max-width: 600px) {
+    width: rem(90);
+    height: rem(90);
+    font-size: rem(10, 14);
+    right: rem(100);
+    bottom: rem(20);
+  }
+  @media (max-width: 475px) {
+    right: rem(50);
+  }
 }
 
 .intro__name {

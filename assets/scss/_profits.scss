@@ -2,14 +2,25 @@
   padding: rem(66 0 65);
   h2 {
     margin-bottom: rem(30);
+    @media (max-width: 540px) {
+      margin-bottom: rem(25, 14);
+    }
   }
   h3 {
     margin: 0 auto rem(36);
     text-align: center;
     max-width: rem(760);
+    @media (max-width: 600px) {
+      max-width: none;
+      text-align: left;
+      margin-bottom: rem(25, 14);
+    }
   }
   p {
     margin-bottom: rem(50);
+    @media (max-width: 600px) {
+      margin-bottom: rem(33, 14);
+    }
   }
   position: relative;
   &:after {
@@ -26,7 +37,11 @@
       rgba(255, 255, 255, 1) 0%,
       rgba(255, 255, 255, 0) 100%
     );
+    @media (max-width: 540px) {
+      display: none;
+    }
   }
+
   .container {
     position: relative;
     &:before {
@@ -40,5 +55,9 @@
       width: 200%;
       background: #fff;
     }
+  }
+
+  @media (max-width: 600px) {
+    padding: rem(44 0, 14);
   }
 }

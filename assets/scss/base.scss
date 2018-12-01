@@ -4,8 +4,8 @@
 
 html {
   height: 100%;
-  font-size: 14px;
-  font: normal 4.375vw/1.5714 $main-font;
+  font-size: 16px;
+  font: normal 16px/1.5714 $main-font;
 }
 body,
 html {
@@ -55,6 +55,9 @@ h1 {
   font-weight: 300;
   margin: rem(0 0 37);
   line-height: 1.17;
+  @media (max-width: 1080px) {
+    font-size: rem(40);
+  }
 }
 
 h2 {
@@ -96,6 +99,39 @@ ul {
 
 .blue {
   color: $ui-second-color;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: rem(30, 14);
+  }
+  h2 {
+    font-size: rem(24, 14);
+  }
+  h3 {
+    font-size: rem(18, 14);
+  }
+}
+
+@media (max-width: 540px) {
+  h2, h3 {
+    text-align: left;
+  }
 }
 
 // @media (min-width: $bp-tablet) {

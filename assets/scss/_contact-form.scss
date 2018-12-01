@@ -8,5 +8,17 @@
       right: rem(56);
     }
     margin: rem(33) auto 0;
+    @media (max-width: 600px) {
+      width: 100%;
+      margin-top: rem(45, 14);
+    }
+  }
+  @media (max-width: 600px) {
+    padding: {
+      top: rem(34, 14);
+      left: rem(20);
+      right: rem(20);
+      bottom: rem(47, 14);
+    }
   }
 }

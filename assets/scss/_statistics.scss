@@ -11,12 +11,23 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  @media (max-width: 800px) {
+    justify-content: space-between;
+  }
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    margin-bottom: rem(-40, 14);
+  }
 }
 
 .statistics__item {
   max-width: rem(208);
   &_small {
     max-width: rem(140);
+    @media (max-width: 600px) {
+      width: 50%;
+      max-width: none;
+    }
   }
   &:first-child {
     margin-right: rem(130);
@@ -26,6 +37,18 @@
   }
   &:nth-last-child(2) {
     margin-right: rem(88);
+  }
+  @media (max-width: 800px) {
+    &:first-child,
+    &:nth-child(2),
+    &:nth-last-child(2) {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 600px) {
+    width: 50%;
+    max-width: none;
+    margin-bottom: rem(40, 14);
   }
 }
 
@@ -48,5 +71,13 @@
     height: rem(26);
     background: url("../images/yellow-arrow.svg") no-repeat center center;
     background-size: cover;
+    @media (max-width: 600px) {
+      width: rem(14, 14);
+      height: rem(15, 14);
+    }
+  }
+  @media (max-width: 600px) {
+    font-size: rem(30, 14);
+    padding-left: rem(26, 14);
   }
 }

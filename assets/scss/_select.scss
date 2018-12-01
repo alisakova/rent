@@ -18,6 +18,10 @@
         height: rem(7);
       }
     }
+    @media (max-width: 600px) {
+      height: rem(41, 14);
+      padding: rem(15, 14);
+    }
   }
 }
 
@@ -31,6 +35,9 @@
       padding: {
         right: rem(40);
         left: 0;
+      }
+      @media (max-width: 600px) {
+        font-size: rem(14, 14);
       }
     }
   }

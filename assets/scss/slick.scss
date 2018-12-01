@@ -21,6 +21,11 @@
   margin: 0 0 rem(58);
   padding: 0;
   max-width: rem(920);
+  @media (max-width: 600px) {
+    max-width: none;
+    overflow: hidden;
+    margin: 0 0 rem(30, 14);
+  }
   &:focus {
     outline: none;
   }
@@ -71,6 +76,10 @@
   // &:not(:last-child) {
   //   margin-right: rem(66);
   // }
+  @media (max-width: 600px) {
+    margin-right: 0;
+    padding: 0;
+  }
   [dir="rtl"] & {
     float: right;
   }
@@ -131,5 +140,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+.slick-dots {
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  li {
+    &:not(:last-child) {
+      margin-right: rem(10);
+    }
+    button {
+      padding: 0;
+      height: rem(12, 14);
+      border-radius: 50%;
+      border: 1px solid $ui-color;
+      background: #fff;
+      min-width: rem(12, 14);
+      max-width: rem(12, 14);
+    }
+    &.slick-active {
+      button {
+        background: $ui-color;
+      }
+    }
   }
 }

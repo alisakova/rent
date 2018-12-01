@@ -13,19 +13,33 @@
 .reviews-slider__img {
   width: rem(83);
   margin-right: rem(24);
+  @media (max-width: 600px) {
+    margin-right: rem(11, 14);
+    width: rem(83, 14);
+  }
 }
 
 .reviews-slider__author-name {
   font-weight: 500;
   color: #000;
   margin-bottom: rem(5);
+  @media (max-width: 600px) {
+    font-weight: 400;
+    margin-bottom: rem(14, 14);
+  }
 }
 
 .reviews-slider__logo-img {
   min-width: rem(93);
+  @media (max-width: 600px) {
+    min-width: rem(93, 14);
+  }
 }
 
 .reviews-slider__content {
   padding-top: rem(35);
   border-top: 6px solid $ui-color;
+  @media (max-width: 600px) {
+    padding-top: rem(23, 14);
+  }
 }

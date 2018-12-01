@@ -1,0 +1,11 @@
+.descr-slider {
+  .slick-slide {
+    margin-right: 0;
+    @media (max-width: 540px) {
+      padding: 0;
+    }
+  }
+  .slick-list {
+    overflow: hidden;
+  }
+}

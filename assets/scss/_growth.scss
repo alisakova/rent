@@ -2,16 +2,37 @@
   padding: rem(68 0 78);
   h2 {
     margin-bottom: rem(28);
+    @media (max-width: 540px) {
+      margin-bottom: rem(20, 14);
+    }
   }
   h3 {
     margin-bottom: rem(70);
     text-align: center;
+    @media (max-width: 540px) {
+      margin-bottom: rem(25, 14);
+      text-align: left;
+    }
   }
   .btn {
     margin: 0 auto;
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+  @media (max-width: 600px) {
+    padding: rem(46 0, 14);
+  }
+  .slick-initialized {
+    .slick-slide {
+      display: flex;
+    }
   }
 }
 
 .growth__container {
   margin-bottom: rem(33);
+  @media (max-width: 600px) {
+    margin-bottom: 0;
+  }
 }

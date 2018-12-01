@@ -6,6 +6,9 @@
     }
     margin-bottom: rem(20);
     color: #000;
+    @media (max-width: 650px) {
+      font-size: rem(16, 14);
+    }
   }
   .btn {
     padding: {
@@ -14,16 +17,52 @@
     }
     font-size: rem(14);
     margin-bottom: rem(18);
+    @media (max-width: 650px) {
+      font-size: rem(14, 14);
+      margin-bottom: rem(29, 14);
+      padding: {
+        top: rem(14, 14);
+        bottom: rem(15, 14);
+      }
+    }
+    @media (max-width: 540px) {
+      width: 100%;
+    }
   }
 }
 
 .footer__col {
   &:first-child {
     width: 23.5%;
+    @media (max-width: 650px) {
+      width: auto;
+    }
   }
-  &:nth-child(2),
-  &:nth-last-child(2) {
-    width: 25%;
+  &:last-child {
+    @media (max-width: 650px) {
+      padding: rem(41 0 32, 14);
+      width: 100%;
+    }
+  }
+  &_logo {
+    @media (max-width: 650px) {
+      margin-bottom: rem(34, 14);
+      align-self: center;
+    }
+  }
+  &_bordered {
+    @media (max-width: 650px) {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -13px;
+        width: calc(100% + 26px);
+        height: 1px;
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
   }
 }
 
@@ -37,12 +76,19 @@
 
 .footer__main {
   padding: rem(70 0 104);
+  @media (max-width: 650px) {
+    padding: rem(34 0 0, 14);
+  }
 }
 
 .footer__container {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .footer__logo {
@@ -53,6 +99,9 @@
   img {
     display: block;
     width: 100%;
+  }
+  @media (max-width: 650px) {
+    width: rem(108, 14);
   }
 }
 
@@ -95,5 +144,52 @@
   height: rem(27);
   &:not(:last-child) {
     margin-right: rem(11);
+  }
+  @media (max-width: 650px) {
+    width: rem(35, 14);
+    height: rem(35, 14);
+    &:not(:last-child) {
+      margin-right: rem(18, 14);
+    }
+  }
+}
+
+.footer__mobile-container {
+  display: flex;
+  width: 50%;
+  @media (max-width: 650px) {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: rem(37, 14);
+  }
+  @media (max-width: 475px) {
+    justify-content: space-between;
+  }
+  .footer__col {
+    &:first-child,
+    &:nth-child(2) {
+      width: 25%;
+      @media (max-width: 650px) {
+        width: auto;
+      }
+    }
+    &:first-child {
+      margin-right: rem(143);
+      @media (max-width: 850px) {
+        width: 40%;
+        margin-right: rem(50);
+      }
+      @media (max-width: 475px) {
+        width: auto;
+        margin-right: 0;
+      }
+    }
+    &:last-child {
+      padding: 0;
+    }
   }
 }

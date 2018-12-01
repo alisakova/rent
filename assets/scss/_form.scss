@@ -13,14 +13,24 @@
     family: $main-font;
     weight: normal;
   }
+  @media (max-width: 600px) {
+    height: rem(41, 14);
+    padding: rem(15, 14);
+  }
 }
 
 .form__item {
   margin-bottom: rem(18);
+  @media (max-width: 600px) {
+    margin-bottom: rem(18, 14);
+  }
 }
 
 .form__label {
   display: block;
   margin-bottom: 0;
   color: #000;
+  @media (max-width: 600px) {
+    color: rgba(0, 0, 0, 0.6);
+  }
 }

@@ -74,6 +74,12 @@
       }
 
       &--phone {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-left: 0;
+        }
         svg {
           width: rem(12);
           height: auto;
