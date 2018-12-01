@@ -404,6 +404,16 @@ ul {
 .btn--success:hover {
   background: #d2047d
 }
+@media (max-width:540px) {
+  h2,
+  h3 {
+    text-align: left
+  }
+  .btn--success {
+    padding-top: .85714rem;
+    padding-bottom: .78571rem
+  }
+}
 .form__input {
   display: block;
   width: 100%;
@@ -743,10 +753,6 @@ ul {
   }
 }
 @media (max-width:540px) {
-  h2,
-  h3 {
-    text-align: left
-  }
   .intro__image--second ~ img {
     left: 0;
     width: 21.42857rem
@@ -835,9 +841,9 @@ ul {
     right: 6.25rem;
     bottom: 1.25rem
   }
-  .companies h4 {
-    display: none;
-    padding: 1rem 0 1.35714rem
+  .subscribe .btn {
+    padding-top: .85714rem;
+    padding-bottom: .78571rem
   }
 }
 .intro__name {
@@ -899,6 +905,10 @@ ul {
   margin-bottom: 1.9375rem
 }
 @media (max-width:600px) {
+  .companies h4 {
+    display: none;
+    padding: 1rem 0 1.35714rem
+  }
   .companies__container {
     flex-wrap: wrap;
     margin-right: -1.25rem

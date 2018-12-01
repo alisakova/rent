@@ -22,5 +22,11 @@
     &:hover {
       background: $ui-color-hover;
     }
+    @media (max-width: 540px) {
+      padding: {
+        top: rem(12, 14);
+        bottom: rem(11, 14);
+      }
+    }
   }
 }

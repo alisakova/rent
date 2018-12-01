@@ -7,6 +7,12 @@
     @media (max-width: 540px) {
       width: 100%;
     }
+    @media (max-width: 600px) {
+      padding: {
+        top: rem(12, 14);
+        bottom: rem(11, 14);
+      }
+    }
   }
 }
 
