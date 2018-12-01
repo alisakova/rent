@@ -1,17 +1,18 @@
 .descr {
   background-color: $second-blue;
-  padding: rem(71 0 65);
+  padding: rem(62 0 65);
   color: #fff;
   h2 {
-    margin-bottom: rem(42);
+    margin-bottom: rem(31);
   }
   h3 {
-    max-width: rem(647);
-    margin: 0 auto rem(45);
+    max-width: rem(650);
+    margin: 0 auto rem(39);
+    line-height: 1.36;
     text-align: center;
   }
   p {
-    margin-bottom: rem(28);
+    margin-bottom: rem(18);
   }
 }
 
@@ -22,7 +23,7 @@
 }
 
 .descr__img {
-  min-width: 46.237%;
+  min-width: 44.8%;
   margin-right: rem(77);
 }
 

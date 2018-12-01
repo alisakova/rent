@@ -22,14 +22,15 @@
 
 .intro {
   h1 {
-    margin-bottom: rem(37);
+    margin-bottom: rem(33);
     letter-spacing: 0.6px;
   }
   h3 {
-    margin-bottom: rem(29);
+    margin-bottom: rem(18);
+    line-height: 1.36;
   }
   p {
-    margin-bottom: rem(46);
+    margin-bottom: rem(36);
   }
   a {
     color: $ui-color;
@@ -40,13 +41,13 @@
   width: rem(354);
   height: auto;
   position: absolute;
-  right: rem(-72);
+  right: rem(-68);
   bottom: 0;
   z-index: 1;
   & ~ img {
     position: relative;
-    left: rem(-114);
-    top: rem(30);
+    right: rem(120);
+    top: rem(20);
     width: rem(481);
   }
 }
@@ -62,10 +63,31 @@
 .intro__image {
   position: relative;
   min-width: 40%;
-  padding-bottom: rem(66);
+  padding-bottom: rem(62);
 }
 
 .intro__text {
   max-width: 44.3%;
-  padding-bottom: rem(66);
+  padding-bottom: rem(62);
+}
+
+.intro__author {
+  position: absolute;
+  z-index: 2;
+  right: rem(-9);
+  bottom: rem(38);
+  width: rem(120);
+  height: rem(120);
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: rem(14);
+  color: #fff;
+  border-radius: 50%;
+}
+
+.intro__name {
+  font-weight: 500;
 }

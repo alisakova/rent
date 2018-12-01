@@ -185,7 +185,8 @@ h2 {
   font-weight: 300;
   margin: 0 0 1.25rem;
   line-height: 1.3333;
-  text-align: center
+  text-align: center;
+  letter-spacing: .9px
 }
 h3 {
   font-size: 1.375rem;
@@ -196,7 +197,7 @@ h3 {
 h4 {
   font-size: 1.125rem;
   font-weight: 500;
-  margin: 0 0 .875rem;
+  margin: 0 0 .625rem;
   line-height: 1.4;
   color: #000
 }
@@ -211,16 +212,6 @@ ul {
 }
 .blue {
   color: #0077bf
-}
-@media (min-width:768px) {
-  html {
-    font-size: 3.6458vw
-  }
-}
-@media (min-width:984px) {
-  html {
-    font-size: 2.539vw
-  }
 }
 .header {
   background: #fff;
@@ -396,7 +387,7 @@ ul {
 }
 .form__label {
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: 0;
   color: #000
 }
 .navigation {
@@ -640,14 +631,15 @@ ul {
   will-change: height
 }
 .intro h1 {
-  margin-bottom: 2.3125rem;
+  margin-bottom: 2.0625rem;
   letter-spacing: .6px
 }
 .intro h3 {
-  margin-bottom: 1.8125rem
+  margin-bottom: 1.125rem;
+  line-height: 1.36
 }
 .intro p {
-  margin-bottom: 2.875rem
+  margin-bottom: 2.25rem
 }
 .intro a {
   color: #eb058c
@@ -656,14 +648,14 @@ ul {
   width: 22.125rem;
   height: auto;
   position: absolute;
-  right: -4.5rem;
+  right: -4.25rem;
   bottom: 0;
   z-index: 1
 }
 .intro__image--second ~ img {
   position: relative;
-  left: -7.125rem;
-  top: 1.875rem;
+  right: 7.5rem;
+  top: 1.25rem;
   width: 30.0625rem
 }
 .intro {
@@ -676,11 +668,34 @@ ul {
 .intro__image {
   position: relative;
   min-width: 40%;
-  padding-bottom: 4.125rem
+  padding-bottom: 3.875rem
 }
 .intro__text {
   max-width: 44.3%;
-  padding-bottom: 4.125rem
+  padding-bottom: 3.875rem
+}
+.intro__author {
+  position: absolute;
+  z-index: 2;
+  right: -.5625rem;
+  bottom: 2.375rem;
+  width: 7.5rem;
+  height: 7.5rem;
+  background: rgba(0,0,0,.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: .875rem;
+  color: #fff;
+  border-radius: 50%
+}
+.intro__name {
+  font-weight: 500
+}
+.subscribe .btn {
+  padding-left: 2.625rem;
+  padding-right: 2.625rem
 }
 .subscribe__group:first-child {
   margin-right: 1.4375rem;
@@ -692,11 +707,11 @@ ul {
   justify-content: flex-start
 }
 .subscribe__text {
-  margin-bottom: 7px
+  margin-bottom: 3px
 }
 .companies {
   background: #779dce;
-  padding: 1.625rem 0 1.4375rem
+  padding: 1.625rem 0 .75rem
 }
 .companies h4 {
   font-size: 1rem;
@@ -714,19 +729,20 @@ ul {
 }
 .descr {
   background-color: #3e75ba;
-  padding: 4.4375rem 0 4.0625rem;
+  padding: 3.875rem 0 4.0625rem;
   color: #fff
 }
 .descr h2 {
-  margin-bottom: 2.625rem
+  margin-bottom: 1.9375rem
 }
 .descr h3 {
-  max-width: 40.4375rem;
-  margin: 0 auto 2.8125rem;
+  max-width: 40.625rem;
+  margin: 0 auto 2.4375rem;
+  line-height: 1.36;
   text-align: center
 }
 .descr p {
-  margin-bottom: 1.75rem
+  margin-bottom: 1.125rem
 }
 .descr__container {
   display: flex;
@@ -734,7 +750,7 @@ ul {
   justify-content: flex-start
 }
 .descr__img {
-  min-width: 46.237%;
+  min-width: 44.8%;
   margin-right: 4.8125rem
 }
 .descr__list {
@@ -742,23 +758,23 @@ ul {
   flex-basis: 100%
 }
 .features-list {
-  padding-top: 2.3125rem;
+  padding-top: 2.1875rem;
   border-top: .375rem solid #fbe608;
   font-size: 1rem
 }
 .features-list__item {
-  padding-left: 2.5rem;
+  padding-left: 2.375rem;
   position: relative;
   line-height: 1.5
 }
 .features-list__item:not(:last-child) {
-  margin-bottom: .9375rem
+  margin-bottom: .75rem
 }
 .features-list__item:after {
   content: '';
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -.25rem;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 1.6875rem;
@@ -768,14 +784,14 @@ ul {
 .statistics {
   color: #fff;
   background: #eb058c;
-  padding: 4.0625rem 0
+  padding: 3.625rem 0 2.625rem
 }
 .statistics h2 {
-  margin-bottom: 2.8125rem
+  margin-bottom: 2.625rem
 }
 .statistics__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start
 }
 .statistics__item {
@@ -784,12 +800,21 @@ ul {
 .statistics__item_small {
   max-width: 8.75rem
 }
+.statistics__item:first-child {
+  margin-right: 8.125rem
+}
+.statistics__item:nth-child(2) {
+  margin-right: 7.1875rem
+}
+.statistics__item:nth-last-child(2) {
+  margin-right: 5.5rem
+}
 .statistics__number {
   text-transform: uppercase;
   font-size: 2.875rem;
   font-weight: 300;
   line-height: .74;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.25rem;
   position: relative;
   padding-left: 2.0625rem
 }
@@ -803,13 +828,13 @@ ul {
   background: url(../images/yellow-arrow.svg) center center/cover no-repeat
 }
 .growth {
-  padding: 4.5rem 0 4.875rem
+  padding: 4.25rem 0 4.875rem
 }
 .growth h2 {
-  margin-bottom: 2.5625rem
+  margin-bottom: 1.75rem
 }
 .growth h3 {
-  margin-bottom: 4.875rem;
+  margin-bottom: 4.375rem;
   text-align: center
 }
 .growth .btn {
@@ -824,29 +849,42 @@ ul {
   justify-content: space-between
 }
 .descr-block h4 {
-  margin-bottom: 2.8125rem
+  font-size: 1.125rem;
+  margin-bottom: 2.375rem
 }
 .descr-block:nth-child(even) {
   flex-direction: row-reverse;
   margin-top: -5rem
 }
+.descr-block:nth-child(even) .descr-block__content {
+  margin-top: 7.5rem
+}
 .descr-block__img {
-  min-width: 38%
+  min-width: 35.8%
+}
+.descr-block__img_width-467 {
+  min-width: 41%
+}
+.descr-block__img_width-443 {
+  min-width: 38.9%
+}
+.descr-block__img_width-365 {
+  min-width: 32%
 }
 .descr-block__content {
   max-width: 48.685%
 }
 .steps {
   background: #f5f5f5;
-  padding: 4.8125rem 0 4.375rem
+  padding: 4.3125rem 0 4.375rem
 }
 .steps h2 {
-  margin-bottom: 2.625rem
+  margin-bottom: 1.875rem
 }
 .steps h3 {
-  max-width: 47.6875rem;
+  max-width: 47.8125rem;
   text-align: center;
-  margin: 0 auto 2.8125rem
+  margin: 0 auto 2.375rem
 }
 .steps .btn {
   margin: 0 auto
@@ -855,7 +893,7 @@ ul {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: -3.5rem
+  margin-bottom: -4.875rem
 }
 .steps__list {
   display: flex;
@@ -865,17 +903,18 @@ ul {
   margin-right: -3.125rem
 }
 .steps__img {
-  min-width: 37.163%
+  min-width: 38.9%
 }
 .step {
   position: relative;
   padding-left: 4.1875rem;
-  margin-bottom: 3.5rem;
-  margin-right: 3.0625rem;
-  max-width: 41.5%
+  margin-bottom: 1.875rem;
+  margin-right: 3.4375rem;
+  max-width: 40.9%
 }
 .step h4 {
-  margin-bottom: 1.75rem
+  margin-bottom: .9375rem;
+  font-size: 1.125rem
 }
 .step__count {
   width: 2.5rem;
@@ -893,31 +932,61 @@ ul {
   top: 0
 }
 .profits {
-  padding: 4.4375rem 0 3.4375rem
+  padding: 4.125rem 0 4.0625rem;
+  position: relative
 }
 .profits h2 {
-  margin-bottom: 2.5625rem
+  margin-bottom: 1.875rem
 }
 .profits h3 {
-  margin: 0 auto 2.75rem;
+  margin: 0 auto 2.25rem;
   text-align: center;
-  max-width: 47.25rem
+  max-width: 47.5rem
 }
 .profits p {
-  margin-bottom: 3.5rem
+  margin-bottom: 3.125rem
+}
+.profits:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 15%;
+  z-index: 3;
+  right: 0;
+  background: linear-gradient(to left,#fff 0,rgba(255,255,255,0) 100%)
+}
+.profits .container {
+  position: relative
+}
+.profits .container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  right: 100%;
+  z-index: 2;
+  width: 200%;
+  background: #fff
 }
 .contact-us {
   background: #f5f5f5;
-  padding: 4.75rem 0 4.9375rem
+  padding: 4.375rem 0 4.9375rem
 }
 .contact-us h2 {
-  margin-bottom: 2.625rem
+  margin-bottom: 2.375rem
 }
 .contact-us h3 {
-  margin-bottom: 2.75rem
+  margin-bottom: 2.375rem;
+  line-height: 1.33
+}
+.contact-us p {
+  line-height: 1.5
 }
 .contact-us p:not(:last-child) {
-  margin-bottom: 2.875rem
+  margin-bottom: 2.375rem
 }
 .contact-us__container {
   display: flex;
@@ -940,14 +1009,17 @@ ul {
   background: #eb058c
 }
 .contact-us__content {
-  margin-right: 5.625rem
+  margin-right: 5.625rem;
+  padding-top: 1.75rem
 }
 .contact-form {
   background: #fff;
   border-radius: .5rem;
-  padding: 2.1875rem 3.1875rem 1.8125rem 2.875rem
+  padding: 1.875rem 3.1875rem 1.8125rem 2.875rem
 }
 .contact-form .btn {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
   margin: 2.0625rem auto 0
 }
 .form-grid {
@@ -978,7 +1050,7 @@ ul {
 }
 .select2-container .select2-selection--single .select2-selection__arrow b {
   border: none;
-  background: url(../images/down-arrow.svg) center center/contain no-repeat;
+  background: url(../images/down-arrow.svg) center center/cover no-repeat;
   width: .6875rem;
   height: .4375rem
 }
@@ -998,11 +1070,21 @@ ul {
 .footer h4 {
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 1.625rem;
+  margin-bottom: 1.25rem;
   color: #000
 }
 .footer .btn {
-  margin-bottom: 1.5rem
+  padding-top: .75rem;
+  padding-bottom: .6875rem;
+  font-size: .875rem;
+  margin-bottom: 1.125rem
+}
+.footer__col:first-child {
+  width: 23.5%
+}
+.footer__col:nth-child(2),
+.footer__col:nth-last-child(2) {
+  width: 25%
 }
 .footer__copyrights {
   background: #3e75ba;
@@ -1017,7 +1099,7 @@ ul {
 .footer__container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between
+  justify-content: flex-start
 }
 .footer__logo {
   width: 10.4375rem
@@ -1041,12 +1123,160 @@ ul {
   color: #0077bf
 }
 .footer__contact {
-  margin-bottom: 1.25rem;
-  white-space: nowrap
+  margin-bottom: 1.125rem;
+  white-space: nowrap;
+  font-size: .875rem
 }
 .footer__contact_tel a {
   color: #000
 }
 .footer__contact_tel svg path {
   fill: #0077bf
+}
+.footer__socials {
+  display: flex;
+  align-items: center
+}
+.footer__social-link {
+  display: block;
+  width: 1.6875rem;
+  height: 1.6875rem
+}
+.footer__social-link:not(:last-child) {
+  margin-right: .6875rem
+}
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent
+}
+.slick-list {
+  position: relative;
+  display: block;
+  margin: 0 0 3.625rem;
+  padding: 0;
+  max-width: 57.5rem
+}
+.slick-list:focus {
+  outline: 0
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand
+}
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0)
+}
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1
+}
+.slick-track:after,
+.slick-track:before {
+  content: "";
+  display: table
+}
+.slick-track:after {
+  clear: both
+}
+.slick-loading .slick-track {
+  visibility: hidden
+}
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  margin-right: 4.25rem;
+  display: none
+}
+[dir=rtl] .slick-slide {
+  float: right
+}
+.slick-slide img {
+  display: block
+}
+.slick-slide.slick-loading img {
+  display: none
+}
+.slick-slide.dragging img {
+  pointer-events: none
+}
+.slick-initialized .slick-slide {
+  display: block
+}
+.slick-loading .slick-slide {
+  visibility: hidden
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent
+}
+.slick-arrow.slick-hidden {
+  display: none
+}
+.slick-prev {
+  display: none!important
+}
+.slick-next {
+  color: #000;
+  position: relative;
+  padding-right: 4.4375rem;
+  margin-left: auto;
+  margin-right: 5.9375rem;
+  z-index: 5;
+  display: block
+}
+.slick-next:after {
+  content: '';
+  width: 3.5625rem;
+  height: 3.5625rem;
+  border-radius: 50%;
+  background: url(../images/white-arrow.svg) center center/45% no-repeat #eb058c;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.reviews-slider p {
+  margin-bottom: 2.5rem
+}
+.reviews-slider__author {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start
+}
+.reviews-slider__img {
+  width: 5.1875rem;
+  margin-right: 1.5rem
+}
+.reviews-slider__author-name {
+  font-weight: 500;
+  color: #000;
+  margin-bottom: .3125rem
+}
+.reviews-slider__logo-img {
+  min-width: 5.8125rem
+}
+.reviews-slider__content {
+  padding-top: 2.1875rem;
+  border-top: 6px solid #eb058c
 }

@@ -1,15 +1,17 @@
 .contact-us {
   background: $section-bg;
-  padding: rem(76 0 79);
+  padding: rem(70 0 79);
   h2 {
-    margin-bottom: rem(42);
+    margin-bottom: rem(38);
   }
   h3 {
-    margin-bottom: rem(44);
+    margin-bottom: rem(38);
+    line-height: 1.33;
   }
   p {
+    line-height: 1.5;
     &:not(:last-child) {
-      margin-bottom: rem(46);
+      margin-bottom: rem(38);
     }
   }
 }
@@ -40,4 +42,5 @@
 
 .contact-us__content {
   margin-right: rem(90);
+  padding-top: rem(28);
 }

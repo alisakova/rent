@@ -21,7 +21,7 @@ var path = {
     },
     src: { // откуда брать
         html: 'assets/*.html',
-        js: 'assets/js/main.js',
+        js: 'assets/js/*.js',
         //jsLibs: 'assets/libs/js/*.js',
         images: 'assets/images/**/*.*',
         style: 'assets/scss/imports.scss',
@@ -31,7 +31,7 @@ var path = {
     watch: { // за чем наблюдать
         html: 'assets/**/*.html',
         images: 'assets/images/**/*.*',
-        js: 'assets/js/main.js',
+        js: 'assets/js/*.js',
         //jsLibs: 'assets/libs/js/*.js',
         style: 'assets/scss/*.scss',
         //styleLibs: 'assets/libs/css/*.css'

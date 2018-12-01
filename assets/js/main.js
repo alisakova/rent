@@ -23,12 +23,6 @@ navLink.addEventListener("click", e => {
   }
 });
 
-$(document).ready(function() {
-  $('.select').select2({
-    minimumResultsForSearch: Infinity
-  });
-});
-
 
 //accordion
 

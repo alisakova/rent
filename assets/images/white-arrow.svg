@@ -1,0 +1,15 @@
+<svg id="Layer_1" width="30" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.5 22.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>white-arrow</title>
+  <path
+    id="Forma_1"
+    data-name="Forma 1"
+    class="cls-1"
+    d="M11.81,22.27,22.27,11.82a.79.79,0,0,0,0-1.12h0L11.81.24a.79.79,0,0,0-1.11,0h0a.77.77,0,0,0-.22.56.8.8,0,0,0,.22.57l9.11,9.1H.8a.8.8,0,0,0,0,1.59h19l-9.11,9.1a.8.8,0,0,0,0,1.12A.82.82,0,0,0,11.81,22.27Z"/>
+  </svg>

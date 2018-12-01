@@ -1,0 +1,31 @@
+.reviews-slider {
+  p {
+    margin-bottom: rem(40);
+  }
+}
+
+.reviews-slider__author {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.reviews-slider__img {
+  width: rem(83);
+  margin-right: rem(24);
+}
+
+.reviews-slider__author-name {
+  font-weight: 500;
+  color: #000;
+  margin-bottom: rem(5);
+}
+
+.reviews-slider__logo-img {
+  min-width: rem(93);
+}
+
+.reviews-slider__content {
+  padding-top: rem(35);
+  border-top: 6px solid $ui-color;
+}

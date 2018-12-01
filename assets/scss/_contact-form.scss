@@ -1,8 +1,12 @@
 .contact-form {
   background: #fff;
   border-radius: rem(8);
-  padding: rem(35 51 29 46);
+  padding: rem(30 51 29 46);
   .btn {
+    padding: {
+      left: rem(56);
+      right: rem(56);
+    }
     margin: rem(33) auto 0;
   }
 }

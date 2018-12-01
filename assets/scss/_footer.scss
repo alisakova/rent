@@ -4,11 +4,26 @@
       size: rem(16);
       weight: normal;
     }
-    margin-bottom: rem(26);
+    margin-bottom: rem(20);
     color: #000;
   }
   .btn {
-    margin-bottom: rem(24);
+    padding: {
+      top: rem(12);
+      bottom: rem(11);
+    }
+    font-size: rem(14);
+    margin-bottom: rem(18);
+  }
+}
+
+.footer__col {
+  &:first-child {
+    width: 23.5%;
+  }
+  &:nth-child(2),
+  &:nth-last-child(2) {
+    width: 25%;
   }
 }
 
@@ -27,7 +42,7 @@
 .footer__container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .footer__logo {
@@ -54,8 +69,9 @@
 }
 
 .footer__contact {
-  margin-bottom: rem(20);
+  margin-bottom: rem(18);
   white-space: nowrap;
+  font-size: rem(14);
   &_tel {
     a {
       color: #000;
@@ -65,5 +81,19 @@
         fill: $ui-second-color;
       }
     }
+  }
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+}
+
+.footer__social-link {
+  display: block;
+  width: rem(27);
+  height: rem(27);
+  &:not(:last-child) {
+    margin-right: rem(11);
   }
 }
