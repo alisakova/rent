@@ -1,158 +1,155 @@
 .header {
-    background: #fff;
-    box-shadow: 0 0 rem(19) rgba(0, 0, 0, 0.1);
-    position: relative;
+  background: #fff;
+  box-shadow: 0 0 rem(19, 14) rgba(0, 0, 0, 0.1);
+  position: relative;
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .header__logo {
-    width: rem(95);
-    a {
-        display: block;
-    }
-    img {
-        display: block;
-        width: 100%;
-    }
+  width: rem(95, 14);
+  a {
+    display: block;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
 }
 
 .header__nav-link {
-    height: rem(54);
-    width: rem(54);
-    margin-right: rem(-$container-padding);
-    margin-left: rem(7);
-    cursor: pointer;
-    background: transparent;
-    transition: $transition;
+  height: rem(54, 14);
+  width: rem(54, 14);
+  margin-right: rem(-$container-padding, 14);
+  margin-left: rem(7, 14);
+  cursor: pointer;
+  background: transparent;
+  transition: $transition;
 
-    svg {
-        display: block;
-        width: rem(22);
-        height: auto;
-    }
+  svg {
+    display: block;
+    width: rem(22, 14);
+    height: auto;
+  }
+
+  path {
+    transition: $transition;
+  }
+
+  &.active {
+    background: $ui-second-color;
 
     path {
-        transition: $transition;
+      fill: #fff;
     }
-
-    &.active {
-        background: $ui-second-color;
-
-        path {
-            fill: #fff;
-        }
-    }
+  }
 }
 
-
-
-
 @media (max-width: $bp-desktop - 1) {
-    .header {
-        .header__link-mobile {
-            a {
-                width: rem(33);
-                height: rem(33);
-                border-radius: 50%;
-                background: $ui-second-color;
-            }
-
-            &--share {
-                svg {
-                    width: rem(13);
-                    height: auto;
-                }
-            }
-
-            &--email {
-                svg {
-                    width: rem(15);
-                    height: auto;
-                }
-            }
-
-            &--phone {
-                svg {
-                    width: rem(12);
-                    height: auto;
-                }
-            }
-        }
-    }
-
+  .header {
     .header__link-mobile {
-        margin-left: rem(12);
+      a {
+        width: rem(33);
+        height: rem(33);
+        border-radius: 50%;
+        background: $ui-second-color;
+      }
 
-        &:first-child {
-            margin-left: 0;
+      &--share {
+        svg {
+          width: rem(13);
+          height: auto;
         }
+      }
 
-        span {
-            display: none;
+      &--email {
+        svg {
+          width: rem(15);
+          height: auto;
         }
+      }
+
+      &--phone {
+        svg {
+          width: rem(12);
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .header__link-mobile {
+    margin-left: rem(12);
+
+    &:first-child {
+      margin-left: 0;
     }
 
-    .header__links {
-        display: flex;
-        align-items: center;
-
-        a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    span {
+      display: none;
     }
+  }
+
+  .header__links {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
 @media (min-width: $bp-tablet) and (max-width: $bp-desktop - 1) {
-    .header__link-mobile {
-        a {
-            width: rem(26);
-            height: rem(26);
-        }
+  .header__link-mobile {
+    a {
+      width: rem(26);
+      height: rem(26);
     }
+  }
 }
 
 @media (min-width: $bp-desktop) {
-    .header {
-        .contacts__phone {
-            white-space: nowrap;
-            span {
-                display: inline;
-            }
+  .header {
+    .contacts__phone {
+      white-space: nowrap;
+      span {
+        display: inline;
+      }
 
-            a {
-                color: $font-color;
+      a {
+        color: $font-color;
 
-                &:hover {
-                    color: $ui-second-color;
-                }
-            }
-            svg {
-                path {
-                    fill: $ui-second-color;
-                }
-            }
+        &:hover {
+          color: $ui-second-color;
         }
-    }
-
-    .header__link-mobile {
-        &--share,
-        &--email {
-            display: none;
+      }
+      svg {
+        path {
+          fill: $ui-second-color;
         }
+      }
     }
+  }
 
-    .header__logo {
-        width: rem(165, $desktop-font-size);
+  .header__link-mobile {
+    &--share,
+    &--email {
+      display: none;
     }
+  }
 
-    .header__nav-link {
-        display: none;
-    }
+  .header__logo {
+    width: rem(165);
+  }
+
+  .header__nav-link {
+    display: none;
+  }
 }

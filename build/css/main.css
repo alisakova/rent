@@ -174,17 +174,11 @@ body {
   max-width: 73.125rem;
   margin: 0 auto
 }
-.intro a {
-  color: #eb058c
-}
-.intro a:hover {
-  color: #d2047d
-}
 h1 {
   font-size: 2.875rem;
   font-weight: 300;
   margin: 0 0 2.3125rem;
-  line-height: 1.2666
+  line-height: 1.17
 }
 h2 {
   font-size: 2.25rem;
@@ -230,7 +224,7 @@ ul {
 }
 .header {
   background: #fff;
-  box-shadow: 0 0 1.1875rem rgba(0,0,0,.1);
+  box-shadow: 0 0 1.35714rem rgba(0,0,0,.1);
   position: relative
 }
 .header .container {
@@ -239,7 +233,7 @@ ul {
   align-items: center
 }
 .header__logo {
-  width: 5.9375rem
+  width: 6.78571rem
 }
 .header__logo a {
   display: block
@@ -249,17 +243,17 @@ ul {
   width: 100%
 }
 .header__nav-link {
-  height: 3.375rem;
-  width: 3.375rem;
-  margin-right: -.9375rem;
-  margin-left: .4375rem;
+  height: 3.85714rem;
+  width: 3.85714rem;
+  margin-right: -1.07143rem;
+  margin-left: .5rem;
   cursor: pointer;
   background: 0 0;
   transition: .2s
 }
 .header__nav-link svg {
   display: block;
-  width: 1.375rem;
+  width: 1.57143rem;
   height: auto
 }
 .header__nav-link path {
@@ -361,18 +355,24 @@ ul {
 .btn {
   display: block;
   text-align: center;
-  border: none;
+  border: 1px solid rgba(62,117,186,.5);
   border-radius: .3125rem;
   box-shadow: none;
-  padding: 1.3125rem 3.125rem 1.375rem;
+  padding: .875rem 2.4375rem .9375rem;
   cursor: pointer;
   transition: .2s;
   font-size: 1rem;
-  color: #fffefe
+  color: #3e75ba;
+  background: #fff
+}
+.btn:hover {
+  border-color: #0077bf
 }
 .btn--success {
   background: #eb058c;
-  color: #fff
+  color: #fff;
+  border: none;
+  padding: 1.3125rem 3.125rem 1.375rem
 }
 .btn--success:hover {
   background: #d2047d
@@ -606,35 +606,31 @@ ul {
     display: block
   }
 }
-.contacts__email a,
-.contacts__phone a {
-  position: relative
-}
 .contacts__email svg,
 .contacts__phone svg {
-  display: block;
+  width: .8125rem;
   height: .875rem;
-  width: auto
+  position: absolute;
+  left: 0;
+  top: .25rem
 }
-@media (min-width:1200px) {
-  .contacts__email a,
-  .contacts__phone a {
-    display: block;
-    padding-left: 1.375rem
-  }
-  .contacts__email svg,
-  .contacts__phone svg {
-    width: .8125rem;
-    position: absolute;
-    left: 0;
-    top: .25rem
-  }
-  .intro .container {
-    display: flex
-  }
-  .intro__image {
-    min-width: 40%
-  }
+.contacts__phone a {
+  display: block;
+  position: relative;
+  padding-left: 1.375rem
+}
+.contacts__phone a:hover {
+  color: #0077bf
+}
+.contacts__email {
+  position: relative
+}
+.contacts__email span {
+  display: block;
+  padding-left: 1.375rem
+}
+.contacts__email a:hover {
+  color: #000
 }
 [data-accordion=panel] {
   height: 0;
@@ -643,34 +639,60 @@ ul {
   transition: 250ms;
   will-change: height
 }
-.intro {
-  padding: 1.5625rem 0 0
+.intro h1 {
+  margin-bottom: 2.3125rem;
+  letter-spacing: .6px
 }
-.intro__image {
-  position: relative
+.intro h3 {
+  margin-bottom: 1.8125rem
+}
+.intro p {
+  margin-bottom: 2.875rem
+}
+.intro a {
+  color: #eb058c
 }
 .intro__image--second {
-  width: 8.75rem;
+  width: 22.125rem;
   height: auto;
   position: absolute;
-  right: 0;
+  right: -4.5rem;
   bottom: 0;
   z-index: 1
 }
-@media (max-width:1199px) {
-  .intro__image--second ~ img {
-    position: relative;
-    left: -2.875rem
-  }
+.intro__image--second ~ img {
+  position: relative;
+  left: -7.125rem;
+  top: 1.875rem;
+  width: 30.0625rem
 }
-.subscribe__group {
-  margin-bottom: .9375rem
+.intro {
+  padding: 4.375rem 0 0
 }
-.subscribe__group:last-child {
-  margin-bottom: 0
+.intro .container {
+  display: flex;
+  justify-content: space-between
+}
+.intro__image {
+  position: relative;
+  min-width: 40%;
+  padding-bottom: 4.125rem
+}
+.intro__text {
+  max-width: 44.3%;
+  padding-bottom: 4.125rem
+}
+.subscribe__group:first-child {
+  margin-right: 1.4375rem;
+  min-width: 16.4375rem
+}
+.subscribe__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start
 }
 .subscribe__text {
-  margin-bottom: 4px
+  margin-bottom: 7px
 }
 .companies {
   background: #779dce;
@@ -767,7 +789,18 @@ ul {
   font-size: 2.875rem;
   font-weight: 300;
   line-height: .74;
-  margin-bottom: 1.75rem
+  margin-bottom: 1.75rem;
+  position: relative;
+  padding-left: 2.0625rem
+}
+.statistics__number:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: .3125rem;
+  width: 1.625rem;
+  height: 1.625rem;
+  background: url(../images/yellow-arrow.svg) center center/cover no-repeat
 }
 .growth {
   padding: 4.5rem 0 4.875rem
@@ -965,7 +998,11 @@ ul {
 .footer h4 {
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 1.625rem
+  margin-bottom: 1.625rem;
+  color: #000
+}
+.footer .btn {
+  margin-bottom: 1.5rem
 }
 .footer__copyrights {
   background: #3e75ba;
@@ -991,4 +1028,25 @@ ul {
 .footer__logo img {
   display: block;
   width: 100%
+}
+.footer__link {
+  display: block;
+  color: #000;
+  font-size: .875rem
+}
+.footer__link:not(:last-child) {
+  margin-bottom: .75rem
+}
+.footer__link:hover {
+  color: #0077bf
+}
+.footer__contact {
+  margin-bottom: 1.25rem;
+  white-space: nowrap
+}
+.footer__contact_tel a {
+  color: #000
+}
+.footer__contact_tel svg path {
+  fill: #0077bf
 }

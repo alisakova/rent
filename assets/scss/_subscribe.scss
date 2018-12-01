@@ -1,15 +1,19 @@
 .subscribe {
-
 }
 
 .subscribe__group {
-    margin-bottom: rem(15);
+  &:first-child {
+    margin-right: rem(23);
+    min-width: rem(263);
+  }
+}
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+.subscribe__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .subscribe__text {
-    margin-bottom: 4px;
+  margin-bottom: 7px;
 }

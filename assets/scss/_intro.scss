@@ -1,42 +1,71 @@
+// .intro {
+//   padding: rem(25 0 0, 14);
+//
+//   a {
+//     @extend %second-link;
+//   }
+// }
+//
+// .intro__image {
+//   position: relative;
+//   //left: rem(-46);
+// }
+//
+// .intro__image--second {
+//   width: rem(140, 14);
+//   height: auto;
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+//   z-index: 1;
+// }
+
 .intro {
-    padding: rem(25 0 0);
-
-    a {
-        @extend %second-link;
-    }
-}
-
-.intro__image {
-    position: relative;
-    //left: rem(-46);
+  h1 {
+    margin-bottom: rem(37);
+    letter-spacing: 0.6px;
+  }
+  h3 {
+    margin-bottom: rem(29);
+  }
+  p {
+    margin-bottom: rem(46);
+  }
+  a {
+    color: $ui-color;
+  }
 }
 
 .intro__image--second {
-    width: rem(140);
-    height: auto;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
+  width: rem(354);
+  height: auto;
+  position: absolute;
+  right: rem(-72);
+  bottom: 0;
+  z-index: 1;
+  & ~ img {
+    position: relative;
+    left: rem(-114);
+    top: rem(30);
+    width: rem(481);
+  }
 }
 
-@media (max-width: $bp-desktop - 1) {
-    .intro__image--second {
-        & ~ img {
-            position: relative;
-            left: rem(-46)
-        }
-    }
+.intro {
+  padding: rem(70 0 0);
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-@media (min-width: $bp-desktop) {
-    .intro {
-        .container {
-            display: flex;
-        }
-    }
+.intro__image {
+  position: relative;
+  min-width: 40%;
+  padding-bottom: rem(66);
+}
 
-    .intro__image {
-        min-width: 40%;
-    }
+.intro__text {
+  max-width: 44.3%;
+  padding-bottom: rem(66);
 }

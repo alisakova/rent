@@ -5,6 +5,10 @@
       weight: normal;
     }
     margin-bottom: rem(26);
+    color: #000;
+  }
+  .btn {
+    margin-bottom: rem(24);
   }
 }
 
@@ -34,5 +38,32 @@
   img {
     display: block;
     width: 100%;
+  }
+}
+
+.footer__link {
+  display: block;
+  color: #000;
+  font-size: rem(14);
+  &:not(:last-child) {
+    margin-bottom: rem(12);
+  }
+  &:hover {
+    color: $ui-second-color;
+  }
+}
+
+.footer__contact {
+  margin-bottom: rem(20);
+  white-space: nowrap;
+  &_tel {
+    a {
+      color: #000;
+    }
+    svg {
+      path {
+        fill: $ui-second-color;
+      }
+    }
   }
 }

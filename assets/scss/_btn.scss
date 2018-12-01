@@ -1,18 +1,23 @@
 .btn {
   display: block;
   text-align: center;
-  border: none;
+  border: 1px solid rgba(62, 117, 186, 0.5);
   border-radius: $global-radius;
   box-shadow: none;
-  padding: rem(21 50 22);
+  padding: rem(14 39 15);
   cursor: pointer;
   transition: $transition;
   font-size: rem(16);
-  color: #fffefe;
+  color: $second-blue;
+  background: #fff;
+  &:hover {
+    border-color: $ui-second-color;
+  }
   &--success {
     background: $ui-color;
     color: #fff;
-
+    border: none;
+    padding: rem(21 50 22);
     &:hover {
       background: $ui-color-hover;
     }

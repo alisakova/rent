@@ -1,27 +1,46 @@
+// .contacts__phone,
+// .contacts__email {
+//     a {
+//         position: relative;
+//     }
+//     svg {
+//         display: block;
+//         height: rem(14);
+//         width: auto;
+//     }
+// }
+
 .contacts__phone,
 .contacts__email {
-    a {
-        position: relative;
-    }
-    svg {
-        display: block;
-        height: rem(14);
-        width: auto;
-    }
+  svg {
+    width: rem(13);
+    height: rem(14);
+    position: absolute;
+    left: 0;
+    top: rem(4);
+  }
 }
 
-@media (min-width: $bp-desktop) {
-    .contacts__phone,
-    .contacts__email {
-        a {
-            display: block;
-            padding-left: rem(22, $desktop-font-size);
-        }
-        svg {
-            width: rem(13, $desktop-font-size);
-            position: absolute;
-            left: 0;
-            top: rem(4, $desktop-font-size);
-        }
+.contacts__phone {
+  a {
+    display: block;
+    position: relative;
+    padding-left: rem(22);
+    &:hover {
+      color: $ui-second-color;
     }
+  }
+}
+
+.contacts__email {
+  position: relative;
+  span {
+    display: block;
+    padding-left: rem(22);
+  }
+  a {
+    &:hover {
+      color: #000;
+    }
+  }
 }
