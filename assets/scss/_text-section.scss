@@ -20,6 +20,9 @@
   p {
     margin-top: rem(44);
   }
+  &_gray-bg {
+    background: $section-bg;
+  }
 }
 
 .text-section_lifecycle {

@@ -1305,6 +1305,15 @@ ul {
 .descr-block:nth-child(even) .descr-block__content {
   margin-top: 7.5rem
 }
+@media (max-width:900px) {
+  .descr-block_alt:not(:last-child) {
+    margin-bottom: 3.57143rem
+  }
+  .descr-block_alt .descr-block__img {
+    max-width: 33%;
+    min-width: 33%
+  }
+}
 .descr-block__img {
   min-width: 35.8%
 }
@@ -1328,8 +1337,9 @@ ul {
   .descr-block {
     flex-direction: column-reverse
   }
-  .descr-block_alt:not(:last-child) {
-    margin-bottom: 3.57143rem
+  .descr-block_alt .descr-block__img {
+    max-width: none;
+    min-width: 0
   }
   .descr-block__img_width-467 {
     min-width: 20.42857rem
@@ -2168,6 +2178,9 @@ ul {
 }
 .text-section p {
   margin-top: 2.75rem
+}
+.text-section_gray-bg {
+  background: #f5f5f5
 }
 .text-section_lifecycle h2 {
   max-width: 59.375rem

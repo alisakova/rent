@@ -27,9 +27,19 @@
     flex-direction: column-reverse;
   }
   &_alt {
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
       &:not(:last-child) {
         margin-bottom: rem(50, 14);
+      }
+    }
+    .descr-block__img {
+      @media (max-width: 900px) {
+        max-width: 33%;
+        min-width: 33%;
+      }
+      @media (max-width: 600px) {
+        max-width: none;
+        min-width: 0;
       }
     }
   }
