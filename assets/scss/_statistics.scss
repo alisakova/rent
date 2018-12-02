@@ -8,6 +8,12 @@
       margin-bottom: rem(35, 14);
     }
   }
+  &_blue-bg {
+    background: $second-blue;
+  }
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .statistics__container {
@@ -20,7 +26,13 @@
   @media (max-width: 600px) {
     flex-wrap: wrap;
     margin-bottom: rem(-40, 14);
+    margin: 0 rem(-20) rem(-40, 14);
     padding: rem(0 0 0 14, 14);
+  }
+  &_alt {
+    @media (max-width: 600px) {
+      padding: 0 0 rem(42, 14) 0;
+    }
   }
 }
 
@@ -50,11 +62,31 @@
     }
   }
   @media (max-width: 600px) {
-    width: rem(118, 14);
+    width: 50%;
     max-width: none;
     margin-bottom: rem(24, 14);
+    padding: 0 rem(20);
     br {
       display: none;
+    }
+  }
+  &_bordered-right {
+    @media (max-width: 600px) {
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+  &_bordered-bottom {
+    @media (max-width: 600px) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+  &_alt {
+    @media (max-width: 600px) {
+      margin: 0;
+      padding: {
+        top: rem(20, 14);
+        bottom: rem(20, 14);
+      }
     }
   }
 }

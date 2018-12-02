@@ -1,0 +1,29 @@
+.text-section {
+  padding: rem(76 0 73);
+  h2 {
+    max-width: rem(850);
+    margin: 0 auto rem(40);
+    @media (max-width: 600px) {
+      margin-bottom: rem(20, 14);
+    }
+  }
+  h3 {
+    max-width: rem(937);
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: 600px) {
+      max-width: none;
+      text-align: left;
+      font-size: rem(14, 14);
+    }
+  }
+  p {
+    margin-top: rem(44);
+  }
+}
+
+.text-section_lifecycle {
+  h2 {
+    max-width: rem(950);
+  }
+}

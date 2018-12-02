@@ -1,0 +1,12 @@
+.breadcrumb {
+  font-size: rem(13);
+  a {
+    color: #000;
+    &:hover {
+      color: $ui-second-color;
+    }
+  }
+  @media (max-width: 600px) {
+    display: none;
+  }
+}

@@ -21,4 +21,7 @@
       bottom: rem(47, 14);
     }
   }
+  &_gray-bg {
+    background: $section-bg;
+  }
 }

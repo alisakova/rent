@@ -29,7 +29,7 @@ var path = {
         fonts: 'assets/fonts/*.*'
     },
     watch: { // за чем наблюдать
-        html: 'assets/**/*.html',
+        html: 'assets/**/**/*.html',
         images: 'assets/images/**/*.*',
         js: 'assets/js/*.js',
         //jsLibs: 'assets/libs/js/*.js',

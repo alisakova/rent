@@ -28,11 +28,21 @@
       display: flex;
     }
   }
+  &_gray-bg {
+    background: $section-bg;
+    padding: rem(68 0 73);
+  }
+  &_without-title {
+    padding-top: rem(55);
+  }
 }
 
 .growth__container {
   margin-bottom: rem(33);
   @media (max-width: 600px) {
+    margin-bottom: 0;
+  }
+  &_margin-bottom-0 {
     margin-bottom: 0;
   }
 }

@@ -17,9 +17,14 @@
 }
 
 .subscribe__group {
+  &_size {
+    min-width: rem(263);
+  }
+  &_big {
+    min-width: rem(351);
+  }
   &:first-child {
     margin-right: rem(23);
-    min-width: rem(263);
     @media (max-width: 540px) {
       margin: {
         bottom: rem(15, 14);

@@ -34,6 +34,39 @@
   @media (max-width: 600px) {
     padding: rem(30 0 0, 14);
   }
+  &_internal-page {
+    position: relative;
+    padding: rem(20 0 0);
+    h1 {
+      font-size: rem(36);
+      margin-bottom: rem(42);
+      @media (max-width: 600px) {
+        margin-bottom: rem(18, 14);
+        font-size: rem(24, 14);
+      }
+    }
+    .container {
+      display: block;
+    }
+    @media (max-width: 600px) {
+      padding: 0;
+    }
+  }
+  &_gray-bg {
+    background: $section-bg;
+  }
+}
+
+.intro__wrap {
+  padding-top: rem(71);
+  @media (max-width: 600px) {
+    padding-top: rem(35, 14);
+  }
+  &_flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 .intro__image--second {
@@ -90,10 +123,50 @@
   }
 }
 
+.intro__image--lifecycle {
+  min-width: 44%;
+  margin-top: rem(-30);
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
+}
+
 .intro__image {
   position: relative;
   min-width: 40%;
   padding-bottom: rem(62);
+  &--internal-page {
+    position: absolute;
+    z-index: 1;
+    min-width: rem(716);
+    right: rem(-50);
+    bottom: rem(-80);
+    padding-bottom: rem(100);
+    @media (max-width: 1200px) {
+      max-width: rem(600);
+      min-width: rem(600);
+    }
+    @media (max-width: 1000px) {
+      bottom: auto;
+      top: rem(100);
+    }
+    @media (max-width: 768px) {
+      max-width: rem(500);
+      min-width: rem(500);
+      padding: 0;
+      top: rem(150);
+    }
+    @media (max-width: 700px) {
+      position: static;
+      margin: 0 auto;
+      padding: rem(50 0);
+    }
+    @media (max-width: 600px) {
+      padding: rem(0 0 34, 14);
+      max-width: none;
+      min-width: 0;
+    }
+  }
 }
 
 .intro__text {
@@ -106,6 +179,23 @@
     padding-bottom: 0;
     max-width: none;
     margin-bottom: 2.125rem;
+  }
+  &_max-width-55 {
+    max-width: 55%;
+    position: relative;
+    z-index: 2;
+    padding-bottom: rem(100);
+    @media (max-width: 700px) {
+      padding-bottom: 0;
+      max-width: none;
+    }
+  }
+  &_max-width-50 {
+    max-width: 50%;
+    margin-right: rem(40);
+    @media (max-width: 700px) {
+      
+    }
   }
 }
 
@@ -136,7 +226,6 @@
   }
   @media (max-width: 475px) {
     right: rem(50);
-
   }
 }
 
