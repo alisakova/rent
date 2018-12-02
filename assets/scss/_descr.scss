@@ -5,7 +5,7 @@
   h2 {
     margin-bottom: rem(31);
     @media (max-width: 600px) {
-      margin-bottom: rem(25, 14);
+      margin-bottom: rem(20, 14);
     }
   }
   h3 {
@@ -14,9 +14,10 @@
     line-height: 1.36;
     text-align: center;
     @media (max-width: 600px) {
-      max-width: none;
-      margin: 0 0 rem(29, 14);
+      max-width: 18.6rem;
+      margin: 0 0 rem(24, 14);
       text-align: left;
+      line-height: 1.44;
     }
   }
   p {
@@ -26,7 +27,7 @@
     }
   }
   @media (max-width: 600px) {
-    padding: rem(45 0 53, 14);
+    padding: rem(42 0 48, 14);
   }
 }
 

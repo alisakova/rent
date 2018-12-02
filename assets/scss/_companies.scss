@@ -12,8 +12,10 @@ $companies-bg: #779dce;
     color: #fff;
     @media (max-width: 600px) {
       display: none;
-      padding: rem(14 0 19, 14);
     }
+  }
+  @media (max-width: 600px) {
+    padding: rem(14 0, 14);
   }
 }
 

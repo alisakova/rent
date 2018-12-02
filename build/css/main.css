@@ -233,7 +233,8 @@ ul {
     font-size: 14px
   }
   h1 {
-    font-size: 2.14286rem
+    font-size: 2.14286rem;
+    line-height: 1.27
   }
   h2 {
     font-size: 1.71429rem
@@ -437,7 +438,7 @@ ul {
     padding: 1.07143rem
   }
   .form__item {
-    margin-bottom: 1.28571rem
+    margin-bottom: 1.42857rem
   }
 }
 .form__label {
@@ -691,7 +692,7 @@ ul {
 }
 @media (max-width:600px) {
   .intro h1 {
-    margin-bottom: 1.42857rem
+    margin-bottom: 1.07143rem
   }
 }
 .intro h3 {
@@ -700,7 +701,8 @@ ul {
 }
 @media (max-width:600px) {
   .intro h3 {
-    margin-bottom: 1.42857rem
+    margin-bottom: 1.42857rem;
+    line-height: 1.44
   }
 }
 .intro p {
@@ -832,14 +834,14 @@ ul {
   .intro__text {
     padding-bottom: 0;
     max-width: none;
-    margin-bottom: 1.125rem
+    margin-bottom: 2.125rem
   }
   .intro__author {
-    width: 5.625rem;
-    height: 5.625rem;
+    width: 6.42857rem;
+    height: 6.42857rem;
     font-size: .71429rem;
-    right: 6.25rem;
-    bottom: 1.25rem
+    right: 3.5rem;
+    bottom: .625rem
   }
   .subscribe .btn {
     padding-top: .85714rem;
@@ -896,18 +898,12 @@ ul {
 .companies__item:not(:last-child) {
   margin-right: 3.75rem
 }
-.descr {
-  background-color: #3e75ba;
-  padding: 3.875rem 0 4.0625rem;
-  color: #fff
-}
-.descr h2 {
-  margin-bottom: 1.9375rem
-}
 @media (max-width:600px) {
   .companies h4 {
-    display: none;
-    padding: 1rem 0 1.35714rem
+    display: none
+  }
+  .companies {
+    padding: 1rem 0
   }
   .companies__container {
     flex-wrap: wrap;
@@ -921,8 +917,18 @@ ul {
     min-width: 25%;
     margin-right: 1.25rem
   }
+}
+.descr {
+  background-color: #3e75ba;
+  padding: 3.875rem 0 4.0625rem;
+  color: #fff
+}
+.descr h2 {
+  margin-bottom: 1.9375rem
+}
+@media (max-width:600px) {
   .descr h2 {
-    margin-bottom: 1.78571rem
+    margin-bottom: 1.42857rem
   }
 }
 .descr h3 {
@@ -933,9 +939,10 @@ ul {
 }
 @media (max-width:600px) {
   .descr h3 {
-    max-width: none;
-    margin: 0 0 2.07143rem;
-    text-align: left
+    max-width: 18.6rem;
+    margin: 0 0 1.71429rem;
+    text-align: left;
+    line-height: 1.44
   }
 }
 .descr p {
@@ -955,7 +962,7 @@ ul {
     margin-bottom: 2.85714rem
   }
   .descr {
-    padding: 3.21429rem 0 3.78571rem
+    padding: 3rem 0 3.42857rem
   }
   .descr__container {
     flex-direction: column;
@@ -981,7 +988,8 @@ ul {
     width: 16.66667rem
   }
   .features-list {
-    padding-right: 2.14286rem
+    padding-right: 2.14286rem;
+    padding-top: 1.78571rem
   }
 }
 .features-list__item {
@@ -1000,6 +1008,18 @@ ul {
   width: 1.6875rem;
   height: 1.6875rem;
   background: url(../images/list-okay.png) center center/cover no-repeat
+}
+@media (max-width:600px) {
+  .features-list__item:not(:last-child) {
+    margin-bottom: 1.07143rem
+  }
+  .features-list__item:after {
+    width: 1.92857rem;
+    height: 1.92857rem
+  }
+  .features-list__item {
+    padding-left: 3.07143rem
+  }
 }
 .statistics {
   color: #fff;
@@ -1040,18 +1060,25 @@ ul {
   }
 }
 @media (max-width:600px) {
+  .statistics h2 {
+    margin-bottom: 2.5rem
+  }
   .statistics__container {
     flex-wrap: wrap;
-    margin-bottom: -2.85714rem
+    margin-bottom: -2.85714rem;
+    padding: 0 0 0 1rem
   }
   .statistics__item_small {
     width: 50%;
     max-width: none
   }
   .statistics__item {
-    width: 50%;
+    width: 8.42857rem;
     max-width: none;
-    margin-bottom: 2.85714rem
+    margin-bottom: 1.71429rem
+  }
+  .statistics__item br {
+    display: none
   }
 }
 .statistics__number {
@@ -1079,7 +1106,8 @@ ul {
   }
   .statistics__number {
     font-size: 2.14286rem;
-    padding-left: 1.85714rem
+    padding-left: 1.42857rem;
+    margin-bottom: .85714rem
   }
   .growth .btn {
     display: none
@@ -1093,7 +1121,7 @@ ul {
 }
 @media (max-width:540px) {
   .growth h2 {
-    margin-bottom: 1.42857rem
+    margin-bottom: 1.07143rem
   }
 }
 .growth h3 {
@@ -1102,7 +1130,7 @@ ul {
 }
 @media (max-width:540px) {
   .growth h3 {
-    margin-bottom: 1.78571rem;
+    margin-bottom: 1.42857rem;
     text-align: left
   }
 }
@@ -1145,7 +1173,7 @@ ul {
     margin-bottom: 0
   }
   .descr-block h4 {
-    margin-bottom: 9px
+    margin-bottom: 5px
   }
   .descr-block:nth-child(even) .descr-block__content {
     margin-top: 0
@@ -1175,6 +1203,13 @@ ul {
 .descr-block__content {
   max-width: 48.685%
 }
+.steps {
+  background: #f5f5f5;
+  padding: 4.3125rem 0 4.375rem
+}
+.steps h2 {
+  margin-bottom: 1.875rem
+}
 @media (max-width:600px) {
   .descr-block__img_width-365 {
     min-width: 20.42857rem
@@ -1190,15 +1225,14 @@ ul {
     object-fit: contain
   }
   .descr-block__content {
-    margin-bottom: 2.28571rem
+    margin-bottom: 1.07143rem
   }
-}
-.steps {
-  background: #f5f5f5;
-  padding: 4.3125rem 0 4.375rem
-}
-.steps h2 {
-  margin-bottom: 1.875rem
+  .steps h2 {
+    margin-bottom: 1.28571rem
+  }
+  .steps {
+    padding: 3.21429rem 0
+  }
 }
 .steps h3 {
   max-width: 47.8125rem;
@@ -1278,8 +1312,11 @@ ul {
   }
   .step {
     max-width: none;
-    margin-bottom: 2.07143rem;
+    margin-bottom: .71429rem;
     margin-right: 0
+  }
+  .step:last-child {
+    margin-bottom: 2.14286rem
   }
 }
 .step__count {
@@ -1297,6 +1334,16 @@ ul {
   left: 0;
   top: 0
 }
+@media (max-width:600px) {
+  .step h4 {
+    font-size: 1.14286rem;
+    margin-bottom: .35714rem
+  }
+  .step__count {
+    width: 2.85714rem;
+    height: 2.85714rem
+  }
+}
 .profits {
   padding: 4.125rem 0 4.0625rem;
   position: relative
@@ -1306,7 +1353,7 @@ ul {
 }
 @media (max-width:540px) {
   .profits h2 {
-    margin-bottom: 1.78571rem
+    margin-bottom: 1.28571rem
   }
   .profits:after {
     display: none
@@ -1318,13 +1365,10 @@ ul {
   max-width: 47.5rem
 }
 @media (max-width:600px) {
-  .step h4 {
-    font-size: 1.14286rem
-  }
   .profits h3 {
     max-width: none;
     text-align: left;
-    margin-bottom: 1.78571rem
+    margin-bottom: 1.42857rem
   }
 }
 .profits p {
@@ -1357,7 +1401,7 @@ ul {
 }
 @media (max-width:600px) {
   .profits p {
-    margin-bottom: 2.35714rem
+    margin-bottom: 2.14286rem
   }
   .profits {
     padding: 3.14286rem 0
@@ -1372,13 +1416,19 @@ ul {
 }
 @media (max-width:600px) {
   .contact-us h2 {
-    margin-bottom: 2.14286rem;
+    margin-bottom: 1.42857rem;
     padding: 0 1.25rem
   }
 }
 .contact-us h3 {
   margin-bottom: 2.375rem;
   line-height: 1.33
+}
+@media (max-width:600px) {
+  .contact-us h3 {
+    margin-bottom: 1.42857rem;
+    line-height: 1.44
+  }
 }
 .contact-us p {
   line-height: 1.5
@@ -1407,23 +1457,23 @@ ul {
   background: #eb058c
 }
 @media (max-width:600px) {
-  .contact-us h3 {
-    margin-bottom: 1.78571rem
-  }
   .contact-us p:not(:last-child) {
-    margin-bottom: 1.92857rem
+    margin-bottom: 1.71429rem
   }
   .contact-us p {
-    margin-bottom: 3.5rem
+    margin-bottom: 3.14286rem
   }
   .contact-us {
-    padding: 3.64286rem 0 2.28571rem
+    padding: 3.42857rem 0 2.28571rem
   }
   .contact-us .container {
     padding: 0
   }
   .contact-us__container {
     flex-direction: column
+  }
+  .contact-us__form:before {
+    border-radius: 0
   }
   .contact-us__form {
     min-width: 100%
@@ -1466,7 +1516,7 @@ ul {
     margin-top: 3.21429rem
   }
   .contact-form {
-    padding: 2.42857rem 1.25rem 3.35714rem
+    padding: 2.64286rem 1.25rem 3.35714rem
   }
   .form-grid {
     margin: 0;
@@ -1629,13 +1679,21 @@ ul {
 .footer__contact {
   margin-bottom: 1.125rem;
   white-space: nowrap;
-  font-size: .875rem
+  font-size: .875rem;
+  display: flex;
+  align-items: center
 }
 .footer__contact_tel a {
   color: #000
 }
+.footer__contact_tel svg {
+  margin-right: .78571rem
+}
 .footer__contact_tel svg path {
   fill: #0077bf
+}
+.footer__contact_mail svg {
+  margin-right: .78571rem
 }
 .footer__socials {
   display: flex;
@@ -1667,6 +1725,10 @@ ul {
   width: 50%
 }
 @media (max-width:600px) {
+  .footer__link:not(:last-child) {
+    font-size: 1rem;
+    margin-bottom: .71429rem
+  }
   .footer__mobile-container {
     width: 100%;
     justify-content: flex-start;
@@ -1889,7 +1951,7 @@ ul {
     min-width: 6.64286rem
   }
   .reviews-slider__content {
-    padding-top: 1.64286rem
+    padding-top: 1.42857rem
   }
 }
 .descr-slider .slick-slide {

@@ -4,7 +4,7 @@
   h2 {
     margin-bottom: rem(38);
     @media (max-width: 600px) {
-      margin-bottom: rem(30, 14);
+      margin-bottom: rem(20, 14);
       padding: 0 rem(20);
     }
   }
@@ -12,7 +12,8 @@
     margin-bottom: rem(38);
     line-height: 1.33;
     @media (max-width: 600px) {
-      margin-bottom: rem(25, 14);
+      margin-bottom: rem(20, 14);
+      line-height: 1.44;
     }
   }
   p {
@@ -20,15 +21,15 @@
     &:not(:last-child) {
       margin-bottom: rem(38);
       @media (max-width: 600px) {
-        margin-bottom: rem(27, 14);
+        margin-bottom: rem(24, 14);
       }
     }
     @media (max-width: 600px) {
-      margin-bottom: rem(49, 14);
+      margin-bottom: rem(44, 14);
     }
   }
   @media (max-width: 600px) {
-    padding: rem(51 0 32, 14);
+    padding: rem(48 0 32, 14);
     .container {
       padding: 0;
     }
@@ -59,6 +60,9 @@
       top-right-radius: 3px;
     }
     background: $ui-color;
+    @media (max-width: 600px) {
+      border-radius: 0;
+    }
   }
   @media (max-width: 600px) {
     min-width: 100%;

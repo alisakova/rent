@@ -3,14 +3,14 @@
   h2 {
     margin-bottom: rem(28);
     @media (max-width: 540px) {
-      margin-bottom: rem(20, 14);
+      margin-bottom: rem(15, 14);
     }
   }
   h3 {
     margin-bottom: rem(70);
     text-align: center;
     @media (max-width: 540px) {
-      margin-bottom: rem(25, 14);
+      margin-bottom: rem(20, 14);
       text-align: left;
     }
   }

@@ -6,7 +6,7 @@
     font-size: rem(18);
     margin-bottom: rem(38);
     @media (max-width: 600px) {
-      margin-bottom: 9px;
+      margin-bottom: 5px;
     }
   }
   &:nth-child(even) {
@@ -62,7 +62,7 @@
 .descr-block__content {
   max-width: 48.685%;
   @media (max-width: 600px) {
-    margin-bottom: rem(32, 14);
+    margin-bottom: rem(15, 14);
   }
   @media (max-width: 540px) {
     max-width: none;

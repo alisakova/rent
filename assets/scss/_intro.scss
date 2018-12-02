@@ -3,7 +3,7 @@
     margin-bottom: rem(33);
     letter-spacing: 0.6px;
     @media (max-width: 600px) {
-      margin-bottom: rem(20, 14);
+      margin-bottom: rem(15, 14);
     }
   }
   h3 {
@@ -11,6 +11,7 @@
     line-height: 1.36;
     @media (max-width: 600px) {
       margin-bottom: rem(20, 14);
+      line-height: 1.44;
     }
   }
   p {
@@ -104,7 +105,7 @@
   @media (max-width: 600px) {
     padding-bottom: 0;
     max-width: none;
-    margin-bottom: rem(18);
+    margin-bottom: 2.125rem;
   }
 }
 
@@ -127,14 +128,15 @@
     right: 0;
   }
   @media (max-width: 600px) {
-    width: rem(90);
-    height: rem(90);
+    width: rem(90, 14);
+    height: rem(90, 14);
     font-size: rem(10, 14);
-    right: rem(100);
-    bottom: rem(20);
+    right: 3.5rem;
+    bottom: rem(10);
   }
   @media (max-width: 475px) {
     right: rem(50);
+
   }
 }
 

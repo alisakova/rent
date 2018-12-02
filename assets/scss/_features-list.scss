@@ -5,7 +5,10 @@ $features-border-color: #fbe608;
   border-top: rem(6) solid $features-border-color;
   font-size: rem(16);
   @media (max-width: 375px) {
-    padding-right: rem(30, 14);
+    padding: {
+      right: rem(30, 14);
+      top: rem(25, 14);
+    }
   }
 }
 
@@ -15,6 +18,9 @@ $features-border-color: #fbe608;
   line-height: 1.5;
   &:not(:last-child) {
     margin-bottom: rem(12);
+    @media (max-width: 600px) {
+      margin-bottom: rem(15, 14);
+    }
   }
   &:after {
     content: '';
@@ -25,5 +31,12 @@ $features-border-color: #fbe608;
     height: rem(27);
     background: url('../images/list-okay.png') center center no-repeat;
     background-size: cover;
+    @media (max-width: 600px) {
+      width: rem(27, 14);
+      height: rem(27, 14);
+    }
+  }
+  @media (max-width: 600px) {
+    padding-left: rem(43, 14);
   }
 }

@@ -4,6 +4,7 @@
     font-size: rem(18);
     @media (max-width: 600px) {
       font-size: rem(16, 14);
+      margin-bottom: rem(5, 14);
     }
   }
   position: relative;
@@ -19,8 +20,11 @@
   @media (max-width: 540px) {
     max-width: none;
     margin: {
-      bottom: rem(29, 14);
+      bottom: rem(10, 14);
       right: 0;
+    }
+    &:last-child {
+      margin-bottom: rem(30, 14);
     }
   }
 }
@@ -41,4 +45,8 @@
   position: absolute;
   left: 0;
   top: 0;
+  @media (max-width: 600px) {
+    width: rem(40, 14);
+    height: rem(40, 14);
+  }
 }

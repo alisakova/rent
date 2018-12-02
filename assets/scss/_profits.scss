@@ -3,7 +3,7 @@
   h2 {
     margin-bottom: rem(30);
     @media (max-width: 540px) {
-      margin-bottom: rem(25, 14);
+      margin-bottom: rem(18, 14);
     }
   }
   h3 {
@@ -13,13 +13,13 @@
     @media (max-width: 600px) {
       max-width: none;
       text-align: left;
-      margin-bottom: rem(25, 14);
+      margin-bottom: rem(20, 14);
     }
   }
   p {
     margin-bottom: rem(50);
     @media (max-width: 600px) {
-      margin-bottom: rem(33, 14);
+      margin-bottom: rem(30, 14);
     }
   }
   position: relative;
