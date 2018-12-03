@@ -101,6 +101,11 @@ ul {
   color: $ui-second-color;
 }
 
+.yellow {
+  font-size: rem(30);
+  color: $marker-color;
+}
+
 @media (max-width: 1080px) {
   html {
     font-size: 14px;

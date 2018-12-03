@@ -1,0 +1,54 @@
+.radio-btn {
+  display: block;
+  position: relative;
+  // padding-left: rem(26);
+  cursor: pointer;
+  user-select: none;
+  font-size: rem(16);
+  color: #000;
+}
+
+.radio-btn input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  left: -9999px;
+  &:checked {
+    & ~ .radio-btn__checkmark {
+      border-color: $ui-color;
+      &:after {
+        transform: translateZ(0) scale(1);
+      }
+    }
+  }
+}
+
+.radio-btn__text {
+  display: block;
+  padding-top: 3px;
+  line-height: 1;
+}
+
+.radio-btn__checkmark {
+  position: absolute;
+  top: 50%;
+  left: rem(17);
+  transform: translateY(-50%);
+  height: rem(21);
+  width: rem(21);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid $ui-color;
+  &:after {
+    content: '';
+    position: absolute;
+    top: rem(3);
+    left: rem(3);
+    transform: translateZ(0) scale(0);
+    width: rem(13);
+    height: rem(13);
+    background: $ui-color;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+  }
+}

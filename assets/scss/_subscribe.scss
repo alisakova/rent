@@ -23,6 +23,12 @@
   &_big {
     min-width: rem(351);
   }
+  &_btn-width {
+    min-width: rem(200);
+    .btn {
+      width: 100%;
+    }
+  }
   &:first-child {
     margin-right: rem(23);
     @media (max-width: 540px) {
@@ -49,4 +55,20 @@
 
 .subscribe__text {
   margin-bottom: 3px;
+  &_alt {
+    color: $ui-color;
+    font: {
+      size: rem(18);
+      weight: 500;
+    }
+  }
+}
+
+.subscribe__label {
+  border: 2px solid transparent;
+  border-radius: rem(7);
+  padding: rem(20 16 20 43);
+  &.active {
+    border-color: $ui-color;
+  }
 }

@@ -23,6 +23,20 @@ navLink.addEventListener("click", e => {
   }
 });
 
+let radioInputs = document.querySelectorAll("input[type='radio']");
+let labels = document.querySelectorAll(".subscribe__label");
+
+radioInputs.forEach(function(input) {
+  input.addEventListener("change", function() {
+    let label = input.closest(".subscribe__label");
+    labels.forEach(function(elem) {
+      if (elem.classList.contains(".active")) {
+        elem.classList.remove("active");
+      }
+    })
+    label.classList.add("active");
+  });
+});
 
 //accordion
 

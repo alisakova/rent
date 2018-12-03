@@ -91,3 +91,10 @@
     max-width: none;
   }
 }
+
+.descr-block__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: rem(45);
+}
