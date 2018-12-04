@@ -49,4 +49,9 @@
     width: rem(40, 14);
     height: rem(40, 14);
   }
+  &_static {
+    position: static;
+    color: #fff;
+    margin-bottom: rem(30);
+  }
 }
