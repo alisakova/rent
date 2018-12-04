@@ -834,7 +834,7 @@ ul {
 }
 @media (max-width:475px) {
   .intro__image--second {
-    right: -1.07143rem;
+    right: 0;
     width: 9.92857rem;
     height: 19.35714rem;
     -o-object-fit: cover;

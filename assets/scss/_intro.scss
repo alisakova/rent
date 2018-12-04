@@ -116,7 +116,7 @@
     width: rem(180, 14);
   }
   @media (max-width: 475px) {
-    right: rem(-15, 14);
+    right: 0;
     width: rem(139, 14);
     height: rem(271, 14);
     object-fit: cover;
