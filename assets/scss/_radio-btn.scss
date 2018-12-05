@@ -6,6 +6,9 @@
   user-select: none;
   font-size: rem(16);
   color: #000;
+  &:not(:last-child) {
+    margin-right: rem(9);
+  }
 }
 
 .radio-btn input {
@@ -38,7 +41,7 @@
   width: rem(21);
   background-color: transparent;
   border-radius: 50%;
-  border: 1px solid $ui-color;
+  border: 1px solid $border-color;
   &:after {
     content: '';
     position: absolute;

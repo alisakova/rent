@@ -35,6 +35,12 @@
   &_without-title {
     padding-top: rem(55);
   }
+  &_startup {
+    padding-bottom: rem(65);
+    h3 {
+      margin-bottom: rem(38);
+    }
+  }
 }
 
 .growth__container {

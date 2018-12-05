@@ -27,6 +27,12 @@
     flex-direction: column-reverse;
   }
   &_alt {
+    &:nth-child(even) {
+      margin-top: 0;
+      .descr-block__content {
+        margin-top: 0;
+      }
+    }
     @media (max-width: 900px) {
       &:not(:last-child) {
         margin-bottom: rem(50, 14);
@@ -55,6 +61,18 @@
   }
   &_width-443 {
     min-width: 38.9%;
+    @media (max-width: 600px) {
+      min-width: rem(286, 14);
+    }
+  }
+  &_width-435 {
+    min-width: 38.2%;
+    @media (max-width: 600px) {
+      min-width: rem(286, 14);
+    }
+  }
+  &_width-429 {
+    min-width: 37.65%;
     @media (max-width: 600px) {
       min-width: rem(286, 14);
     }

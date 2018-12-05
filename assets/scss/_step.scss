@@ -27,6 +27,20 @@
       margin-bottom: rem(30, 14);
     }
   }
+  &_work-steps {
+    z-index: 2;
+    padding-left: 0;
+    margin-bottom: 0;
+    h4 {
+      margin-bottom: rem(9);
+    }
+    p {
+      margin-bottom: rem(12);
+    }
+  }
+  &_margin-right-0 {
+    margin-right: 0;
+  }
 }
 
 .step__count {
@@ -49,9 +63,35 @@
     width: rem(40, 14);
     height: rem(40, 14);
   }
-  &_static {
+  &_alt {
     position: static;
     color: #fff;
-    margin-bottom: rem(30);
+    margin-bottom: rem(25);
+    width: rem(50);
+    height: rem(50);
+  }
+}
+
+.step_with-process-line {
+  &:after {
+    content: "";
+    position: absolute;
+    top: rem(22);
+    left: rem(22);
+    height: 2px;
+    background: $second-blue;
+    z-index: -1;
+  }
+  &_big {
+    min-width: rem(500);
+    &:after {
+      width: rem(451);
+    }
+  }
+  &_small {
+    min-width: rem(268);
+    &:after {
+      width: rem(237);
+    }
   }
 }

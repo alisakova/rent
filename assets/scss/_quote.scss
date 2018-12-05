@@ -5,7 +5,6 @@
     line-height: 1.36;
     max-width: rem(576);
     margin-bottom: 0;
-    padding: rem(85 0 83);
   }
   .container {
     position: relative;
@@ -19,17 +18,21 @@
   align-items: flex-start;
 }
 
+.quote__text {
+  padding: rem(83 0 80);
+}
+
 .quote__img {
   margin-right: rem(43);
-  max-width: rem(55);
+  width: rem(55);
 }
 
 .quote__book-img {
   position: absolute;
   bottom: 0;
-  right: rem(-50);
+  right: rem(-110);
   min-width: rem(700);
-  height: rem(233);
+  height: 100%;
   img {
     width: 100%;
     height: 100%;

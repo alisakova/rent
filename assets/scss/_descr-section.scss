@@ -1,0 +1,37 @@
+.descr-section {
+  padding: rem(77 0 0);
+  .container {
+    border-bottom: 1px solid #c4c4c4;
+  }
+  h2 {
+    margin-bottom: rem(28);
+  }
+  h3 {
+    margin-bottom: rem(34);
+  }
+  p {
+    margin-bottom: rem(32);
+  }
+  .btn {
+    padding: {
+      left: rem(29);
+      right: rem(29);
+    }
+  }
+}
+
+.descr-section__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: rem(135);
+}
+
+.descr-section__img {
+  min-width: 42.9%;
+  margin-top: rem(15);
+}
+
+.descr-section__content {
+  margin-right: rem(100);
+}

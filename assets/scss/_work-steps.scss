@@ -1,11 +1,43 @@
 .work-steps {
   background: $section-bg;
-  padding: rem(70 0 87);
+  padding: rem(65 0 82);
   h2 {
-    margin-bottom: rem(49);
+    margin-bottom: rem(38);
+  }
+  .btn {
+    padding: {
+      left: rem(95);
+      right: rem(95);
+    }
   }
 }
 
 .work-steps__list {
   list-style-type: disc;
+  padding-left: rem(13);
+}
+
+.work-steps__list-item {
+  &:not(:last-child) {
+    margin-bottom: rem(10);
+  }
+}
+
+.work-steps__container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: rem(10);
+  &:after {
+    content: "";
+    position: absolute;
+    top: rem(22);
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: $second-blue;
+    opacity: 0.3;
+    z-index: 1;
+  }
 }
