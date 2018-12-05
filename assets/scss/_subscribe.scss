@@ -12,6 +12,14 @@
         top: rem(12, 14);
         bottom: rem(11, 14);
       }
+      &--big {
+        @media (max-width: 600px) {
+          padding: {
+            top: rem(15, 14);
+            bottom: rem(13, 14);
+          }
+        }
+      }
     }
   }
 }
@@ -52,18 +60,32 @@
     flex-wrap: wrap;
   }
   &_column {
+    max-width: rem(558);
     flex-direction: column;
+    @media (max-width: 760px) {
+      margin: 0 auto;
+    }
+    @media (max-width: 540px) {
+      max-width: none;
+    }
   }
 }
 
 .subscribe__text {
   margin-bottom: 3px;
   &_alt {
-    margin-bottom: 0;
     color: $ui-color;
     font: {
       size: rem(18);
       weight: 500;
+    }
+    @media (max-width: 760px) {
+      max-width: rem(558);
+      margin: 0 auto 3px;
+    }
+    @media (max-width: 540px) {
+      max-width: none;
+      font-size: rem(14, 14);
     }
   }
 }
@@ -71,11 +93,20 @@
 .subscribe__label {
   border: 2px solid $border-color;
   border-radius: rem(7);
-  padding: rem(17 16 16 43);
+  padding: rem(17 16 16 40);
   // width: calc((100% - 40px) / 3);
   min-width: rem(178);
   &.active {
     border-color: $ui-color;
+  }
+  @media (max-width: 900px) {
+    padding: {
+      left: rem(33);
+      right: rem(10);
+    }
+  }
+  @media (max-width: 540px) {
+    padding: rem(13 13 13 43, 14);
   }
 }
 
@@ -85,4 +116,8 @@
   align-items: center;
   margin-bottom: rem(14);
   width: 100%;
+  @media (max-width: 540px) {
+    flex-direction: column;
+    margin-bottom: rem(30, 14);
+  }
 }

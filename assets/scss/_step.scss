@@ -37,6 +37,12 @@
     p {
       margin-bottom: rem(12);
     }
+    @media (max-width: 600px) {
+      margin-right: 0;
+      &:not(:last-child) {
+        margin-bottom: rem(27, 13);
+      }
+    }
   }
   &_margin-right-0 {
     margin-right: 0;
@@ -87,11 +93,50 @@
     &:after {
       width: rem(451);
     }
+    @media (max-width: 992px) {
+      min-width: rem(400);
+      &:after {
+        width: rem(351);
+      }
+    }
+    @media (max-width: 820px) {
+      min-width: 32%;
+      &:after {
+        width: 100%;
+        left: 0;
+      }
+    }
+    @media (max-width: 600px) {
+      min-width: 100%;
+    }
   }
   &_small {
     min-width: rem(268);
     &:after {
       width: rem(237);
+    }
+    @media (max-width: 820px) {
+      min-width: 32%;
+    }
+    @media (max-width: 600px) {
+      min-width: 100%;
+      &:after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+  &_mobile {
+    @media (max-width: 600px) {
+      width: 100%;
+      max-width: none;
+    }
+    &:after {
+      width: 100%;
+      left: 0;
+      @media (min-width: 601px) {
+        display: none;
+      }
     }
   }
 }

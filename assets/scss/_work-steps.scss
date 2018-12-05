@@ -10,6 +10,15 @@
       right: rem(95);
     }
   }
+  h3 {
+    margin-bottom: rem(28, 14);
+    @media (min-width: 601px) {
+      display: none;
+    }
+  }
+  @media (max-width: 600px) {
+    padding: rem(50 0 50, 14);
+  }
 }
 
 .work-steps__list {
@@ -39,5 +48,11 @@
     background: $second-blue;
     opacity: 0.3;
     z-index: 1;
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    &:after {
+      display: none;
+    }
   }
 }

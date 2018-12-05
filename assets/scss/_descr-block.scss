@@ -46,6 +46,7 @@
       @media (max-width: 600px) {
         max-width: none;
         min-width: 0;
+        width: 100%;
       }
     }
   }
@@ -73,9 +74,6 @@
   }
   &_width-429 {
     min-width: 37.65%;
-    @media (max-width: 600px) {
-      min-width: rem(286, 14);
-    }
   }
   &_width-365 {
     min-width: 32%;
@@ -85,9 +83,6 @@
   }
   &_width-488 {
     min-width: 42%;
-    @media (max-width: 600px) {
-      min-width: rem(286, 14);
-    }
   }
   @media (max-width: 600px) {
     min-width: rem(286, 14);

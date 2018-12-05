@@ -28,8 +28,10 @@ let labels = document.querySelectorAll(".subscribe__label");
 
 labels.forEach(function(label) {
   label.addEventListener("click", function() {
-    let input = label.querySelector("input[type='radio']");
-    labels.forEach(function(elem) {
+    let parent = label.closest(".subscribe__controls");
+    let nearLabels = parent.querySelectorAll(".subscribe__label");
+    let input = parent.querySelector("input[type='radio']");
+    nearLabels.forEach(function(elem) {
       if (elem.classList.contains("active")) {
         elem.classList.remove("active");
       }

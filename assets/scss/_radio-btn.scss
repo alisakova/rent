@@ -8,6 +8,16 @@
   color: #000;
   &:not(:last-child) {
     margin-right: rem(9);
+    @media (max-width: 540px) {
+      margin: {
+        right: 0;
+        bottom: rem(14, 14);
+      }
+    }
+  }
+  @media (max-width: 540px) {
+    width: 100%;
+    font-size: rem(16, 14);
   }
 }
 
@@ -35,7 +45,7 @@
 .radio-btn__checkmark {
   position: absolute;
   top: 50%;
-  left: rem(17);
+  left: rem(14);
   transform: translateY(-50%);
   height: rem(21);
   width: rem(21);
@@ -53,5 +63,19 @@
     background: $ui-color;
     border-radius: 50%;
     transition: all 0.2s ease;
+    @media (max-width: 540px) {
+      height: rem(12, 14);
+      width: rem(12, 14);
+      top: 4px;
+      left: 4px;
+    }
+  }
+  @media (max-width: 900px) {
+    left: rem(8);
+  }
+  @media (max-width: 540px) {
+    height: rem(21, 14);
+    width: rem(21, 14);
+    left: rem(15, 14);
   }
 }
