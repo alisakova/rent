@@ -1,7 +1,6 @@
-.form__input {
+input, textarea {
   display: block;
   width: 100%;
-  height: rem(61);
   border-radius: $global-radius;
   border: 1px solid $input-border-color;
   background: $input-bg;
@@ -9,14 +8,44 @@
   padding: rem(10 15 10);
   color: #000;
   line-height: 1.75;
+  -webkit-appearance: none;
   font: {
     family: $main-font;
     weight: normal;
+    size: rem(16);
   }
+  @include input-placeholder {
+    color: #000;
+    line-height: 1.75;
+    opacity: 0.6;
+    transition: opacity 250ms;
+    font: {
+      family: $main-font;
+      weight: normal;
+      size: rem(16);
+    }
+  }
+  &:focus {
+    @include input-placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+.form__input {
+  padding: rem(16 15 15 11);
+  text-indent: 4px;
+  // height: rem(61);
   @media (max-width: 600px) {
-    height: rem(41, 14);
-    padding: rem(15, 14);
+    // height: rem(41, 14);
+    padding: rem(8 11 7, 14);
   }
+}
+
+.form__textarea {
+  resize: none;
+  min-height: rem(170);
+  max-height: rem(400);
 }
 
 .form__item {
