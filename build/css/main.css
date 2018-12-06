@@ -537,7 +537,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 .navigation {
   width: 100%;
-  z-index: 2
+  z-index: 10
 }
 .navigation.visible {
   opacity: 1;
@@ -815,7 +815,6 @@ textarea:focus::-webkit-input-placeholder {
   }
 }
 .intro_internal-page {
-  position: relative;
   padding: 1.25rem 0 0
 }
 .intro_internal-page h1 {
@@ -823,6 +822,7 @@ textarea:focus::-webkit-input-placeholder {
   margin-bottom: 2.625rem
 }
 .intro_internal-page .container {
+  position: relative;
   display: block
 }
 @media (max-width:600px) {
@@ -840,10 +840,24 @@ textarea:focus::-webkit-input-placeholder {
 .intro__wrap {
   padding-top: 4.4375rem
 }
+@media (max-width:600px) {
+  .intro__wrap {
+    padding-top: 2.5rem
+  }
+  .intro__image--second ~ img {
+    left: 5rem
+  }
+}
 .intro__wrap_flex {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start
+}
+.intro__wrap_creative {
+  padding-top: 0
+}
+.intro__wrap_creative .intro__text {
+  padding-top: 5rem
 }
 .intro__image--second {
   width: 22.125rem;
@@ -868,14 +882,6 @@ textarea:focus::-webkit-input-placeholder {
   .intro__image--second ~ img {
     right: 3.125rem;
     width: 21.875rem
-  }
-}
-@media (max-width:600px) {
-  .intro__wrap {
-    padding-top: 2.5rem
-  }
-  .intro__image--second ~ img {
-    left: 5rem
   }
 }
 @media (max-width:540px) {
@@ -931,28 +937,29 @@ textarea:focus::-webkit-input-placeholder {
   min-width: 40%;
   padding-bottom: 3.875rem
 }
-.intro__image--internal-page {
+.intro__image--digital-trans {
   position: absolute;
   z-index: 1;
   min-width: 44.75rem;
-  right: -3.125rem;
+  right: -7.3rem;
   bottom: -5rem;
   padding-bottom: 6.25rem
 }
 @media (max-width:1200px) {
-  .intro__image--internal-page {
+  .intro__image--digital-trans {
     max-width: 37.5rem;
-    min-width: 37.5rem
+    min-width: 37.5rem;
+    right: -3.5rem
   }
 }
 @media (max-width:1000px) {
-  .intro__image--internal-page {
+  .intro__image--digital-trans {
     bottom: auto;
     top: 6.25rem
   }
 }
 @media (max-width:768px) {
-  .intro__image--internal-page {
+  .intro__image--digital-trans {
     max-width: 31.25rem;
     min-width: 31.25rem;
     padding: 0;
@@ -960,14 +967,15 @@ textarea:focus::-webkit-input-placeholder {
   }
 }
 @media (max-width:700px) {
-  .intro__image--internal-page {
+  .intro__image--digital-trans {
     position: static;
     margin: 0 auto;
+    max-width: 35.71429rem;
     padding: 3.125rem 0
   }
 }
 @media (max-width:600px) {
-  .intro__image--internal-page {
+  .intro__image--digital-trans {
     padding: 0 0 2.42857rem;
     max-width: none;
     min-width: 0
@@ -982,6 +990,15 @@ textarea:focus::-webkit-input-placeholder {
     margin-top: 0
   }
 }
+@media (max-width:760px) {
+  .intro__wrap_lifecycle,
+  .intro__wrap_startup {
+    flex-direction: column
+  }
+  .intro__image--lifecycle {
+    margin: 0 auto
+  }
+}
 .intro__image--startup {
   min-width: 44%;
   margin-top: -1.875rem;
@@ -994,9 +1011,6 @@ textarea:focus::-webkit-input-placeholder {
   }
 }
 @media (max-width:760px) {
-  .intro__wrap_startup {
-    flex-direction: column
-  }
   .intro__image--startup {
     min-width: 70%;
     margin: 0 auto
@@ -1029,7 +1043,7 @@ textarea:focus::-webkit-input-placeholder {
   height: 23.625rem;
   padding-bottom: 0;
   position: relative;
-  right: -3.125rem
+  right: -2.5rem
 }
 .intro__image--creative-dev img {
   width: 100%;
@@ -1068,6 +1082,20 @@ textarea:focus::-webkit-input-placeholder {
 .intro__text_max-width-50 {
   max-width: 50%;
   margin-right: 2.5rem
+}
+@media (max-width:780px) {
+  .intro__text_max-width-50 {
+    max-width: 60%;
+    margin-right: 0
+  }
+}
+@media (max-width:760px) {
+  .intro__text_max-width-50 {
+    max-width: none
+  }
+  .subscribe__container_column {
+    margin: 0 auto
+  }
 }
 .intro__text_creative-dev {
   max-width: none
@@ -1113,6 +1141,10 @@ textarea:focus::-webkit-input-placeholder {
   padding-left: 2.625rem;
   padding-right: 2.625rem
 }
+.subscribe_internal .btn {
+  padding-left: 3.4375rem;
+  padding-right: 3.4375rem
+}
 .subscribe__group_size {
   min-width: 16.4375rem
 }
@@ -1149,11 +1181,6 @@ textarea:focus::-webkit-input-placeholder {
 .subscribe__container_column {
   max-width: 34.875rem;
   flex-direction: column
-}
-@media (max-width:760px) {
-  .subscribe__container_column {
-    margin: 0 auto
-  }
 }
 @media (max-width:540px) {
   .subscribe__container_column {
@@ -1517,6 +1544,12 @@ textarea:focus::-webkit-input-placeholder {
 .growth_startup h3 {
   margin-bottom: 2.375rem
 }
+.growth_creative h2 {
+  max-width: 56.25rem;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto
+}
 .growth__container {
   margin-bottom: 2.0625rem
 }
@@ -1621,7 +1654,7 @@ textarea:focus::-webkit-input-placeholder {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-top: 2.8125rem
+  margin-top: 1.875rem
 }
 .steps {
   background: #f5f5f5;
@@ -2495,28 +2528,25 @@ textarea:focus::-webkit-input-placeholder {
   overflow: hidden
 }
 .text-section {
-  padding: 4.75rem 0 4.5625rem
+  padding: 4.5rem 0 4.5625rem
 }
 .text-section h2 {
-  max-width: 53.125rem;
-  margin: 0 auto 2.5rem
+  max-width: 59.375rem;
+  margin: 0 auto 2.1875rem;
+  letter-spacing: .2px;
+  line-height: 1.22
 }
 @media (max-width:600px) {
   .text-section h2 {
-    margin-bottom: 1.42857rem
+    line-height: 1.35;
+    max-width: 92%;
+    margin: 0 0 1.42857rem
   }
 }
 .text-section h3 {
   max-width: 58.5625rem;
   margin: 0 auto;
   text-align: center
-}
-@media (max-width:600px) {
-  .text-section h3 {
-    max-width: none;
-    text-align: left;
-    font-size: 1rem
-  }
 }
 .text-section p {
   margin-top: 2.75rem
@@ -2527,8 +2557,21 @@ textarea:focus::-webkit-input-placeholder {
 .text-section_blue-bg {
   background: #3e75ba
 }
-.text-section_lifecycle h2 {
-  max-width: 59.375rem
+@media (max-width:600px) {
+  .text-section h3 {
+    max-width: none;
+    text-align: left;
+    font-size: 1rem
+  }
+  .text-section p {
+    margin-top: 1.42857rem
+  }
+  .text-section {
+    padding: 3.57143rem 0 3.14286rem
+  }
+  .text-section_lifecycle h3 {
+    font-size: 1.28571rem
+  }
 }
 .text-section_creative {
   color: #fff
@@ -2538,8 +2581,8 @@ textarea:focus::-webkit-input-placeholder {
   max-width: none;
   text-align: left
 }
-.text-section_creative h3:first-child {
-  margin-bottom: 1.25rem
+.text-section_creative h2 {
+  margin-bottom: 1.5625rem
 }
 .text-section_creative p {
   margin: 0
@@ -2573,8 +2616,8 @@ textarea:focus::-webkit-input-placeholder {
   margin-bottom: -1.125rem
 }
 .simple-list:first-child {
-  margin-right: 3.25rem;
-  width: 50%
+  margin-right: 3rem;
+  width: 45%
 }
 .simple-list:last-child {
   width: 40%
@@ -2582,7 +2625,7 @@ textarea:focus::-webkit-input-placeholder {
 .simple-list__item {
   padding-left: 1.4375rem;
   position: relative;
-  margin-bottom: 1.125rem
+  margin-bottom: .75rem
 }
 .simple-list__item:after {
   content: "";

@@ -22,6 +22,14 @@
       }
     }
   }
+  &_internal {
+    .btn {
+      padding: {
+        left: rem(55);
+        right: rem(55);
+      }
+    }
+  }
 }
 
 .subscribe__group {

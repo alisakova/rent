@@ -46,6 +46,16 @@
       margin-bottom: rem(38);
     }
   }
+  &_creative {
+    h2 {
+      max-width: rem(900);
+      margin: {
+        top: 0;
+        left: auto;
+        right: auto;
+      }
+    }
+  }
 }
 
 .growth__container {

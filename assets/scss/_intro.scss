@@ -35,7 +35,6 @@
     padding: rem(30 0 0, 14);
   }
   &_internal-page {
-    position: relative;
     padding: rem(20 0 0);
     h1 {
       font-size: rem(36);
@@ -46,6 +45,7 @@
       }
     }
     .container {
+      position: relative;
       display: block;
     }
     @media (max-width: 600px) {
@@ -67,9 +67,16 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
-  &_startup {
+  &_startup,
+  &_lifecycle {
     @media (max-width: 760px) {
       flex-direction: column;
+    }
+  }
+  &_creative {
+    padding-top: 0;
+    .intro__text {
+      padding-top: rem(80);
     }
   }
 }
@@ -132,16 +139,17 @@
   position: relative;
   min-width: 40%;
   padding-bottom: rem(62);
-  &--internal-page {
+  &--digital-trans {
     position: absolute;
     z-index: 1;
     min-width: rem(716);
-    right: rem(-50);
+    right: -7.3rem;
     bottom: rem(-80);
     padding-bottom: rem(100);
     @media (max-width: 1200px) {
       max-width: rem(600);
       min-width: rem(600);
+      right: -3.5rem;
     }
     @media (max-width: 1000px) {
       bottom: auto;
@@ -156,6 +164,7 @@
     @media (max-width: 700px) {
       position: static;
       margin: 0 auto;
+      max-width: rem(500, 14);
       padding: rem(50 0);
     }
     @media (max-width: 600px) {
@@ -171,6 +180,9 @@
   margin-top: rem(-30);
   @media (max-width: 768px) {
     margin-top: 0;
+  }
+  @media (max-width: 760px) {
+    margin: 0 auto;
   }
 }
 
@@ -221,7 +233,7 @@
   height: rem(378);
   padding-bottom: 0;
   position: relative;
-  right: rem(-50);
+  right: rem(-40);
   img {
     width: 100%;
     height: 100%;
@@ -253,7 +265,12 @@
   &_max-width-50 {
     max-width: 50%;
     margin-right: rem(40);
-    @media (max-width: 700px) {
+    @media (max-width: 780px) {
+      max-width: 60%;
+      margin-right: 0;
+    }
+    @media (max-width: 760px) {
+      max-width: none;
     }
   }
 }
