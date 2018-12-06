@@ -3,6 +3,9 @@
   padding: rem(65 0 82);
   h2 {
     margin-bottom: rem(38);
+    @media (max-width: 600px) {
+      margin-bottom: rem(15, 14);
+    }
   }
   .btn {
     padding: {
@@ -11,24 +14,32 @@
     }
   }
   h3 {
-    margin-bottom: rem(28, 14);
+    margin-bottom: rem(20, 14);
+    max-width: 95%;
     @media (min-width: 601px) {
       display: none;
     }
   }
   @media (max-width: 600px) {
-    padding: rem(50 0 50, 14);
+    padding: rem(50 0 0, 14);
   }
 }
 
 .work-steps__list {
   list-style-type: disc;
   padding-left: rem(13);
+  margin-bottom: rem(10);
+  @media (max-width: 600px) {
+    margin-bottom: rem(24, 14);
+  }
 }
 
 .work-steps__list-item {
   &:not(:last-child) {
     margin-bottom: rem(10);
+    @media (max-width: 600px) {
+      margin-bottom: rem(5, 14);
+    }
   }
 }
 
@@ -37,7 +48,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: rem(10);
   &:after {
     content: "";
     position: absolute;

@@ -5,6 +5,9 @@
     line-height: 1.36;
     max-width: rem(576);
     margin-bottom: 0;
+    @media (max-width: 600px) {
+      font-size: rem(18, 14);
+    }
   }
   .container {
     position: relative;
@@ -30,7 +33,7 @@
   @media (max-width: 600px) {
     flex-direction: column;
     align-items: center;
-    padding: rem(47 0 15, 13);
+    padding: rem(47 0 15, 14);
     text-align: center;
   }
 }
@@ -42,7 +45,7 @@
     width: rem(26, 13);
     margin: {
       right: 0;
-      bottom: rem(20, 13);
+      bottom: rem(10, 14);
     }
   }
 }
@@ -75,7 +78,7 @@
     position: static;
   }
   @media (max-width: 600px) {
-    height: rem(169, 13);
+    height: rem(169, 14);
     img {
       object-fit: cover;
     }

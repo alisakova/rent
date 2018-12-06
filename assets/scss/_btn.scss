@@ -22,11 +22,15 @@
     &:hover {
       background: $ui-color-hover;
     }
-    @media (max-width: 540px) {
-      padding: {
-        top: rem(12, 14);
-        bottom: rem(11, 14);
-      }
+  }
+}
+
+.btn--big {
+  @media (max-width: 600px) {
+    width: 100%;
+    padding: {
+      top: rem(13, 14);
+      bottom: rem(12, 14);
     }
   }
 }

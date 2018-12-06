@@ -12,12 +12,12 @@
         top: rem(12, 14);
         bottom: rem(11, 14);
       }
-      &--big {
-        @media (max-width: 600px) {
-          padding: {
-            top: rem(15, 14);
-            bottom: rem(13, 14);
-          }
+    }
+    &--big {
+      @media (max-width: 600px) {
+        padding: {
+          top: rem(13, 14);
+          bottom: rem(12, 14);
         }
       }
     }
@@ -33,9 +33,6 @@
   }
   &_btn-width {
     min-width: rem(200);
-    .btn {
-      width: 100%;
-    }
   }
   &:first-child {
     margin-right: rem(23);
@@ -106,7 +103,7 @@
     }
   }
   @media (max-width: 540px) {
-    padding: rem(13 13 13 43, 14);
+    padding: rem(9 13 9 43, 14);
   }
 }
 
