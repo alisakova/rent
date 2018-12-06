@@ -164,6 +164,10 @@ body {
   font: inherit;
   color: #000
 }
+:active,
+:focus {
+  outline: 0
+}
 .wrapper {
   position: relative;
   overflow: hidden;

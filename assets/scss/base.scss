@@ -19,6 +19,11 @@ body {
   color: $font-color;
 }
 
+*:focus,
+*:active {
+	outline: none;
+}
+
 .wrapper {
   position: relative;
   overflow: hidden;
