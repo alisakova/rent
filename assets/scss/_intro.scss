@@ -149,26 +149,21 @@
   &--digital-trans {
     position: absolute;
     z-index: 1;
-    min-width: rem(716);
-    right: -7.3rem;
-    bottom: rem(-80);
-    padding-bottom: rem(100);
+    max-width: 42.75rem;
+    min-width: 42.75rem;
+    // right: -7.3rem;
+    margin-top: 3.5rem;
+    padding-bottom: 0;
     @media (max-width: 1200px) {
       max-width: rem(600);
       min-width: rem(600);
-      right: -3.5rem;
-    }
-    @media (max-width: 1000px) {
-      bottom: auto;
-      top: rem(100);
     }
     @media (max-width: 768px) {
       max-width: rem(500);
       min-width: rem(500);
       padding: 0;
-      top: rem(150);
     }
-    @media (max-width: 700px) {
+    @media (max-width: 760px) {
       position: static;
       margin: 0 auto;
       max-width: rem(500, 14);
@@ -177,7 +172,7 @@
     @media (max-width: 600px) {
       padding: rem(0 0 34, 14);
       max-width: none;
-      min-width: 0;
+      min-width: 100%;
     }
   }
 }
