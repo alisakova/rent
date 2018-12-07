@@ -10,6 +10,10 @@ $features-border-color: #fbe608;
       top: rem(25, 14);
     }
   }
+  &_no-border {
+    border-top: none;
+    padding-top: 0;
+  }
 }
 
 .features-list__item {
@@ -38,5 +42,10 @@ $features-border-color: #fbe608;
   }
   @media (max-width: 600px) {
     padding-left: rem(43, 14);
+  }
+  &_paid-media {
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
   }
 }

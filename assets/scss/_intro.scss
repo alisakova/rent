@@ -184,6 +184,10 @@
   }
   @media (max-width: 760px) {
     margin: 0 auto;
+    min-width: 70%;
+  }
+  @media (max-width: 600px) {
+    min-width: 100%;
   }
 }
 
@@ -299,6 +303,10 @@
   @media (max-width: 760px) {
     width: 100%;
   }
+}
+
+.intro__text_paid-media {
+  padding-bottom: rem(125);
 }
 
 .intro__author {
