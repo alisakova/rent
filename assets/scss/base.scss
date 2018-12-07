@@ -123,6 +123,9 @@ button {
 .yellow {
   font-size: rem(30);
   color: $marker-color;
+  @media (max-width: 600px) {
+    font-size: rem(22, 14);
+  }
 }
 
 .bold {

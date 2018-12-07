@@ -3,9 +3,19 @@
   &:first-child {
     margin-right: rem(48);
     width: 45%;
+    @media (max-width: 600px) {
+      margin-right: 0;
+      width: 100%;
+    }
   }
   &:last-child {
     width: 40%;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 0;
   }
 }
 
