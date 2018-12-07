@@ -84,6 +84,9 @@
   &_width-488 {
     min-width: 42%;
   }
+  &_width-310 {
+    min-width: 28%;
+  }
   @media (max-width: 600px) {
     min-width: rem(286, 14);
     height: rem(246, 14);

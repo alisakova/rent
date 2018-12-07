@@ -82,6 +82,14 @@
       }
     }
   }
+  &_sales {
+    padding: rem(50 0 78);
+    h2 + p {
+      text-align: center;
+      max-width: rem(950);
+      margin: 0 auto rem(50);
+    }
+  }
 }
 
 .growth__container {

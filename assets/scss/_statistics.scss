@@ -1,7 +1,7 @@
 .statistics {
   color: #fff;
   background: $ui-color;
-  padding: rem(58 0 58);
+  padding: rem(58 0);
   h2 {
     margin-bottom: rem(42);
     @media (max-width: 600px) {
@@ -17,6 +17,9 @@
     @media (max-width: 600px) {
       text-align: left;
     }
+  }
+  &_sales {
+    padding: rem(50 0 45);
   }
 }
 
@@ -37,6 +40,9 @@
     @media (max-width: 600px) {
       padding: 0 0 rem(42, 14) 0;
     }
+  }
+  &_center {
+    justify-content: center;
   }
 }
 
@@ -93,6 +99,21 @@
       }
     }
   }
+  &_width {
+    max-width: rem(262);
+    &:first-child {
+      margin-right: 0;
+    }
+    &:nth-child(2) {
+      margin: 0 rem(80);
+      @media (max-width: 600px) {
+        margin: 0;
+      }
+    }
+    &:not(:last-child) {
+      
+    }
+  }
 }
 
 .statistics__number {
@@ -123,5 +144,14 @@
     font-size: rem(30, 14);
     padding-left: rem(20, 14);
     margin-bottom: rem(12, 14);
+  }
+  &_alt {
+    font-size: rem(60);
+    color: $marker-color;
+    padding-left: 0;
+    text-align: center;
+    &:after {
+      display: none;
+    }
   }
 }
