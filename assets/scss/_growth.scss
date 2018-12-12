@@ -88,6 +88,9 @@
       text-align: center;
       max-width: rem(950);
       margin: 0 auto rem(50);
+      @media (max-width: 600px) {
+        text-align: left;
+      }
     }
   }
 }

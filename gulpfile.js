@@ -115,7 +115,7 @@ gulp.task('style:build', function () {
 gulp.task('images:build', function () {
     gulp.src(path.src.images)
         .pipe(wait(1000))
-        .pipe(imagemin())
+        // .pipe(imagemin())
         .pipe(gulp.dest(path.build.images))
 });
 

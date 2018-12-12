@@ -14,7 +14,7 @@
     line-height: 1.36;
     text-align: center;
     @media (max-width: 600px) {
-      max-width: 18.6rem;
+      max-width: rem(320, 14);
       margin: 0 0 rem(24, 14);
       text-align: left;
       line-height: 1.44;

@@ -2,6 +2,34 @@
   p {
     margin-bottom: rem(40);
   }
+  .slick-next {
+    color: #000;
+    position: relative;
+    padding-right: rem(71);
+    padding: 0 rem(71) 0 0;
+    margin-left: auto;
+    margin-right: rem(95);
+    z-index: 5;
+    display: block;
+    &:after {
+      content: '';
+      width: rem(57);
+      height: rem(57);
+      border-radius: 50%;
+      background: $ui-color url("../images/white-arrow.svg") no-repeat center center;
+      background-size: 45%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .slick-prev {
+    display: none !important;
+  }
 }
 
 .reviews-slider__author {

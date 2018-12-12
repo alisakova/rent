@@ -4,7 +4,7 @@
   justify-content: space-between;
   h4 {
     font-size: rem(18);
-    margin-bottom: rem(38);
+    // margin-bottom: rem(38);
     @media (max-width: 600px) {
       margin-bottom: 5px;
     }
@@ -86,6 +86,9 @@
   }
   &_width-310 {
     min-width: 28%;
+  }
+  &_width-390 {
+    min-width: 34.25%;
   }
   @media (max-width: 600px) {
     min-width: rem(286, 14);

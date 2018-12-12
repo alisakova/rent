@@ -20,6 +20,12 @@
   }
   &_sales {
     padding: rem(50 0 45);
+    @media (max-width: 600px) {
+      padding: rem(30, 14) 0 4.8rem;
+      p {
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -111,7 +117,17 @@
       }
     }
     &:not(:last-child) {
-      
+
+    }
+  }
+  &_sales {
+    @media (max-width: 600px) {
+      width: 100%;
+      max-width: none;
+      &:not(:last-child),
+      &:last-child {
+        margin-bottom: rem(22, 14);
+      }
     }
   }
 }
@@ -152,6 +168,9 @@
     text-align: center;
     &:after {
       display: none;
+    }
+    @media (max-width: 600px) {
+      font-size: rem(30, 14);
     }
   }
 }

@@ -23,7 +23,7 @@
   a {
     color: $ui-color;
   }
-  padding: rem(70 0 0);
+  padding: rem(140 0 0);
   .container {
     display: flex;
     justify-content: space-between;
@@ -32,10 +32,10 @@
     }
   }
   @media (max-width: 600px) {
-    padding: rem(30 0 0, 14);
+    padding: rem(84 0 0, 14);
   }
   &_internal-page {
-    padding: rem(20 0 0);
+    padding: rem(90 0 0);
     h1 {
       font-size: rem(36);
       margin-bottom: rem(42);
@@ -49,7 +49,7 @@
       display: block;
     }
     @media (max-width: 600px) {
-      padding: 0;
+      padding: rem(54 0 0, 14);
     }
   }
   &_gray-bg {
@@ -224,6 +224,18 @@
   }
 }
 
+.intro__image--reporting {
+  padding-bottom: rem(32);
+  @media (max-width: 760px) {
+    min-width: 70%;
+    margin: 0 auto;
+  }
+  @media (max-width: 600px) {
+    min-width: 100%;
+    width: 100%;
+  }
+}
+
 .intro__image_with-gradient {
   position: relative;
   &:after,
@@ -313,6 +325,7 @@
     }
     @media (max-width: 760px) {
       max-width: none;
+      width: 100%;
     }
   }
   &_padding-0 {

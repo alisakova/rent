@@ -8,4 +8,21 @@
   .slick-list {
     overflow: hidden;
   }
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+    width: rem(30);
+    height: rem(40);
+    font-size: 0;
+    background: url("../images/slider-arrow.svg") no-repeat center center;
+  }
+  .slick-prev {
+    left: 0;
+    transform: translateY(-50%) scale(-1);
+  }
+  .slick-next {
+    right: 0;
+  }
 }

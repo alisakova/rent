@@ -20,9 +20,11 @@ $(document).ready(function(){
   });
   if (window.innerWidth < 600) {
     $('.descr-slider').slick({
-      arrows: false,
+      arrows: true,
       dots: true,
       adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
     });
   }
 });
