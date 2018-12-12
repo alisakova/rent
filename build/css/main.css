@@ -760,6 +760,9 @@ button:focus {
   font-size: 1.875rem;
   color: #ffe600
 }
+.yellow-title {
+  color: #ffe600
+}
 .bold {
   font-weight: 700
 }
@@ -1852,8 +1855,8 @@ textarea:focus::-webkit-input-placeholder {
     padding-left: 2.0625rem;
     padding-right: .625rem
   }
-  .growth br {
-    display: none
+  .growth h2.with-br br {
+    display: block
   }
 }
 .subscribe__controls {
@@ -2270,6 +2273,13 @@ textarea:focus::-webkit-input-placeholder {
 .growth__container {
   margin-bottom: 2.0625rem
 }
+.growth__container_margin-bottom-0 {
+  margin-bottom: 0
+}
+.growth__btn-container {
+  text-align: center;
+  margin-top: 3.9375rem
+}
 @media (max-width:600px) {
   .growth_alt .descr-block_alt:nth-child(odd) {
     flex-direction: column-reverse
@@ -2280,12 +2290,14 @@ textarea:focus::-webkit-input-placeholder {
   .growth__container {
     margin-bottom: 0
   }
-  .descr-block h4 {
-    margin-bottom: 5px
+  .growth__btn-container {
+    text-align: left;
+    margin-top: 3.57143rem
   }
 }
-.growth__container_margin-bottom-0 {
-  margin-bottom: 0
+.growth__text-for-btn {
+  font-size: 1.375rem;
+  margin-bottom: 2.75rem
 }
 .descr-block {
   display: flex;
@@ -2307,6 +2319,9 @@ textarea:focus::-webkit-input-placeholder {
   margin-top: 0
 }
 @media (max-width:900px) {
+  .growth br {
+    display: none
+  }
   .descr-block_alt:not(:last-child) {
     margin-bottom: 3.57143rem
   }
@@ -2322,6 +2337,13 @@ textarea:focus::-webkit-input-placeholder {
   min-width: 41%
 }
 @media (max-width:600px) {
+  .growth__text-for-btn {
+    font-size: 1.28571rem;
+    margin-bottom: 1.92857rem
+  }
+  .descr-block h4 {
+    margin-bottom: 5px
+  }
   .descr-block:nth-child(even) .descr-block__content {
     margin-top: 0
   }
@@ -2396,7 +2418,7 @@ textarea:focus::-webkit-input-placeholder {
 @media (max-width:600px) {
   .descr-block__img {
     min-width: 20.42857rem;
-    height: 17.57143rem
+    height: 21.28571rem
   }
   .descr-block__img img {
     width: 100%;
@@ -2405,6 +2427,7 @@ textarea:focus::-webkit-input-placeholder {
     object-fit: contain
   }
   .descr-block__content {
+    max-width: none;
     margin-bottom: 1.07143rem
   }
   .descr-block__list {
@@ -2449,9 +2472,6 @@ textarea:focus::-webkit-input-placeholder {
   margin-right: -3.125rem
 }
 @media (max-width:540px) {
-  .descr-block__content {
-    max-width: none
-  }
   .steps h3 {
     max-width: none;
     text-align: left
@@ -2716,6 +2736,9 @@ textarea:focus::-webkit-input-placeholder {
   .contact-us__container {
     flex-direction: column
   }
+}
+.contact-us__container h2 {
+  text-align: left
 }
 .contact-us__form {
   min-width: 57.2%;
@@ -3276,18 +3299,8 @@ textarea:focus::-webkit-input-placeholder {
   background: #f5f5f5
 }
 .text-section_blue-bg {
-  background: #3e75ba
-}
-.text-section_creative {
+  background: #3e75ba;
   color: #fff
-}
-.text-section_creative h2,
-.text-section_creative h3 {
-  max-width: none;
-  text-align: left
-}
-.text-section_creative h2 {
-  margin-bottom: 1.5625rem
 }
 @media (max-width:600px) {
   .text-section h3 {
@@ -3304,6 +3317,24 @@ textarea:focus::-webkit-input-placeholder {
   .text-section_lifecycle h3 {
     font-size: 1.28571rem
   }
+}
+@media (min-width:601px) {
+  .text-section_p-center p {
+    text-align: center
+  }
+  .work-steps h3 {
+    display: none
+  }
+}
+.text-section_creative h2,
+.text-section_creative h3 {
+  max-width: none;
+  text-align: left
+}
+.text-section_creative h2 {
+  margin-bottom: 1.5625rem
+}
+@media (max-width:600px) {
   .text-section_creative h2 {
     margin-bottom: 1.28571rem
   }
@@ -3592,11 +3623,6 @@ textarea:focus::-webkit-input-placeholder {
   margin-bottom: 1.42857rem;
   max-width: 95%
 }
-@media (min-width:601px) {
-  .work-steps h3 {
-    display: none
-  }
-}
 .work-steps__list {
   list-style-type: disc;
   padding-left: .8125rem;
@@ -3694,6 +3720,9 @@ textarea:focus::-webkit-input-placeholder {
   align-items: flex-start;
   justify-content: flex-start
 }
+.descr-section__container_reverse {
+  flex-direction: row-reverse
+}
 .descr-section__img {
   min-width: 42.9%;
   margin-top: .9375rem
@@ -3722,6 +3751,9 @@ textarea:focus::-webkit-input-placeholder {
 .descr-section__img_small {
   min-width: 40%;
   margin-top: -1.875rem
+}
+.descr-section__img_margin-top-0 {
+  margin-top: 0
 }
 .descr-section__content {
   margin-right: 5.625rem
@@ -3774,6 +3806,10 @@ textarea:focus::-webkit-input-placeholder {
     margin-top: 0
   }
 }
+.descr-section__content_reverse {
+  margin-right: 0;
+  margin-left: 3.125rem
+}
 .descr-section__list {
   max-width: 50%
 }
@@ -3791,4 +3827,32 @@ textarea:focus::-webkit-input-placeholder {
   .descr-section__list:first-child {
     margin-bottom: 2.14286rem
   }
+}
+.differences {
+  background: #3e75ba;
+  padding: 6.0625rem 0;
+  color: #fff
+}
+.differences h2 {
+  margin-bottom: 3.125rem
+}
+.differences__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between
+}
+.differences__col {
+  width: 48%
+}
+.differences__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.25rem 0
+}
+.differences__item:not(:last-child) {
+  border-bottom: 1px solid rgba(255,255,255,.1)
+}
+.differences__img {
+  margin-right: 1.25rem
 }

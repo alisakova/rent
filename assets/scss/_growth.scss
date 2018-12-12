@@ -5,6 +5,13 @@
     @media (max-width: 540px) {
       margin-bottom: rem(15, 14);
     }
+    &.with-br {
+      @media (max-width: 900px) {
+        br {
+          display: block;
+        }
+      }
+    }
   }
   h3 {
     margin-bottom: rem(70);
@@ -102,5 +109,23 @@
   }
   &_margin-bottom-0 {
     margin-bottom: 0;
+  }
+}
+
+.growth__btn-container {
+  text-align: center;
+  margin-top: rem(63);
+  @media (max-width: 600px) {
+    text-align: left;
+    margin-top: rem(50, 14);
+  }
+}
+
+.growth__text-for-btn {
+  font-size: rem(22);
+  margin-bottom: rem(44);
+  @media (max-width: 600px) {
+    font-size: rem(18, 14);
+    margin-bottom: rem(27, 14);
   }
 }

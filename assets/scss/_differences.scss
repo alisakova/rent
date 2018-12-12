@@ -1,0 +1,32 @@
+.differences {
+  background: $second-blue;
+  padding: rem(97 0);
+  color: #fff;
+  h2 {
+    margin-bottom: rem(50);
+  }
+}
+
+.differences__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.differences__col {
+  width: 48%;
+}
+
+.differences__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: rem(20 0);
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.differences__img {
+  margin-right: rem(20);
+}

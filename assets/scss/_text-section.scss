@@ -32,9 +32,18 @@
   }
   &_blue-bg {
     background: $second-blue;
+    color: #fff;
   }
   @media (max-width: 600px) {
     padding: rem(50 0 44, 14);
+  }
+}
+
+.text-section_p-center {
+  @media (min-width: 601px) {
+    p {
+      text-align: center;
+    }
   }
 }
 
@@ -47,7 +56,6 @@
 }
 
 .text-section_creative {
-  color: #fff;
   h2, h3 {
     max-width: none;
     text-align: left;
