@@ -12,7 +12,7 @@
 }
 
 .header__logo {
-  width: rem(120, 14);
+  width: rem(160, 14);
   a {
     display: block;
   }
@@ -158,5 +158,11 @@
 
   .header__nav-link {
     display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__logo {
+    max-width: rem(120, 14);
   }
 }

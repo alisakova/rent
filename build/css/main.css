@@ -817,7 +817,7 @@ button:focus {
   align-items: center
 }
 .header__logo {
-  width: 8.57143rem
+  width: 11.42857rem
 }
 .header__logo a {
   display: block
@@ -927,6 +927,11 @@ button:focus {
   }
   .header__nav-link {
     display: none
+  }
+}
+@media (max-width:320px) {
+  .header__logo {
+    max-width: 8.57143rem
   }
 }
 .btn {
