@@ -31,12 +31,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: {
-    bottom: rem(-78);
-  }
-  @media (max-width: 1200px) {
-    margin-bottom: 0;
-  }
   @media (max-width: 650px) {
     flex-direction: column-reverse;
   }
@@ -47,7 +41,9 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-right: rem(-50);
+  margin: {
+    right: rem(-50);
+  }
   @media (max-width: 540px) {
     margin-right: 0;
   }

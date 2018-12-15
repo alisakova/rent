@@ -19,6 +19,14 @@
     width: 100%;
     font-size: rem(16, 14);
   }
+  &_alt {
+    &:not(:last-child) {
+      margin: {
+        right: 0;
+        bottom: rem(20);
+      }
+    }
+  }
 }
 
 .radio-btn input {

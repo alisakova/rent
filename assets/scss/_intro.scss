@@ -4,6 +4,9 @@
     letter-spacing: 0.6px;
     @media (max-width: 600px) {
       margin-bottom: rem(15, 14);
+      &.intro__title_mobile-margin-bottom-0 {
+        margin-bottom: 0;
+      }
     }
   }
   h3 {
@@ -78,6 +81,9 @@
     align-items: flex-end;
     .intro__text {
       padding-top: rem(80);
+      @media (max-width: 600px) {
+        padding-top: rem(30, 14);
+      }
     }
     @media (max-width: 760px) {
       align-items: flex-start;
@@ -174,6 +180,13 @@
       max-width: none;
       min-width: 100%;
     }
+  }
+}
+
+.intro__image--common {
+  @media (max-width: 760px) {
+    min-width: 70%;
+    margin: 0 auto;
   }
 }
 

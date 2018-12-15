@@ -27,14 +27,6 @@
       display: none;
     }
   }
-  @media (max-width: 900px) {
-    br {
-      display: none;
-    }
-  }
-  @media (max-width: 600px) {
-    padding: rem(46 0, 14);
-  }
   .slick-initialized {
     .slick-slide {
       display: flex;
@@ -100,6 +92,14 @@
       }
     }
   }
+  @media (max-width: 900px) {
+    br {
+      display: none;
+    }
+  }
+  @media (max-width: 600px) {
+    padding: rem(46 0, 14);
+  }
 }
 
 .growth__container {
@@ -118,6 +118,14 @@
   @media (max-width: 600px) {
     text-align: left;
     margin-top: rem(50, 14);
+    .btn {
+      display: block;
+      width: 100%;
+      padding: {
+        top: rem(14);
+        bottom: rem(14);
+      }
+    }
   }
 }
 

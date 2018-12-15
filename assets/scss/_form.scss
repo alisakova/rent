@@ -1,11 +1,11 @@
 input, textarea {
   display: block;
   width: 100%;
-  border-radius: $global-radius;
+  border-radius: 0;
   border: 1px solid $input-border-color;
   background: $input-bg;
   box-shadow: none;
-  padding: rem(10 15 10);
+  padding: rem(6 15);
   color: #000;
   line-height: 1.75;
   -webkit-appearance: none;
@@ -35,7 +35,7 @@ input, textarea {
 .form__input {
   padding: rem(16 15 15 11);
   text-indent: 4px;
-  // height: rem(61);
+  height: rem(48);
   @media (max-width: 600px) {
     // height: rem(41, 14);
     padding: rem(8 11 7, 14);
@@ -44,7 +44,7 @@ input, textarea {
 
 .form__textarea {
   resize: none;
-  min-height: rem(170);
+  min-height: rem(172);
   max-height: rem(400);
 }
 

@@ -23,6 +23,12 @@
       background: $ui-color-hover;
     }
   }
+  @media (max-width: 600px) {
+    padding: {
+      top: rem(12, 14);
+      bottom: rem(12, 14);
+    }
+  }
 }
 
 .btn--big {

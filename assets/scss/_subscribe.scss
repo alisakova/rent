@@ -1,17 +1,12 @@
 .subscribe {
   .btn {
+    height: 100%;
     padding: {
       left: rem(42);
       right: rem(42);
     }
     @media (max-width: 540px) {
       width: 100%;
-    }
-    @media (max-width: 600px) {
-      padding: {
-        top: rem(12, 14);
-        bottom: rem(11, 14);
-      }
     }
     &--big {
       @media (max-width: 600px) {
@@ -58,11 +53,14 @@
     min-width: 100%;
     width: 100%;
   }
+  .form__input {
+    height: auto;
+  }
 }
 
 .subscribe__container {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: flex-start;
   @media (max-width: 540px) {
     flex-wrap: wrap;
@@ -107,6 +105,15 @@
   &.active {
     border-color: $ui-color;
   }
+  &_width-50 {
+    width: 48%;
+    @media (max-width: 840px) {
+      width: 100%;
+    }
+  }
+  &_width-100 {
+    width: 100%;
+  }
   @media (max-width: 900px) {
     padding: {
       left: rem(33);
@@ -127,5 +134,16 @@
   @media (max-width: 540px) {
     flex-direction: column;
     margin-bottom: rem(30, 14);
+  }
+  &_wrap {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & + .subscribe__group_btn-width {
+      .btn {
+        @media (max-width: 840px) {
+          width: 100%;
+        }
+      }
+    }
   }
 }
