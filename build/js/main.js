@@ -145,4 +145,27 @@ $(document).ready(function(){
       autoplaySpeed: 5000,
     });
   }
+  $('.team-slider').slick({
+    rows: 2,
+    slidesPerRow: 6,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 760,
+        settings: {
+          slidesPerRow: 4,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesPerRow: 2,
+          arrows: false,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 2500,
+        }
+      }
+    ]
+  });
 });

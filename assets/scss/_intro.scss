@@ -183,10 +183,19 @@
   }
 }
 
+.intro__image--team {
+  @media (max-width: 800px) {
+    min-width: 50%;
+  }
+}
+
 .intro__image--common {
   @media (max-width: 760px) {
     min-width: 70%;
     margin: 0 auto;
+  }
+  @media (max-width: 600px) {
+    min-width: 100%;
   }
 }
 

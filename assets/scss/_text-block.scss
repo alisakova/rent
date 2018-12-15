@@ -1,0 +1,12 @@
+.text-block {
+  background: $section-bg;
+  border-top: 6px solid $second-blue;
+  padding: rem(47 55 50);
+  margin-bottom: rem(52);
+  width: 48.7%;
+  @media (max-width: 600px) {
+    width: 100%;
+    margin-bottom: rem(30, 14);
+    padding: rem(23 16 26, 14);
+  }
+}

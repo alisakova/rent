@@ -1,0 +1,78 @@
+.team-slider {
+  .slick-list {
+    max-width: none;
+    overflow: hidden;
+    margin: 0;
+  }
+  .slick-slide {
+    margin: 0;
+    padding: 3px;
+    @media (max-width: 600px) {
+      padding: 0;
+    }
+  }
+  .slick-next {
+    color: #fff;
+    position: relative;
+    padding: 0 rem(71) 0 0;
+    margin-left: auto;
+    height: rem(58);
+    z-index: 5;
+    display: block;
+    &:after {
+      content: '';
+      width: rem(57);
+      height: rem(57);
+      border-radius: 50%;
+      background: $marker-color url("../images/blue-arrow.svg") no-repeat center center;
+      background-size: 45%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .slick-prev {
+    display: none !important;
+  }
+  .slick-dots {
+    li {
+      button {
+        border-color: $marker-color;
+        background: transparent;
+      }
+      &.slick-active {
+        button {
+          background: $marker-color;
+        }
+      }
+    }
+  }
+}
+
+.team-slider__slide {
+  vertical-align: top;
+  margin-bottom: rem(47);
+  @media (max-width: 600px) {
+    padding: 2px;
+    margin-bottom: rem(24, 14);
+  }
+}
+
+.team-slider__photo {
+  width: rem(113);
+  height: rem(113);
+  margin-bottom: rem(25);
+}
+
+.team-slider__name {
+  margin-bottom: rem(8);
+}
+
+.team-slider__profession-name {
+  font-size: rem(16);
+  color: $marker-color;
+}
