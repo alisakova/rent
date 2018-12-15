@@ -941,7 +941,8 @@ button:focus {
   font-size: 1rem;
   color: #3e75ba;
   background: #fff;
-  white-space: nowrap
+  white-space: nowrap;
+  line-height: 1.15
 }
 .btn:hover {
   border-color: #0077bf
@@ -1782,6 +1783,7 @@ textarea:focus::-webkit-input-placeholder {
   font-weight: 500
 }
 .subscribe .btn {
+  color: #fff;
   height: 100%;
   padding-left: 2.625rem;
   padding-right: 2.625rem
