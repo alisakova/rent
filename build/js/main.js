@@ -42,15 +42,17 @@ labels.forEach(function(label) {
 
 //typed effect
 
-let options = {
-  strings: ["subscribers", "renewals", "MRR"],
-  typeSpeed: 100,
-  backSpeed: 50,
-  loop: true,
-  showCursor: false,
-}
+if (document.querySelector("._typed-text")) {
+  let options = {
+    strings: ["subscribers", "renewals", "MRR"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true,
+    showCursor: false,
+  }
 
-let typed = new Typed("._typed-text", options);
+  let typed = new Typed("._typed-text", options);
+}
 
 function getParent(el, elData) {
   while ((el = el.parentElement) && !el.hasAttribute(elData));
