@@ -183,6 +183,10 @@
   }
 }
 
+.intro__image--paid-media {
+  min-width: 35.5%;
+}
+
 .intro__image--team {
   @media (max-width: 800px) {
     min-width: 50%;
@@ -360,8 +364,10 @@
 
 .intro__text_creative-dev {
   max-width: none;
+  padding-bottom: rem(90);
   @media (max-width: 760px) {
     width: 100%;
+    padding-bottom: rem(20);
   }
 }
 
@@ -374,6 +380,9 @@
 
 .intro__text_paid-media {
   padding-bottom: rem(125);
+  @media (max-width: 600px) {
+    padding-bottom: 0;
+  }
 }
 
 .intro__author {
