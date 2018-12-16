@@ -1739,6 +1739,9 @@ textarea:focus::-webkit-input-placeholder {
 .intro__text_padding-0 {
   padding: 0
 }
+.intro__text ._typed-text {
+  color: #eb058c
+}
 .intro__text_creative-dev {
   max-width: none
 }

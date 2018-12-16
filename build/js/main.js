@@ -40,28 +40,17 @@ labels.forEach(function(label) {
   });
 });
 
-//accordion
+//typed effect
 
-// let accordionLink = document.querySelectorAll('[data-accordion="link"]');
-// let i;
-// for (i = 0; i < accordionLink.length; i++) {
-//     console.log(i);
-//     accordionLink[i].addEventListener('click', toggleItem, false);
-// }
-// function toggleItem(e) {
-//     let parent = this.parentNode;
-//     let target = parent.querySelector('[data-accordion="target"]');
-//
-//     e.preventDefault();
-//
-//     if (parent.classList.contains('active')) {
-//         parent.classList.remove('active');
-//         target.classList.remove('visible');
-//     } else {
-//         parent.classList.add('active');
-//         target.classList.add('visible');
-//     }
-// }
+let options = {
+  strings: ["subscribers", "renewals", "MRR"],
+  typeSpeed: 100,
+  backSpeed: 50,
+  loop: true,
+  showCursor: false,
+}
+
+let typed = new Typed("._typed-text", options);
 
 function getParent(el, elData) {
   while ((el = el.parentElement) && !el.hasAttribute(elData));
