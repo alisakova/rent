@@ -18,7 +18,7 @@
     font-size: rem(14);
     margin-bottom: rem(18);
     @media (max-width: 650px) {
-      font-size: rem(14, 14);
+      font-size: rem(16, 14);
       margin-bottom: rem(29, 14);
       padding: {
         top: rem(11, 14);
@@ -29,10 +29,13 @@
       width: 100%;
     }
   }
+  @media (max-width: 600px) {
+    font-size: rem(16, 14);
+  }
 }
 
 .footer__col {
-  &:first-child {
+  &_logo {
     width: 23.5%;
     @media (max-width: 650px) {
       width: auto;
@@ -112,9 +115,12 @@
   &:not(:last-child) {
     margin-bottom: rem(12);
     @media (max-width: 600px) {
-      font-size: rem(14, 14);
       margin-bottom: rem(10, 14);
     }
+  }
+  @media (max-width: 600px) {
+    font-size: rem(16, 14);
+    margin-bottom: rem(10, 14);
   }
   &:hover {
     color: $ui-second-color;
@@ -142,6 +148,9 @@
     svg {
       margin-right: rem(11, 14);
     }
+  }
+  @media (max-width: 600px) {
+    font-size: rem(16, 14);
   }
 }
 
@@ -182,7 +191,6 @@
     justify-content: space-between;
   }
   .footer__col {
-    &:first-child,
     &:nth-child(2) {
       width: 25%;
       @media (max-width: 650px) {
@@ -190,7 +198,11 @@
       }
     }
     &:first-child {
+      width: 30%;
       margin-right: rem(143);
+      @media (max-width: 1000px) {
+        width: 35%;
+      }
       @media (max-width: 850px) {
         width: 40%;
         margin-right: rem(50);

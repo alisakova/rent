@@ -22,6 +22,7 @@
     }
   }
   .btn {
+    display: inline-block;
     margin: 0 auto;
     @media (max-width: 600px) {
       display: none;

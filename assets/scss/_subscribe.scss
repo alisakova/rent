@@ -93,8 +93,10 @@
     }
     @media (max-width: 540px) {
       max-width: none;
-      font-size: rem(14, 14);
     }
+  }
+  @media (max-width: 600px) {
+    font-size: rem(16, 14);
   }
 }
 

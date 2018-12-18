@@ -17,6 +17,7 @@
     font-size: rem(16);
     @media (max-width: 600px) {
       text-align: left;
+      font-size: rem(16, 14);
     }
   }
   &_sales {
@@ -55,6 +56,7 @@
 
 .statistics__item {
   max-width: rem(208);
+  text-align: center;
   &_small {
     max-width: rem(140);
     @media (max-width: 600px) {
@@ -83,6 +85,7 @@
     max-width: none;
     margin-bottom: rem(24, 14);
     padding: 0 rem(20);
+    text-align: left;
     br {
       display: none;
     }
@@ -140,9 +143,11 @@
     weight: 300;
   }
   line-height: 0.74;
-  margin-bottom: rem(15);
   position: relative;
   padding-left: rem(33);
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto rem(15);
   &:after {
     content: "";
     position: absolute;

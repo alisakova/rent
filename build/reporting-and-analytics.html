@@ -23,18 +23,20 @@
     </div>
     <nav class="navigation">
       <ul class="navigation__list">
-        <li class="navigation__item">
+        <!-- TODO вставлен клас с active LI для активного пункта меню (ДЛЯ ПРИМЕРА, УБРАТЬ, ДОБАВИТЬ ЧЕРЕЗ СКРИПТ) -->
+        <li class="navigation__item active">
           <a href="#" class="navigation__link navigation__link_with-submenu">Capabilities</a>
           <div class="navigation__submenu">
             <ul class="navigation__submenu-list">
               <li><a href="startup-accelerator.html">Startup accelerator</a></li>
-              <li><a href="digital-transformation.html">Digital Transformation</a></li>
-              <li><a href="paid-media.html">Paid Media</a></li>
-              <li><a href="#">SEO Optimization</a></li>
               <li><a href="creative-development.html">Creative & Development</a></li>
+              <li><a href="digital-transformation.html">Digital Transformation</a></li>
               <li><a href="lifecycle-marketing.html">Lifecycle Marketing</a></li>
+              <li><a href="paid-media.html">Paid Media</a></li>
               <li><a href="sales-enablement.html">Sales Enablement</a></li>
-              <li><a href="reporting-and-analytics.html">Reporting & Analytics</a></li>
+              <li><a href="#">SEO Optimization</a></li>
+              <!-- TODO вставлен класс с active ссылке для активной (ДЛЯ ПРИМЕРА, УБРАТЬ, ДОБАВИТЬ ЧЕРЕЗ СКРИПТ) -->
+              <li><a href="reporting-and-analytics.html" class="active">Reporting & Analytics</a></li>
             </ul>
 
             <div class="navigation__submenu-image">
@@ -100,8 +102,7 @@
     <div class="breadcrumb">
       <a href="index.html" class="breadcrumb__link">Home</a>
       <span class="breadcrumb__divider">/</span>
-      <span class="breadcrumb__link">Capabilities</span>
-      <span class="breadcrumb__divider">/</span>
+      <!-- TODO убрать Capabilities -->
       <span class="breadcrumb__link">Reporting & Analytics</span>
     </div>
     <div class="intro__wrap intro__wrap_padding-top-0 intro__wrap_flex intro__wrap_flex_space-between">
@@ -208,7 +209,8 @@
   </div>
 </section>
 
-<section id="contactForm" class="contact-us contact-us_white-bg">
+<!-- TODO убрать ID -->
+<section class="contact-us contact-us_white-bg">
   <div class="container">
     <h2>
       Put your marketing campaigns in the nurturing hands
@@ -228,7 +230,7 @@
         </p>
         <p>For faster service, call 1-866-6-RENT-CMO.</p>
       </div>
-      <div class="contact-us__form">
+      <div id="contactForm" class="contact-us__form">
         <form action="" class="contact-form contact-form_gray-bg form">
           <div class="form__item">
             <label for="theme" class="form__label">I’d like to chat about:</label>
@@ -271,6 +273,10 @@
           <button type="submit" class="btn btn--success">Contact me</button>
         </form>
       </div>
+    </div>
+    <!-- TODO добавить блок -->
+    <div class="link-btn-container link-btn-container_margin-alt">
+      <a href="" class="link-btn">Next service: <span>Subscription Companies</span></a>
     </div>
   </div>
 </section>

@@ -14,6 +14,9 @@ $features-border-color: #fbe608;
     border-top: none;
     padding-top: 0;
   }
+  @media (max-width: 600px) {
+    font-size: rem(16, 14);
+  }
 }
 
 .features-list__item {

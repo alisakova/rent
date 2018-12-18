@@ -13,16 +13,34 @@
     top: 50%;
     z-index: 10;
     transform: translateY(-50%);
-    width: rem(30);
-    height: rem(40);
+    width: 20px;
+    height: 20px;
     font-size: 0;
-    background: url("../images/slider-arrow.svg") no-repeat center center;
+    border-radius: 50%;
+    background: {
+      repeat: no-repeat;
+      position: center center;
+    }
   }
   .slick-prev {
     left: 0;
-    transform: translateY(-50%) scale(-1);
+    background-image: url('../images/left-arrow.svg');
   }
   .slick-next {
     right: 0;
+    background-image: url('../images/right-arrow.svg');
+  }
+  .slick-dots {
+    li {
+      button {
+        border-color: $ui-second-color;
+        background: transparent;
+      }
+      &.slick-active {
+        button {
+          background: $ui-second-color;
+        }
+      }
+    }
   }
 }

@@ -63,3 +63,9 @@ input, textarea {
     color: rgba(0, 0, 0, 0.6);
   }
 }
+
+.form {
+  @media (max-width: 600px) {
+    font-size: rem(16, 14);
+  }
+}
