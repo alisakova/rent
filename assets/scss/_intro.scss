@@ -321,6 +321,11 @@
   }
 }
 
+.intro__image--seo {
+  padding: 0 0 rem(40);
+  margin-top: rem(30);
+}
+
 .intro__text {
   max-width: 44.3%;
   padding-bottom: rem(62);
@@ -360,6 +365,10 @@
   ._typed-text {
     color: $ui-color;
   }
+}
+
+.intro__text_seo {
+  max-width: none;
 }
 
 .intro__text_creative-dev {

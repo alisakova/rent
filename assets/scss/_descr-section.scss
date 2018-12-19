@@ -62,10 +62,65 @@
       }
     }
   }
+  &_seo {
+    h2 {
+      max-width: rem(932);
+      margin: 0 auto rem(40);
+    }
+    &_alt {
+      h3 {
+        text-align: center;
+        margin-bottom: 0;
+        @media (max-width: 700px) {
+          margin-bottom: rem(20, 14);
+        }
+      }
+      h2 {
+        margin: 0 0 rem(49);
+        max-width: none;
+        @media (max-width: 700px) {
+          margin-bottom: rem(20, 14);
+          br {
+            display: none;
+          }
+        }
+      }
+      h4 {
+        margin-bottom: rem(46);
+        @media (max-width: 700px) {
+          margin-bottom: rem(20, 14);
+        }
+      }
+      p {
+        margin-bottom: rem(20);
+        @media (max-width: 700px) {
+          margin-bottom: rem(20, 14);
+        }
+      }
+      .descr-section__content {
+        margin-right: rem(60);
+        @media (max-width: 700px) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
   .btn {
     padding: {
       left: rem(29);
       right: rem(29);
+    }
+  }
+  &_seo-services {
+    padding-bottom: rem(87);
+    h2 {
+      margin-bottom: rem(47);
+      @media (max-width: 600px) {
+        margin-bottom: rem(20, 14);
+      }
+    }
+    @media (max-width: 600px) {
+      padding-bottom: rem(53, 14);
     }
   }
   @media (max-width: 600px) {
@@ -119,6 +174,13 @@
 .descr-section__img {
   min-width: 42.9%;
   margin-top: rem(15);
+  &_small {
+    min-width: 40%;
+    margin-top: rem(-30);
+  }
+  &_margin-top-0 {
+    margin-top: 0;
+  }
   @media (max-width: 920px) {
     min-width: 36%;
   }
@@ -128,13 +190,9 @@
   &_alt {
     margin-top: 0;
     min-width: 45.2%;
-  }
-  &_small {
-    min-width: 40%;
-    margin-top: rem(-30);
-  }
-  &_margin-top-0 {
-    margin-top: 0;
+    @media (max-width: 700px) {
+      min-width: 100%;
+    }
   }
 }
 
@@ -199,11 +257,45 @@
   }
   @media (max-width: 600px) {
     max-width: 100%;
+    &_width-mobile-100 {
+      width: 100%;
+    }
     h4 {
       margin-bottom: rem(10, 14);
     }
     &:first-child {
       margin-bottom: rem(30, 14);
+    }
+  }
+}
+
+.descr-section__flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+}
+
+.descr-section__col {
+  &:first-child {
+    margin-right: rem(87);
+    max-width: 22%;
+  }
+  &:nth-child(2) {
+    margin-right: rem(87);
+  }
+  &:last-child {
+    max-width: 30%;
+  }
+  @media (max-width: 650px) {
+    &:nth-child(n) {
+      max-width: none;
+      margin-right: 0;
+    }
+    &:not(:last-child) {
+      margin-bottom: rem(26, 14);
     }
   }
 }

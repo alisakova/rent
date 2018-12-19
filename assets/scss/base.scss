@@ -102,6 +102,23 @@ ul {
 	list-style-type: none;
 }
 
+ul:not([class]) {
+  li {
+    padding-left: rem(15);
+    position: relative;
+    &:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: $ui-second-color;
+    }
+    &:not(:last-child) {
+      margin-bottom: rem(15);
+    }
+  }
+}
+
 button {
 	border: none;
 	padding: 0;

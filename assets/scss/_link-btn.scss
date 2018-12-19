@@ -11,13 +11,10 @@
     border-color: darken($border-color, 10%);
   }
   @media (max-width: 600px) {
+    flex-direction: column;
     min-width: 0;
     width: 100%;
     font-size: rem(16, 14);
-    padding: {
-      left: rem(10);
-      right: rem(10);
-    }
   }
 }
 
@@ -28,6 +25,17 @@
     top-left-radius: $global-radius;
     bottom-left-radius: $global-radius;
     right: 1px solid #d0d0d0;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    border: {
+      right: 0;
+      bottom: 1px solid #d0d0d0;
+    }
+    padding: {
+      left: rem(20);
+      right: rem(20);
+    }
   }
 }
 
@@ -50,6 +58,13 @@
     background: url("../images/right-arrow.svg") no-repeat center center;
     // background-size: 40%;
   }
+  @media (max-width: 600px) {
+    width: 100%;
+    // padding: rem(18 50 18 15);
+    &:after {
+      right: rem(15);
+    }
+  }
 }
 
 .link-btn-container {
@@ -63,8 +78,6 @@
     }
   }
   @media (max-width: 600px) {
-    &_margin-alt {
-      margin: rem(40) rem(20) 0;
-    }
+    margin: rem(40) rem(20) 0;
   }
 }

@@ -1,0 +1,36 @@
+.num-list {
+  padding: rem(37 62 35 55);
+  border: 2px solid #f8f8f8;
+  min-width: rem(362);
+  @media (max-width: 600px) {
+    width: 100%;
+    padding: rem(22, 14);
+  }
+}
+
+.num-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &:not(:last-child) {
+    margin-bottom: rem(20);
+  }
+}
+
+.num-list__num {
+  min-width: rem(30);
+  max-width: rem(30);
+  height: rem(30);
+  background: $ui-second-color;
+  color: $marker-color;
+  font: {
+    size: rem(14);
+    weight: 500;
+  }
+  line-height: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: rem(8);
+}

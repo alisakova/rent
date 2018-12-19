@@ -50,6 +50,16 @@
       }
     }
   }
+  &_seo {
+    min-width: rem(360);
+    &:first-child {
+      margin-right: rem(15);
+    }
+  }
+  &_btn-seo {
+    max-width: rem(278);
+    flex-basis: 100%;
+  }
   @media (max-width: 540px) {
     min-width: 100%;
     width: 100%;

@@ -7,6 +7,17 @@
       margin-bottom: rem(20, 14);
       padding: 0 rem(20);
     }
+    & + h3 {
+      max-width: rem(928);
+      margin: 0 auto rem(45);
+      text-align: center;
+      @media (max-width: 600px) {
+        margin-bottom: rem(20, 14);
+        max-width: none;
+        text-align: left;
+        padding: 0 rem(20);
+      }
+    }
   }
   h3 {
     margin-bottom: rem(38);
