@@ -4313,32 +4313,15 @@ textarea:focus::-webkit-input-placeholder {
 }
 .link-btn {
   background: #fff;
-  border: 2px solid #e8e8e8;
+  border: 1px solid #d0d0d0;
   border-radius: .3125rem;
-  color: gray;
-  font-weight: 500;
-  padding: .75rem 3.75rem;
-  display: inline-block;
-  min-width: 31.25rem;
+  color: 000;
+  display: flex;
+  align-items: center;
   text-align: center
-}
-.link-btn span {
-  color: #0077bf;
-  margin-left: .3125rem;
-  position: relative;
-  font-weight: 400
 }
 .link-btn:hover {
   border-color: #cfcfcf
-}
-.link-btn-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.875rem
-}
-.link-btn-container_margin-alt {
-  margin-top: 2.5rem;
-  margin-bottom: 0
 }
 @media (max-width:600px) {
   .team-slider__profession-name,
@@ -4352,6 +4335,44 @@ textarea:focus::-webkit-input-placeholder {
     padding-left: .625rem;
     padding-right: .625rem
   }
+}
+.link-btn__title {
+  display: block;
+  padding: 1.375rem 2.1875rem 1.375rem 2.5rem;
+  border-top-left-radius: .3125rem;
+  border-bottom-left-radius: .3125rem;
+  border-right: 1px solid #d0d0d0
+}
+.link-btn__link {
+  color: #0077bf;
+  padding: 1.125rem 4.375rem 1.125rem 2.125rem;
+  height: 100%;
+  position: relative;
+  font-weight: 400;
+  display: flex;
+  align-items: center
+}
+.link-btn__link:after {
+  content: "";
+  position: absolute;
+  right: 2.1875rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../images/right-arrow.svg) center center no-repeat
+}
+.link-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem
+}
+.link-btn-container_margin-bottom {
+  margin-top: 0;
+  margin-bottom: 2.5rem
+}
+@media (max-width:600px) {
   .link-btn-container_margin-alt {
     margin: 2.5rem 1.25rem 0
   }
