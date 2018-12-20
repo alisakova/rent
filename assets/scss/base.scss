@@ -34,6 +34,17 @@ body {
   padding: rem(0 $container-padding);
   max-width: rem(1170, $desktop-font-size);
   margin: 0 auto;
+  &.flex {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: rem(94);
+  }
+}
+
+.main {
+  max-width: 70%;
+  width: 100%;
+  margin-right: rem(88);
 }
 
 a {

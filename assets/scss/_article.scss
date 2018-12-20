@@ -1,0 +1,49 @@
+.article {
+  h1 {
+    font: {
+      size: rem(22);
+      weight: 400;
+    }
+    margin-bottom: rem(10);
+  }
+  &_main {
+    border-bottom: 1px solid #d0d0d0;
+    padding-bottom: rem(28);
+    margin-bottom: rem(24);
+    h1 {
+      font-size: rem(36);
+      margin-bottom: 0;
+    }
+  }
+  &_small {
+    width: 45%;
+  }
+}
+
+.article__img {
+  width: 100%;
+  height: rem(250);
+  background: $section-bg;
+  margin-bottom: rem(10);
+  &_main {
+    height: rem(330);
+  }
+}
+
+.article__info {
+  font-size: rem(14);
+  margin-bottom: rem(25);
+}
+
+.article__info-item {
+  &:not(:last-child) {
+    margin-right: rem(17);
+  }
+}
+
+.article__views {
+  img {
+    width: rem(15);
+    margin-right: rem(6);
+  }
+}

@@ -1,0 +1,28 @@
+.aside {
+  max-width: 26.2%;
+  min-width: 26.2%;
+  margin-top: rem(37);
+  h4 {
+    margin-bottom: rem(26);
+    font-weight: 400;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+
+.aside__search {
+  position: relative;
+  margin-bottom: rem(28);
+}
+
+.aside__banner {
+  width: 100%;
+  height: rem(295);
+  background: $section-bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(14);
+  margin-bottom: rem(29);
+}
