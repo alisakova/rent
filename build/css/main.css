@@ -2423,7 +2423,8 @@ textarea:focus::-webkit-input-placeholder {
   }
   .statistics__item_sales {
     width: 100%;
-    max-width: none
+    max-width: none;
+    text-align: center
   }
   .statistics__item_sales:last-child,
   .statistics__item_sales:not(:last-child) {
@@ -2535,6 +2536,9 @@ textarea:focus::-webkit-input-placeholder {
   text-align: center;
   margin-top: 3.9375rem
 }
+.growth__btn-container .btn {
+  display: inline-block
+}
 @media (max-width:600px) {
   .growth_alt .descr-block_alt:nth-child(odd) {
     flex-direction: column-reverse
@@ -2635,9 +2639,11 @@ textarea:focus::-webkit-input-placeholder {
 .descr-block_alt_reverse:nth-child(odd) {
   flex-direction: row-reverse
 }
+.descr-block_alt_reverse:nth-child(even) {
+  flex-direction: row
+}
 @media (max-width:600px) {
-  .descr-block_alt_reverse,
-  .descr-block_alt_reverse:nth-child(odd) {
+  .descr-block_alt_reverse:nth-child(n) {
     flex-direction: column-reverse
   }
   .descr-block_alt_reverse.descr-block_alt-reverse-mobile {
