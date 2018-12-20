@@ -9,7 +9,8 @@ var gulp = require('gulp'),
     wait = require('gulp-wait'),
     imagemin = require('gulp-imagemin'),
     webserver = require('gulp-webserver'),
-    htmlImport = require('gulp-html-import');
+    htmlImport = require('gulp-html-import'),
+    prettify = require('gulp-html-prettify');
 
 var path = {
     build: { // куда складывать
@@ -69,6 +70,7 @@ gulp.task('html:build', function () {
     return gulp.src(path.src.html)
     .on('error', log)
     .pipe(htmlImport('./assets/components/'))
+    .pipe(prettify({indent_char: ' ', indent_size: 2}))
     .pipe(gulp.dest(path.build.html))
 });
 

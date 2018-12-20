@@ -1256,7 +1256,7 @@ textarea:focus::-webkit-input-placeholder {
     display: flex
   }
   .navigation__item a {
-    border-bottom: 4px solid transparent
+    border-bottom: 3px solid transparent
   }
   .navigation__item.active a {
     border-bottom-color: #0077bf
@@ -2852,7 +2852,9 @@ textarea:focus::-webkit-input-placeholder {
   }
 }
 .profits p {
-  margin-bottom: 3.125rem
+  margin-bottom: 3.125rem;
+  position: relative;
+  z-index: 5
 }
 .profits:after {
   content: "";
@@ -2894,7 +2896,7 @@ textarea:focus::-webkit-input-placeholder {
 .contact-us h2 {
   margin-bottom: 2.375rem
 }
-.contact-us h2 + h3 {
+.contact-us h2 + h3:not(.text-left) {
   max-width: 58rem;
   margin: 0 auto 2.8125rem;
   text-align: center
@@ -2904,7 +2906,7 @@ textarea:focus::-webkit-input-placeholder {
     margin-bottom: 1.42857rem;
     padding: 0 1.25rem
   }
-  .contact-us h2 + h3 {
+  .contact-us h2 + h3:not(.text-left) {
     margin-bottom: 1.42857rem;
     max-width: none;
     text-align: left;
@@ -4134,6 +4136,9 @@ textarea:focus::-webkit-input-placeholder {
 .descr-section__img_margin-top-0 {
   margin-top: 0
 }
+.descr-section__img_alt-width {
+  min-width: 40%
+}
 @media (max-width:920px) {
   .descr-section__img {
     min-width: 36%
@@ -4684,8 +4689,8 @@ textarea:focus::-webkit-input-placeholder {
   min-height: 100vh
 }
 .simple-page h1 {
-  font-size: 4.5rem;
-  color: #eb058c;
+  font-size: 2.25rem;
+  max-width: 35.1875rem;
   margin-bottom: 1.875rem
 }
 .simple-page p {
@@ -4695,6 +4700,11 @@ textarea:focus::-webkit-input-placeholder {
   display: inline-block;
   padding-left: 3.125rem;
   padding-right: 3.125rem
+}
+@media (max-width:540px) {
+  .simple-page .btn {
+    display: block
+  }
 }
 .simple-page .container {
   display: flex;
@@ -4722,7 +4732,7 @@ textarea:focus::-webkit-input-placeholder {
     object-fit: cover
   }
   .simple-page h1 {
-    font-size: 2.875rem
+    max-width: none
   }
   .simple-page__container {
     flex-direction: column

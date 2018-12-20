@@ -16,707 +16,690 @@
 <body>
   <div class="wrapper">
 
-<header class="header">
-  <div class="container">
-    <div class="header__logo">
-      <a href="/"><img src="images/logo.svg" alt=""></a>
-    </div>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <!-- TODO вставлен клас с active LI для активного пункта меню (ДЛЯ ПРИМЕРА, УБРАТЬ, ДОБАВИТЬ ЧЕРЕЗ СКРИПТ) -->
-        <li class="navigation__item active">
-          <a href="#" class="navigation__link navigation__link_with-submenu">Capabilities</a>
-          <div class="navigation__submenu">
-            <ul class="navigation__submenu-list">
-              <li><a href="startup-accelerator.html">Startup accelerator</a></li>
-              <li><a href="creative-development.html">Creative & Development</a></li>
-              <li><a href="digital-transformation.html">Digital Transformation</a></li>
-              <li><a href="lifecycle-marketing.html">Lifecycle Marketing</a></li>
-              <li><a href="paid-media.html">Paid Media</a></li>
-              <li><a href="sales-enablement.html">Sales Enablement</a></li>
-              <!-- TODO Добавить ссылку на страницу -->
-              <li><a href="seo-optimization.html">SEO Optimization</a></li>
-              <!-- TODO вставлен класс с active ссылке для активной (ДЛЯ ПРИМЕРА, УБРАТЬ, ДОБАВИТЬ ЧЕРЕЗ СКРИПТ) -->
-              <li><a href="reporting-and-analytics.html" class="active">Reporting & Analytics</a></li>
-            </ul>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <a href="/">
+            <img src="images/logo.svg" alt="">
+          </a>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <!-- TODO вставлен клас с active LI для активного пункта меню (ДЛЯ ПРИМЕРА, УБРАТЬ, ДОБАВИТЬ ЧЕРЕЗ СКРИПТ) -->
+            <li class="navigation__item active">
+              <a href="#" class="navigation__link navigation__link_with-submenu">Capabilities</a>
+              <div class="navigation__submenu">
+                <ul class="navigation__submenu-list">
+                  <li><a href="startup-accelerator.html">Startup accelerator</a>
+                  </li>
+                  <li><a href="creative-development.html">Creative & Development</a>
+                  </li>
+                  <li><a href="digital-transformation.html">Digital Transformation</a>
+                  </li>
+                  <li><a href="lifecycle-marketing.html">Lifecycle Marketing</a>
+                  </li>
+                  <li><a href="paid-media.html">Paid Media</a>
+                  </li>
+                  <li><a href="sales-enablement.html">Sales Enablement</a>
+                  </li>
+                  <!-- TODO Добавить ссылку на страницу -->
+                  <li><a href="seo-optimization.html">SEO Optimization</a>
+                  </li>
+                  <!-- TODO вставлен класс с active ссылке для активной (ДЛЯ ПРИМЕРА, УБРАТЬ, ДОБАВИТЬ ЧЕРЕЗ СКРИПТ) -->
+                  <li><a href="reporting-and-analytics.html" class="active">Reporting & Analytics</a>
+                  </li>
+                </ul>
 
-            <div class="navigation__submenu-image">
-              <img src="https://via.placeholder.com/262x150/fff.png/ccc" alt="">
-            </div>
+                <div class="navigation__submenu-image">
+                  <img src="https://via.placeholder.com/262x150/fff.png/ccc" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="navigation__item">
+              <a href="industries.html" class="navigation__link">Industries</a>
+            </li>
+            <li class="navigation__item">
+              <a href="rent-vs-buy.html" class="navigation__link">Rent vs Buy</a>
+            </li>
+            <li class="navigation__item">
+              <a href="meet-the-team.html" class="navigation__link">Meet the Team</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link navigation__link_big-padding">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__links">
+          <div class="header__link-mobile header__link-mobile--share">
+            <a href="#">
+              <svg data-name="Layer 1 copy 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.37 14.93">
+                <path d="M16.38 7.42L9.57 0v4.42H8.14A8.12 8.12 0 0 0 0 12.57v2.36l.64-.7a11.53 11.53 0 0 1 8.5-3.81h.41v4.5z" fill="#fff" />
+              </svg>
+            </a>
           </div>
-        </li>
-        <li class="navigation__item">
-          <a href="industries.html" class="navigation__link">Industries</a>
-        </li>
-        <li class="navigation__item">
-          <a href="rent-vs-buy.html" class="navigation__link">Rent vs Buy</a>
-        </li>
-        <li class="navigation__item">
-          <a href="meet-the-team.html" class="navigation__link">Meet the Team</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link navigation__link_big-padding">Blog</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header__links">
-      <div class="header__link-mobile header__link-mobile--share">
-        <a href="#">
-          <svg data-name="Layer 1 copy 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.37 14.93">
-            <path d="M16.38 7.42L9.57 0v4.42H8.14A8.12 8.12 0 0 0 0 12.57v2.36l.64-.7a11.53 11.53 0 0 1 8.5-3.81h.41v4.5z" fill="#fff" /></svg>
-        </a>
-      </div>
 
-      <div class="header__link-mobile header__link-mobile--email contacts__email">
-        <a href="mailto:press@rentcmo.com">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.87 13.41">
-            <path d="M17.89 11.17a2.21 2.21 0 0 1-.29 1.07l-5.65-6.31 5.58-4.88a2.22 2.22 0 0 1 .36 1.19v8.94zM8.94 7.08l7.77-6.8A2.21 2.21 0 0 0 15.65 0H2.24a2.2 2.2 0 0 0-1.06.28zm2.17-.42l-1.8 1.57a.56.56 0 0 1-.74 0l-1.8-1.57-5.71 6.4a2.21 2.21 0 0 0 1.18.34h13.4a2.21 2.21 0 0 0 1.18-.34zM.35 1.05A2.22 2.22 0 0 0 0 2.24v8.94a2.21 2.21 0 0 0 .29 1.07l5.6-6.32z"
+          <div class="header__link-mobile header__link-mobile--email contacts__email">
+            <a href="mailto:press@rentcmo.com">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.87 13.41">
+                <path d="M17.89 11.17a2.21 2.21 0 0 1-.29 1.07l-5.65-6.31 5.58-4.88a2.22 2.22 0 0 1 .36 1.19v8.94zM8.94 7.08l7.77-6.8A2.21 2.21 0 0 0 15.65 0H2.24a2.2 2.2 0 0 0-1.06.28zm2.17-.42l-1.8 1.57a.56.56 0 0 1-.74 0l-1.8-1.57-5.71 6.4a2.21 2.21 0 0 0 1.18.34h13.4a2.21 2.21 0 0 0 1.18-.34zM.35 1.05A2.22 2.22 0 0 0 0 2.24v8.94a2.21 2.21 0 0 0 .29 1.07l5.6-6.32z"
                 fill="#fff" />
-          </svg>
-        </a>
-      </div>
+              </svg>
+            </a>
+          </div>
 
-      <div class="header__link-mobile header__link-mobile--phone contacts__phone">
-        <a href="tel:18666736826">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09">
-            <path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z"
+          <div class="header__link-mobile header__link-mobile--phone contacts__phone">
+            <a href="tel:18666736826">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09">
+                <path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z"
                 fill="#fff" />
-          </svg>
-          <span>
+              </svg>
+              <span>
             1-866-6-RENT-CMO (1-866-673-6826)
           </span>
-        </a>
+            </a>
+          </div>
+
+          <a href="#" class="header__nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18.5">
+              <path d="M0 0h22v3.5H0zm0 7.5h22V11H0zM0 15h22v3.5H0z" fill="#3e75ba" />
+            </svg>
+          </a>
+        </div>
       </div>
-
-      <a href="#" class="header__nav-link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18.5">
-          <path d="M0 0h22v3.5H0zm0 7.5h22V11H0zM0 15h22v3.5H0z" fill="#3e75ba" />
-        </svg>
-      </a>
-    </div>
-  </div>
-</header>
+    </header>
 
 
-<section class="intro">
-  <div class="container">
-    <div class="intro__text">
-      <!-- В КОНЦЕ ЗАГОЛОВКА H1 ПОМЕНЯТЬ ССЫЛКУ НА ПУСТОЙ СПАН С КЛАССОМ _typed-text -->
-      <h1>We help Fortune 100s & startups exponentially grow their <span class="_typed-text"></span></h1>
-      <h3>With <a href="#">$1 billion</a> in monthly recurring revenue generated for subscription-based businesses, we&nbsp;know what works.</h3>
-      <p>
-        Whether you need high-level strategy — or flawless end-to-end execution — we&nbsp;don't just move the needle. We blow it off the dial.
-      </p>
+    <section class="intro">
+      <div class="container">
+        <div class="intro__text">
+          <!-- В КОНЦЕ ЗАГОЛОВКА H1 ПОМЕНЯТЬ ССЫЛКУ НА ПУСТОЙ СПАН С КЛАССОМ _typed-text -->
+          <h1>We help Fortune 100s & startups exponentially grow their <span class="_typed-text"></span></h1>
+          <!-- TODO Поменять текст в h3 и p -->
+          <h3>With <a href="#">$1 billion</a> in monthly recurring revenue generated for subscription&#8209;based businesses, we&nbsp;know what works.</h3>
+          <p>Whether you need high-level strategy — or flawless end&#8209;to&#8209;end execution — we&nbsp;don't just move the needle. We blow it off the dial.</p>
 
-      <div class="subscribe">
-        <form action="">
-          <div class="subscribe__text">Schedule your strategy session now.</div>
-          <div class="subscribe__container">
-            <div class="subscribe__group subscribe__group_size">
-              <input type="email" class="form__input" placeholder="Enter your work email here">
+          <div class="subscribe">
+            <form action="">
+              <div class="subscribe__text">Schedule your strategy session now.</div>
+              <div class="subscribe__container">
+                <div class="subscribe__group subscribe__group_size">
+                  <input type="email" class="form__input" placeholder="Enter your work email here">
+                </div>
+                <div class="subscribe__group">
+                  <!-- ЗДЕСЬ ПОМЕНЯЛАСЬ КНОПКА НА ССЫЛКУ С HREF -->
+                  <a href="#contactForm" class="btn btn--success">Talk to our CMO</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="intro__image">
+          <img class="intro__image--second" src="images/lyamen-photo.png" srcset="images/lyamen-photo@2x.png 2x" alt="Lyamen Savy">
+          <!-- TODO изменить название картинки + alt -->
+          <img src="images/grow-subscribers-renewals-MRR.svg" alt="Grow subscribers renewals">
+          <div class="intro__author">
+            <div class="intro__name">
+              Lyamen Savy
             </div>
-            <div class="subscribe__group">
-              <!-- ЗДЕСЬ ПОМЕНЯЛАСЬ КНОПКА НА ССЫЛКУ С HREF -->
-              <a href="#contactForm" class="btn btn--success">Talk to our CMO</a>
+            <div class="intro__author-text">
+              Meet our CMO
             </div>
           </div>
-        </form>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="intro__image">
-      <img class="intro__image--second" src="images/lyamen-photo.png" srcset="images/lyamen-photo@2x.png 2x" alt="Lyamen Savy">
-      <!-- TODO изменить название картинки + alt -->
-      <img src="images/grow-subscribers-renewals-MRR.svg" alt="Grow subscribers renewals">
-      <div class="intro__author">
-        <div class="intro__name">
-          Lyamen Savy
-        </div>
-        <div class="intro__author-text">
-          Meet our CMO
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="companies">
-  <div class="container">
-    <h4>Trusted by</h4>
-    <div class="companies__container">
-      <div class="companies__item"><img src="images/companies/1logo.png" alt="Market Leader Logo"></div>
-      <div class="companies__item"><img src="images/companies/2logo.png" alt="ING DIRECT Logo"></div>
-      <div class="companies__item"><img src="images/companies/3logo.png" alt="Capital One Logo"></div>
-      <div class="companies__item"><img src="images/companies/4logo.png" alt="DataSphere Logo"></div>
-      <div class="companies__item"><img src="images/companies/5logo.png" alt="Microsoft Logo"></div>
-      <div class="companies__item"><img src="images/companies/6logo.png" alt="PipelineDeals"></div>
-    </div>
-  </div>
-</section>
-
-<section class="descr">
-  <div class="container">
-    <h2>
-      Spark customers to buy, pay, renew, and repeat
-    </h2>
-    <h3>
-      Rent a CMO is a unique, full-funnel marketing agency for B2B and B2C
-      companies who sell subscription products and services.
-    </h3>
-    <p>
-      We come fully loaded. Our CMO managed global marketing campaigns,
-      end to end, for some of the world’s largest Fortune 100 companies and
-      startups. After spending more than 31,000 hours and $100 million on
-      advertising — and running 1,000+ tests — she knows what works. And what
-      not to waste your time and marketing dollars on.
-    </p>
-    <div class="descr__container">
-      <div class="descr__img">
-        <!-- TODO изменить название картинки + alt -->
-        <img src="images/full-funnel-marketing-agency.svg" alt="Full funnel marketing agency">
-      </div>
-      <ul class="descr__list features-list">
-        <li class="features-list__item">
-          Everyone promises awareness or leads. We deliver buyers.
-        </li>
-        <li class="features-list__item">
-          Roll back lead acquisition costs &&nbsp;pump up ROI.
-        </li>
-        <li class="features-list__item">
-          Drive customer adoption rates &&nbsp;expansion revenue.
-        </li>
-        <li class="features-list__item">
-          Boost usage & send renewals soaring.
-        </li>
-        <li class="features-list__item">
-          Ramp up faster & beat competitors every step of the way.
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="statistics">
-  <div class="container">
-    <h2>Nobody knows subscription marketing like we do. Nobody.</h2>
-    <div class="statistics__container">
-      <div class="statistics__item">
-        <div class="statistics__number">43K+</div>
-        <p>
-          Hours invested on <br />research&nbsp;&&nbsp;field testing
-        </p>
-      </div>
-      <div class="statistics__item">
-        <div class="statistics__number">100m+</div>
-        <p>
-          Marketing dollars spent <br />
-          testing all paid media
-        </p>
-      </div>
-      <div class="statistics__item">
-        <div class="statistics__number">1K+</div>
-        <p>
-          A/B creative & value <br />proposition messages tested
-        </p>
-      </div>
-      <div class="statistics__item statistics__item_small">
-        <div class="statistics__number">$1b+</div>
-        <p>
-          Monthly recurring <br />revenue generated
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="growth">
-  <div class="container">
-    <h2>For high growth companies:</h2>
-    <h3>Everything you need to maintain your lead or fend off competitive pressure.</h3>
-    <div class="growth__container descr-slider">
-      <div class="descr-block">
-        <div class="descr-block__img">
-          <!-- TODO изменить название картинки -->
-          <img src="images/growth/marketing-qualified-leads.svg" alt="Marketing Qualified Leads (MQL)">
-        </div>
-        <div class="descr-block__content">
-          <h4>Marketing Qualified Leads (MQL)</h4>
-          <p>
-            <span class="blue">Demand generation strategies</span> guaranteed to deliver hot marketing
-            qualified leads and buyers at the lowest cost per acquisition.
-          </p>
-        </div>
-      </div>
-      <div class="descr-block">
-        <div class="descr-block__img">
-          <!-- TODO изменить название картинки -->
-          <img src="images/growth/new-customer-acquisition.svg" alt="New Customer Acquisition">
-        </div>
-        <div class="descr-block__content">
-          <h4>New Customer Acquisition</h4>
-          <p>
-            <span class="blue">Self-service acquisition strategies</span>
-             that allow you to cost-effectively sell low-priced products, scale,
-            and grow without hiring sales people.
-          </p>
-        </div>
-      </div>
-      <div class="descr-block">
-        <div class="descr-block__img descr-block__img_width-467">
-          <!-- TODO изменить название картинки -->
-          <img src="images/growth/adoption-renewals.svg" alt="Adoption & Renewals">
-        </div>
-        <div class="descr-block__content">
-          <h4>Adoption & Renewals</h4>
-          <p>
-            Post-sale digital customer experiences that <span class="blue">increase adoptions, usage & renewals.</span>
-          </p>
-        </div>
-      </div>
-      <div class="descr-block">
-        <div class="descr-block__img descr-block__img_width-443">
-          <!-- TODO изменить название картинки -->
-          <img src="images/lifecycle/upsell-cross-sell.svg" alt="Upsell & Cross-Sell">
-        </div>
-        <div class="descr-block__content">
-          <h4>Upsell & Cross-Sell</h4>
-          <p>
-            <span class="blue">Killer lifecycle marketing automation</span> strategies that increase average revenue per customer and LTV.
-          </p>
-        </div>
-      </div>
-      <div class="descr-block">
-        <div class="descr-block__img descr-block__img_width-365">
-          <!-- TODO изменить название картинки -->
-          <img src="images/growth/partner-channel-growth.svg" alt="Partner Channel Growth">
-        </div>
-        <div class="descr-block__content">
-          <h4>Partner Channel Growth</h4>
-          <p>
-            <span class="blue">Scalable partner programs</span> that accelerate your growth and boost your profits.
-          </p>
-        </div>
-      </div>
-      <div class="descr-block">
-        <div class="descr-block__img descr-block__img_width-443">
-          <!-- TODO изменить название картинки -->
-          <img src="images/growth/sales-marketing-operations.svg" alt="Sales & Marketing Operations">
-        </div>
-        <div class="descr-block__content">
-          <h4>Sales & Marketing Operations</h4>
-          <p>
-            <span class="blue">Sales and marketing operations playbook</span> that gets everyone on the same page all the time for maximum efficiency & profitability.
-          </p>
-        </div>
-      </div>
-    </div>
-    <button class="btn btn--success">Find out more</button>
-  </div>
-</section>
-
-<section class="steps">
-  <div class="container">
-    <h2>
-      For early stage startups:
-    </h2>
-    <h3>
-      Strategies that are absolutely critical for you to ramp up fast and
-      make a huge splash without a ton of cash
-    </h3>
-    <div class="steps__container">
-      <div class="steps__list">
-        <div class="step">
-          <div class="step__count">
-            1
+    <section class="companies">
+      <div class="container">
+        <h4>Trusted by</h4>
+        <div class="companies__container">
+          <div class="companies__item">
+            <img src="images/companies/1logo.png" alt="Market Leader Logo">
           </div>
-          <h4>Validate Demand</h4>
-          <p>
-            Validate before you build — to develop winning products & weed
-            out duds.
-          </p>
-        </div>
-        <div class="step">
-          <div class="step__count">
-            2
+          <div class="companies__item">
+            <img src="images/companies/2logo.png" alt="ING DIRECT Logo">
           </div>
-          <h4>Fine tune business models</h4>
-          <p>
-            Get customers to pay, renew, and even pay more with pricing plans,
-            bundles & monetization strategies.
-          </p>
-        </div>
-        <div class="step">
-          <div class="step__count">
-            3
+          <div class="companies__item">
+            <img src="images/companies/3logo.png" alt="Capital One Logo">
           </div>
-          <h4>Get funded</h4>
-          <p>
-            Marketing plans that gain investors’ confidence and get you funding
-            to fuel rapid growth.
-          </p>
-        </div>
-        <div class="step">
-          <div class="step__count">
-            4
+          <div class="companies__item">
+            <img src="images/companies/4logo.png" alt="DataSphere Logo">
           </div>
-          <h4>Start selling</h4>
-          <p>
-            Value proposition development that sets your company apart in
-            the marketplace.
-          </p>
+          <div class="companies__item">
+            <img src="images/companies/5logo.png" alt="Microsoft Logo">
+          </div>
+          <div class="companies__item">
+            <img src="images/companies/6logo.png" alt="PipelineDeals">
+          </div>
         </div>
       </div>
-      <div class="steps__img">
-        <!-- TODO изменить название картинки -->
-        <img src="images/early-stage-startups.svg" alt="Early stage startups">
-      </div>
-    </div>
-    <button type="button" class="btn btn--success">Find out more</button>
-  </div>
-</section>
+    </section>
 
-<section class="profits">
-  <div class="container">
-    <h2>Increase profits … not payroll</h2>
-    <h3>
+    <section class="descr">
+      <div class="container">
+        <!-- TODO поменять h2, h3, p -->
+        <h2>Spark customers to buy, pay, renew and repeat</h2>
+        <h3>Rent a CMO is a unique, full&#8209;funnel marketing agency for B2B and B2C companies who sell subscription products and services.</h3>
+        <p>
+          We come fully loaded. Our CMO managed global marketing campaigns, end to end, for some of the world’s largest Fortune 100 companies and startups. After spending more than 31,000 hours and $100 million on advertising — and running 1,000+ tests — she knows
+          what works. And what not to waste your time and marketing dollars on.
+        </p>
+        <div class="descr__container">
+          <div class="descr__img">
+            <!-- TODO изменить название картинки + alt -->
+            <img src="images/full-funnel-marketing-agency.svg" alt="Full funnel marketing agency">
+          </div>
+          <ul class="descr__list features-list">
+            <li class="features-list__item">
+              Everyone promises awareness or leads. We deliver buyers.
+            </li>
+            <li class="features-list__item">
+              Roll back lead acquisition costs &&nbsp;pump up ROI.
+            </li>
+            <li class="features-list__item">
+              Drive customer adoption rates &&nbsp;expansion revenue.
+            </li>
+            <li class="features-list__item">
+              Boost usage & send renewals soaring.
+            </li>
+            <li class="features-list__item">
+              Ramp up faster & beat competitors every step of the way.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics">
+      <div class="container">
+        <h2>Nobody knows subscription marketing like we do. Nobody.</h2>
+        <div class="statistics__container">
+          <div class="statistics__item">
+            <div class="statistics__number">43K+</div>
+            <!-- TODO поменять p -->
+            <p>Hours invested on
+              <br />research&nbsp;&&nbsp;field testing</p>
+          </div>
+          <div class="statistics__item">
+            <div class="statistics__number">100m+</div>
+            <!-- TODO поменять p -->
+            <p>Marketing dollars spent
+              <br />testing all paid media</p>
+          </div>
+          <div class="statistics__item">
+            <div class="statistics__number">1K+</div>
+            <!-- TODO поменять p -->
+            <p>A/B creative & value
+              <br />proposition messages tested</p>
+          </div>
+          <div class="statistics__item statistics__item_small">
+            <div class="statistics__number">$1b+</div>
+            <!-- TODO поменять p -->
+            <p>Monthly recurring
+              <br />revenue generated</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="growth">
+      <div class="container">
+        <h2>For high growth companies:</h2>
+        <h3>Everything you need to maintain your lead or fend off competitive pressure.</h3>
+        <div class="growth__container descr-slider">
+          <div class="descr-block">
+            <div class="descr-block__img">
+              <!-- TODO изменить название картинки -->
+              <img src="images/growth/marketing-qualified-leads.svg" alt="Marketing Qualified Leads (MQL)">
+            </div>
+            <div class="descr-block__content">
+              <h4>Marketing Qualified Leads (MQL)</h4>
+              <p>
+                <span class="blue">Demand generation strategies</span> guaranteed to deliver hot marketing qualified leads and buyers at the lowest cost per acquisition.
+              </p>
+            </div>
+          </div>
+          <div class="descr-block">
+            <div class="descr-block__img">
+              <!-- TODO изменить название картинки -->
+              <img src="images/growth/new-customer-acquisition.svg" alt="New Customer Acquisition">
+            </div>
+            <div class="descr-block__content">
+              <h4>New Customer Acquisition</h4>
+              <p>
+                <span class="blue">Self-service acquisition strategies</span>
+                <!-- TODO поменять текст -->
+                that allow you to cost-effectively sell low&#8209;priced products, scale, and grow without hiring sales people.
+              </p>
+            </div>
+          </div>
+          <div class="descr-block">
+            <div class="descr-block__img descr-block__img_width-467">
+              <!-- TODO изменить название картинки -->
+              <img src="images/growth/adoption-renewals.svg" alt="Adoption & Renewals">
+            </div>
+            <div class="descr-block__content">
+              <h4>Adoption & Renewals</h4>
+              <p>
+                Post-sale digital customer experiences that <span class="blue">increase adoptions, usage & renewals.</span>
+              </p>
+            </div>
+          </div>
+          <div class="descr-block">
+            <div class="descr-block__img descr-block__img_width-443">
+              <!-- TODO изменить название картинки -->
+              <img src="images/lifecycle/upsell-cross-sell.svg" alt="Upsell & Cross-Sell">
+            </div>
+            <div class="descr-block__content">
+              <h4>Upsell & Cross-Sell</h4>
+              <p>
+                <span class="blue">Killer lifecycle marketing automation</span> strategies that increase average revenue per customer and LTV.
+              </p>
+            </div>
+          </div>
+          <div class="descr-block">
+            <div class="descr-block__img descr-block__img_width-365">
+              <!-- TODO изменить название картинки -->
+              <img src="images/growth/partner-channel-growth.svg" alt="Partner Channel Growth">
+            </div>
+            <div class="descr-block__content">
+              <h4>Partner Channel Growth</h4>
+              <p>
+                <span class="blue">Scalable partner programs</span> that accelerate your growth and boost your profits.
+              </p>
+            </div>
+          </div>
+          <div class="descr-block">
+            <div class="descr-block__img descr-block__img_width-443">
+              <!-- TODO изменить название картинки -->
+              <img src="images/growth/sales-marketing-operations.svg" alt="Sales & Marketing Operations">
+            </div>
+            <div class="descr-block__content">
+              <h4>Sales & Marketing Operations</h4>
+              <p>
+                <span class="blue">Sales and marketing operations playbook</span> that gets everyone on the same page all the time for maximum efficiency & profitability.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn--success">Find out more</button>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="container">
+        <!-- TODO поменять h2 и h3 -->
+        <h2>For early stage startups:</h2>
+        <h3>Strategies that are absolutely critical for you to ramp up fast and make a huge splash without a ton of cash</h3>
+        <div class="steps__container">
+          <div class="steps__list">
+            <div class="step">
+              <div class="step__count">
+                1
+              </div>
+              <h4>Validate Demand</h4>
+              <!-- TODO поменять p -->
+              <p>Validate before you build — to develop winning products & weed out duds.</p>
+            </div>
+            <div class="step">
+              <div class="step__count">
+                2
+              </div>
+              <h4>Fine tune business models</h4>
+              <!-- TODO поменять p -->
+              <p>Get customers to pay, renew, and even pay more with pricing plans, bundles & monetization strategies.</p>
+            </div>
+            <div class="step">
+              <div class="step__count">
+                3
+              </div>
+              <h4>Get funded</h4>
+              <!-- TODO поменять p -->
+              <p>Marketing plans that gain investors’ confidence and get you funding to fuel rapid growth.</p>
+            </div>
+            <div class="step">
+              <div class="step__count">
+                4
+              </div>
+              <h4>Start selling</h4>
+              <!-- TODO поменять p -->
+              <p>Value proposition development that sets your company apart in the marketplace.</p>
+            </div>
+          </div>
+          <div class="steps__img">
+            <!-- TODO изменить название картинки -->
+            <img src="images/early-stage-startups.svg" alt="Early stage startups">
+          </div>
+        </div>
+        <button type="button" class="btn btn--success">Find out more</button>
+      </div>
+    </section>
+
+    <section class="profits">
+      <div class="container">
+        <h2>Increase profits … not payroll</h2>
+        <h3>
       Rent a dream team of marketing strategists, analysts, designers,
       copywriters, and developers ready to take your sales to the next level.
     </h3>
-    <p>
-      No handholding. No learning curve. We know subscription business models
-      better than anyone. But don’t take our word for it. Here’s what others
-      are saying ...
-    </p>
-    <div class="reviews-slider">
-      <div>
-        <div class="reviews-slider__content">
-          <p>
-            “Innovative, flawless execution, including positioning, messaging and
-            traditional mass media. Always on the leading edge.”
-          </p>
-          <div class="reviews-slider__author">
-            <div class="reviews-slider__img">
-              <img src="images/reviews/reviews-1.jpg" alt="Andrew Tempest photo" />
-            </div>
-            <div class="reviews-slider__author-info">
-              <div class="reviews-slider__author-name">
-                Andrew Tempest, Business Director
-              </div>
-              <div class="reviews-slider__logo-img">
-                <img src="images/reviews/capital-one-logo.png" alt="Capital One">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="reviews-slider__content">
-          <p>
-            “I was immediately impressed by Lyamen subject matter expertise. Even
-            though it was a huge operation, she ran that business like clockwork,
-            and introduced a whole new level of maturity on our paid strategy.”
-          </p>
-          <div class="reviews-slider__author">
-            <div class="reviews-slider__img">
-              <img src="images/reviews/reviews-2.jpg" alt="Rene Garcia photo" />
-            </div>
-            <div class="reviews-slider__author-info">
-              <div class="reviews-slider__author-name">
-                Rene Garcia,  GTM for Office 365 Commercial Direct, Microsoft
-              </div>
-              <div class="reviews-slider__logo-img">
-                <img src="images/reviews/microsoft-logo.png" alt="Microsoft">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="reviews-slider__content">
-          <p>
-            “Lyamen led significant investments and growth outcomes for Office
-            365 customer acquisition. Her razor focus on growth outcomes paired
-            with an outstanding lean startup mindset (fast turn, do, measure,
-            learn loops to persevere, pivot, or fail fast investments) in planning
-            and execution, was a pleasure to witness and learn from. One of the
-            best digital marketing leaders.”
-          </p>
-          <div class="reviews-slider__author">
-            <div class="reviews-slider__img">
-              <img src="images/reviews/reviews-3.jpg" alt="Karthik Ravindran photo" />
-            </div>
-            <div class="reviews-slider__author-info">
-              <div class="reviews-slider__author-name">
-                Karthik Ravindran, Principal Group Product and Engineering Manager, Microsoft
-              </div>
-              <div class="reviews-slider__logo-img">
-                <img src="images/reviews/microsoft-logo.png" alt="Microsoft">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="reviews-slider__content">
-          <p>
-            "Rare standout marketing talent. I had the pleasure of working with
-            Lyamen as she drove the website redesign, marketing campaign and ad
-            content for Kal Academy within a month. The outcome was beyond my
-            expectation and I highly recommend Lyamen if you are looking to
-            launch your company and have it take off or take your company to
-            the next level!"
-          </p>
-          <div class="reviews-slider__author">
-            <div class="reviews-slider__img">
-              <img src="images/reviews/reviews-4.jpg" alt="Kalpana Viswanathan photo" />
-            </div>
-            <div class="reviews-slider__author-info">
-              <div class="reviews-slider__author-name">
-                Kalpana Viswanathan, Principle Group Engineering Manager, Hololens, Microsoft
-              </div>
-              <div class="reviews-slider__logo-img">
-                <img src="images/reviews/microsoft-logo.png" alt="Microsoft">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="reviews-slider__content">
-          <p>
-            "Bright, focused, and results-oriented. Her marketing savvy and
-            attention to detail helped ShareBuilder to prioritize and implement
-            a number of projects that helped grow the business and build the
-            brand. I recommend her highly."
-          </p>
-          <div class="reviews-slider__author">
-            <div class="reviews-slider__img">
-              <img src="images/reviews/reviews-5.jpg" alt="Paul Swegle photo" />
-            </div>
-            <div class="reviews-slider__author-info">
-              <div class="reviews-slider__author-name">
-                Paul Swegle, General Counsel, ShareBuilder, ING DIRECT
-              </div>
-              <div class="reviews-slider__logo-img">
-                <img src="" alt="ING DIRECT">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="reviews-slider__content">
-          <p>
-            "Lyamen is versed in the entire customer journey and her business
-            acumen has resulted in successful integrated marketing campaigns
-            tailored to our business needs. Her diverse executive experience
-            at large corporations, SMBs, and startups has been a valuable asset
-            and that has helped us push boundaries to reach our marketing goals.."
-          </p>
-          <div class="reviews-slider__author">
-            <div class="reviews-slider__img">
-              <img src="images/reviews/reviews-6.jpg" alt="Marissa Tejada photo" />
-            </div>
-            <div class="reviews-slider__author-info">
-              <div class="reviews-slider__author-name">
-                Marissa Tejada, Sr. Manager of Marketing and PR, PipelineDeals
-              </div>
-              <div class="reviews-slider__logo-img">
-                <img src="" alt="PipelineDeals">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- TODO убрать ID -->
-<section class="contact-us">
-  <div class="container">
-    <h2>Do it once. Do it right. Do it fast.</h2>
-    <div class="contact-us__container">
-      <div class="contact-us__content">
-        <h3>
-          Marketing department or no marketing department, we give you the
-          capacity & subject matter experts to crush your competition.
-        </h3>
         <p>
-          Our CMO’s lean startup marketing practices have generated over
-          $1B in revenue for companies including Microsoft, Capital One
-          Investing, and a roster of startups with successful exits. Fill
-          out this form and find out how we can increase your revenue..
+          No handholding. No learning curve. We know subscription business models better than anyone. But don’t take our word for it. Here’s what others are saying ...
         </p>
-        <p>
-          For faster service, call 1-866-6-RENT-CMO.
-        </p>
-      </div>
-      <!-- TODO добавить ID -->
-      <div id="contactForm" class="contact-us__form">
-        <form action="" class="contact-form form">
-          <div class="form__item">
-            <label for="theme" class="form__label">I’d like to chat about:</label>
-            <select class="select form__select" id="theme" name="theme">
-              <option value="general-inquiry">General inquiry</option>
-            </select>
-          </div>
-          <div class="form__item">
-            <input type="text" id="name" class="form__input" placeholder="Name:" required />
-          </div>
-          <div class="form__group form-grid">
-            <div class="form__item form-grid__col">
-              <input type="text" class="form__input" id="company-mail" placeholder="Company email:" required />
-            </div>
-            <div class="form__item form-grid__col">
-              <input type="tel" class="form__input" id="tel" placeholder="Phone number" required />
+        <div class="reviews-slider">
+          <div>
+            <div class="reviews-slider__content">
+              <p>
+                “Innovative, flawless execution, including positioning, messaging and traditional mass media. Always on the leading edge.”
+              </p>
+              <div class="reviews-slider__author">
+                <div class="reviews-slider__img">
+                  <img src="images/reviews/reviews-1.jpg" alt="Andrew Tempest photo" />
+                </div>
+                <div class="reviews-slider__author-info">
+                  <div class="reviews-slider__author-name">
+                    Andrew Tempest, Business Director
+                  </div>
+                  <div class="reviews-slider__logo-img">
+                    <img src="images/reviews/capital-one-logo.png" alt="Capital One">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="form__item">
-            <input type="text" id="job-title" class="form__input" placeholder="Job title:" required />
+          <div>
+            <div class="reviews-slider__content">
+              <p>
+                <!-- TODO поменять текст -->
+                “I was immediately impressed by Lyamen's subject matter expertise. Even though it was a huge operation, she ran that business like clockwork, and introduced a whole new level of maturity on our paid strategy.”
+              </p>
+              <div class="reviews-slider__author">
+                <div class="reviews-slider__img">
+                  <img src="images/reviews/reviews-2.jpg" alt="Rene Garcia photo" />
+                </div>
+                <div class="reviews-slider__author-info">
+                  <div class="reviews-slider__author-name">
+                    Rene Garcia, GTM for Office 365 Commercial Direct, Microsoft
+                  </div>
+                  <div class="reviews-slider__logo-img">
+                    <img src="images/reviews/microsoft-logo.png" alt="Microsoft">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="form__item">
-            <label for="budget" class="form__label">Monthly marketing budget:</label>
-            <select class="select form__select" id="budget" name="budget">
-              <option value="general-inquiry">$0 to $5,000</option>
-            </select>
+          <div>
+            <div class="reviews-slider__content">
+              <p>
+                “Lyamen led significant investments and growth outcomes for Office 365 customer acquisition. Her razor focus on growth outcomes paired with an outstanding lean startup mindset (fast turn, do, measure, learn loops to persevere, pivot, or fail fast investments)
+                in planning and execution, was a pleasure to witness and learn from. One of the best digital marketing leaders.”
+              </p>
+              <div class="reviews-slider__author">
+                <div class="reviews-slider__img">
+                  <img src="images/reviews/reviews-3.jpg" alt="Karthik Ravindran photo" />
+                </div>
+                <div class="reviews-slider__author-info">
+                  <div class="reviews-slider__author-name">
+                    Karthik Ravindran, Principal Group Product and Engineering Manager, Microsoft
+                  </div>
+                  <div class="reviews-slider__logo-img">
+                    <img src="images/reviews/microsoft-logo.png" alt="Microsoft">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="form__item">
-            <input type="url" id="website" class="form__input" placeholder="Website URL" required />
+          <div>
+            <div class="reviews-slider__content">
+              <p>
+                "Rare standout marketing talent. I had the pleasure of working with Lyamen as she drove the website redesign, marketing campaign and ad content for Kal Academy within a month. The outcome was beyond my expectation and I highly recommend Lyamen if you
+                are looking to launch your company and have it take off or take your company to the next level!"
+              </p>
+              <div class="reviews-slider__author">
+                <div class="reviews-slider__img">
+                  <img src="images/reviews/reviews-4.jpg" alt="Kalpana Viswanathan photo" />
+                </div>
+                <div class="reviews-slider__author-info">
+                  <div class="reviews-slider__author-name">
+                    Kalpana Viswanathan, Principle Group Engineering Manager, Hololens, Microsoft
+                  </div>
+                  <div class="reviews-slider__logo-img">
+                    <img src="images/reviews/microsoft-logo.png" alt="Microsoft">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="form__item">
-            <label for="currently-work" class="form__label">You are currently... </label>
-            <select class="select form__select" id="currently-work" name="currently-work">
-              <option value="general-inquiry">Working with an agency</option>
-            </select>
+          <div>
+            <div class="reviews-slider__content">
+              <p>
+                "Bright, focused, and results-oriented. Her marketing savvy and attention to detail helped ShareBuilder to prioritize and implement a number of projects that helped grow the business and build the brand. I recommend her highly."
+              </p>
+              <div class="reviews-slider__author">
+                <div class="reviews-slider__img">
+                  <img src="images/reviews/reviews-5.jpg" alt="Paul Swegle photo" />
+                </div>
+                <div class="reviews-slider__author-info">
+                  <div class="reviews-slider__author-name">
+                    Paul Swegle, General Counsel, ShareBuilder, ING DIRECT
+                  </div>
+                  <div class="reviews-slider__logo-img">
+                    <img src="" alt="ING DIRECT">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="form__item">
-            <textarea class="form__textarea" placeholder="Tell us a little bit about your company and major problem areas which you would like to improve..."></textarea>
+          <div>
+            <div class="reviews-slider__content">
+              <p>
+                "Lyamen is versed in the entire customer journey and her business acumen has resulted in successful integrated marketing campaigns tailored to our business needs. Her diverse executive experience at large corporations, SMBs, and startups has been a valuable
+                asset and that has helped us push boundaries to reach our marketing goals.."
+              </p>
+              <div class="reviews-slider__author">
+                <div class="reviews-slider__img">
+                  <img src="images/reviews/reviews-6.jpg" alt="Marissa Tejada photo" />
+                </div>
+                <div class="reviews-slider__author-info">
+                  <div class="reviews-slider__author-name">
+                    Marissa Tejada, Sr. Manager of Marketing and PR, PipelineDeals
+                  </div>
+                  <div class="reviews-slider__logo-img">
+                    <img src="" alt="PipelineDeals">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <button type="submit" class="btn btn--success">Contact me</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
 
-
-<footer class="footer">
-  <div class="footer__main">
-    <div class="container footer__container">
-      <div class="footer__col footer__col_logo">
-        <div class="footer__logo">
-          <a href="/"><img src="images/logo.svg" alt=""></a>
         </div>
       </div>
-      <div class="footer__mobile-container">
-        <div class="footer__col">
-          <h4>Capabilities</h4>
-          <ul class="footer__list">
-            <a href="startup-accelerator.html" class="footer__link">
+    </section>
+
+    <!-- TODO убрать ID -->
+    <section class="contact-us">
+      <div class="container">
+        <h2>Do it once. Do it right. Do it fast.</h2>
+        <div class="contact-us__container">
+          <div class="contact-us__content">
+            <!-- TODO поменять h3 -->
+            <h3>Marketing department or no marketing department, we give you the capacity & subject matter experts to crush your competition.</h3>
+            <p>
+              Our CMO’s lean startup marketing practices have generated over $1B in revenue for companies including Microsoft, Capital One Investing, and a roster of startups with successful exits. Fill out this form and find out how we can increase your revenue..
+            </p>
+            <p>
+              For faster service, call 1-866-6-RENT-CMO.
+            </p>
+          </div>
+          <!-- TODO добавить ID -->
+          <div id="contactForm" class="contact-us__form">
+            <form action="" class="contact-form form">
+              <div class="form__item">
+                <label for="theme" class="form__label">I’d like to chat about:</label>
+                <select class="select form__select" id="theme" name="theme">
+                  <option value="general-inquiry">General inquiry</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <input type="text" id="name" class="form__input" placeholder="Name:" required />
+              </div>
+              <div class="form__group form-grid">
+                <div class="form__item form-grid__col">
+                  <input type="text" class="form__input" id="company-mail" placeholder="Company email:" required />
+                </div>
+                <div class="form__item form-grid__col">
+                  <input type="tel" class="form__input" id="tel" placeholder="Phone number" required />
+                </div>
+              </div>
+              <div class="form__item">
+                <input type="text" id="job-title" class="form__input" placeholder="Job title:" required />
+              </div>
+              <div class="form__item">
+                <label for="budget" class="form__label">Monthly marketing budget:</label>
+                <select class="select form__select" id="budget" name="budget">
+                  <option value="general-inquiry">$0 to $5,000</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <input type="url" id="website" class="form__input" placeholder="Website URL" required />
+              </div>
+              <div class="form__item">
+                <label for="currently-work" class="form__label">You are currently...</label>
+                <select class="select form__select" id="currently-work" name="currently-work">
+                  <option value="general-inquiry">Working with an agency</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <textarea class="form__textarea" placeholder="Tell us a little bit about your company and major problem areas which you would like to improve..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--success">Contact me</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="container footer__container">
+          <div class="footer__col footer__col_logo">
+            <div class="footer__logo">
+              <a href="/">
+                <img src="images/logo.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="footer__mobile-container">
+            <div class="footer__col">
+              <h4>Capabilities</h4>
+              <ul class="footer__list">
+                <a href="startup-accelerator.html" class="footer__link">
               Startup accelerator
             </a>
-            <a href="digital-transformation.html" class="footer__link">
+                <a href="digital-transformation.html" class="footer__link">
               Digital Transformation
             </a>
-            <a href="paid-media.html" class="footer__link">
+                <a href="paid-media.html" class="footer__link">
               Paid Media
             </a>
-            <a href="" class="footer__link">
+                <a href="" class="footer__link">
               SEO Optimization
             </a>
-            <a href="creative-development.html" class="footer__link">
+                <a href="creative-development.html" class="footer__link">
               Creative & Development
             </a>
-            <a href="lifecycle-marketing.html" class="footer__link">
+                <a href="lifecycle-marketing.html" class="footer__link">
               Lifecycle Marketing
             </a>
-            <a href="sales-enablement.html" class="footer__link">
+                <a href="sales-enablement.html" class="footer__link">
               Sales Enablement
             </a>
-            <a href="reporting-and-analytics.html" class="footer__link">
+                <a href="reporting-and-analytics.html" class="footer__link">
               Reporting & Analytics
             </a>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Company</h4>
-          <ul class="footer__list">
-            <a href="industries.html" class="footer__link">
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4>Company</h4>
+              <ul class="footer__list">
+                <a href="industries.html" class="footer__link">
               Industries
             </a>
-            <a href="rent-vs-buy.html" class="footer__link">
+                <a href="rent-vs-buy.html" class="footer__link">
               Rent vs. Buy
             </a>
-            <a href="meet-the-team.html" class="footer__link">
+                <a href="meet-the-team.html" class="footer__link">
               Meet the Team
             </a>
-            <a href="" class="footer__link">
+                <a href="" class="footer__link">
               Blog
             </a>
-            <a href="" class="footer__link">
+                <a href="" class="footer__link">
               Sitemap
             </a>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__col footer__col_bordered">
-        <h4>Get in Touch</h4>
-        <div class="footer__contacts contacts">
-          <div class="footer__contact footer__contact_tel contacts__phone">
-            <a href="tel:18666736826">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09"><path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z" fill="#fff"/></svg>
-              <span>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col_bordered">
+            <h4>Get in Touch</h4>
+            <div class="footer__contacts contacts">
+              <div class="footer__contact footer__contact_tel contacts__phone">
+                <a href="tel:18666736826">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09">
+                    <path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z"
+                    fill="#fff" />
+                  </svg>
+                  <span>
                 1-866-6-RENT-CMO (1-866-673-6826)
               </span>
-            </a>
-          </div>
-          <button class="btn">Contact us</button>
-          <div class="footer__contact footer__contact_mail contacts__email">
-            <?xml version="1.0" encoding="utf-8"?>
-            <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 viewBox="0 0 12.2 9.8" style="enable-background:new 0 0 12.2 9.8;" xml:space="preserve">
-            <style type="text/css">
-            	.st0{fill:#3E75BA;}
-            </style>
-            <path id="Forma_1" class="st0" d="M0.2,8.2C0.2,8.3,0.1,8.3,0.2,8.2l-0.1,0C0,8.3,0,8.2,0,8.2V3.1C0,3,0,3,0.1,3c0,0,0.1,0,0.1,0
+                </a>
+              </div>
+              <button class="btn">Contact us</button>
+              <div class="footer__contact footer__contact_mail contacts__email">
+                <?xml version="1.0" encoding="utf-8" ?>
+                <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12.2 9.8" style="enable-background:new 0 0 12.2 9.8;" xml:space="preserve">
+                  <style type="text/css">
+                    .st0{fill:#3E75BA;}
+                  </style>
+                  <path id="Forma_1" class="st0" d="M0.2,8.2C0.2,8.3,0.1,8.3,0.2,8.2l-0.1,0C0,8.3,0,8.2,0,8.2V3.1C0,3,0,3,0.1,3c0,0,0.1,0,0.1,0
             	l3.5,2c0,0,0.1,0,0.1,0.1c0,0,0,0.1,0,0.1L0.2,8.2z M11.8,9.6c0,0,0,0.1,0,0.1c0,0-0.1,0.1-0.1,0.1H0.4c-0.1,0-0.1,0-0.2-0.1
             	c0,0-0.1,0-0.1-0.1c0,0,0-0.1,0-0.1l4.4-4c0,0,0.1,0,0.1,0l1.2,0.6c0.2,0.1,0.3,0.1,0.5,0l1.3-0.8c0.1,0,0.1,0,0.1,0L11.8,9.6z
             	 M12.2,2.9C12.2,2.9,12.2,3,12.2,2.9l0.1,5.5c0,0,0,0.1-0.1,0.1c0,0,0,0,0,0c0,0-0.1,0-0.1,0L8.8,5c0,0,0-0.1,0-0.1c0,0,0-0.1,0-0.1
             	L12.2,2.9C12.1,2.9,12.2,2.9,12.2,2.9C12.2,2.9,12.2,2.9,12.2,2.9L12.2,2.9z M11.8,0c0.1,0,0.2,0,0.3,0.1c0.1,0.1,0.1,0.2,0.1,0.3
             	v1.2c0,0,0,0.1-0.1,0.1c0,0,0,0,0,0c-0.1,0-0.1,0-0.1,0.1L6.2,5.1c0,0,0,0-0.1,0c0,0,0,0-0.1,0l-6-3.4C0,1.8,0,1.7,0,1.7V0.4
-            	c0-0.1,0-0.2,0.1-0.3C0.2,0,0.3,0,0.4,0H11.8L11.8,0z"/>
-            </svg>
-            <span>PR Inquiries: <a href="mailto:press@rentcmo.com">press@rentcmo.com</a></span>
-          </div>
-          <div class="footer__socials">
-            <a href="" class="footer__social-link">
-              <img src="images/social-icons/insta.svg" alt="Instagram">
-            </a>
-            <a href="" class="footer__social-link">
-              <img src="images/social-icons/fb.svg" alt="Facebook">
-            </a>
-            <a href="" class="footer__social-link">
-              <img src="images/social-icons/LinkedIn.svg" alt="LinkedIn">
-            </a>
+            	c0-0.1,0-0.2,0.1-0.3C0.2,0,0.3,0,0.4,0H11.8L11.8,0z" />
+                </svg>
+                <span>PR Inquiries: <a href="mailto:press@rentcmo.com">press@rentcmo.com</a></span>
+              </div>
+              <div class="footer__socials">
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/insta.svg" alt="Instagram">
+                </a>
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/fb.svg" alt="Facebook">
+                </a>
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/LinkedIn.svg" alt="LinkedIn">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="footer__copyrights">
-    <div class="container">
-      © 2018 Rent a CMO. All rights reserved.
-    </div>
-  </div>
-</footer>
+      <div class="footer__copyrights">
+        <div class="container">
+          © 2018 Rent a CMO. All rights reserved.
+        </div>
+      </div>
+    </footer>
 
-</div> <!-- </ .wrapper> -->
+  </div>
+  <!-- </ .wrapper> -->
 
-<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
-<script src="js/main.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>

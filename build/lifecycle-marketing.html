@@ -16,399 +16,406 @@
 <body>
   <div class="wrapper">
 
-<header class="header">
-  <div class="container">
-    <div class="header__logo">
-      <a href="/"><img src="images/logo.svg" alt=""></a>
-    </div>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <!-- TODO вставлен клас с active LI для активного пункта меню (ДЛЯ ПРИМЕРА, УБРАТЬ, ДОБАВИТЬ ЧЕРЕЗ СКРИПТ) -->
-        <li class="navigation__item active">
-          <a href="#" class="navigation__link navigation__link_with-submenu">Capabilities</a>
-          <div class="navigation__submenu">
-            <ul class="navigation__submenu-list">
-              <li><a href="startup-accelerator.html">Startup accelerator</a></li>
-              <li><a href="creative-development.html">Creative & Development</a></li>
-              <li><a href="digital-transformation.html">Digital Transformation</a></li>
-              <li><a href="lifecycle-marketing.html">Lifecycle Marketing</a></li>
-              <li><a href="paid-media.html">Paid Media</a></li>
-              <li><a href="sales-enablement.html">Sales Enablement</a></li>
-              <!-- TODO Добавить ссылку на страницу -->
-              <li><a href="seo-optimization.html">SEO Optimization</a></li>
-              <!-- TODO вставлен класс с active ссылке для активной (ДЛЯ ПРИМЕРА, УБРАТЬ, ДОБАВИТЬ ЧЕРЕЗ СКРИПТ) -->
-              <li><a href="reporting-and-analytics.html" class="active">Reporting & Analytics</a></li>
-            </ul>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <a href="/">
+            <img src="images/logo.svg" alt="">
+          </a>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <!-- TODO вставлен клас с active LI для активного пункта меню (ДЛЯ ПРИМЕРА, УБРАТЬ, ДОБАВИТЬ ЧЕРЕЗ СКРИПТ) -->
+            <li class="navigation__item active">
+              <a href="#" class="navigation__link navigation__link_with-submenu">Capabilities</a>
+              <div class="navigation__submenu">
+                <ul class="navigation__submenu-list">
+                  <li><a href="startup-accelerator.html">Startup accelerator</a>
+                  </li>
+                  <li><a href="creative-development.html">Creative & Development</a>
+                  </li>
+                  <li><a href="digital-transformation.html">Digital Transformation</a>
+                  </li>
+                  <li><a href="lifecycle-marketing.html">Lifecycle Marketing</a>
+                  </li>
+                  <li><a href="paid-media.html">Paid Media</a>
+                  </li>
+                  <li><a href="sales-enablement.html">Sales Enablement</a>
+                  </li>
+                  <!-- TODO Добавить ссылку на страницу -->
+                  <li><a href="seo-optimization.html">SEO Optimization</a>
+                  </li>
+                  <!-- TODO вставлен класс с active ссылке для активной (ДЛЯ ПРИМЕРА, УБРАТЬ, ДОБАВИТЬ ЧЕРЕЗ СКРИПТ) -->
+                  <li><a href="reporting-and-analytics.html" class="active">Reporting & Analytics</a>
+                  </li>
+                </ul>
 
-            <div class="navigation__submenu-image">
-              <img src="https://via.placeholder.com/262x150/fff.png/ccc" alt="">
-            </div>
+                <div class="navigation__submenu-image">
+                  <img src="https://via.placeholder.com/262x150/fff.png/ccc" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="navigation__item">
+              <a href="industries.html" class="navigation__link">Industries</a>
+            </li>
+            <li class="navigation__item">
+              <a href="rent-vs-buy.html" class="navigation__link">Rent vs Buy</a>
+            </li>
+            <li class="navigation__item">
+              <a href="meet-the-team.html" class="navigation__link">Meet the Team</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link navigation__link_big-padding">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__links">
+          <div class="header__link-mobile header__link-mobile--share">
+            <a href="#">
+              <svg data-name="Layer 1 copy 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.37 14.93">
+                <path d="M16.38 7.42L9.57 0v4.42H8.14A8.12 8.12 0 0 0 0 12.57v2.36l.64-.7a11.53 11.53 0 0 1 8.5-3.81h.41v4.5z" fill="#fff" />
+              </svg>
+            </a>
           </div>
-        </li>
-        <li class="navigation__item">
-          <a href="industries.html" class="navigation__link">Industries</a>
-        </li>
-        <li class="navigation__item">
-          <a href="rent-vs-buy.html" class="navigation__link">Rent vs Buy</a>
-        </li>
-        <li class="navigation__item">
-          <a href="meet-the-team.html" class="navigation__link">Meet the Team</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link navigation__link_big-padding">Blog</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header__links">
-      <div class="header__link-mobile header__link-mobile--share">
-        <a href="#">
-          <svg data-name="Layer 1 copy 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.37 14.93">
-            <path d="M16.38 7.42L9.57 0v4.42H8.14A8.12 8.12 0 0 0 0 12.57v2.36l.64-.7a11.53 11.53 0 0 1 8.5-3.81h.41v4.5z" fill="#fff" /></svg>
-        </a>
-      </div>
 
-      <div class="header__link-mobile header__link-mobile--email contacts__email">
-        <a href="mailto:press@rentcmo.com">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.87 13.41">
-            <path d="M17.89 11.17a2.21 2.21 0 0 1-.29 1.07l-5.65-6.31 5.58-4.88a2.22 2.22 0 0 1 .36 1.19v8.94zM8.94 7.08l7.77-6.8A2.21 2.21 0 0 0 15.65 0H2.24a2.2 2.2 0 0 0-1.06.28zm2.17-.42l-1.8 1.57a.56.56 0 0 1-.74 0l-1.8-1.57-5.71 6.4a2.21 2.21 0 0 0 1.18.34h13.4a2.21 2.21 0 0 0 1.18-.34zM.35 1.05A2.22 2.22 0 0 0 0 2.24v8.94a2.21 2.21 0 0 0 .29 1.07l5.6-6.32z"
+          <div class="header__link-mobile header__link-mobile--email contacts__email">
+            <a href="mailto:press@rentcmo.com">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.87 13.41">
+                <path d="M17.89 11.17a2.21 2.21 0 0 1-.29 1.07l-5.65-6.31 5.58-4.88a2.22 2.22 0 0 1 .36 1.19v8.94zM8.94 7.08l7.77-6.8A2.21 2.21 0 0 0 15.65 0H2.24a2.2 2.2 0 0 0-1.06.28zm2.17-.42l-1.8 1.57a.56.56 0 0 1-.74 0l-1.8-1.57-5.71 6.4a2.21 2.21 0 0 0 1.18.34h13.4a2.21 2.21 0 0 0 1.18-.34zM.35 1.05A2.22 2.22 0 0 0 0 2.24v8.94a2.21 2.21 0 0 0 .29 1.07l5.6-6.32z"
                 fill="#fff" />
-          </svg>
-        </a>
-      </div>
+              </svg>
+            </a>
+          </div>
 
-      <div class="header__link-mobile header__link-mobile--phone contacts__phone">
-        <a href="tel:18666736826">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09">
-            <path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z"
+          <div class="header__link-mobile header__link-mobile--phone contacts__phone">
+            <a href="tel:18666736826">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09">
+                <path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z"
                 fill="#fff" />
-          </svg>
-          <span>
+              </svg>
+              <span>
             1-866-6-RENT-CMO (1-866-673-6826)
           </span>
-        </a>
+            </a>
+          </div>
+
+          <a href="#" class="header__nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18.5">
+              <path d="M0 0h22v3.5H0zm0 7.5h22V11H0zM0 15h22v3.5H0z" fill="#3e75ba" />
+            </svg>
+          </a>
+        </div>
       </div>
-
-      <a href="#" class="header__nav-link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18.5">
-          <path d="M0 0h22v3.5H0zm0 7.5h22V11H0zM0 15h22v3.5H0z" fill="#3e75ba" />
-        </svg>
-      </a>
-    </div>
-  </div>
-</header>
+    </header>
 
 
-<section class="intro intro_internal-page">
-  <div class="container">
-    <div class="breadcrumb">
-      <a href="index.html" class="breadcrumb__link">Home</a>
-      <span class="breadcrumb__divider">/</span>
-      <!-- TODO убрать Capabilities -->
-      <span class="breadcrumb__link">Lifecycle Marketing</span>
-    </div>
-    <div class="intro__wrap intro__wrap_flex intro__wrap_lifecycle">
-      <div class="intro__text intro__text_max-width-50">
-        <h1>
+    <section class="intro intro_internal-page">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html" class="breadcrumb__link">Home</a>
+          <span class="breadcrumb__divider">/</span>
+          <!-- TODO убрать Capabilities -->
+          <span class="breadcrumb__link">Lifecycle Marketing</span>
+        </div>
+        <div class="intro__wrap intro__wrap_flex intro__wrap_lifecycle">
+          <div class="intro__text intro__text_max-width-50">
+            <h1>
           We turn leads into customers&nbsp;—<br />
           and customers into the loudest
           cheerleaders for your products<br />and services
         </h1>
 
-        <div class="subscribe subscribe_internal">
-          <form action="">
-            <div class="subscribe__text">Start wowing your users every step of the journey</div>
-            <div class="subscribe__container">
-              <div class="subscribe__group subscribe__group_big">
-                <input type="email" class="form__input" placeholder="Enter your work email here">
-              </div>
-              <div class="subscribe__group">
-                <a href="#contactForm" class="btn btn--success">Contact me</a>
-              </div>
+            <div class="subscribe subscribe_internal">
+              <form action="">
+                <div class="subscribe__text">Start wowing your users every step of the journey</div>
+                <div class="subscribe__container">
+                  <div class="subscribe__group subscribe__group_big">
+                    <input type="email" class="form__input" placeholder="Enter your work email here">
+                  </div>
+                  <div class="subscribe__group">
+                    <a href="#contactForm" class="btn btn--success">Contact me</a>
+                  </div>
+                </div>
+              </form>
             </div>
-          </form>
+          </div>
+
+          <div class="intro__image intro__image--lifecycle">
+            <!-- TODO изменить название картинки + alt -->
+            <img src="images/lifecycle/leads-into-customers-cheerleaders.svg" alt="Leads into customers cheerleaders">
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="intro__image intro__image--lifecycle">
-        <!-- TODO изменить название картинки + alt -->
-        <img src="images/lifecycle/leads-into-customers-cheerleaders.svg" alt="Leads into customers cheerleaders">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="text-section text-section_gray-bg text-section_lifecycle">
-  <div class="container">
-    <h2>
+    <section class="text-section text-section_gray-bg text-section_lifecycle">
+      <div class="container">
+        <h2>
       We’ve run thousands of tests and invested 31,000 hours into the science
       behind lifecycle marketing.
     </h2>
-    <h3>
+        <h3>
       We can see patterns. Heck, we can spot profitability and growth problems<br />
       before they even become problems.
     </h3>
-    <p>
-      We know how people find out about subscription products and services,
-      and how they make decisions to buy, use, renew, and share with friends.
-      Use our knowledge to catapult sales, adoption, usage, renewals, MRR and
-      ARPA.
-    </p>
-  </div>
-</section>
+        <p>
+          We know how people find out about subscription products and services, and how they make decisions to buy, use, renew, and share with friends. Use our knowledge to catapult sales, adoption, usage, renewals, MRR and ARPA.
+        </p>
+      </div>
+    </section>
 
-<section class="growth growth_without-title">
-  <div class="container">
-    <div class="growth__container growth__container_margin-bottom-0">
-      <div class="descr-block descr-block_alt">
-        <div class="descr-block__img">
-          <!-- TODO изменить название картинки + alt -->
-          <img src="images/lifecycle/automated-email-lead-nurture.svg" alt="Automated Email Lead Nurture">
-        </div>
-        <div class="descr-block__content">
-          <h4>
+    <section class="growth growth_without-title">
+      <div class="container">
+        <div class="growth__container growth__container_margin-bottom-0">
+          <div class="descr-block descr-block_alt">
+            <div class="descr-block__img">
+              <!-- TODO изменить название картинки + alt -->
+              <img src="images/lifecycle/automated-email-lead-nurture.svg" alt="Automated Email Lead Nurture">
+            </div>
+            <div class="descr-block__content">
+              <h4>
             Automated Email Lead Nurture
           </h4>
-          <p>
-            Send the right message at exactly the right time with
-            highly - personalized email nurture campaigns that convert more
-            cold leads into hot leads ... and get your phones ringing.
-          </p>
+              <p>
+                <!-- TODO поменять текст -->
+                Send the right message at exactly the right time with highly&#8209;personalized email nurture campaigns that convert more cold leads into hot leads ... and get your phones ringing.
+              </p>
+            </div>
+          </div>
+          <div class="descr-block descr-block_alt">
+            <div class="descr-block__img">
+              <!-- TODO изменить название картинки + alt -->
+              <img src="images/lifecycle/automated-customer-onboarding.svg" alt="Automated customer onboarding">
+            </div>
+            <div class="descr-block__content">
+              <h4>Automated Email & In-App Customer Onboarding</h4>
+              <p>
+                <!-- TODO поменять текст -->
+                Make sure first-time clients engage with your product or service immediately, and keep using it with 30&#8209;60&#8209;90 day automated onboarding strategies, including emails, in-app guided tours, and training videos.
+              </p>
+            </div>
+          </div>
+          <div class="descr-block descr-block_alt">
+            <div class="descr-block__img">
+              <!-- TODO изменить название картинки + alt -->
+              <img src="images/lifecycle/boost-usage.svg" alt="Boost Usage">
+            </div>
+            <div class="descr-block__content">
+              <h4>Automated Email Nurture to Boost Usage</h4>
+              <p>
+                Engage, engage, engage! We make sure your customers continue to use your product or service well after the initial onboarding period, with special announcements and engaging emails to keep them interested and active.
+              </p>
+            </div>
+          </div>
+          <div class="descr-block descr-block_alt">
+            <div class="descr-block__img descr-block__img_width-443">
+              <!-- TODO изменить название картинки + alt -->
+              <img src="images/growth/upsell-cross-sell.svg" alt="Automated Email & In-app UX Upsell Strategies">
+            </div>
+            <div class="descr-block__content">
+              <h4>Automated Email & In-app UX Upsell Strategies</h4>
+              <p>
+                <!-- TODO поменять текст -->
+                We know what it takes to get customers to buy ... and to spend more. Generate more revenue with our time&#8209;tested, proven behavioral science upsell and cross-sell strategies.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="descr-block descr-block_alt">
-        <div class="descr-block__img">
-          <!-- TODO изменить название картинки + alt -->
-          <img src="images/lifecycle/automated-customer-onboarding.svg" alt="Automated customer onboarding">
-        </div>
-        <div class="descr-block__content">
-          <h4>Automated Email & In-App Customer Onboarding</h4>
-          <p>
-            Make sure first-time clients engage with your product or service
-            immediately, and keep using it with 30-60-90 day automated onboarding
-            strategies, including emails, in-app guided tours, and training videos.
-          </p>
-        </div>
-      </div>
-      <div class="descr-block descr-block_alt">
-        <div class="descr-block__img">
-          <!-- TODO изменить название картинки + alt -->
-          <img src="images/lifecycle/boost-usage.svg" alt="Boost Usage">
-        </div>
-        <div class="descr-block__content">
-          <h4>Automated Email Nurture to Boost Usage</h4>
-          <p>
-            Engage, engage, engage! We make sure your customers continue to use
-            your product or service well after the initial onboarding period,
-            with special announcements and engaging emails to keep them interested
-            and active.
-          </p>
-        </div>
-      </div>
-      <div class="descr-block descr-block_alt">
-        <div class="descr-block__img descr-block__img_width-443">
-          <!-- TODO изменить название картинки + alt -->
-          <img src="images/growth/upsell-cross-sell.svg" alt="Automated Email & In-app UX Upsell Strategies">
-        </div>
-        <div class="descr-block__content">
-          <h4>Automated Email & In-app UX Upsell Strategies</h4>
-          <p>
-            We know what it takes to get customers to buy ... and to spend more.
-            Generate more revenue with our time-tested, proven behavioral science
-            upsell and cross-sell strategies.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- TODO убрать ID -->
-<section  class="contact-us">
-  <div class="container">
-    <h2>How solid is your customer base, really? </h2>
-    <div class="contact-us__container">
-      <div class="contact-us__content contact-us__content_padding-top-0">
-        <h3>
+    <!-- TODO убрать ID -->
+    <section class="contact-us">
+      <div class="container">
+        <h2>How solid is your customer base, really? </h2>
+        <div class="contact-us__container">
+          <div class="contact-us__content contact-us__content_padding-top-0">
+            <h3>
           Too many subscription-based businesses have failed because they’ve
           neglected to properly monetize their existing customer base.
         </h3>
-        <p>
-          Find out right now how to upsell and cross-sell your way into mega profits.
-        </p>
-      </div>
-      <!-- TODO добавить ID -->
-      <div id="contactForm" class="contact-us__form">
-        <form action="" class="contact-form form">
-          <div class="form__item">
-            <label for="theme" class="form__label">I’d like to chat about:</label>
-            <select class="select form__select" id="theme" name="theme">
-              <option value="general-inquiry">General inquiry</option>
-            </select>
+            <p>
+              Find out right now how to upsell and cross-sell your way into mega profits.
+            </p>
           </div>
-          <div class="form__item">
-            <input type="text" id="name" class="form__input" placeholder="Name:" required>
+          <!-- TODO добавить ID -->
+          <div id="contactForm" class="contact-us__form">
+            <form action="" class="contact-form form">
+              <div class="form__item">
+                <label for="theme" class="form__label">I’d like to chat about:</label>
+                <select class="select form__select" id="theme" name="theme">
+                  <option value="general-inquiry">General inquiry</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <input type="text" id="name" class="form__input" placeholder="Name:" required>
+              </div>
+              <div class="form__group form-grid">
+                <div class="form__item form-grid__col">
+                  <input type="text" class="form__input" id="company-mail" placeholder="Company email:" required>
+                </div>
+                <div class="form__item form-grid__col">
+                  <input type="tel" class="form__input" id="tel" placeholder="Phone number" required>
+                </div>
+              </div>
+              <div class="form__item">
+                <input type="text" id="job-title" class="form__input" placeholder="Job title:" required>
+              </div>
+              <div class="form__item">
+                <label for="budget" class="form__label">Monthly marketing budget:</label>
+                <select class="select form__select" id="budget" name="budget">
+                  <option value="general-inquiry">$0 to $5,000</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <input type="url" id="website" class="form__input" placeholder="Website URL" required>
+              </div>
+              <div class="form__item">
+                <label for="currently-work" class="form__label">You are currently...</label>
+                <select class="select form__select" id="currently-work" name="currently-work">
+                  <option value="general-inquiry">Working with an agency</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <textarea class="form__textarea" placeholder="Tell us a little bit about your company and major problem areas which you would like to improve..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--success">Contact me</button>
+            </form>
           </div>
-          <div class="form__group form-grid">
-            <div class="form__item form-grid__col">
-              <input type="text" class="form__input" id="company-mail" placeholder="Company email:" required>
-            </div>
-            <div class="form__item form-grid__col">
-              <input type="tel" class="form__input" id="tel" placeholder="Phone number" required>
-            </div>
-          </div>
-          <div class="form__item">
-            <input type="text" id="job-title" class="form__input" placeholder="Job title:" required>
-          </div>
-          <div class="form__item">
-            <label for="budget" class="form__label">Monthly marketing budget:</label>
-            <select class="select form__select" id="budget" name="budget">
-              <option value="general-inquiry">$0 to $5,000</option>
-            </select>
-          </div>
-          <div class="form__item">
-            <input type="url" id="website" class="form__input" placeholder="Website URL" required>
-          </div>
-          <div class="form__item">
-            <label for="currently-work" class="form__label">You are currently... </label>
-            <select class="select form__select" id="currently-work" name="currently-work">
-              <option value="general-inquiry">Working with an agency</option>
-            </select>
-          </div>
-          <div class="form__item">
-            <textarea class="form__textarea" placeholder="Tell us a little bit about your company and major problem areas which you would like to improve..."></textarea>
-          </div>
-          <button type="submit" class="btn btn--success">Contact me</button>
-        </form>
-      </div>
-    </div>
-    <!-- TODO добавить блок -->
-    <div class="link-btn-container">
-      <div class="link-btn">
-        <span class="link-btn__title">Next service</span>
-        <a href="sales-enablement.html" class="link-btn__link">
+        </div>
+        <!-- TODO добавить блок -->
+        <div class="link-btn-container">
+          <div class="link-btn">
+            <span class="link-btn__title">Next service</span>
+            <a href="sales-enablement.html" class="link-btn__link">
           Sales Enablement
         </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="footer__main">
-    <div class="container footer__container">
-      <div class="footer__col footer__col_logo">
-        <div class="footer__logo">
-          <a href="/"><img src="images/logo.svg" alt=""></a>
+          </div>
         </div>
       </div>
-      <div class="footer__mobile-container">
-        <div class="footer__col">
-          <h4>Capabilities</h4>
-          <ul class="footer__list">
-            <a href="startup-accelerator.html" class="footer__link">
+    </section>
+
+
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="container footer__container">
+          <div class="footer__col footer__col_logo">
+            <div class="footer__logo">
+              <a href="/">
+                <img src="images/logo.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="footer__mobile-container">
+            <div class="footer__col">
+              <h4>Capabilities</h4>
+              <ul class="footer__list">
+                <a href="startup-accelerator.html" class="footer__link">
               Startup accelerator
             </a>
-            <a href="digital-transformation.html" class="footer__link">
+                <a href="digital-transformation.html" class="footer__link">
               Digital Transformation
             </a>
-            <a href="paid-media.html" class="footer__link">
+                <a href="paid-media.html" class="footer__link">
               Paid Media
             </a>
-            <a href="" class="footer__link">
+                <a href="" class="footer__link">
               SEO Optimization
             </a>
-            <a href="creative-development.html" class="footer__link">
+                <a href="creative-development.html" class="footer__link">
               Creative & Development
             </a>
-            <a href="lifecycle-marketing.html" class="footer__link">
+                <a href="lifecycle-marketing.html" class="footer__link">
               Lifecycle Marketing
             </a>
-            <a href="sales-enablement.html" class="footer__link">
+                <a href="sales-enablement.html" class="footer__link">
               Sales Enablement
             </a>
-            <a href="reporting-and-analytics.html" class="footer__link">
+                <a href="reporting-and-analytics.html" class="footer__link">
               Reporting & Analytics
             </a>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Company</h4>
-          <ul class="footer__list">
-            <a href="industries.html" class="footer__link">
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4>Company</h4>
+              <ul class="footer__list">
+                <a href="industries.html" class="footer__link">
               Industries
             </a>
-            <a href="rent-vs-buy.html" class="footer__link">
+                <a href="rent-vs-buy.html" class="footer__link">
               Rent vs. Buy
             </a>
-            <a href="meet-the-team.html" class="footer__link">
+                <a href="meet-the-team.html" class="footer__link">
               Meet the Team
             </a>
-            <a href="" class="footer__link">
+                <a href="" class="footer__link">
               Blog
             </a>
-            <a href="" class="footer__link">
+                <a href="" class="footer__link">
               Sitemap
             </a>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__col footer__col_bordered">
-        <h4>Get in Touch</h4>
-        <div class="footer__contacts contacts">
-          <div class="footer__contact footer__contact_tel contacts__phone">
-            <a href="tel:18666736826">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09"><path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z" fill="#fff"/></svg>
-              <span>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col_bordered">
+            <h4>Get in Touch</h4>
+            <div class="footer__contacts contacts">
+              <div class="footer__contact footer__contact_tel contacts__phone">
+                <a href="tel:18666736826">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09">
+                    <path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z"
+                    fill="#fff" />
+                  </svg>
+                  <span>
                 1-866-6-RENT-CMO (1-866-673-6826)
               </span>
-            </a>
-          </div>
-          <button class="btn">Contact us</button>
-          <div class="footer__contact footer__contact_mail contacts__email">
-            <?xml version="1.0" encoding="utf-8"?>
-            <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 viewBox="0 0 12.2 9.8" style="enable-background:new 0 0 12.2 9.8;" xml:space="preserve">
-            <style type="text/css">
-            	.st0{fill:#3E75BA;}
-            </style>
-            <path id="Forma_1" class="st0" d="M0.2,8.2C0.2,8.3,0.1,8.3,0.2,8.2l-0.1,0C0,8.3,0,8.2,0,8.2V3.1C0,3,0,3,0.1,3c0,0,0.1,0,0.1,0
+                </a>
+              </div>
+              <button class="btn">Contact us</button>
+              <div class="footer__contact footer__contact_mail contacts__email">
+                <?xml version="1.0" encoding="utf-8" ?>
+                <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12.2 9.8" style="enable-background:new 0 0 12.2 9.8;" xml:space="preserve">
+                  <style type="text/css">
+                    .st0{fill:#3E75BA;}
+                  </style>
+                  <path id="Forma_1" class="st0" d="M0.2,8.2C0.2,8.3,0.1,8.3,0.2,8.2l-0.1,0C0,8.3,0,8.2,0,8.2V3.1C0,3,0,3,0.1,3c0,0,0.1,0,0.1,0
             	l3.5,2c0,0,0.1,0,0.1,0.1c0,0,0,0.1,0,0.1L0.2,8.2z M11.8,9.6c0,0,0,0.1,0,0.1c0,0-0.1,0.1-0.1,0.1H0.4c-0.1,0-0.1,0-0.2-0.1
             	c0,0-0.1,0-0.1-0.1c0,0,0-0.1,0-0.1l4.4-4c0,0,0.1,0,0.1,0l1.2,0.6c0.2,0.1,0.3,0.1,0.5,0l1.3-0.8c0.1,0,0.1,0,0.1,0L11.8,9.6z
             	 M12.2,2.9C12.2,2.9,12.2,3,12.2,2.9l0.1,5.5c0,0,0,0.1-0.1,0.1c0,0,0,0,0,0c0,0-0.1,0-0.1,0L8.8,5c0,0,0-0.1,0-0.1c0,0,0-0.1,0-0.1
             	L12.2,2.9C12.1,2.9,12.2,2.9,12.2,2.9C12.2,2.9,12.2,2.9,12.2,2.9L12.2,2.9z M11.8,0c0.1,0,0.2,0,0.3,0.1c0.1,0.1,0.1,0.2,0.1,0.3
             	v1.2c0,0,0,0.1-0.1,0.1c0,0,0,0,0,0c-0.1,0-0.1,0-0.1,0.1L6.2,5.1c0,0,0,0-0.1,0c0,0,0,0-0.1,0l-6-3.4C0,1.8,0,1.7,0,1.7V0.4
-            	c0-0.1,0-0.2,0.1-0.3C0.2,0,0.3,0,0.4,0H11.8L11.8,0z"/>
-            </svg>
-            <span>PR Inquiries: <a href="mailto:press@rentcmo.com">press@rentcmo.com</a></span>
-          </div>
-          <div class="footer__socials">
-            <a href="" class="footer__social-link">
-              <img src="images/social-icons/insta.svg" alt="Instagram">
-            </a>
-            <a href="" class="footer__social-link">
-              <img src="images/social-icons/fb.svg" alt="Facebook">
-            </a>
-            <a href="" class="footer__social-link">
-              <img src="images/social-icons/LinkedIn.svg" alt="LinkedIn">
-            </a>
+            	c0-0.1,0-0.2,0.1-0.3C0.2,0,0.3,0,0.4,0H11.8L11.8,0z" />
+                </svg>
+                <span>PR Inquiries: <a href="mailto:press@rentcmo.com">press@rentcmo.com</a></span>
+              </div>
+              <div class="footer__socials">
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/insta.svg" alt="Instagram">
+                </a>
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/fb.svg" alt="Facebook">
+                </a>
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/LinkedIn.svg" alt="LinkedIn">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="footer__copyrights">
-    <div class="container">
-      © 2018 Rent a CMO. All rights reserved.
-    </div>
-  </div>
-</footer>
+      <div class="footer__copyrights">
+        <div class="container">
+          © 2018 Rent a CMO. All rights reserved.
+        </div>
+      </div>
+    </footer>
 
-</div> <!-- </ .wrapper> -->
+  </div>
+  <!-- </ .wrapper> -->
 
-<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
-<script src="js/main.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
