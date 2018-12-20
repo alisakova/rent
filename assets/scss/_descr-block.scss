@@ -43,6 +43,9 @@
       @media (max-width: 900px) {
         max-width: 33%;
         min-width: 33%;
+        &_width-260 {
+          min-width: 23%;
+        }
       }
       @media (max-width: 600px) {
         max-width: none;
