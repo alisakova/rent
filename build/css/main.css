@@ -2457,11 +2457,11 @@ textarea:focus::-webkit-input-placeholder {
 .descr-block h4 {
   font-size: 1.125rem
 }
-.descr-block:nth-child(even):not(.descr-block_alt_reverse) {
+.descr-block:nth-child(even) {
   flex-direction: row-reverse;
   margin-top: -5rem
 }
-.descr-block:nth-child(even):not(.descr-block_alt_reverse) .descr-block__content {
+.descr-block:nth-child(even) .descr-block__content {
   margin-top: 7.5rem
 }
 .descr-block_alt:nth-child(even),
@@ -2489,10 +2489,10 @@ textarea:focus::-webkit-input-placeholder {
     margin-bottom: 5px;
     font-size: 1.14286rem
   }
-  .descr-block:nth-child(even):not(.descr-block_alt_reverse) .descr-block__content {
+  .descr-block:nth-child(even) .descr-block__content {
     margin-top: 0
   }
-  .descr-block:nth-child(even):not(.descr-block_alt_reverse) {
+  .descr-block:nth-child(even) {
     margin-top: 0;
     flex-direction: column-reverse
   }
@@ -4141,6 +4141,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 @media (max-width:700px) {
   .descr-section__img {
+    min-width: 100%;
     margin-top: 2.14286rem
   }
 }

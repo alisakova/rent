@@ -10,7 +10,7 @@
       font-size: rem(16, 14);
     }
   }
-  &:nth-child(even):not(.descr-block_alt_reverse) {
+  &:nth-child(even) {
     flex-direction: row-reverse;
     margin-top: rem(-80);
     .descr-block__content {
