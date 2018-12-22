@@ -1,3 +1,11 @@
 .article-list {
   margin-top: rem(17);
 }
+
+.article-list__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: rem(20);
+}

@@ -1,0 +1,41 @@
+.pagination-container {
+  margin-top: rem(72);
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  .btn {
+    border: {
+      width: 2px;
+      color: $second-blue;
+    }
+    padding: {
+      left: rem(137);
+      right: rem(137);
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  border-radius: $global-radius;
+  border: 2px solid $second-blue;
+  color: $second-blue;
+}
+
+.pagination__page {
+  &:not(:last-child) {
+    border-right: 2px solid $second-blue;
+  }
+}
+
+.pagination__link {
+  padding: rem(23 19);
+  height: rem(48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &_active {
+    color: #fff;
+    background: $second-blue;
+  }
+}

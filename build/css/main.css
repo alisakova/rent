@@ -4,11 +4,6 @@ details,
 main {
   display: block
 }
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible
-}
 code,
 kbd,
 pre,
@@ -819,7 +814,8 @@ body {
 .container.flex {
   display: flex;
   justify-content: flex-end;
-  padding-top: 5.875rem
+  padding: 5.875rem 0 3.875rem;
+  border-bottom: 1px solid #c4c4c4
 }
 .main {
   max-width: 70%;
@@ -911,6 +907,13 @@ button:focus {
 }
 .font-weight-500 {
   font-weight: 500
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border: 1px solid #d0d0d0;
+  margin: 0
 }
 @media (max-width:1080px) {
   html {
@@ -5017,12 +5020,19 @@ textarea:focus::-webkit-input-placeholder {
 .categories__link {
   color: #3e75ba
 }
+.article {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start
+}
 .article h1 {
   font-size: 1.375rem;
   font-weight: 400;
+  color: #000;
   margin-bottom: .625rem
 }
 .article_main {
+  display: block;
   border-bottom: 1px solid #d0d0d0;
   padding-bottom: 1.75rem;
   margin-bottom: 1.5rem
@@ -5032,7 +5042,32 @@ textarea:focus::-webkit-input-placeholder {
   margin-bottom: 0
 }
 .article_small {
-  width: 45%
+  display: block;
+  width: 47.8%
+}
+.article_small p {
+  margin-bottom: 2.0625rem
+}
+.article_default .article__content {
+  margin-top: .625rem;
+  margin-left: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+.article_default .article__img {
+  min-width: 47.8%;
+  max-width: 47.8%;
+  margin-bottom: 0
+}
+.article_default .article__info,
+.article_default p {
+  margin-bottom: 0
+}
+.article_default:not(:last-child) {
+  padding-bottom: 1.875rem;
+  margin-bottom: 1.5625rem;
+  border-bottom: 1px solid #d0d0d0
 }
 .article__img {
   width: 100%;
@@ -5057,10 +5092,49 @@ textarea:focus::-webkit-input-placeholder {
 .article-list {
   margin-top: 1.0625rem
 }
+.article-list__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: 1.25rem
+}
 .tag {
   text-transform: uppercase;
   background: #3e75ba;
   color: #fff;
   padding: .375rem .5rem .3125rem;
   border-radius: 3px
+}
+.pagination-container {
+  margin-top: 4.5rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between
+}
+.pagination-container .btn {
+  border-width: 2px;
+  border-color: #3e75ba;
+  padding-left: 8.5625rem;
+  padding-right: 8.5625rem
+}
+.pagination {
+  display: flex;
+  border-radius: .3125rem;
+  border: 2px solid #3e75ba;
+  color: #3e75ba
+}
+.pagination__page:not(:last-child) {
+  border-right: 2px solid #3e75ba
+}
+.pagination__link {
+  padding: 1.4375rem 1.1875rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.pagination__link_active {
+  color: #fff;
+  background: #3e75ba
 }
