@@ -106,68 +106,171 @@
     </header>
 
 
-    <div class="container flex">
-      <main class="main">
-        <div class="breadcrumb">
-          <a href="index.html" class="breadcrumb__link">Home</a>
-          <span class="breadcrumb__divider">/</span>
-          <span class="breadcrumb__link">Blog</span>
-        </div>
-        <section class="article-list">
-          <div class="article-header">
-            <div class="article-header__user">
-              <button class="article-header__sign"></button>
+
+    <div class="breadcrumb breadcrumb_gray">
+      <div class="container">
+        <a href="index.html" class="breadcrumb__link">Home</a>
+        <span class="breadcrumb__divider">/</span>
+        <a href="blog.html" class="breadcrumb__link">Blog</a>
+        <span class="breadcrumb__divider">/</span>
+        <span class="breadcrumb__link">What is Lorem Ipsum?</span>
+      </div>
+    </div>
+    <article class="article-main">
+      <div class="container">
+        <div class="article-main__header">
+          <div class="article-main__header-img">
+            <img src="images/article/article01.jpg" alt="">
+          </div>
+          <div class="article-main__info info">
+            <div class="info__text-info">
+              <div class="info__item info__img">
+                <img src="images/meet-the-team/lyamen-photo.png" alt="Lyamen Savy">
+              </div>
+              <span class="info__item info__author font-weight-500">Lyamen Savy</span>
+              <span class="info__item info__date">Oct 10, 2018</span>
+              <span class="info__item info__views">
+            <img src="images/blog/views.svg" alt="">
+            156
+          </span>
             </div>
-            <div class="article-header__search search-mobile">
-              <button class="search-mobile__btn"></button>
-              <input type="text" class="search__input" placeholder="Search this blog">
-            </div>
-            <div class="article-header__select">
-              <select class="select">
-                <option value="general-inquiry">All articles</option>
-              </select>
+            <div class="info__tags">
+              <span class="info__item info__tag tag">marketing</span>
             </div>
           </div>
-          <article class="article article_main">
-            <div class="article__img article__img_main">
+        </div>
+        <h1>What is Lorem Ipsum?</h1>
+        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <div class="article-main__article-img">
+          <img src="images/article/article02.jpg" alt="">
+        </div>
+        <hr>
+        <p class="italic">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <hr>
+        <div class="article-main__list">
+          <h2>Lorem Ipsum</h2>
+          <ul>
+            <li>Lorem Ipsum is simply dummy</li>
+            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+            <li>Lorem Ipsum is simply dummy text of the printing</li>
+            <li>Lorem Ipsum is simply dummy</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <section class="comments">
+      <div class="container">
+        <h2>Comments</h2>
+        <form class="form comments-form">
+          <div class="form__item form__item_margin-bottom-5">
+            <textarea class="form__textarea" maxlength="2000" placeholder="Share your thoughts"></textarea>
+            <div class="form__counter">2000 symbols remain</div>
+          </div>
+          <div class="comments-form__inputs-container">
+            <div class="form__item">
+              <input type="text" id="name" class="form__input" placeholder="Name*" required>
+            </div>
+            <div class="form__item">
+              <input type="text" class="form__input" id="company-mail" placeholder="Email*" required>
+            </div>
+            <div class="form__item">
+              <input type="url" id="website" class="form__input" placeholder="Website">
+            </div>
+          </div>
+          <div class="comments-form__container">
+            <div class="form__item">
+              <label for="accept" class="form__label checkbox">Notify me of follow-up comments by email
+                <input id="accept" type="checkbox">
+                <span class="checkbox__checkmark"></span>
+              </label>
+            </div>
+            <div class="form__item">
+              <label for="accept-1" class="form__label checkbox">Notify me of new posts by email
+                <input id="accept-1" type="checkbox">
+                <span class="checkbox__checkmark"></span>
+              </label>
+            </div>
+            <button class="btn btn--success">Comment</button>
+          </div>
+        </form>
+        <div class="comments__item comments-item">
+          <div class="commets-item__container">
+            <div class="comments-item__logo">
               <img src="" alt="">
             </div>
-            <div class="article__content">
-              <div class="info">
-                <span class="info__item info__tag tag">marketing</span>
-                <span class="info__item info__date">Oct 10, 2018</span>
-                <span class="info__item info__views"><img src="images/blog/views.svg" alt="">156</span>
+            <div class="comments-item__content">
+              <div class="comments-item__header">
+                <span class="comments-item__author">John B</span>
+                <span class="comments-item__date">10 oct 2018</span>
               </div>
-              <a href="article.html">
-                <h1>What is Lorem Ipsum?</h1>
-              </a>
-            </div>
-          </article>
-          <div class="article-list__banner banner">banner</div>
-          <button class="btn btn--success">Sign up for newsletter</button>
-          <article class="article article_default article_gray">
-            <div class="article__alt-img">
-              <img src="images/blog/lyamen.png" alt="Lyamen Savy">
-              <div>
-                <p class="font-weight-500">Lyamen Savy,</p>
-                <p>Chief Marketing Officer</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book.</p>
+              <div class="comments-item__actions">
+                <button class="comments-item__link">Reply</button>
+                <button class="comments-item__link comments-item__link_with-icon">
+                  <img src="images/blog/share.svg" alt="Share">Share
+                </button>
               </div>
             </div>
-            <div class="article__content">
-              <div class="article__text">
-                <a href="article.html">
-                  <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
-                </a>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+          </div>
+          <div class="comments__item comments-item comments-item_answer">
+            <div class="commets-item__container">
+              <div class="comments-item__logo">
+                <img src="" alt="">
               </div>
-              <div class="info">
-                <span class="info__item info__tag tag">marketing</span>
-                <span class="info__item info__date">Oct 10, 2018</span>
-                <span class="info__item info__views"><img src="images/blog/views.svg" alt="">156</span>
+              <div class="comments-item__content">
+                <div class="comments-item__header">
+                  <span class="comments-item__author">Lyamen Savy</span>
+                  <div class="comments-item__arrow">
+                    <img src="images/blog/arrow.svg" alt="">
+                  </div>
+                  <span class="comments-item__answer">John B</span>
+                  <span class="comments-item__date">10 oct 2018</span>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+                <div class="comments-item__actions">
+                  <button class="comments-item__link">Reply</button>
+                  <button class="comments-item__link comments-item__link_with-icon">
+                    <img src="images/blog/share.svg" alt="Share">Share
+                  </button>
+                </div>
               </div>
             </div>
-          </article>
-          <div class="article-list__container">
+          </div>
+        </div>
+        <div class="comments__item comments-item">
+          <div class="commets-item__container">
+            <div class="comments-item__logo">
+              <img src="" alt="">
+            </div>
+            <div class="comments-item__content">
+              <div class="comments-item__header">
+                <span class="comments-item__author">Chris</span>
+                <span class="comments-item__date">10 oct 2018</span>
+              </div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book.</p>
+              <div class="comments-item__actions">
+                <button class="comments-item__link">Reply</button>
+                <button class="comments-item__link comments-item__link_with-icon">
+                  <img src="images/blog/share.svg" alt="Share">Share
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommended">
+      <div class="container">
+        <h2>Recommended</h2>
+        <div class="article-list">
+          <div class="article-list__container article-slider">
             <article class="article article_small">
               <div class="article__img">
                 <img src="" alt="">
@@ -177,9 +280,8 @@
                   <span class="info__item info__tag tag">marketing</span>
                   <span class="info__item info__date">Oct 10, 2018</span>
                   <span class="info__item info__views">
-            <img src="images/blog/views.svg" alt="">
-            156
-          </span>
+                <img src="images/blog/views.svg" alt="">156
+              </span>
                 </div>
                 <div class="article__text">
                   <a href="article.html">
@@ -195,12 +297,11 @@
               </div>
               <div class="article__content">
                 <div class="info">
-                  <span class="info__item info__tag tag">industry news</span>
+                  <span class="info__item info__tag tag">marketing</span>
                   <span class="info__item info__date">Oct 10, 2018</span>
                   <span class="info__item info__views">
-            <img src="images/blog/views.svg" alt="">
-            156
-          </span>
+                <img src="images/blog/views.svg" alt="">156
+              </span>
                 </div>
                 <div class="article__text">
                   <a href="article.html">
@@ -211,97 +312,10 @@
               </div>
             </article>
           </div>
-          <article class="article article_default">
-            <div class="article__img">
-              <img src="" alt="">
-            </div>
-            <div class="article__content">
-              <div class="article__text">
-                <a href="article.html">
-                  <h1>What is Lorem Ipsum?</h1>
-                </a>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
-              </div>
-              <div class="info">
-                <span class="info__item info__tag tag">marketing</span>
-                <span class="info__item info__date">Oct 10, 2018</span>
-                <span class="info__item info__views"><img src="images/blog/views.svg" alt="">156</span>
-              </div>
-            </div>
-          </article>
-          <article class="article article_default">
-            <div class="article__img">
-              <img src="" alt="">
-            </div>
-            <div class="article__content">
-              <div class="article__text">
-                <a href="article.html">
-                  <h1>What is Lorem Ipsum?</h1>
-                </a>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
-              </div>
-              <div class="info">
-                <span class="info__item info__tag tag">marketing</span>
-                <span class="info__item info__date">Oct 10, 2018</span>
-                <span class="info__item info__views"><img src="images/blog/views.svg" alt="">156</span>
-              </div>
-            </div>
-          </article>
-        </section>
-        <div class="pagination-container">
-          <ul class="pagination">
-            <li class="pagination__page">
-              <a href="" class="pagination__link pagination__link_active">1</a>
-            </li>
-            <li class="pagination__page"><a href="" class="pagination__link">2</a>
-            </li>
-            <li class="pagination__page"><a href="" class="pagination__link">3</a>
-            </li>
-            <li class="pagination__page"><a href="" class="pagination__link">4</a>
-            </li>
-            <li class="pagination__page"><a href="" class="pagination__link">...</a>
-            </li>
-          </ul>
-          <button class="btn">Learn more</button>
         </div>
+      </div>
+    </section>
 
-      </main>
-      <aside class="aside">
-        <div class="aside__search search">
-          <div class="search__icon"></div>
-          <input type="text" class="search__input" placeholder="Search this blog">
-        </div>
-        <h4>Categories</h4>
-        <ul class="categories">
-          <li class="categories__item">
-            All categories
-          </li>
-          <li class="categories__item">
-            <a href="" class="categories__link">Startup</a>
-          </li>
-          <li class="categories__item">
-            <a href="" class="categories__link">Digital transformation</a>
-          </li>
-          <li class="categories__item">
-            <a href="" class="categories__link">Paid media</a>
-          </li>
-          <li class="categories__item">
-            <a href="" class="categories__link">SEO</a>
-          </li>
-          <li class="categories__item">
-            <a href="" class="categories__link">DR Creative</a>
-          </li>
-          <li class="categories__item">
-            <a href="" class="categories__link">Lifecycle marketing</a>
-          </li>
-          <li class="categories__item">
-            <a href="" class="categories__link">Sales enablement</a>
-          </li>
-        </ul>
-        <div class="aside__banner banner">banner</div>
-      </aside>
-
-    </div>
 
     <footer class="footer">
       <div class="footer__main">

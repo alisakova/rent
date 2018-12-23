@@ -12,6 +12,20 @@
       left: rem(137);
       right: rem(137);
     }
+    @media (max-width: 600px) {
+      padding: {
+        left: rem(20);
+        right: rem(20);
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    padding: {
+      left: rem($container-padding);
+      right: rem($container-padding);
+    }
+    flex-direction: column;
+    margin-top: rem(46, 14);
   }
 }
 
@@ -20,6 +34,9 @@
   border-radius: $global-radius;
   border: 2px solid $second-blue;
   color: $second-blue;
+  @media (max-width: 600px) {
+    margin: 0 auto rem(16);
+  }
 }
 
 .pagination__page {

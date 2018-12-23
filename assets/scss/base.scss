@@ -37,8 +37,15 @@ body {
   &.flex {
     display: flex;
     justify-content: flex-end;
-    padding: rem(94 0 62);
+    padding: rem(94 $container-padding 62);
     border-bottom: 1px solid #c4c4c4;
+    @media (max-width: 600px) {
+      padding: {
+        left: 0;
+        right: 0;
+        top: rem(53, 14);
+      }
+    }
   }
 }
 
@@ -46,6 +53,10 @@ body {
   max-width: 70%;
   width: 100%;
   margin-right: rem(88);
+  @media (max-width: 740px) {
+    max-width: none;
+    margin-right: 0;
+  }
 }
 
 a {
@@ -172,6 +183,10 @@ button {
 
 .font-weight-500 {
   font-weight: 500;
+}
+
+.italic {
+  font-style: italic;
 }
 
 hr {

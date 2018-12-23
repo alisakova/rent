@@ -332,6 +332,13 @@ for (i = 0; i < accordionLink.length; i++) {
   //accordionLink[i].addEventListener('click', toggleItem, false);
 }
 
+let searchBtn = document.querySelector('.search-mobile__btn');
+let searchInput = document.querySelector('.search-mobile .search__input');
+
+searchBtn.addEventListener("click", function(e) {
+  searchInput.classList.add("active");
+});
+
 $("._submit-modal").click(function(event) {
   event.preventDefault();
   $("#submit-modal").modal();
@@ -384,6 +391,15 @@ $(document).ready(function(){
       dots: true,
       adaptiveHeight: true,
       autoplay: true,
+      autoplaySpeed: 5000,
+    });
+  }
+  if (window.innerWidth < 600) {
+    $('.article-slider').slick({
+      arrows: false,
+      dots: true,
+      adaptiveHeight: true,
+      // autoplay: true,
       autoplaySpeed: 5000,
     });
   }

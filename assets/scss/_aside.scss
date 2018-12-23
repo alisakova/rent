@@ -9,20 +9,12 @@
   .btn {
     width: 100%;
   }
+  @media (max-width: 740px) {
+    display: none;
+  }
 }
 
 .aside__search {
   position: relative;
   margin-bottom: rem(28);
-}
-
-.aside__banner {
-  width: 100%;
-  height: rem(295);
-  background: $section-bg;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: rem(14);
-  margin-bottom: rem(29);
 }

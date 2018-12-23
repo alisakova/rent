@@ -9,4 +9,19 @@
   @media (max-width: 600px) {
     display: none;
   }
+  &_gray {
+    background: $section-bg;
+    padding: {
+      top: rem(82);
+      bottom: rem(18);
+    }
+    .container {
+      padding-left: rem(105);
+      @media (max-width: 800px) {
+        padding: {
+          left: rem($container-padding);
+        }
+      }
+    }
+  }
 }

@@ -53,6 +53,9 @@ input, textarea {
   @media (max-width: 600px) {
     margin-bottom: rem(20, 14);
   }
+  &_margin-bottom-5 {
+    margin-bottom: 5px;
+  }
 }
 
 .form__label {
@@ -68,4 +71,13 @@ input, textarea {
   @media (max-width: 600px) {
     font-size: rem(16, 14);
   }
+  .select2-container {
+    min-width: 100%;
+  }
+}
+
+.form__counter {
+  font-size: rem(14);
+  text-align: right;
+  margin-top: 5px;
 }

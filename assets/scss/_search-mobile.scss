@@ -1,0 +1,32 @@
+.search-mobile {
+  .search__input {
+    width: rem(17, 14);
+    background: transparent;
+    will-change: width;
+    position: relative;
+    border: none;
+    padding: 0;
+    pointer-events: none;
+    @include input-placeholder {
+      font-size: 0;
+    }
+    &.active {
+      width: 100%;
+      padding: rem(8 11 7, 14);
+      border: 1px solid $input-border-color;
+      pointer-events: auto;
+      @include input-placeholder {
+        font-size: rem(16, 14);
+      }
+    }
+  }
+}
+
+.search-mobile__btn {
+  width: 17px;
+  height: 17px;
+  background: url('../images/blog/search.svg') no-repeat center center;
+  background-size: contain;
+  position: absolute;
+
+}

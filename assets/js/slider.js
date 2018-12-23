@@ -27,6 +27,15 @@ $(document).ready(function(){
       autoplaySpeed: 5000,
     });
   }
+  if (window.innerWidth < 600) {
+    $('.article-slider').slick({
+      arrows: false,
+      dots: true,
+      adaptiveHeight: true,
+      // autoplay: true,
+      autoplaySpeed: 5000,
+    });
+  }
   $('.team-slider').slick({
     rows: 2,
     slidesPerRow: 6,

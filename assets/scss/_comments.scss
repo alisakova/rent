@@ -1,0 +1,25 @@
+.comments {
+  background: $section-bg;
+  padding: rem(65 0 30);
+  .container {
+    padding: {
+      left: rem(105);
+      right: rem(120);
+    }
+    @media (max-width: 800px) {
+      padding: {
+        left: rem($container-padding);
+        right: rem($container-padding);
+      }
+    }
+  }
+  h2 {
+    text-align: left;
+    font-size: rem(22);
+    font-weight: normal;
+    margin-bottom: rem(22);
+  }
+  @media (max-width: 600px) {
+    padding: rem(38 0 30, 14);
+  }
+}
