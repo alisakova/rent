@@ -1354,10 +1354,19 @@ textarea:focus::-webkit-input-placeholder {
   display: block;
   max-width: 100%
 }
+.navigation__submenu-image button {
+  display: block;
+  width: 16.375rem;
+  height: 9.4375rem
+}
 .navigation__submenu-image_mobile {
   display: block;
   max-width: 50%;
   margin: 0 auto 1.25rem
+}
+.navigation__submenu-image_mobile button {
+  width: 100%;
+  height: auto
 }
 @media (max-width:475px) {
   .navigation__submenu-image_mobile {
@@ -1526,10 +1535,6 @@ textarea:focus::-webkit-input-placeholder {
     display: block;
     width: 16.375rem;
     height: 9.4375rem
-  }
-  .navigation__submenu-image a {
-    border: none;
-    display: block
   }
   .navigation__submenu-image_mobile {
     display: none
@@ -4997,6 +5002,10 @@ textarea:focus::-webkit-input-placeholder {
 .custom-modal p + p {
   margin-bottom: 0
 }
+.custom-modal_download {
+  max-width: 31.25rem;
+  padding: 1.25rem 1.25rem 1.875rem
+}
 .modal-close {
   background-color: #eb058c;
   position: absolute;
@@ -5012,6 +5021,31 @@ textarea:focus::-webkit-input-placeholder {
 }
 .modal-close svg {
   width: .625rem
+}
+.custom-modal__title {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start
+}
+.custom-modal__title h1 {
+  color: #000;
+  margin-bottom: 1.5625rem;
+  text-align: left;
+  max-width: 22.5rem
+}
+.custom-modal__title h2 {
+  color: #3e75ba;
+  margin-bottom: .3125rem;
+  text-align: left;
+  font-weight: 400
+}
+@media (max-width:375px) {
+  .custom-modal__title h1 {
+    font-size: 1.875rem
+  }
+  .custom-modal__title h2 {
+    font-size: 1.375rem
+  }
 }
 .aside {
   max-width: 26.2%;

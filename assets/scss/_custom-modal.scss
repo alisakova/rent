@@ -26,6 +26,10 @@
       margin-bottom: 0;
     }
   }
+  &_download {
+    max-width: rem(500);
+    padding: rem(20 20 30 20);
+  }
 }
 
 .modal-close {
@@ -44,5 +48,31 @@
   justify-content: center;
   svg {
     width: rem(10);
+  }
+}
+
+.custom-modal__title {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  h1 {
+    color: #000;
+    margin-bottom: rem(25);
+    text-align: left;
+    max-width: rem(360);
+  }
+  h2 {
+    color: $second-blue;
+    margin-bottom: rem(5);
+    text-align: left;
+    font-weight: normal;
+  }
+  @media (max-width: 375px) {
+    h1 {
+      font-size: rem(30);
+    }
+    h2 {
+      font-size: rem(22);
+    }
   }
 }

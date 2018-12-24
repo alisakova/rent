@@ -347,6 +347,12 @@ $("._submit-modal").click(function(event) {
   return false;
 });
 
+$("._download-btn").click(function(event) {
+  event.preventDefault();
+  $("#download-modal").modal();
+  return false;
+});
+
 $(document).ready(function() {
   $("body").on("click", ".subscribe__group a.btn", function(event) {
     event.preventDefault();

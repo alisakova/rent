@@ -99,10 +99,19 @@
     display: block;
     max-width: 100%;
   }
+  button {
+    display: block;
+    width: rem(262);
+    height: rem(151);
+  }
   &_mobile {
     display: block;
     max-width: 50%;
     margin: 0 auto rem(20);
+    button {
+      width: 100%;
+      height: auto;
+    }
     @media (max-width: 475px) {
       max-width: calc(100% - 28px);
     }
@@ -216,6 +225,8 @@
     width: rem(900);
     font-size: rem(16, $desktop-font-size);
     background: $ui-second-color;
+    // opacity: 1;
+    // visibility: visible;
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -303,10 +314,6 @@
     display: block;
     width: rem(262);
     height: rem(151);
-    a {
-      border: none;
-      display: block;
-    }
     &_mobile {
       display: none;
     }
