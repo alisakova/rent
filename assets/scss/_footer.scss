@@ -173,6 +173,9 @@
       margin-right: rem(18, 14);
     }
   }
+  &.d-none {
+    display: none;
+  }
 }
 
 .footer__mobile-container {

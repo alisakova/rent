@@ -90,6 +90,8 @@ for (i = 0; i < accordionLink.length; i++) {
 let searchBtn = document.querySelector('.search-mobile__btn');
 let searchInput = document.querySelector('.search-mobile .search__input');
 
-searchBtn.addEventListener("click", function(e) {
-  searchInput.classList.add("active");
-});
+if (searchBtn) {
+  searchBtn.addEventListener("click", function(e) {
+    searchInput.classList.add("active");
+  });
+}
