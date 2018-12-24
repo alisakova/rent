@@ -27,26 +27,28 @@
 .navigation__submenu {
   padding: rem(0 0 0 $container-padding * 2);
   a {
-    display: block;
-    color: #fff;
-    position: relative;
-    padding-left: rem(20);
-
-    &:before {
+    &:not([download]) {
       display: block;
-      border: rem(6) solid transparent;
-      border-left-color: #fff;
-      border-right: none;
-      position: absolute;
-      left: 0;
-      top: rem(5);
-      content: "";
-    }
+      color: #fff;
+      position: relative;
+      padding-left: rem(20);
 
-    &.active {
-      color: $marker-color;
       &:before {
-        border-left-color: currentColor;
+        display: block;
+        border: rem(6) solid transparent;
+        border-left-color: #fff;
+        border-right: none;
+        position: absolute;
+        left: 0;
+        top: rem(5);
+        content: "";
+      }
+
+      &.active {
+        color: $marker-color;
+        &:before {
+          border-left-color: currentColor;
+        }
       }
     }
   }
@@ -96,6 +98,14 @@
   img {
     display: block;
     max-width: 100%;
+  }
+  &_mobile {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto rem(20);
+    @media (max-width: 475px) {
+      max-width: calc(100% - 28px);
+    }
   }
 }
 
@@ -291,5 +301,14 @@
 
   .navigation__submenu-image {
     display: block;
+    width: rem(262);
+    height: rem(151);
+    a {
+      border: none;
+      display: block;
+    }
+    &_mobile {
+      display: none;
+    }
   }
 }

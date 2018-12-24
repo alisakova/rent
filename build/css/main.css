@@ -1288,13 +1288,13 @@ textarea:focus::-webkit-input-placeholder {
 .navigation__submenu {
   padding: 0 0 0 1.875rem
 }
-.navigation__submenu a {
+.navigation__submenu a:not([download]) {
   display: block;
   color: #fff;
   position: relative;
   padding-left: 1.25rem
 }
-.navigation__submenu a:before {
+.navigation__submenu a:not([download]):before {
   display: block;
   border: .375rem solid transparent;
   border-left-color: #fff;
@@ -1304,10 +1304,10 @@ textarea:focus::-webkit-input-placeholder {
   top: .3125rem;
   content: ""
 }
-.navigation__submenu a.active {
+.navigation__submenu a:not([download]).active {
   color: #ffe600
 }
-.navigation__submenu a.active:before {
+.navigation__submenu a:not([download]).active:before {
   border-left-color: currentColor
 }
 .navigation__submenu-list {
@@ -1353,6 +1353,16 @@ textarea:focus::-webkit-input-placeholder {
 .navigation__submenu-image img {
   display: block;
   max-width: 100%
+}
+.navigation__submenu-image_mobile {
+  display: block;
+  max-width: 50%;
+  margin: 0 auto 1.25rem
+}
+@media (max-width:475px) {
+  .navigation__submenu-image_mobile {
+    max-width: calc(100% - 28px)
+  }
 }
 @media (max-width:1199px) {
   .navigation {
@@ -1513,7 +1523,16 @@ textarea:focus::-webkit-input-placeholder {
     order: unset
   }
   .navigation__submenu-image {
+    display: block;
+    width: 16.375rem;
+    height: 9.4375rem
+  }
+  .navigation__submenu-image a {
+    border: none;
     display: block
+  }
+  .navigation__submenu-image_mobile {
+    display: none
   }
 }
 .contacts__email svg,
