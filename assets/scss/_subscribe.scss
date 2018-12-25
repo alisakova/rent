@@ -45,7 +45,7 @@
     margin-right: rem(23);
     @media (max-width: 540px) {
       margin: {
-        bottom: rem(15, 14);
+        bottom: rem(20, 14);
         right: 0;
       }
     }
@@ -60,12 +60,23 @@
     max-width: rem(278);
     flex-basis: 100%;
   }
+  &_relative {
+    position: relative;
+  }
   @media (max-width: 540px) {
     min-width: 100%;
     width: 100%;
   }
   .form__input {
     height: auto;
+  }
+  .form__input {
+    &_error {
+      border-color:#EE3425;
+      &:focus {
+        border-color: $input-border-color;
+      }
+    }
   }
 }
 

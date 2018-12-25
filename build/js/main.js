@@ -1,3 +1,16 @@
+$(document).ready(function() {
+  $(".download-form .form__input").change(function() {
+    if (
+      $(".download-form #first-name").val() &&
+      $(".download-form #mail").val()
+    ) {
+      $(".download-form .btn").removeClass("btn--success_inactive");
+    } else {
+      $(".download-form .btn").addClass("btn--success_inactive");
+    }
+  });
+});
+
 /*
     A simple jQuery modal (http://github.com/kylefox/jquery-modal)
     Version 0.9.1
@@ -359,8 +372,17 @@ $(document).ready(function() {
     var id = $(this).attr("href"),
         top = $(id).offset().top - 70;
     if ($(".subscribe .form__input").val()) {
+      $(".subscribe .form__input").removeClass("form__input_error");
+      $(".subscribe .error").removeClass("active");
       $("body,html").animate({ scrollTop: top }, 1500);
+    } else {
+      $(".subscribe .form__input").addClass("form__input_error");
+      $(".subscribe .error").addClass("active");
     }
+  });
+  $(".subscribe .form__input").focus(function() {
+    $(".subscribe .form__input").removeClass("form__input_error");
+    $(".subscribe .error").removeClass("active");
   });
 });
 

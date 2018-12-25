@@ -1121,6 +1121,10 @@ hr {
 .btn--success:hover {
   background: #d2047d
 }
+.btn--success_inactive {
+  background: #dcdcdc;
+  pointer-events: none
+}
 @media (max-width:600px) {
   .btn {
     padding-top: .85714rem;
@@ -1263,6 +1267,17 @@ textarea:focus::-webkit-input-placeholder {
   font-size: .875rem;
   text-align: right;
   margin-top: 5px
+}
+.error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: #ee3425;
+  font-size: 12px;
+  display: none
+}
+.error.active {
+  display: block
 }
 .navigation {
   width: 100%;
@@ -2090,7 +2105,7 @@ textarea:focus::-webkit-input-placeholder {
     width: 100%
   }
   .subscribe__group:first-child {
-    margin-bottom: 1.07143rem;
+    margin-bottom: 1.42857rem;
     margin-right: 0
   }
 }
@@ -2104,8 +2119,17 @@ textarea:focus::-webkit-input-placeholder {
   max-width: 17.375rem;
   flex-basis: 100%
 }
+.subscribe__group_relative {
+  position: relative
+}
 .subscribe__group .form__input {
   height: auto
+}
+.subscribe__group .form__input_error {
+  border-color: #ee3425
+}
+.subscribe__group .form__input_error:focus {
+  border-color: #dcdcdc
 }
 .subscribe__container {
   display: flex;

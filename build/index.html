@@ -147,9 +147,10 @@
           <input type="text" id="first-name" class="form__input" placeholder="First Name" required>
         </div>
         <div class="form__item">
-          <input type="text" class="form__input" id="mail" placeholder="Email" required>
+          <input type="email" class="form__input" id="mail" placeholder="Email" required>
         </div>
-        <a href="" download="" class="btn btn--success">Send me the PDF</a>
+        <!-- TODO обновить класс -->
+        <a href="" download="" class="btn btn--success btn--success_inactive _send-pdf">Send me the PDF</a>
       </form>
     </div>
 
@@ -166,8 +167,10 @@
             <form action="">
               <div class="subscribe__text">Schedule your strategy session now.</div>
               <div class="subscribe__container">
-                <div class="subscribe__group subscribe__group_size">
+                <!-- TODO поменять блок div -->
+                <div class="subscribe__group subscribe__group_relative subscribe__group_size">
                   <input type="email" class="form__input" placeholder="Enter your work email here">
+                  <span class="error">Please enter your email</span>
                 </div>
                 <div class="subscribe__group">
                   <a href="#contactForm" class="btn btn--success">Talk to our CMO</a>

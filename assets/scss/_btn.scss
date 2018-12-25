@@ -23,6 +23,10 @@
     &:hover {
       background: $ui-color-hover;
     }
+    &_inactive {
+      background: $input-border-color;
+      pointer-events: none;
+    }
   }
   @media (max-width: 600px) {
     padding: {

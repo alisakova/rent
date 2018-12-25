@@ -81,3 +81,18 @@ input, textarea {
   text-align: right;
   margin-top: 5px;
 }
+
+.error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: #EE3425;
+  font-size: 12px;
+  display: none;
+  &.active {
+    display: block;
+  }
+  @media (max-width: 540px) {
+
+  }
+}
