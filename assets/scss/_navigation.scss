@@ -1,6 +1,7 @@
 .navigation {
   width: 100%;
   z-index: 10;
+  overflow-y: scroll;
 
   &.visible {
     opacity: 1;

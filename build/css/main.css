@@ -976,6 +976,11 @@ hr {
   justify-content: space-between;
   align-items: center
 }
+.header.not-sticky {
+  position: absolute;
+  top: 0;
+  left: 0
+}
 .header__logo {
   width: 11.42857rem
 }
@@ -1281,7 +1286,8 @@ textarea:focus::-webkit-input-placeholder {
 }
 .navigation {
   width: 100%;
-  z-index: 10
+  z-index: 10;
+  overflow-y: scroll
 }
 .navigation.visible {
   opacity: 1;
