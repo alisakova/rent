@@ -3991,8 +3991,8 @@ textarea:focus::-webkit-input-placeholder {
   border-color: #eb058c
 }
 .radio-btn input:checked ~ .radio-btn__checkmark:after {
-  -webkit-transform: translateZ(0) scale(1);
-  transform: translateZ(0) scale(1)
+  -webkit-transform: translate(-50%,-50%) translateZ(0) scale(1);
+  transform: translate(-50%,-50%) translateZ(0) scale(1)
 }
 .radio-btn__text {
   display: block;
@@ -4005,8 +4005,8 @@ textarea:focus::-webkit-input-placeholder {
   left: .875rem;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  height: 1.3125rem;
-  width: 1.3125rem;
+  height: 22px;
+  width: 22px;
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid #e8e8e8
@@ -4014,32 +4014,32 @@ textarea:focus::-webkit-input-placeholder {
 .radio-btn__checkmark:after {
   content: '';
   position: absolute;
-  top: .1875rem;
-  left: .1875rem;
-  -webkit-transform: translateZ(0) scale(0);
-  transform: translateZ(0) scale(0);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%) translateZ(0) scale(0);
+  transform: translate(-50%,-50%) translateZ(0) scale(0);
   width: .8125rem;
   height: .8125rem;
   background: #eb058c;
   border-radius: 50%;
   transition: .2s
 }
-@media (max-width:900px) {
-  .radio-btn__checkmark {
-    left: .5rem
-  }
-}
 @media (max-width:540px) {
   .radio-btn__checkmark:after {
     height: .85714rem;
-    width: .85714rem;
-    top: 4px;
-    left: 4px
+    width: .85714rem
   }
+}
+@media (max-width:1080px) {
   .radio-btn__checkmark {
-    height: 1.5rem;
-    width: 1.5rem;
-    left: 1.07143rem
+    left: .625rem
+  }
+}
+@media (max-width:900px) {
+  .radio-btn__checkmark {
+    width: 20px;
+    height: 20px;
+    left: .1875rem
   }
 }
 .quote {

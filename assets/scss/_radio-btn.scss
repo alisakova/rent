@@ -38,7 +38,7 @@
     & ~ .radio-btn__checkmark {
       border-color: $ui-color;
       &:after {
-        transform: translateZ(0) scale(1);
+        transform: translate(-50%, -50%) translateZ(0) scale(1);
       }
     }
   }
@@ -55,17 +55,17 @@
   top: 50%;
   left: rem(14);
   transform: translateY(-50%);
-  height: rem(21);
-  width: rem(21);
+  height: 22px;
+  width: 22px;
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid $border-color;
   &:after {
     content: '';
     position: absolute;
-    top: rem(3);
-    left: rem(3);
-    transform: translateZ(0) scale(0);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(0) scale(0);
     width: rem(13);
     height: rem(13);
     background: $ui-color;
@@ -74,16 +74,19 @@
     @media (max-width: 540px) {
       height: rem(12, 14);
       width: rem(12, 14);
-      top: 4px;
-      left: 4px;
     }
   }
+  @media (max-width: 1080px) {
+    left: rem(10);
+  }
   @media (max-width: 900px) {
-    left: rem(8);
+    width: 20px;
+    height: 20px;
+    left: rem(3);
   }
   @media (max-width: 540px) {
-    height: rem(21, 14);
-    width: rem(21, 14);
-    left: rem(15, 14);
+    // height: rem(22, 14);
+    // width: rem(22, 14);
+    // left: rem(14, 14);
   }
 }

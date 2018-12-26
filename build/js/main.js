@@ -370,6 +370,7 @@ $("._download-btn").click(function(event) {
 });
 
 $(document).ready(function() {
+  $(".subscribe__group a.btn").attr("href", "#contactForm");
   $("body").on("click", ".subscribe__group a.btn", function(event) {
     event.preventDefault();
     var id = $(this).attr("href"),
