@@ -89,12 +89,3 @@ for (i = 0; i < accordionLink.length; i++) {
   accordionLink[i].addEventListener("click", toggleItem, false);
   //accordionLink[i].addEventListener('click', toggleItem, false);
 }
-
-let searchBtn = document.querySelector('.search-mobile__btn');
-let searchInput = document.querySelector('.search-mobile .search__input');
-
-if (searchBtn) {
-  searchBtn.addEventListener("click", function(e) {
-    searchInput.classList.add("active");
-  });
-}
