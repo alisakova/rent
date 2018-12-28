@@ -2,16 +2,17 @@
   background: #fff;
   border: 1px solid #d0d0d0;
   border-radius: $global-radius;
-  color: 000;
+  color: #000;
   display: flex;
   align-items: center;
-  // min-width: rem(500);
   text-align: center;
+  padding: rem(15 15);
+  min-width: rem(450);
   &:hover {
     border-color: darken($border-color, 10%);
   }
   @media (max-width: 600px) {
-    flex-direction: column;
+    // flex-direction: column;
     min-width: 0;
     width: 100%;
     font-size: rem(16, 14);
@@ -20,50 +21,37 @@
 
 .link-btn__title {
   display: block;
-  padding: rem(22 35 22 40);
-  border: {
-    top-left-radius: $global-radius;
-    bottom-left-radius: $global-radius;
-    right: 1px solid #d0d0d0;
-  }
+  width: 100%;
   @media (max-width: 600px) {
-    width: 100%;
-    border: {
-      right: 0;
-      bottom: 1px solid #d0d0d0;
-    }
-    padding: {
-      left: rem(20);
-      right: rem(20);
-    }
+
   }
 }
 
 .link-btn__link {
   color: $ui-second-color;
-  padding: rem(18 70 18 34);
+  padding: rem(0 15 0 10);
   height: 100%;
   position: relative;
   font-weight: 400;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   &:after {
     content: "";
     position: absolute;
-    right: rem(35);
+    right: rem(0);
     top: 50%;
     transform: translateY(-50%);
-    width: rem(24);
-    height: rem(24);
-    background: url("../images/right-arrow.svg") no-repeat center center;
+    width: rem(10);
+    height: rem(10);
+    background: url("../images/slider-arrow.svg") no-repeat center center;
     // background-size: 40%;
   }
   @media (max-width: 600px) {
-    width: 100%;
+    // width: 100%;
     // padding: rem(18 50 18 15);
-    &:after {
-      right: rem(15);
-    }
+    // &:after {
+    //   right: rem(15);
+    // }
   }
 }
 

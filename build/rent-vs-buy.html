@@ -16,519 +16,487 @@
 <body>
   <div class="wrapper">
 
-<header class="header">
-  <div class="container">
-    <div class="header__logo">
-      <a href="/"><img src="images/logo.svg" alt=""></a>
-    </div>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <!-- TODO вставлен клас с active LI для активного пункта меню (ДЛЯ ПРИМЕРА, УБРАТЬ, ДОБАВИТЬ ЧЕРЕЗ СКРИПТ) -->
-        <li class="navigation__item active">
-          <a href="#" class="navigation__link navigation__link_with-submenu">Capabilities</a>
-          <div class="navigation__submenu">
-            <ul class="navigation__submenu-list">
-              <li><a href="startup-accelerator.html">Startup accelerator</a></li>
-              <li><a href="creative-development.html">Creative & Development</a></li>
-              <li><a href="digital-transformation.html">Digital Transformation</a></li>
-              <li><a href="lifecycle-marketing.html">Lifecycle Marketing</a></li>
-              <li><a href="paid-media.html">Paid Media</a></li>
-              <li><a href="sales-enablement.html">Sales Enablement</a></li>
-              <!-- TODO Добавить ссылку на страницу -->
-              <li><a href="seo-optimization.html">SEO Optimization</a></li>
-              <!-- TODO вставлен класс с active ссылке для активной (ДЛЯ ПРИМЕРА, УБРАТЬ, ДОБАВИТЬ ЧЕРЕЗ СКРИПТ) -->
-              <li><a href="reporting-and-analytics.html" class="active">Reporting & Analytics</a></li>
-            </ul>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <a href="/">
+            <img src="images/logo.svg" alt="">
+          </a>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item active">
+              <a href="#" class="navigation__link navigation__link_with-submenu">Capabilities</a>
+              <div class="navigation__submenu">
+                <ul class="navigation__submenu-list">
+                  <li><a href="startup-accelerator.html">Startup accelerator</a>
+                  </li>
+                  <li><a href="creative-development.html">Creative & Development</a>
+                  </li>
+                  <li><a href="digital-transformation.html">Digital Transformation</a>
+                  </li>
+                  <li><a href="lifecycle-marketing.html">Lifecycle Marketing</a>
+                  </li>
+                  <li><a href="paid-media.html">Paid Media</a>
+                  </li>
+                  <li><a href="sales-enablement.html">Sales Enablement</a>
+                  </li>
+                  <li><a href="seo-optimization.html">SEO Optimization</a>
+                  </li>
+                  <li><a href="reporting-and-analytics.html" class="active">Reporting & Analytics</a>
+                  </li>
+                </ul>
+                <!-- TODO изменить блок -->
+                <div class="navigation__submenu-image">
+                  <button class="_download-btn">
+                    <img src="images/best-seo-tools-book.svg" alt="Best SEO tools">
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="navigation__item">
+              <a href="industries.html" class="navigation__link">Industries</a>
+            </li>
+            <li class="navigation__item">
+              <a href="rent-vs-buy.html" class="navigation__link">Rent vs Buy</a>
+            </li>
+            <li class="navigation__item">
+              <a href="meet-the-team.html" class="navigation__link">Meet the Team</a>
+            </li>
+            <li class="navigation__item">
+              <a href="blog.html" class="navigation__link navigation__link_big-padding">Blog</a>
+            </li>
+          </ul>
+          <!-- TODO добавить блок -->
+          <div class="navigation__submenu-image navigation__submenu-image_mobile">
+            <button class="_download-btn">
+              <img src="images/best-seo-tools-book.svg" alt="Best SEO tools">
+            </button>
+          </div>
+        </nav>
+        <div class="header__links">
+          <div class="header__link-mobile header__link-mobile--share">
+            <a href="#">
+              <svg data-name="Layer 1 copy 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.37 14.93">
+                <path d="M16.38 7.42L9.57 0v4.42H8.14A8.12 8.12 0 0 0 0 12.57v2.36l.64-.7a11.53 11.53 0 0 1 8.5-3.81h.41v4.5z" fill="#fff" />
+              </svg>
+            </a>
+          </div>
 
-            <div class="navigation__submenu-image">
-              <img src="https://via.placeholder.com/262x150/fff.png/ccc" alt="">
+          <div class="header__link-mobile header__link-mobile--email contacts__email">
+            <a href="mailto:press@rentcmo.com">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.87 13.41">
+                <path d="M17.89 11.17a2.21 2.21 0 0 1-.29 1.07l-5.65-6.31 5.58-4.88a2.22 2.22 0 0 1 .36 1.19v8.94zM8.94 7.08l7.77-6.8A2.21 2.21 0 0 0 15.65 0H2.24a2.2 2.2 0 0 0-1.06.28zm2.17-.42l-1.8 1.57a.56.56 0 0 1-.74 0l-1.8-1.57-5.71 6.4a2.21 2.21 0 0 0 1.18.34h13.4a2.21 2.21 0 0 0 1.18-.34zM.35 1.05A2.22 2.22 0 0 0 0 2.24v8.94a2.21 2.21 0 0 0 .29 1.07l5.6-6.32z"
+                fill="#fff" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="header__link-mobile header__link-mobile--phone contacts__phone">
+            <a href="tel:18666736826">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09">
+                <path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z"
+                fill="#fff" />
+              </svg>
+              <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+              <span>
+            1&#8209;866&#8209;6&#8209;RENT&#8209;CMO (1&#8209;866&#8209;673&#8209;6826)
+          </span>
+            </a>
+          </div>
+
+          <a href="#" class="header__nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18.5">
+              <path d="M0 0h22v3.5H0zm0 7.5h22V11H0zM0 15h22v3.5H0z" fill="#3e75ba" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <section class="intro intro_internal-page">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html" class="breadcrumb__link">Home</a>
+          <span class="breadcrumb__divider">/</span>
+          <span class="breadcrumb__link">Rent vs. Buy</span>
+        </div>
+        <div class="intro__wrap intro__wrap_flex intro__wrap_flex_space-between intro__wrap_creative">
+          <div class="intro__text intro__text_max-width-50">
+            <h1>The easiest, smartest, cheapest way to scale your business and gain market share — FAST</h1>
+            <p>
+              It doesn’t matter if you’re a startup, or more well-established. If you’re like the vast majority of businesses we’ve worked with, your company has an employee bandwidth problem. You just don’t have the team capacity, time or budgetrequired to find and
+              hire ideal subject matter experts in digital advertising and subscription business models.
+            </p>
+          </div>
+
+          <div class="intro__image intro__image--common">
+            <img src="images/rent-vs-buy/best-team-in-the-business.svg" alt="Best team in the business">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-section text-section_blue-bg">
+      <div class="container">
+        <h2>Rent a CMO is your shortcut to success.</h2>
+        <h3>We already ran the tests for Fortune 100 companies. We already know what works like gangbusters for companies that sell subscription products and services.</h3>
+      </div>
+    </section>
+
+    <section class="descr-section descr-section_padding-bottom">
+      <div class="container">
+        <div class="descr-section__container descr-section__container_reverse">
+          <div class="descr-section__content descr-section__content_margin-top descr-section__content_reverse">
+            <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+            <h2>When you choose our agency, you’re renting the mind of a profit&#8209;seeking, seasoned CMO, and the skills of her crackerjack team.</h2>
+            <h3>We become a seamless extension of your company, ready to roll up our sleeves and get work done.</h3>
+          </div>
+          <div class="descr-section__img descr-section__img_alt-width descr-section__img_margin-top-0">
+            <img src="images/rent-vs-buy/profit-seeking-cmo.svg" alt="Profit seeking CMO">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="growth growth_gray-bg">
+      <div class="container">
+        <h2>Adding headcount just adds headaches</h2>
+        <div class="growth__container growth__container_margin-bottom-0">
+          <div class="descr-block descr-block_alt">
+            <div class="descr-block__img">
+              <img src="images/rent-vs-buy/the-time-strain.svg" alt="The Time Strain">
+            </div>
+            <div class="descr-block__content">
+              <h4>The Time Strain</h4>
+              <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+              <p>
+                Data shows it takes about 250 resumes to fill one position. The long&#8209;drawn&#8209;out recruiting process can take a minimum of 3 months per position. And even if you do find a diamond in the rough, that new hire needs a few months just to ramp up
+                and learn your business. So now 6 months have gone by and you have one new, green employee to show for it. In 6 months, Rent a CMO could’ve  already launched a number of campaigns for you, and started  implementing findings to dramatically
+                improve your results.
+              </p>
             </div>
           </div>
-        </li>
-        <li class="navigation__item">
-          <a href="industries.html" class="navigation__link">Industries</a>
-        </li>
-        <li class="navigation__item">
-          <a href="rent-vs-buy.html" class="navigation__link">Rent vs Buy</a>
-        </li>
-        <li class="navigation__item">
-          <a href="meet-the-team.html" class="navigation__link">Meet the Team</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link navigation__link_big-padding">Blog</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header__links">
-      <div class="header__link-mobile header__link-mobile--share">
-        <a href="#">
-          <svg data-name="Layer 1 copy 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.37 14.93">
-            <path d="M16.38 7.42L9.57 0v4.42H8.14A8.12 8.12 0 0 0 0 12.57v2.36l.64-.7a11.53 11.53 0 0 1 8.5-3.81h.41v4.5z" fill="#fff" /></svg>
-        </a>
+          <div class="descr-block descr-block_alt">
+            <div class="descr-block__img">
+              <img src="images/rent-vs-buy/the-money-pit.svg" alt="The Money Pit">
+            </div>
+            <div class="descr-block__content">
+              <h4>The Money Pit</h4>
+              <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+              <p>
+                Hiring a full&#8209;time, experienced marketing team is going to cost you an arm and a leg. The salaries alone for a competent team of 10 (including a VP of marketing, marketing managers, media managers, copywriters, designers, and analysts) could easily
+                run you close to $2,000,000. Oh, then tack on another few hundred thousand in  recruiter fees. Cha&#8209;ching!
+              </p>
+            </div>
+          </div>
+          <div class="descr-block descr-block_alt">
+            <div class="descr-block__img">
+              <img src="images/rent-vs-buy/save-now-pay-later.svg" alt="Save now pay later">
+            </div>
+            <div class="descr-block__content">
+              <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+              <h4>The “Save&#8209;Now&#8209;Pay&#8209;Later” Trap</h4>
+              <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+              <p>
+                Sure you might be tempted to save a little cash by hiring junior employees. But you know what that gets you? Junior ideas. You can’t expect inexperienced marketers to bring you breakthrough solutions to deeply entrenched problems. Plus, you’ll be spending
+                all your time micromanaging and fixing execution problems. With Rent a CMO, you get game&#8209;changing ideas and flawless execution from the get go — with no handholding.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="growth__btn-container">
+          <div class="growth__text-for-btn">
+            See why renting beats hiring
+          </div>
+          <a href="#contactForm" class="btn btn--success">Let's talk</a>
+        </div>
       </div>
+    </section>
 
-      <div class="header__link-mobile header__link-mobile--email contacts__email">
-        <a href="mailto:press@rentcmo.com">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.87 13.41">
-            <path d="M17.89 11.17a2.21 2.21 0 0 1-.29 1.07l-5.65-6.31 5.58-4.88a2.22 2.22 0 0 1 .36 1.19v8.94zM8.94 7.08l7.77-6.8A2.21 2.21 0 0 0 15.65 0H2.24a2.2 2.2 0 0 0-1.06.28zm2.17-.42l-1.8 1.57a.56.56 0 0 1-.74 0l-1.8-1.57-5.71 6.4a2.21 2.21 0 0 0 1.18.34h13.4a2.21 2.21 0 0 0 1.18-.34zM.35 1.05A2.22 2.22 0 0 0 0 2.24v8.94a2.21 2.21 0 0 0 .29 1.07l5.6-6.32z"
-                fill="#fff" />
-          </svg>
-        </a>
-      </div>
-
-      <div class="header__link-mobile header__link-mobile--phone contacts__phone">
-        <a href="tel:18666736826">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09">
-            <path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z"
-                fill="#fff" />
-          </svg>
-          <span>
-            1-866-6-RENT-CMO (1-866-673-6826)
-          </span>
-        </a>
-      </div>
-
-      <a href="#" class="header__nav-link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18.5">
-          <path d="M0 0h22v3.5H0zm0 7.5h22V11H0zM0 15h22v3.5H0z" fill="#3e75ba" />
-        </svg>
-      </a>
-    </div>
-  </div>
-</header>
-
-
-<section class="intro intro_internal-page">
-  <div class="container">
-    <div class="breadcrumb">
-      <a href="index.html" class="breadcrumb__link">Home</a>
-      <span class="breadcrumb__divider">/</span>
-      <span class="breadcrumb__link">Rent vs. Buy</span>
-    </div>
-    <div class="intro__wrap intro__wrap_flex intro__wrap_flex_space-between intro__wrap_creative">
-      <div class="intro__text intro__text_max-width-50">
-        <h1>
-          The easiest, smartest, cheapest way to scale your business and gain
-          market share — FAST
-        </h1>
+    <section class="text-section text-section_p-center">
+      <div class="container">
+        <h2>Do you hear that? It’s the competition gaining on you.</h2>
         <p>
-          It doesn’t matter if you’re a startup, or more well-established.
-          If you’re like the vast majority of businesses we’ve worked with,
-          your company has an employee bandwidth problem. You just don’t have
-          the team capacity, time or budgetrequired to find and hire ideal
-          subject matter experts in digital advertising and subscription
-          business models.
+          If you want to separate yourself from the pack and stay in front — way, way in front — you need to start improving your metrics now. The longer you wait, the harder it is to meet your revenue growth goals. And that hole you’re in keeps getting deeper.
+          We know how to dig you out. Other agencies just don’t have the expertise or vision that subscription model companies need to succeed.
         </p>
       </div>
+    </section>
 
-      <div class="intro__image intro__image--common">
-        <!-- TODO изменить название картинки + alt -->
-        <img src="images/rent-vs-buy/best-team-in-the-business.svg" alt="Best team in the business">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="text-section text-section_blue-bg">
-  <div class="container">
-    <h2>
-      Rent a CMO is your shortcut to success.
-    </h2>
-    <h3>
-      We already ran the tests for Fortune 100 companies. We already
-      know what works like gangbusters for companies that sell
-      subscription products and services.
-    </h3>
-  </div>
-</section>
-
-<section class="descr-section descr-section_padding-bottom">
-  <div class="container">
-    <div class="descr-section__container descr-section__container_reverse">
-      <div class="descr-section__content descr-section__content_margin-top descr-section__content_reverse">
-        <h2>
-          When you choose our agency, you’re renting the mind of a profit-seeking,
-          seasoned CMO, and the skills of her crackerjack team.
-        </h2>
-        <h3>
-          We become a seamless extension of your company, ready to roll up our
-          sleeves and get work done.
-        </h3>
-      </div>
-      <div class="descr-section__img descr-section__img_margin-top-0">
-        <!-- TODO изменить название картинки + alt -->
-        <img src="images/rent-vs-buy/profit-seeking-cmo.svg" alt="Profit seeking CMO">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="growth growth_gray-bg">
-  <div class="container">
-    <h2>
-      Adding headcount just adds headaches
-    </h2>
-    <div class="growth__container growth__container_margin-bottom-0">
-      <div class="descr-block descr-block_alt">
-        <div class="descr-block__img">
-          <!-- TODO изменить название картинки + alt -->
-          <img src="images/rent-vs-buy/the-time-strain.svg" alt="The Time Strain">
-        </div>
-        <div class="descr-block__content">
-          <h4>
-            The Time Strain
-          </h4>
-          <p>
-            Data shows it takes about 250 resumes to fill one position.
-            The long-drawn- out recruiting process can take a minimum of 3
-            months per position. And even if you do find a diamond in the
-            rough, that new hire needs a few months just to ramp up and learn
-            your business. So now 6 months have gone by and you have one new,
-            green employee to show for it. In 6 months, Rent a CMO could’ve 
-            already launched a number of campaigns for you, and started 
-            implementing findings to dramatically improve your results.
-          </p>
-        </div>
-      </div>
-      <div class="descr-block descr-block_alt">
-        <div class="descr-block__img">
-          <!-- TODO изменить название картинки + alt -->
-          <img src="images/rent-vs-buy/the-money-pit.svg" alt="The Money Pit">
-        </div>
-        <div class="descr-block__content">
-          <h4>The Money Pit</h4>
-          <p>
-            Hiring a full-time, experienced marketing team is going to cost you
-            an arm and a leg. The salaries alone for a competent team of 10
-            (including a VP of marketing, marketing managers, media managers,
-            copywriters, designers, and analysts) could easily run you close
-            to $2,000,000. Oh, then tack on another few hundred thousand in 
-            recruiter fees. Cha-ching!
-          </p>
-        </div>
-      </div>
-      <div class="descr-block descr-block_alt">
-        <div class="descr-block__img">
-          <!-- TODO изменить название картинки + alt -->
-          <img src="images/rent-vs-buy/save-now-pay-later.svg" alt="Save now pay later">
-        </div>
-        <div class="descr-block__content">
-          <h4>The “Save-Now-Pay-Later” Trap</h4>
-          <p>
-            Sure you might be tempted to save a little cash by hiring junior
-            employees. But you know what that gets you? Junior ideas. You can’t
-            expect inexperienced marketers to bring you breakthrough solutions
-            to deeply entrenched problems. Plus, you’ll be spending all your
-            time micromanaging and fixing execution problems. With Rent a CMO,
-            you get game-changing ideas and flawless execution from the get
-            go — with no handholding.
-          </p>
+    <section class="differences">
+      <div class="container">
+        <div class="differences__container">
+          <div class="differences__col">
+            <h2 class="yellow-title">What you get with Rent a CMO</h2>
+            <ul class="differences__list">
+              <li class="differences__item">
+                <div class="differences__img">
+                  <img src="images/rent-vs-buy/1.svg" alt="Senior consultants">
+                </div>
+                <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+                <p class="differences__text">
+                  Senior consultants and digital customer experience experts who know the ins&#8209;and&#8209;outs of selling subscription products and services.
+                </p>
+              </li>
+              <li class="differences__item">
+                <div class="differences__img">
+                  <img src="images/rent-vs-buy/2.svg" alt="Battle-tested strategies">
+                </div>
+                <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+                <p class="differences__text">
+                  Battle&#8209;tested strategies that we’ve honed by running 1,000+ tests and spending more than 31,000 hours and $100 million on advertising.
+                </p>
+              </li>
+              <li class="differences__item">
+                <div class="differences__img">
+                  <img src="images/rent-vs-buy/3.svg" alt="Complete customer lifecycle journey">
+                </div>
+                <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+                <p class="differences__text">
+                  Soup&#8209;to&#8209;nuts agency specializing in the complete customer lifecycle journey. We handle everything from pre&#8209;launch to post&#8209;launch and every critical touch point in between.
+                </p>
+              </li>
+              <li class="differences__item">
+                <div class="differences__img">
+                  <img src="images/rent-vs-buy/4.svg" alt="Flawless end-to-end execution of innovative ideas">
+                </div>
+                <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+                <p class="differences__text">
+                  Flawless end&#8209;to&#8209;end execution of innovative ideas guaranteed to make a seismic impact on your profits.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="differences__col">
+            <h2>What you get with other agencies</h2>
+            <ul class="differences__list">
+              <li class="differences__item">
+                <div class="differences__img">
+                  <img src="images/rent-vs-buy/5.svg" alt="Junior level">
+                </div>
+                <p class="differences__text">
+                  Junior level staff who’ll take your order and try to learn your business on the fly.
+                </p>
+              </li>
+              <li class="differences__item">
+                <div class="differences__img">
+                  <img src="images/rent-vs-buy/6.svg" alt="Half-baked ideas">
+                </div>
+                <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+                <p class="differences__text">
+                  Half&#8209;baked ideas that may or may not work because they’ve never been tested in subscription&#8209;based environments.
+                </p>
+              </li>
+              <li class="differences__item">
+                <div class="differences__img">
+                  <img src="images/rent-vs-buy/7.svg" alt="A single specialty">
+                </div>
+                <p class="differences__text">
+                  A single specialty, like paid search or social media. Great, now you have to manage multiple agencies to get it all done.
+                </p>
+              </li>
+              <li class="differences__item">
+                <div class="differences__img">
+                  <img src="images/rent-vs-buy/8.svg" alt="Consulting advice">
+                </div>
+                <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+                <p class="differences__text">
+                  Consulting advice and a complicated plan that you have to implement — but won’t — because you don’t have the time, resources, and in&#8209;house expertise.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="growth__btn-container">
-      <div class="growth__text-for-btn">
-        See why renting beats hiring
-      </div>
-      <!-- TODO поменять кнопку на ссылку с href -->
-      <a href="#contactForm" class="btn btn--success">Let's talk</a>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="text-section text-section_p-center">
-  <div class="container">
-    <h2>
-      Do you hear that? It’s the competition gaining on you.
-    </h2>
-    <p>
-      If you want to separate yourself from the pack and stay in front — way,
-      way in front — you need to start improving your metrics now. The longer
-      you wait, the harder it is to meet your revenue growth goals. And that
-      hole you’re in keeps getting deeper. We know how to dig you out. Other
-      agencies just don’t have the expertise or vision that subscription model
-      companies need to succeed.
-    </p>
-  </div>
-</section>
-
-<section class="differences">
-  <div class="container">
-    <div class="differences__container">
-      <div class="differences__col">
-        <h2 class="yellow-title">What you get with Rent a CMO</h2>
-        <ul class="differences__list">
-          <li class="differences__item">
-            <div class="differences__img">
-              <img src="images/rent-vs-buy/1.svg" alt="Senior consultants">
-            </div>
-            <p class="differences__text">
-              Senior consultants and digital customer experience experts
-              who know the ins-and-outs of selling subscription products
-              and services.
-            </p>
-          </li>
-          <li class="differences__item">
-            <div class="differences__img">
-              <img src="images/rent-vs-buy/2.svg" alt="Battle-tested strategies">
-            </div>
-            <p class="differences__text">
-              Battle-tested strategies that we’ve honed by running 1,000+ tests
-              and spending more than 31,000 hours and $100 million on
-              advertising.
-            </p>
-          </li>
-          <li class="differences__item">
-            <div class="differences__img">
-              <img src="images/rent-vs-buy/3.svg" alt="Complete customer lifecycle journey">
-            </div>
-            <p class="differences__text">
-              Soup-to-nuts agency specializing in the complete customer
-              lifecycle journey. We handle everything from pre-launch to
-              post-launch and every critical touch point in between.
-            </p>
-          </li>
-          <li class="differences__item">
-            <div class="differences__img">
-              <img src="images/rent-vs-buy/4.svg" alt="Flawless end-to-end execution of innovative ideas">
-            </div>
-            <p class="differences__text">
-              Flawless end-to-end execution of innovative ideas guaranteed to
-              make a seismic impact on your profits.
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="differences__col">
-        <h2>What you get with other agencies</h2>
-        <ul class="differences__list">
-          <li class="differences__item">
-            <div class="differences__img">
-              <img src="images/rent-vs-buy/5.svg" alt="Junior level">
-            </div>
-            <p class="differences__text">
-              Junior level staff who’ll take your order and try to learn your
-              business on the fly.
-            </p>
-          </li>
-          <li class="differences__item">
-            <div class="differences__img">
-              <img src="images/rent-vs-buy/6.svg" alt="Half-baked ideas">
-            </div>
-            <p class="differences__text">
-              Half-baked ideas that may or may not work because they’ve never
-              been tested in subscription-based environments.
-            </p>
-          </li>
-          <li class="differences__item">
-            <div class="differences__img">
-              <img src="images/rent-vs-buy/7.svg" alt="A single specialty">
-            </div>
-            <p class="differences__text">
-              A single specialty, like paid search or social media. Great,
-              now you have to manage multiple agencies to get it all done.
-            </p>
-          </li>
-          <li class="differences__item">
-            <div class="differences__img">
-              <img src="images/rent-vs-buy/8.svg" alt="Consulting advice">
-            </div>
-            <p class="differences__text">
-              Consulting advice and a complicated plan that you have to
-              implement — but won’t — because you don’t have the time,
-              resources, and in-house expertise.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="contact-us contact-us_white-bg">
-  <div class="container">
-    <div class="contact-us__container">
-      <div class="contact-us__content contact-us__content_margin-right-small contact-us__content_padding-top-0">
-        <h2>
-          Reserve your strategy session now — spots are filling up fast!
-        </h2>
-        <h3>
-          Why spend $2,000,000 staffing up when you can Rent a CMO?
-        </h3>
-      </div>
-      <!-- TODO добавить id contactForm форме -->
-      <div id="contactForm" class="contact-us__form">
-        <form action="" class="contact-form contact-form_gray-bg form">
-          <div class="form__item">
-            <label for="theme" class="form__label">I’d like to chat about:</label>
-            <select class="select form__select" id="theme" name="theme">
-              <option value="general-inquiry">General inquiry</option>
-            </select>
+    <section class="contact-us contact-us_white-bg">
+      <div class="container">
+        <div class="contact-us__container">
+          <div class="contact-us__content contact-us__content_margin-right-small contact-us__content_padding-top-0">
+            <h2>Reserve your strategy session now — spots are filling up fast!</h2>
+            <h3 class="text-left">Why spend $2,000,000 staffing up when you can Rent a CMO?</h3>
           </div>
-          <div class="form__item">
-            <input type="text" id="name" class="form__input" placeholder="Name:" required>
+          <div id="contactForm" class="contact-us__form">
+            <form action="" class="contact-form contact-form_gray-bg form">
+              <div class="form__item">
+                <label for="theme" class="form__label">I’d like to chat about:</label>
+                <select class="select form__select" id="theme" name="theme">
+                  <option value="general-inquiry">General inquiry</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <input type="text" id="name" class="form__input" placeholder="Name:" required>
+              </div>
+              <div class="form__group form-grid">
+                <div class="form__item form-grid__col">
+                  <input type="text" class="form__input" id="company-mail" placeholder="Company email:" required>
+                </div>
+                <div class="form__item form-grid__col">
+                  <input type="tel" class="form__input" id="tel" placeholder="Phone number" required>
+                </div>
+              </div>
+              <div class="form__item">
+                <input type="text" id="job-title" class="form__input" placeholder="Job title:" required>
+              </div>
+              <div class="form__item">
+                <label for="budget" class="form__label">Monthly marketing budget:</label>
+                <select class="select form__select" id="budget" name="budget">
+                  <option value="general-inquiry">$0 to $5,000</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <input type="url" id="website" class="form__input" placeholder="Website URL" required>
+              </div>
+              <div class="form__item">
+                <label for="currently-work" class="form__label">You are currently...</label>
+                <select class="select form__select" id="currently-work" name="currently-work">
+                  <option value="general-inquiry">Working with an agency</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <textarea class="form__textarea" placeholder="Tell us a little bit about your company and major problem areas which you would like to improve..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--success">Talk to our CMO</button>
+            </form>
           </div>
-          <div class="form__group form-grid">
-            <div class="form__item form-grid__col">
-              <input type="text" class="form__input" id="company-mail" placeholder="Company email:" required>
-            </div>
-            <div class="form__item form-grid__col">
-              <input type="tel" class="form__input" id="tel" placeholder="Phone number" required>
-            </div>
+        </div>
+        <div class="link-btn-container">
+          <div class="link-btn">
+            <!-- TODO поменять блок -->
+            <span class="link-btn__title">Next service:<a href="meet-the-team.html" class="link-btn__link">Meet the Team</a></span>
           </div>
-          <div class="form__item">
-            <input type="text" id="job-title" class="form__input" placeholder="Job title:" required>
-          </div>
-          <div class="form__item">
-            <label for="budget" class="form__label">Monthly marketing budget:</label>
-            <select class="select form__select" id="budget" name="budget">
-              <option value="general-inquiry">$0 to $5,000</option>
-            </select>
-          </div>
-          <div class="form__item">
-            <input type="url" id="website" class="form__input" placeholder="Website URL" required>
-          </div>
-          <div class="form__item">
-            <label for="currently-work" class="form__label">You are currently... </label>
-            <select class="select form__select" id="currently-work" name="currently-work">
-              <option value="general-inquiry">Working with an agency</option>
-            </select>
-          </div>
-          <div class="form__item">
-            <textarea class="form__textarea" placeholder="Tell us a little bit about your company and major problem areas which you would like to improve..."></textarea>
-          </div>
-          <button type="submit" class="btn btn--success">Talk to our CMO</button>
-        </form>
-      </div>
-    </div>
-    <!-- TODO добавить блок -->
-    <div class="link-btn-container">
-      <div class="link-btn">
-        <span class="link-btn__title">Next service</span>
-        <a href="meet-the-team.html" class="link-btn__link">
-          Meet the Team<
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="footer__main">
-    <div class="container footer__container">
-      <div class="footer__col footer__col_logo">
-        <div class="footer__logo">
-          <a href="/"><img src="images/logo.svg" alt=""></a>
         </div>
       </div>
-      <div class="footer__mobile-container">
-        <div class="footer__col">
-          <h4>Capabilities</h4>
-          <ul class="footer__list">
-            <a href="startup-accelerator.html" class="footer__link">
+    </section>
+
+
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="container footer__container">
+          <div class="footer__col footer__col_logo">
+            <div class="footer__logo">
+              <a href="/">
+                <img src="images/logo.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="footer__mobile-container">
+            <div class="footer__col">
+              <h4>Capabilities</h4>
+              <ul class="footer__list">
+                <a href="startup-accelerator.html" class="footer__link">
               Startup accelerator
             </a>
-            <a href="digital-transformation.html" class="footer__link">
+                <a href="digital-transformation.html" class="footer__link">
               Digital Transformation
             </a>
-            <a href="paid-media.html" class="footer__link">
+                <a href="paid-media.html" class="footer__link">
               Paid Media
             </a>
-            <a href="" class="footer__link">
+                <a href="" class="footer__link">
               SEO Optimization
             </a>
-            <a href="creative-development.html" class="footer__link">
+                <a href="creative-development.html" class="footer__link">
               Creative & Development
             </a>
-            <a href="lifecycle-marketing.html" class="footer__link">
+                <a href="lifecycle-marketing.html" class="footer__link">
               Lifecycle Marketing
             </a>
-            <a href="sales-enablement.html" class="footer__link">
+                <a href="sales-enablement.html" class="footer__link">
               Sales Enablement
             </a>
-            <a href="reporting-and-analytics.html" class="footer__link">
+                <a href="reporting-and-analytics.html" class="footer__link">
               Reporting & Analytics
             </a>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Company</h4>
-          <ul class="footer__list">
-            <a href="industries.html" class="footer__link">
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4>Company</h4>
+              <ul class="footer__list">
+                <a href="industries.html" class="footer__link">
               Industries
             </a>
-            <a href="rent-vs-buy.html" class="footer__link">
+                <a href="rent-vs-buy.html" class="footer__link">
               Rent vs. Buy
             </a>
-            <a href="meet-the-team.html" class="footer__link">
+                <a href="meet-the-team.html" class="footer__link">
               Meet the Team
             </a>
-            <a href="" class="footer__link">
+                <a href="" class="footer__link">
               Blog
             </a>
-            <a href="" class="footer__link">
+                <a href="" class="footer__link">
               Sitemap
             </a>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__col footer__col_bordered">
-        <h4>Get in Touch</h4>
-        <div class="footer__contacts contacts">
-          <div class="footer__contact footer__contact_tel contacts__phone">
-            <a href="tel:18666736826">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09"><path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z" fill="#fff"/></svg>
-              <span>
-                1-866-6-RENT-CMO (1-866-673-6826)
-              </span>
-            </a>
+              </ul>
+            </div>
           </div>
-          <button class="btn">Contact us</button>
-          <div class="footer__contact footer__contact_mail contacts__email">
-            <?xml version="1.0" encoding="utf-8"?>
-            <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 viewBox="0 0 12.2 9.8" style="enable-background:new 0 0 12.2 9.8;" xml:space="preserve">
-            <style type="text/css">
-            	.st0{fill:#3E75BA;}
-            </style>
-            <path id="Forma_1" class="st0" d="M0.2,8.2C0.2,8.3,0.1,8.3,0.2,8.2l-0.1,0C0,8.3,0,8.2,0,8.2V3.1C0,3,0,3,0.1,3c0,0,0.1,0,0.1,0
+          <div class="footer__col footer__col_bordered">
+            <h4>Get in Touch</h4>
+            <div class="footer__contacts contacts">
+              <div class="footer__contact footer__contact_tel contacts__phone">
+                <a href="tel:18666736826">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09">
+                    <path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z"
+                    fill="#fff" />
+                  </svg>
+                  <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+                  <span>
+                1&#8209;866&#8209;6&#8209;RENT&#8209;CMO (1&#8209;866&#8209;673&#8209;6826)
+              </span>
+                </a>
+              </div>
+              <button class="btn">Contact us</button>
+              <div class="footer__contact footer__contact_mail contacts__email">
+                <?xml version="1.0" encoding="utf-8" ?>
+                <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12.2 9.8" style="enable-background:new 0 0 12.2 9.8;" xml:space="preserve">
+                  <style type="text/css">
+                    .st0{fill:#3E75BA;}
+                  </style>
+                  <path id="Forma_1" class="st0" d="M0.2,8.2C0.2,8.3,0.1,8.3,0.2,8.2l-0.1,0C0,8.3,0,8.2,0,8.2V3.1C0,3,0,3,0.1,3c0,0,0.1,0,0.1,0
             	l3.5,2c0,0,0.1,0,0.1,0.1c0,0,0,0.1,0,0.1L0.2,8.2z M11.8,9.6c0,0,0,0.1,0,0.1c0,0-0.1,0.1-0.1,0.1H0.4c-0.1,0-0.1,0-0.2-0.1
             	c0,0-0.1,0-0.1-0.1c0,0,0-0.1,0-0.1l4.4-4c0,0,0.1,0,0.1,0l1.2,0.6c0.2,0.1,0.3,0.1,0.5,0l1.3-0.8c0.1,0,0.1,0,0.1,0L11.8,9.6z
             	 M12.2,2.9C12.2,2.9,12.2,3,12.2,2.9l0.1,5.5c0,0,0,0.1-0.1,0.1c0,0,0,0,0,0c0,0-0.1,0-0.1,0L8.8,5c0,0,0-0.1,0-0.1c0,0,0-0.1,0-0.1
             	L12.2,2.9C12.1,2.9,12.2,2.9,12.2,2.9C12.2,2.9,12.2,2.9,12.2,2.9L12.2,2.9z M11.8,0c0.1,0,0.2,0,0.3,0.1c0.1,0.1,0.1,0.2,0.1,0.3
             	v1.2c0,0,0,0.1-0.1,0.1c0,0,0,0,0,0c-0.1,0-0.1,0-0.1,0.1L6.2,5.1c0,0,0,0-0.1,0c0,0,0,0-0.1,0l-6-3.4C0,1.8,0,1.7,0,1.7V0.4
-            	c0-0.1,0-0.2,0.1-0.3C0.2,0,0.3,0,0.4,0H11.8L11.8,0z"/>
-            </svg>
-            <span>PR Inquiries: <a href="mailto:press@rentcmo.com">press@rentcmo.com</a></span>
-          </div>
-          <div class="footer__socials">
-            <a href="" class="footer__social-link">
-              <img src="images/social-icons/insta.svg" alt="Instagram">
-            </a>
-            <a href="" class="footer__social-link">
-              <img src="images/social-icons/fb.svg" alt="Facebook">
-            </a>
-            <a href="" class="footer__social-link">
-              <img src="images/social-icons/LinkedIn.svg" alt="LinkedIn">
-            </a>
+            	c0-0.1,0-0.2,0.1-0.3C0.2,0,0.3,0,0.4,0H11.8L11.8,0z" />
+                </svg>
+                <span>PR Inquiries: <a href="mailto:press@rentcmo.com">press@rentcmo.com</a></span>
+              </div>
+              <div class="footer__socials">
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/insta.svg" alt="Instagram">
+                </a>
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/fb.svg" alt="Facebook">
+                </a>
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/LinkedIn.svg" alt="LinkedIn">
+                </a>
+                <a href="" class="footer__social-link d-none">
+                  <img src="images/social-icons/twitter.svg" alt="Twitter">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="footer__copyrights">
-    <div class="container">
-      © 2018 Rent a CMO. All rights reserved.
-    </div>
-  </div>
-</footer>
+      <div class="footer__copyrights">
+        <div class="container">
+          © 2018 Rent a CMO. All rights reserved.
+        </div>
+      </div>
+    </footer>
 
-</div> <!-- </ .wrapper> -->
+  </div>
+  <!-- </ .wrapper> -->
 
-<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
-<script src="js/main.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>

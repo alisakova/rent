@@ -128,6 +128,7 @@
     @media (max-width: 600px) {
       width: 100%;
       max-width: none;
+      text-align: center;
       &:not(:last-child),
       &:last-child {
         margin-bottom: rem(22, 14);

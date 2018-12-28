@@ -22,7 +22,7 @@
     }
   }
   .btn {
-    display: inline-block;
+    // display: inline-block;
     margin: 0 auto;
     @media (max-width: 600px) {
       display: none;
@@ -116,6 +116,9 @@
 .growth__btn-container {
   text-align: center;
   margin-top: rem(63);
+  .btn {
+    display: inline-block;
+  }
   @media (max-width: 600px) {
     text-align: left;
     margin-top: rem(50, 14);

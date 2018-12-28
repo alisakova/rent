@@ -1,0 +1,28 @@
+.recommended {
+  padding: rem(50 0 0);
+  h2 {
+    font: {
+      size: rem(22);
+      weight: normal;
+    }
+    text-align: left;
+    margin-bottom: rem(20);
+  }
+  .container {
+    padding: {
+      left: rem(105);
+      right: rem(120);
+      bottom: rem(55);
+    }
+    border-bottom: 1px solid #c4c4c4;
+    @media (max-width: 800px) {
+      padding: {
+        left: rem($container-padding);
+        right: rem($container-padding);
+      }
+    }
+  }
+  .article-list__container {
+    border-bottom: none;
+  }
+}

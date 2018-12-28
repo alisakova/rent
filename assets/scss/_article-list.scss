@@ -1,0 +1,36 @@
+.article-list {
+  margin-top: rem(17);
+  .banner {
+    @media (min-width: 741px) {
+      display: none;
+    }
+    & + .btn {
+      width: calc(100% - 26px);
+      display: block;
+      margin: {
+        bottom: rem(24, 14);
+        left: auto;
+        right: auto;
+      }
+      @media (min-width: 741px) {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    margin-top: 0;
+  }
+}
+
+.article-list__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: rem(20);
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}

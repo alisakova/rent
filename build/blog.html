@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+  <title>Rent a CMO</title>
+
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <a href="/">
+            <img src="images/logo.svg" alt="">
+          </a>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item active">
+              <a href="#" class="navigation__link navigation__link_with-submenu">Capabilities</a>
+              <div class="navigation__submenu">
+                <ul class="navigation__submenu-list">
+                  <li><a href="startup-accelerator.html">Startup accelerator</a>
+                  </li>
+                  <li><a href="creative-development.html">Creative & Development</a>
+                  </li>
+                  <li><a href="digital-transformation.html">Digital Transformation</a>
+                  </li>
+                  <li><a href="lifecycle-marketing.html">Lifecycle Marketing</a>
+                  </li>
+                  <li><a href="paid-media.html">Paid Media</a>
+                  </li>
+                  <li><a href="sales-enablement.html">Sales Enablement</a>
+                  </li>
+                  <li><a href="seo-optimization.html">SEO Optimization</a>
+                  </li>
+                  <li><a href="reporting-and-analytics.html" class="active">Reporting & Analytics</a>
+                  </li>
+                </ul>
+                <!-- TODO изменить блок -->
+                <div class="navigation__submenu-image">
+                  <button class="_download-btn">
+                    <img src="images/best-seo-tools-book.svg" alt="Best SEO tools">
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="navigation__item">
+              <a href="industries.html" class="navigation__link">Industries</a>
+            </li>
+            <li class="navigation__item">
+              <a href="rent-vs-buy.html" class="navigation__link">Rent vs Buy</a>
+            </li>
+            <li class="navigation__item">
+              <a href="meet-the-team.html" class="navigation__link">Meet the Team</a>
+            </li>
+            <li class="navigation__item">
+              <a href="blog.html" class="navigation__link navigation__link_big-padding">Blog</a>
+            </li>
+          </ul>
+          <!-- TODO добавить блок -->
+          <div class="navigation__submenu-image navigation__submenu-image_mobile">
+            <button class="_download-btn">
+              <img src="images/best-seo-tools-book.svg" alt="Best SEO tools">
+            </button>
+          </div>
+        </nav>
+        <div class="header__links">
+          <div class="header__link-mobile header__link-mobile--share">
+            <a href="#">
+              <svg data-name="Layer 1 copy 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.37 14.93">
+                <path d="M16.38 7.42L9.57 0v4.42H8.14A8.12 8.12 0 0 0 0 12.57v2.36l.64-.7a11.53 11.53 0 0 1 8.5-3.81h.41v4.5z" fill="#fff" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="header__link-mobile header__link-mobile--email contacts__email">
+            <a href="mailto:press@rentcmo.com">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.87 13.41">
+                <path d="M17.89 11.17a2.21 2.21 0 0 1-.29 1.07l-5.65-6.31 5.58-4.88a2.22 2.22 0 0 1 .36 1.19v8.94zM8.94 7.08l7.77-6.8A2.21 2.21 0 0 0 15.65 0H2.24a2.2 2.2 0 0 0-1.06.28zm2.17-.42l-1.8 1.57a.56.56 0 0 1-.74 0l-1.8-1.57-5.71 6.4a2.21 2.21 0 0 0 1.18.34h13.4a2.21 2.21 0 0 0 1.18-.34zM.35 1.05A2.22 2.22 0 0 0 0 2.24v8.94a2.21 2.21 0 0 0 .29 1.07l5.6-6.32z"
+                fill="#fff" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="header__link-mobile header__link-mobile--phone contacts__phone">
+            <a href="tel:18666736826">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09">
+                <path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z"
+                fill="#fff" />
+              </svg>
+              <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+              <span>
+            1&#8209;866&#8209;6&#8209;RENT&#8209;CMO (1&#8209;866&#8209;673&#8209;6826)
+          </span>
+            </a>
+          </div>
+
+          <a href="#" class="header__nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18.5">
+              <path d="M0 0h22v3.5H0zm0 7.5h22V11H0zM0 15h22v3.5H0z" fill="#3e75ba" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="container flex">
+      <main class="main">
+        <div class="breadcrumb">
+          <a href="index.html" class="breadcrumb__link">Home</a>
+          <span class="breadcrumb__divider">/</span>
+          <span class="breadcrumb__link">Blog</span>
+        </div>
+        <section class="article-list">
+          <div class="article-header">
+            <div class="article-header__user">
+              <button class="article-header__sign"></button>
+            </div>
+            <div class="article-header__search search-mobile">
+              <button class="search-mobile__btn"></button>
+              <input type="text" class="search__input" placeholder="Search this blog">
+            </div>
+            <div class="article-header__select">
+              <select class="select">
+                <option value="general-inquiry">All articles</option>
+              </select>
+            </div>
+          </div>
+          <article class="article article_main">
+            <div class="article__img article__img_main">
+              <img src="" alt="">
+            </div>
+            <div class="article__content">
+              <div class="info">
+                <span class="info__item info__tag tag">marketing</span>
+                <span class="info__item info__date">Oct 10, 2018</span>
+                <span class="info__item info__views"><img src="images/blog/views.svg" alt="">156</span>
+              </div>
+              <a href="article.html">
+                <h1>What is Lorem Ipsum?</h1>
+              </a>
+            </div>
+          </article>
+          <div class="article-list__banner banner">banner</div>
+          <button class="btn btn--success">Sign up for newsletter</button>
+          <article class="article article_default article_gray">
+            <div class="article__alt-img">
+              <img src="images/blog/lyamen.png" alt="Lyamen Savy">
+              <div>
+                <p class="font-weight-500">Lyamen Savy,</p>
+                <p>Chief Marketing Officer</p>
+              </div>
+            </div>
+            <div class="article__content">
+              <div class="article__text">
+                <a href="article.html">
+                  <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
+                </a>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+              </div>
+              <div class="info">
+                <span class="info__item info__tag tag">marketing</span>
+                <span class="info__item info__date">Oct 10, 2018</span>
+                <span class="info__item info__views"><img src="images/blog/views.svg" alt="">156</span>
+              </div>
+            </div>
+          </article>
+          <div class="article-list__container">
+            <article class="article article_small">
+              <div class="article__img">
+                <img src="" alt="">
+              </div>
+              <div class="article__content">
+                <div class="info">
+                  <span class="info__item info__tag tag">marketing</span>
+                  <span class="info__item info__date">Oct 10, 2018</span>
+                  <span class="info__item info__views">
+            <img src="images/blog/views.svg" alt="">
+            156
+          </span>
+                </div>
+                <div class="article__text">
+                  <a href="article.html">
+                    <h1>What is Lorem Ipsum?</h1>
+                  </a>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                </div>
+              </div>
+            </article>
+            <article class="article article_small">
+              <div class="article__img">
+                <img src="" alt="">
+              </div>
+              <div class="article__content">
+                <div class="info">
+                  <span class="info__item info__tag tag">industry news</span>
+                  <span class="info__item info__date">Oct 10, 2018</span>
+                  <span class="info__item info__views">
+            <img src="images/blog/views.svg" alt="">
+            156
+          </span>
+                </div>
+                <div class="article__text">
+                  <a href="article.html">
+                    <h1>What is Lorem Ipsum?</h1>
+                  </a>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <article class="article article_default">
+            <div class="article__img">
+              <img src="" alt="">
+            </div>
+            <div class="article__content">
+              <div class="article__text">
+                <a href="article.html">
+                  <h1>What is Lorem Ipsum?</h1>
+                </a>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+              </div>
+              <div class="info">
+                <span class="info__item info__tag tag">marketing</span>
+                <span class="info__item info__date">Oct 10, 2018</span>
+                <span class="info__item info__views"><img src="images/blog/views.svg" alt="">156</span>
+              </div>
+            </div>
+          </article>
+          <article class="article article_default">
+            <div class="article__img">
+              <img src="" alt="">
+            </div>
+            <div class="article__content">
+              <div class="article__text">
+                <a href="article.html">
+                  <h1>What is Lorem Ipsum?</h1>
+                </a>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+              </div>
+              <div class="info">
+                <span class="info__item info__tag tag">marketing</span>
+                <span class="info__item info__date">Oct 10, 2018</span>
+                <span class="info__item info__views"><img src="images/blog/views.svg" alt="">156</span>
+              </div>
+            </div>
+          </article>
+        </section>
+        <div class="pagination-container">
+          <ul class="pagination">
+            <li class="pagination__page">
+              <a href="" class="pagination__link pagination__link_active">1</a>
+            </li>
+            <li class="pagination__page"><a href="" class="pagination__link">2</a>
+            </li>
+            <li class="pagination__page"><a href="" class="pagination__link">3</a>
+            </li>
+            <li class="pagination__page"><a href="" class="pagination__link">4</a>
+            </li>
+            <li class="pagination__page"><a href="" class="pagination__link">...</a>
+            </li>
+          </ul>
+          <button class="btn">Learn more</button>
+        </div>
+
+      </main>
+      <aside class="aside">
+        <div class="aside__search search">
+          <div class="search__icon"></div>
+          <input type="text" class="search__input" placeholder="Search this blog">
+        </div>
+        <h4>Categories</h4>
+        <ul class="categories">
+          <li class="categories__item">
+            All categories
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__link">Startup</a>
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__link">Digital transformation</a>
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__link">Paid media</a>
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__link">SEO</a>
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__link">DR Creative</a>
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__link">Lifecycle marketing</a>
+          </li>
+          <li class="categories__item">
+            <a href="" class="categories__link">Sales enablement</a>
+          </li>
+        </ul>
+        <div class="aside__banner banner">banner</div>
+      </aside>
+
+    </div>
+
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="container footer__container">
+          <div class="footer__col footer__col_logo">
+            <div class="footer__logo">
+              <a href="/">
+                <img src="images/logo.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="footer__mobile-container">
+            <div class="footer__col">
+              <h4>Capabilities</h4>
+              <ul class="footer__list">
+                <a href="startup-accelerator.html" class="footer__link">
+              Startup accelerator
+            </a>
+                <a href="digital-transformation.html" class="footer__link">
+              Digital Transformation
+            </a>
+                <a href="paid-media.html" class="footer__link">
+              Paid Media
+            </a>
+                <a href="" class="footer__link">
+              SEO Optimization
+            </a>
+                <a href="creative-development.html" class="footer__link">
+              Creative & Development
+            </a>
+                <a href="lifecycle-marketing.html" class="footer__link">
+              Lifecycle Marketing
+            </a>
+                <a href="sales-enablement.html" class="footer__link">
+              Sales Enablement
+            </a>
+                <a href="reporting-and-analytics.html" class="footer__link">
+              Reporting & Analytics
+            </a>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4>Company</h4>
+              <ul class="footer__list">
+                <a href="industries.html" class="footer__link">
+              Industries
+            </a>
+                <a href="rent-vs-buy.html" class="footer__link">
+              Rent vs. Buy
+            </a>
+                <a href="meet-the-team.html" class="footer__link">
+              Meet the Team
+            </a>
+                <a href="" class="footer__link">
+              Blog
+            </a>
+                <a href="" class="footer__link">
+              Sitemap
+            </a>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col_bordered">
+            <h4>Get in Touch</h4>
+            <div class="footer__contacts contacts">
+              <div class="footer__contact footer__contact_tel contacts__phone">
+                <a href="tel:18666736826">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09">
+                    <path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z"
+                    fill="#fff" />
+                  </svg>
+                  <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+                  <span>
+                1&#8209;866&#8209;6&#8209;RENT&#8209;CMO (1&#8209;866&#8209;673&#8209;6826)
+              </span>
+                </a>
+              </div>
+              <button class="btn">Contact us</button>
+              <div class="footer__contact footer__contact_mail contacts__email">
+                <?xml version="1.0" encoding="utf-8" ?>
+                <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12.2 9.8" style="enable-background:new 0 0 12.2 9.8;" xml:space="preserve">
+                  <style type="text/css">
+                    .st0{fill:#3E75BA;}
+                  </style>
+                  <path id="Forma_1" class="st0" d="M0.2,8.2C0.2,8.3,0.1,8.3,0.2,8.2l-0.1,0C0,8.3,0,8.2,0,8.2V3.1C0,3,0,3,0.1,3c0,0,0.1,0,0.1,0
+            	l3.5,2c0,0,0.1,0,0.1,0.1c0,0,0,0.1,0,0.1L0.2,8.2z M11.8,9.6c0,0,0,0.1,0,0.1c0,0-0.1,0.1-0.1,0.1H0.4c-0.1,0-0.1,0-0.2-0.1
+            	c0,0-0.1,0-0.1-0.1c0,0,0-0.1,0-0.1l4.4-4c0,0,0.1,0,0.1,0l1.2,0.6c0.2,0.1,0.3,0.1,0.5,0l1.3-0.8c0.1,0,0.1,0,0.1,0L11.8,9.6z
+            	 M12.2,2.9C12.2,2.9,12.2,3,12.2,2.9l0.1,5.5c0,0,0,0.1-0.1,0.1c0,0,0,0,0,0c0,0-0.1,0-0.1,0L8.8,5c0,0,0-0.1,0-0.1c0,0,0-0.1,0-0.1
+            	L12.2,2.9C12.1,2.9,12.2,2.9,12.2,2.9C12.2,2.9,12.2,2.9,12.2,2.9L12.2,2.9z M11.8,0c0.1,0,0.2,0,0.3,0.1c0.1,0.1,0.1,0.2,0.1,0.3
+            	v1.2c0,0,0,0.1-0.1,0.1c0,0,0,0,0,0c-0.1,0-0.1,0-0.1,0.1L6.2,5.1c0,0,0,0-0.1,0c0,0,0,0-0.1,0l-6-3.4C0,1.8,0,1.7,0,1.7V0.4
+            	c0-0.1,0-0.2,0.1-0.3C0.2,0,0.3,0,0.4,0H11.8L11.8,0z" />
+                </svg>
+                <span>PR Inquiries: <a href="mailto:press@rentcmo.com">press@rentcmo.com</a></span>
+              </div>
+              <div class="footer__socials">
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/insta.svg" alt="Instagram">
+                </a>
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/fb.svg" alt="Facebook">
+                </a>
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/LinkedIn.svg" alt="LinkedIn">
+                </a>
+                <a href="" class="footer__social-link d-none">
+                  <img src="images/social-icons/twitter.svg" alt="Twitter">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyrights">
+        <div class="container">
+          © 2018 Rent a CMO. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <!-- </ .wrapper> -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+

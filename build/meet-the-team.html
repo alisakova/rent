@@ -16,807 +16,734 @@
 <body>
   <div class="wrapper">
 
-<header class="header">
-  <div class="container">
-    <div class="header__logo">
-      <a href="/"><img src="images/logo.svg" alt=""></a>
-    </div>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <!-- TODO вставлен клас с active LI для активного пункта меню (ДЛЯ ПРИМЕРА, УБРАТЬ, ДОБАВИТЬ ЧЕРЕЗ СКРИПТ) -->
-        <li class="navigation__item active">
-          <a href="#" class="navigation__link navigation__link_with-submenu">Capabilities</a>
-          <div class="navigation__submenu">
-            <ul class="navigation__submenu-list">
-              <li><a href="startup-accelerator.html">Startup accelerator</a></li>
-              <li><a href="creative-development.html">Creative & Development</a></li>
-              <li><a href="digital-transformation.html">Digital Transformation</a></li>
-              <li><a href="lifecycle-marketing.html">Lifecycle Marketing</a></li>
-              <li><a href="paid-media.html">Paid Media</a></li>
-              <li><a href="sales-enablement.html">Sales Enablement</a></li>
-              <!-- TODO Добавить ссылку на страницу -->
-              <li><a href="seo-optimization.html">SEO Optimization</a></li>
-              <!-- TODO вставлен класс с active ссылке для активной (ДЛЯ ПРИМЕРА, УБРАТЬ, ДОБАВИТЬ ЧЕРЕЗ СКРИПТ) -->
-              <li><a href="reporting-and-analytics.html" class="active">Reporting & Analytics</a></li>
-            </ul>
-
-            <div class="navigation__submenu-image">
-              <img src="https://via.placeholder.com/262x150/fff.png/ccc" alt="">
-            </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <a href="/">
+            <img src="images/logo.svg" alt="">
+          </a>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item active">
+              <a href="#" class="navigation__link navigation__link_with-submenu">Capabilities</a>
+              <div class="navigation__submenu">
+                <ul class="navigation__submenu-list">
+                  <li><a href="startup-accelerator.html">Startup accelerator</a>
+                  </li>
+                  <li><a href="creative-development.html">Creative & Development</a>
+                  </li>
+                  <li><a href="digital-transformation.html">Digital Transformation</a>
+                  </li>
+                  <li><a href="lifecycle-marketing.html">Lifecycle Marketing</a>
+                  </li>
+                  <li><a href="paid-media.html">Paid Media</a>
+                  </li>
+                  <li><a href="sales-enablement.html">Sales Enablement</a>
+                  </li>
+                  <li><a href="seo-optimization.html">SEO Optimization</a>
+                  </li>
+                  <li><a href="reporting-and-analytics.html" class="active">Reporting & Analytics</a>
+                  </li>
+                </ul>
+                <!-- TODO изменить блок -->
+                <div class="navigation__submenu-image">
+                  <button class="_download-btn">
+                    <img src="images/best-seo-tools-book.svg" alt="Best SEO tools">
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="navigation__item">
+              <a href="industries.html" class="navigation__link">Industries</a>
+            </li>
+            <li class="navigation__item">
+              <a href="rent-vs-buy.html" class="navigation__link">Rent vs Buy</a>
+            </li>
+            <li class="navigation__item">
+              <a href="meet-the-team.html" class="navigation__link">Meet the Team</a>
+            </li>
+            <li class="navigation__item">
+              <a href="blog.html" class="navigation__link navigation__link_big-padding">Blog</a>
+            </li>
+          </ul>
+          <!-- TODO добавить блок -->
+          <div class="navigation__submenu-image navigation__submenu-image_mobile">
+            <button class="_download-btn">
+              <img src="images/best-seo-tools-book.svg" alt="Best SEO tools">
+            </button>
           </div>
-        </li>
-        <li class="navigation__item">
-          <a href="industries.html" class="navigation__link">Industries</a>
-        </li>
-        <li class="navigation__item">
-          <a href="rent-vs-buy.html" class="navigation__link">Rent vs Buy</a>
-        </li>
-        <li class="navigation__item">
-          <a href="meet-the-team.html" class="navigation__link">Meet the Team</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link navigation__link_big-padding">Blog</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header__links">
-      <div class="header__link-mobile header__link-mobile--share">
-        <a href="#">
-          <svg data-name="Layer 1 copy 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.37 14.93">
-            <path d="M16.38 7.42L9.57 0v4.42H8.14A8.12 8.12 0 0 0 0 12.57v2.36l.64-.7a11.53 11.53 0 0 1 8.5-3.81h.41v4.5z" fill="#fff" /></svg>
-        </a>
-      </div>
+        </nav>
+        <div class="header__links">
+          <div class="header__link-mobile header__link-mobile--share">
+            <a href="#">
+              <svg data-name="Layer 1 copy 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.37 14.93">
+                <path d="M16.38 7.42L9.57 0v4.42H8.14A8.12 8.12 0 0 0 0 12.57v2.36l.64-.7a11.53 11.53 0 0 1 8.5-3.81h.41v4.5z" fill="#fff" />
+              </svg>
+            </a>
+          </div>
 
-      <div class="header__link-mobile header__link-mobile--email contacts__email">
-        <a href="mailto:press@rentcmo.com">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.87 13.41">
-            <path d="M17.89 11.17a2.21 2.21 0 0 1-.29 1.07l-5.65-6.31 5.58-4.88a2.22 2.22 0 0 1 .36 1.19v8.94zM8.94 7.08l7.77-6.8A2.21 2.21 0 0 0 15.65 0H2.24a2.2 2.2 0 0 0-1.06.28zm2.17-.42l-1.8 1.57a.56.56 0 0 1-.74 0l-1.8-1.57-5.71 6.4a2.21 2.21 0 0 0 1.18.34h13.4a2.21 2.21 0 0 0 1.18-.34zM.35 1.05A2.22 2.22 0 0 0 0 2.24v8.94a2.21 2.21 0 0 0 .29 1.07l5.6-6.32z"
+          <div class="header__link-mobile header__link-mobile--email contacts__email">
+            <a href="mailto:press@rentcmo.com">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.87 13.41">
+                <path d="M17.89 11.17a2.21 2.21 0 0 1-.29 1.07l-5.65-6.31 5.58-4.88a2.22 2.22 0 0 1 .36 1.19v8.94zM8.94 7.08l7.77-6.8A2.21 2.21 0 0 0 15.65 0H2.24a2.2 2.2 0 0 0-1.06.28zm2.17-.42l-1.8 1.57a.56.56 0 0 1-.74 0l-1.8-1.57-5.71 6.4a2.21 2.21 0 0 0 1.18.34h13.4a2.21 2.21 0 0 0 1.18-.34zM.35 1.05A2.22 2.22 0 0 0 0 2.24v8.94a2.21 2.21 0 0 0 .29 1.07l5.6-6.32z"
                 fill="#fff" />
-          </svg>
-        </a>
-      </div>
+              </svg>
+            </a>
+          </div>
 
-      <div class="header__link-mobile header__link-mobile--phone contacts__phone">
-        <a href="tel:18666736826">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09">
-            <path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z"
+          <div class="header__link-mobile header__link-mobile--phone contacts__phone">
+            <a href="tel:18666736826">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09">
+                <path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z"
                 fill="#fff" />
-          </svg>
-          <span>
-            1-866-6-RENT-CMO (1-866-673-6826)
+              </svg>
+              <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+              <span>
+            1&#8209;866&#8209;6&#8209;RENT&#8209;CMO (1&#8209;866&#8209;673&#8209;6826)
           </span>
-        </a>
-      </div>
+            </a>
+          </div>
 
-      <a href="#" class="header__nav-link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18.5">
-          <path d="M0 0h22v3.5H0zm0 7.5h22V11H0zM0 15h22v3.5H0z" fill="#3e75ba" />
-        </svg>
-      </a>
-    </div>
-  </div>
-</header>
+          <a href="#" class="header__nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18.5">
+              <path d="M0 0h22v3.5H0zm0 7.5h22V11H0zM0 15h22v3.5H0z" fill="#3e75ba" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
 
 
-<section class="intro intro_internal-page">
-  <div class="container">
-    <div class="breadcrumb">
-      <a href="index.html" class="breadcrumb__link">Home</a>
-      <span class="breadcrumb__divider">/</span>
-      <span class="breadcrumb__link">Meet the team</span>
-    </div>
-    <div class="intro__wrap intro__wrap_padding-top-0 intro__wrap_flex intro__wrap_flex_space-between">
-      <div class="intro__text intro__text_max-width-50 intro__text_sales">
-        <h1>
-          We’re totally obsessed with growing our clients’ revenue (but it’s a healthy obsession)
-        </h1>
-        <p>
-          You won’t find another agency on this planet that lives and breathes
-          subscription marketing like we do. Only we have the secret sauce —
-          tons of experience, absolute tirelessness, and just plain smarts — to
-          take your marketing department or startup where you want to go FAST.
-          It’s the only speed we know how to work.
-        </p>
+    <section class="intro intro_internal-page">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html" class="breadcrumb__link">Home</a>
+          <span class="breadcrumb__divider">/</span>
+          <span class="breadcrumb__link">Meet the team</span>
+        </div>
+        <div class="intro__wrap intro__wrap_padding-top-0 intro__wrap_flex intro__wrap_flex_space-between">
+          <div class="intro__text intro__text_max-width-50 intro__text_sales">
+            <h1>We're totally obsessed with growing our clients’ revenue (but it's a healty obsession)</h1>
+            <p>You won’t find another agency on this planet that lives and breathes subscription marketing like we do. Only we have the secret sauce —tons of experience, absolute tirelessness, and just plain smarts — to take your marketing department or
+              startup where you want to go FAST. It’s the only speed we know how to work.</p>
+          </div>
+          <div class="intro__image intro__image--team intro__image--common">
+            <img src="images/meet-the-team/growing-clients-revenue.svg" alt="Growing clients revenue">
+          </div>
+        </div>
       </div>
-      <div class="intro__image intro__image--team intro__image--common">
-        <img src="images/meet-the-team/growing-clients-revenue.svg" alt="Growing clients revenue">
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="descr-section descr-section_padding-bottom descr-section_gray-bg">
-  <div class="container">
-    <div class="descr-section__container descr-section__container_align-center descr-section__container_reverse">
-      <div class="descr-section__content descr-section__content_reverse">
-        <h2>
-          Meet Our CMO <span class="font-weight-500">Lyamen Savy</span>
-        </h2>
-        <p>
-          Lyamen Savy is 1 part marketing guru, 1 part sales magician, and 1
-          part walking database. As founder of Rent a CMO, Lyamen partners
-          with CEOs, marketing executives, sales executives and entrepreneurs
-          to dramatically increase sales of their B2B and B2C subscription-based
-          products and services.
-        </p>
+    <section class="descr-section descr-section_padding-bottom descr-section_gray-bg">
+      <div class="container">
+        <div class="descr-section__container descr-section__container_align-center descr-section__container_reverse">
+          <div class="descr-section__content descr-section__content_reverse">
+            <h2>Meet Our CMO <span class="font-weight-500">Lyamen Savy</span></h2>
+            <p>Lyamen Savy is 1 part marketing guru, 1 part sales magician, and 1 part walking database. She knows what it takes to create truly integrated marketing programs for the entire customer subscription lifecycle. And that’s because she’s learned
+              in the trenches.</p>
+            <p>On the client side, she’s spent $100+ million in advertising dollars, and put in 31,000 hours of testing for some of the world’s largest Fortune 100 companies and startups. Marketing is in her DNA.</p>
+            <p>As founder of Rent a CMO, Lyamen partners with CEOs, marketing executives, sales executives and entrepreneurs to dramatically increase sales of their B2B and B2C subscription-based products and services.</p>
+          </div>
+          <div class="descr-section__img descr-section__img_max-width-50">
+            <img src="images/meet-the-team/lyamen-photo.png" alt="Lyamen Savy">
+          </div>
+        </div>
       </div>
-      <div class="descr-section__img descr-section__img_max-width-50">
-        <img src="images/meet-the-team/lyamen-photo.png" alt="Lyamen Savy">
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="descr-section descr-section_h2-big-margin descr-section_blue-bg">
-  <div class="container">
-    <h2>Our CMO has helped grow and position STARTUPS to:</h2>
-    <div class="descr-section__container descr-section__container_alt descr-section__container_space-between">
-      <div class="descr-item descr-item_width-33">
-        <div class="descr-item__content descr-item__content_padding-0">
-          <div class="descr-item__icon descr-item__icon_margin-bottom-28">
-            <img src="images/meet-the-team/item1.svg" alt="IPO">
-          </div>
-          <p class="descr-item__text descr-item__text_font-size-18">
-            Go IPO and then get acquired by the leading real estate and
-            rental marketplace (Zillow).
-          </p>
-        </div>
-      </div>
-      <div class="descr-item descr-item_width-33">
-        <div class="descr-item__content descr-item__content_padding-0">
-          <div class="descr-item__icon descr-item__icon_margin-bottom-28">
-            <img src="images/meet-the-team/item2.svg" alt="Be bought back-to-back">
-          </div>
-          <p class="descr-item__text descr-item__text_font-size-18">
-            Be bought back-to-back by a global entity (ING DIRECT) and then by
-            a monster Fortune 100 (CapitalOne).
-          </p>
-        </div>
-      </div>
-      <div class="descr-item descr-item_width-33">
-        <div class="descr-item__content descr-item__content_padding-0">
-          <div class="descr-item__icon descr-item__icon_margin-bottom-28">
-            <img src="images/meet-the-team/item3.svg" alt="PipelineDeals">
-          </div>
-          <p class="descr-item__text descr-item__text_font-size-18">
-            Thrive in a nearly 100% bootstrapped environment (PipelineDeals).
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="text-section text-section_team">
-  <div class="container">
-    <h2>
-      She’s made big companies bigger ... <br />
-      & pushed medium-sized companies to break out:
-    </h2>
-    <div class="text-section__wrap text-section__wrap_align-stretch">
-      <div class="text-block">
-        <span class="font-weight-500">Took the reins of Microsoft’s <span class="rose">$30M</span> Office 365 SaaS
-        marketing budget</span> — new SMB customer acquisition exploded <span class="rose font-weight-500">80%</span> over
-        goal & CPA plummeted by -23%. Microsoft is now valued at <span class="rose font-weight-500">$753 billion.</span>
-        That’s bigger than Google.
-      </div>
-      <div class="text-block">
-        <span class="font-weight-500">Launched strategic initiatives for Datasphere
-        Technologies to sell its online advertising services via subscription,
-        </span> positioning the company to be acquired by the largest TV network
-        in the U.S. (Sinclair Broadcast Group).
-      </div>
-    </div>
-    <h2>
-      CMO Lyamen Savy has been right where you are:<br />on the client side.
-    </h2>
-    <h3>
-      She knows what it takes to create a true integrated marketing program for
-      the entire customer subscription lifecycle.
-    </h3>
-    <p>
-      She has learned in the trenches — spending over $100 million in
-      advertising dollars, and 31,000 hours of testing — to understand the
-      entire digital customer experience. Marketing is in her DNA. No matter
-      what state of maturity or funding your company is in, let our CMO and
-      her team take you over the top.
-    </p>
-  </div>
-</section>
-
-<section class="descr-section descr-section_with-slider descr-section_blue-bg">
-  <div class="container">
-    <h2>Now Meet The Best Team in the Biz</h2>
-    <div class="team-slider">
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/haddad.png" alt="DJ Haddad">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">DJ Haddad</div>
-          <div class="team-slider__profession-name">
-            VP of Brand & Digital<br />Customer Experience
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/simon.png" alt="Simon Tagg">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Simon Tagg</div>
-          <div class="team-slider__profession-name">
-            Animation Director
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/chris.png" alt="Chris Hoenigmann">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Chris Hoenigmann</div>
-          <div class="team-slider__profession-name">
-            Animation Director 
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/marni.png" alt="Marni Manko">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Marni Manko</div>
-          <div class="team-slider__profession-name">
-            Creative Director
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/aimee.png" alt="Aimee Bensavage">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Aimee Bensavage</div>
-          <div class="team-slider__profession-name">
-            Account Director
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/ryan.png" alt="Ryan Cayer">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Ryan Cayer</div>
-          <div class="team-slider__profession-name">
-            Consigliere
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/benoit.png" alt="Benoît Dutrevis">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Benoît Dutrevis</div>
-          <div class="team-slider__profession-name">
-            Lead Developer
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/audra.png" alt="Audra Stino">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Audra Stino</div>
-          <div class="team-slider__profession-name">
-            Animation Supervisor 
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/malcolm.png" alt="Malcolm Twist">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Malcolm Twist</div>
-          <div class="team-slider__profession-name">
-            Creative Director
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/kristen.png" alt="Kristen Melesky">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Kristen Melesky</div>
-          <div class="team-slider__profession-name">
-            Copy & Strategy
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/alexis.png" alt="Alexis Kenny">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Alexis Kenny</div>
-          <div class="team-slider__profession-name">
-            Account Director
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/nicole.png" alt="Nicole Valentine">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Nicole Valentine</div>
-          <div class="team-slider__profession-name">
-            Executive Admin
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Joff.png" alt="Joff Monkton">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Joff Monkton</div>
-          <div class="team-slider__profession-name">
-            Developer
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Michael.png" alt="Michael Field">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Michael Field</div>
-          <div class="team-slider__profession-name">
-            Animator
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Rachel.png" alt="Rachel Leake">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Rachel Leake</div>
-          <div class="team-slider__profession-name">
-            Art Director
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Shoshana.png" alt="Shoshana Tyler">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Shoshana Tyler</div>
-          <div class="team-slider__profession-name">
-            Copywriter
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Lisa.png" alt="Lisa Tambini">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Lisa Tambini</div>
-          <div class="team-slider__profession-name">
-            Account Director
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Cecilia.png" alt="Cecilia Lizárraga">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Cecilia Lizárraga</div>
-          <div class="team-slider__profession-name">
-            Project Manager & QA
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Eduar.png" alt="Eduar Apaza Yañez">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Eduar Apaza Yañez</div>
-          <div class="team-slider__profession-name">
-            Developer
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Anna.png" alt="Anna Stylianidou">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Anna Stylianidou</div>
-          <div class="team-slider__profession-name">
-            Animator
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Christine.png" alt="Christine Matthews">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Christine Matthews</div>
-          <div class="team-slider__profession-name">
-            Art Director
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Natalia.png" alt="Natalia Sánchez">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Natalia Sánchez</div>
-          <div class="team-slider__profession-name">
-            Account Director
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Claudine.png" alt="Claudine Delaney">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Claudine Delaney</div>
-          <div class="team-slider__profession-name">
-            Ops. Manager & QA
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Daniel.png" alt="Daniel Njoroge">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Daniel Njoroge</div>
-          <div class="team-slider__profession-name">
-            AEM Engineer
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Titos.png" alt="Titos Agathangelou">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Titos Agathangelou</div>
-          <div class="team-slider__profession-name">
-            Animator
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Lauren.png" alt="Lauren Kalik">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Lauren Kalik</div>
-          <div class="team-slider__profession-name">
-            UX Designer
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Ann.png" alt="Ann Mackenzie">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Ann Mackenzie</div>
-          <div class="team-slider__profession-name">
-            Account Director
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Rachel.png" alt="Rachael Mason">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Rachael Mason</div>
-          <div class="team-slider__profession-name">
-            Admin. Assistant
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Gus.png" alt="Gus Cantavero">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Gus Cantavero</div>
-          <div class="team-slider__profession-name">
-            Video Producer
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Briann.png" alt="Brianne Rowe">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Brianne Rowe</div>
-          <div class="team-slider__profession-name">
-            Graphic Designer
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Paul.png" alt="Paul Raimondi">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Paul Raimondi</div>
-          <div class="team-slider__profession-name">
-            Account Supervisor
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Georges.png" alt="Georges Jabbour">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Georges Jabbour</div>
-          <div class="team-slider__profession-name">
-            Video Editor
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Sophia.png" alt="Sophia Openshaw">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Sophia Openshaw</div>
-          <div class="team-slider__profession-name">
-            Graphic Designer
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Jennifer.png" alt="Jennifer Mager">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Jennifer Mager</div>
-          <div class="team-slider__profession-name">
-            Managed Services
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Catina.png" alt="Catina Cricco">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Catina Cricco</div>
-          <div class="team-slider__profession-name">
-            Graphic Designer
-          </div>
-        </div>
-      </div>
-      <div class="team-slider__slide">
-        <div class="team-slider__photo">
-          <img src="images/meet-the-team/slider/Julia.png" alt="Julia Rotella">
-        </div>
-        <div class="team-slider__text">
-          <div class="team-slider__name">Julia Rotella</div>
-          <div class="team-slider__profession-name">
-            Project Manager
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="contact-us contact-us_white-bg">
-  <div class="container">
-    <div class="contact-us__container">
-      <div class="contact-us__content contact-us__content_margin-right-small contact-us__content_padding-top-0">
-        <h2>
-          Book your consultation right now. It’s the best business decision you
-          can possibly make.
-        </h2>
-        <p>
-          Are you serious, I mean really serious, about growing your subscription
-          model company? My team and I are always looking to help the right clients.
-          And by “right clients,” I mean marketers who are absolutely obsessed
-          with profits and don’t want to spend a nickel on a strategy that
-          hasn’t been proven.<br />
-          Put the marketing playbook of Fortune 100 companies to work for you.
-        </p>
-      </div>
-      <div class="contact-us__form">
-        <form action="" class="contact-form contact-form_gray-bg form">
-          <div class="form__item">
-            <label for="theme" class="form__label">I’d like to chat about:</label>
-            <select class="select form__select" id="theme" name="theme">
-              <option value="general-inquiry">General inquiry</option>
-            </select>
-          </div>
-          <div class="form__item">
-            <input type="text" id="name" class="form__input" placeholder="Name:" required>
-          </div>
-          <div class="form__group form-grid">
-            <div class="form__item form-grid__col">
-              <input type="text" class="form__input" id="company-mail" placeholder="Company email:" required>
+    <section class="descr-section descr-section_with-slider descr-section_blue-bg">
+      <div class="container">
+        <h2>Now Meet The Best Team in the Biz</h2>
+        <div class="team-slider">
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/haddad.png" alt="DJ Haddad">
             </div>
-            <div class="form__item form-grid__col">
-              <input type="tel" class="form__input" id="tel" placeholder="Phone number" required>
+            <div class="team-slider__text">
+              <div class="team-slider__name">DJ Haddad</div>
+              <div class="team-slider__profession-name">
+                VP of Brand & Digital
+                <br />Customer Experience
+              </div>
             </div>
           </div>
-          <div class="form__item">
-            <input type="text" id="job-title" class="form__input" placeholder="Job title:" required>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/simon.png" alt="Simon Tagg">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Simon Tagg</div>
+              <div class="team-slider__profession-name">
+                Animation Director
+              </div>
+            </div>
           </div>
-          <div class="form__item">
-            <label for="budget" class="form__label">Monthly marketing budget:</label>
-            <select class="select form__select" id="budget" name="budget">
-              <option value="general-inquiry">$0 to $5,000</option>
-            </select>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/chris.png" alt="Chris Hoenigmann">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Chris Hoenigmann</div>
+              <div class="team-slider__profession-name">
+                Animation Director 
+              </div>
+            </div>
           </div>
-          <div class="form__item">
-            <input type="url" id="website" class="form__input" placeholder="Website URL" required>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/marni.png" alt="Marni Manko">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Marni Manko</div>
+              <div class="team-slider__profession-name">
+                Creative Director
+              </div>
+            </div>
           </div>
-          <div class="form__item">
-            <label for="currently-work" class="form__label">You are currently... </label>
-            <select class="select form__select" id="currently-work" name="currently-work">
-              <option value="general-inquiry">Working with an agency</option>
-            </select>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/aimee.png" alt="Aimee Bensavage">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Aimee Bensavage</div>
+              <div class="team-slider__profession-name">
+                Account Director
+              </div>
+            </div>
           </div>
-          <div class="form__item">
-            <textarea class="form__textarea" placeholder="Tell us a little bit about your company and major problem areas which you would like to improve..."></textarea>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/ryan.png" alt="Ryan Cayer">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Ryan Cayer</div>
+              <div class="team-slider__profession-name">
+                Consigliere
+              </div>
+            </div>
           </div>
-          <button type="submit" class="btn btn--success">Contact me</button>
-        </form>
-      </div>
-    </div>
-    <!-- TODO добавить блок -->
-    <div class="link-btn-container">
-      <div class="link-btn">
-        <span class="link-btn__title">Next service</span>
-        <a href="startup-accelerator.html" class="link-btn__link">
-          Startup Accelerator
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="footer__main">
-    <div class="container footer__container">
-      <div class="footer__col footer__col_logo">
-        <div class="footer__logo">
-          <a href="/"><img src="images/logo.svg" alt=""></a>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/benoit.png" alt="Benoît Dutrevis">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Benoît Dutrevis</div>
+              <div class="team-slider__profession-name">
+                Lead Developer
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/audra.png" alt="Audra Stino">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Audra Stino</div>
+              <div class="team-slider__profession-name">
+                Animation Supervisor 
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/malcolm.png" alt="Malcolm Twist">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Malcolm Twist</div>
+              <div class="team-slider__profession-name">
+                Creative Director
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/kristen.png" alt="Kristen Melesky">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Kristen Melesky</div>
+              <div class="team-slider__profession-name">
+                Copy & Strategy
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/alexis.png" alt="Alexis Kenny">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Alexis Kenny</div>
+              <div class="team-slider__profession-name">
+                Account Director
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/nicole.png" alt="Nicole Valentine">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Nicole Valentine</div>
+              <div class="team-slider__profession-name">
+                Executive Admin
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Joff.png" alt="Joff Monkton">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Joff Monkton</div>
+              <div class="team-slider__profession-name">
+                Developer
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Michael.png" alt="Michael Field">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Michael Field</div>
+              <div class="team-slider__profession-name">
+                Animator
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Rachel.png" alt="Rachel Leake">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Rachel Leake</div>
+              <div class="team-slider__profession-name">
+                Art Director
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Shoshana.png" alt="Shoshana Tyler">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Shoshana Tyler</div>
+              <div class="team-slider__profession-name">
+                Copywriter
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Lisa.png" alt="Lisa Tambini">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Lisa Tambini</div>
+              <div class="team-slider__profession-name">
+                Account Director
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Cecilia.png" alt="Cecilia Lizárraga">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Cecilia Lizárraga</div>
+              <div class="team-slider__profession-name">
+                Project Manager & QA
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Eduar.png" alt="Eduar Apaza Yañez">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Eduar Apaza Yañez</div>
+              <div class="team-slider__profession-name">
+                Developer
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Anna.png" alt="Anna Stylianidou">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Anna Stylianidou</div>
+              <div class="team-slider__profession-name">
+                Animator
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Christine.png" alt="Christine Matthews">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Christine Matthews</div>
+              <div class="team-slider__profession-name">
+                Art Director
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Natalia.png" alt="Natalia Sánchez">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Natalia Sánchez</div>
+              <div class="team-slider__profession-name">
+                Account Director
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Claudine.png" alt="Claudine Delaney">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Claudine Delaney</div>
+              <div class="team-slider__profession-name">
+                Ops. Manager & QA
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Daniel.png" alt="Daniel Njoroge">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Daniel Njoroge</div>
+              <div class="team-slider__profession-name">
+                AEM Engineer
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Titos.png" alt="Titos Agathangelou">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Titos Agathangelou</div>
+              <div class="team-slider__profession-name">
+                Animator
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Lauren.png" alt="Lauren Kalik">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Lauren Kalik</div>
+              <div class="team-slider__profession-name">
+                UX Designer
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Ann.png" alt="Ann Mackenzie">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Ann Mackenzie</div>
+              <div class="team-slider__profession-name">
+                Account Director
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Rachael.png" alt="Rachael Mason">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Rachael Mason</div>
+              <div class="team-slider__profession-name">
+                Admin. Assistant
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Gus.png" alt="Gus Cantavero">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Gus Cantavero</div>
+              <div class="team-slider__profession-name">
+                Video Producer
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Briann.png" alt="Brianne Rowe">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Brianne Rowe</div>
+              <div class="team-slider__profession-name">
+                Graphic Designer
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Paul.png" alt="Paul Raimondi">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Paul Raimondi</div>
+              <div class="team-slider__profession-name">
+                Account Supervisor
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Georges.png" alt="Georges Jabbour">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Georges Jabbour</div>
+              <div class="team-slider__profession-name">
+                Video Editor
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Sophia.png" alt="Sophia Openshaw">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Sophia Openshaw</div>
+              <div class="team-slider__profession-name">
+                Graphic Designer
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Jennifer.png" alt="Jennifer Mager">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Jennifer Mager</div>
+              <div class="team-slider__profession-name">
+                Managed Services
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Catina.png" alt="Catina Cricco">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Catina Cricco</div>
+              <div class="team-slider__profession-name">
+                Graphic Designer
+              </div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__photo">
+              <img src="images/meet-the-team/slider/Julia.png" alt="Julia Rotella">
+            </div>
+            <div class="team-slider__text">
+              <div class="team-slider__name">Julia Rotella</div>
+              <div class="team-slider__profession-name">
+                Project Manager
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer__mobile-container">
-        <div class="footer__col">
-          <h4>Capabilities</h4>
-          <ul class="footer__list">
-            <a href="startup-accelerator.html" class="footer__link">
+    </section>
+
+    <section class="contact-us contact-us_white-bg">
+      <div class="container">
+        <div class="contact-us__container">
+          <div class="contact-us__content contact-us__content_margin-right-small contact-us__content_padding-top-0">
+            <h2>Book your consultation right now. It’s the best business decision you can possibly make.</h2>
+            <p>Are you serious, I mean really serious, about growing your subscription model company? My team and I are always looking to help the right clients. And by “right clients,” I mean marketers who are absolutely obsessed with profits and don’t
+              want to spend a nickel on a strategy that hasn’t been proven.
+              <br />Put the marketing playbook of Fortune 100 companies to work for you.</p>
+          </div>
+          <div class="contact-us__form">
+            <form action="" class="contact-form contact-form_gray-bg form">
+              <div class="form__item">
+                <label for="theme" class="form__label">I’d like to chat about:</label>
+                <select class="select form__select" id="theme" name="theme">
+                  <option value="general-inquiry">General inquiry</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <input type="text" id="name" class="form__input" placeholder="Name:" required>
+              </div>
+              <div class="form__group form-grid">
+                <div class="form__item form-grid__col">
+                  <input type="text" class="form__input" id="company-mail" placeholder="Company email:" required>
+                </div>
+                <div class="form__item form-grid__col">
+                  <input type="tel" class="form__input" id="tel" placeholder="Phone number" required>
+                </div>
+              </div>
+              <div class="form__item">
+                <input type="text" id="job-title" class="form__input" placeholder="Job title:" required>
+              </div>
+              <div class="form__item">
+                <label for="budget" class="form__label">Monthly marketing budget:</label>
+                <select class="select form__select" id="budget" name="budget">
+                  <option value="general-inquiry">$0 to $5,000</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <input type="url" id="website" class="form__input" placeholder="Website URL" required>
+              </div>
+              <div class="form__item">
+                <label for="currently-work" class="form__label">You are currently...</label>
+                <select class="select form__select" id="currently-work" name="currently-work">
+                  <option value="general-inquiry">Working with an agency</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <textarea class="form__textarea" placeholder="Tell us a little bit about your company and major problem areas which you would like to improve..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--success">Contact me</button>
+            </form>
+          </div>
+        </div>
+        <div class="link-btn-container">
+          <div class="link-btn">
+            <!-- TODO поменять блок -->
+            <span class="link-btn__title">Next service:<a href="startup-accelerator.html" class="link-btn__link">Startup Accelerator</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="container footer__container">
+          <div class="footer__col footer__col_logo">
+            <div class="footer__logo">
+              <a href="/">
+                <img src="images/logo.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="footer__mobile-container">
+            <div class="footer__col">
+              <h4>Capabilities</h4>
+              <ul class="footer__list">
+                <a href="startup-accelerator.html" class="footer__link">
               Startup accelerator
             </a>
-            <a href="digital-transformation.html" class="footer__link">
+                <a href="digital-transformation.html" class="footer__link">
               Digital Transformation
             </a>
-            <a href="paid-media.html" class="footer__link">
+                <a href="paid-media.html" class="footer__link">
               Paid Media
             </a>
-            <a href="" class="footer__link">
+                <a href="" class="footer__link">
               SEO Optimization
             </a>
-            <a href="creative-development.html" class="footer__link">
+                <a href="creative-development.html" class="footer__link">
               Creative & Development
             </a>
-            <a href="lifecycle-marketing.html" class="footer__link">
+                <a href="lifecycle-marketing.html" class="footer__link">
               Lifecycle Marketing
             </a>
-            <a href="sales-enablement.html" class="footer__link">
+                <a href="sales-enablement.html" class="footer__link">
               Sales Enablement
             </a>
-            <a href="reporting-and-analytics.html" class="footer__link">
+                <a href="reporting-and-analytics.html" class="footer__link">
               Reporting & Analytics
             </a>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Company</h4>
-          <ul class="footer__list">
-            <a href="industries.html" class="footer__link">
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4>Company</h4>
+              <ul class="footer__list">
+                <a href="industries.html" class="footer__link">
               Industries
             </a>
-            <a href="rent-vs-buy.html" class="footer__link">
+                <a href="rent-vs-buy.html" class="footer__link">
               Rent vs. Buy
             </a>
-            <a href="meet-the-team.html" class="footer__link">
+                <a href="meet-the-team.html" class="footer__link">
               Meet the Team
             </a>
-            <a href="" class="footer__link">
+                <a href="" class="footer__link">
               Blog
             </a>
-            <a href="" class="footer__link">
+                <a href="" class="footer__link">
               Sitemap
             </a>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__col footer__col_bordered">
-        <h4>Get in Touch</h4>
-        <div class="footer__contacts contacts">
-          <div class="footer__contact footer__contact_tel contacts__phone">
-            <a href="tel:18666736826">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09"><path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z" fill="#fff"/></svg>
-              <span>
-                1-866-6-RENT-CMO (1-866-673-6826)
-              </span>
-            </a>
+              </ul>
+            </div>
           </div>
-          <button class="btn">Contact us</button>
-          <div class="footer__contact footer__contact_mail contacts__email">
-            <?xml version="1.0" encoding="utf-8"?>
-            <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 viewBox="0 0 12.2 9.8" style="enable-background:new 0 0 12.2 9.8;" xml:space="preserve">
-            <style type="text/css">
-            	.st0{fill:#3E75BA;}
-            </style>
-            <path id="Forma_1" class="st0" d="M0.2,8.2C0.2,8.3,0.1,8.3,0.2,8.2l-0.1,0C0,8.3,0,8.2,0,8.2V3.1C0,3,0,3,0.1,3c0,0,0.1,0,0.1,0
+          <div class="footer__col footer__col_bordered">
+            <h4>Get in Touch</h4>
+            <div class="footer__contacts contacts">
+              <div class="footer__contact footer__contact_tel contacts__phone">
+                <a href="tel:18666736826">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.09">
+                    <path d="M18.09 14.28a.87.87 0 0 1-.27.77l-2.55 2.53a1.43 1.43 0 0 1-.45.33 1.86 1.86 0 0 1-.55.17h-.36a8.83 8.83 0 0 1-1.17-.08 9 9 0 0 1-2-.61 16.73 16.73 0 0 1-2.67-1.47 19.93 19.93 0 0 1-3.18-2.72 21 21 0 0 1-2.22-2.53 18 18 0 0 1-1.42-2.23 12 12 0 0 1-.8-1.86 9.86 9.86 0 0 1-.37-1.44A4.75 4.75 0 0 1 0 4.2v-.38a1.86 1.86 0 0 1 .17-.55 1.44 1.44 0 0 1 .33-.45L3.07.27A.84.84 0 0 1 3.68 0a.71.71 0 0 1 .44.14 1.33 1.33 0 0 1 .33.36L6.5 4.39a.93.93 0 0 1 .1.67 1.19 1.19 0 0 1-.33.61l-.94.94a.32.32 0 0 0-.07.12.47.47 0 0 0 0 .14 3.46 3.46 0 0 0 .34.92 8.44 8.44 0 0 0 .71 1.12 12.45 12.45 0 0 0 1.36 1.52A12.69 12.69 0 0 0 9.2 11.8a8.85 8.85 0 0 0 1.12.72 3 3 0 0 0 .69.28h.36a.32.32 0 0 0 .12-.07l1.09-1.11a1.17 1.17 0 0 1 .8-.31 1 1 0 0 1 .52.11l3.7 2.18a1 1 0 0 1 .49.68z"
+                    fill="#fff" />
+                  </svg>
+                  <!-- TODO поменять текст + проверить квадратики и пробелы в консоли -->
+                  <span>
+                1&#8209;866&#8209;6&#8209;RENT&#8209;CMO (1&#8209;866&#8209;673&#8209;6826)
+              </span>
+                </a>
+              </div>
+              <button class="btn">Contact us</button>
+              <div class="footer__contact footer__contact_mail contacts__email">
+                <?xml version="1.0" encoding="utf-8" ?>
+                <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12.2 9.8" style="enable-background:new 0 0 12.2 9.8;" xml:space="preserve">
+                  <style type="text/css">
+                    .st0{fill:#3E75BA;}
+                  </style>
+                  <path id="Forma_1" class="st0" d="M0.2,8.2C0.2,8.3,0.1,8.3,0.2,8.2l-0.1,0C0,8.3,0,8.2,0,8.2V3.1C0,3,0,3,0.1,3c0,0,0.1,0,0.1,0
             	l3.5,2c0,0,0.1,0,0.1,0.1c0,0,0,0.1,0,0.1L0.2,8.2z M11.8,9.6c0,0,0,0.1,0,0.1c0,0-0.1,0.1-0.1,0.1H0.4c-0.1,0-0.1,0-0.2-0.1
             	c0,0-0.1,0-0.1-0.1c0,0,0-0.1,0-0.1l4.4-4c0,0,0.1,0,0.1,0l1.2,0.6c0.2,0.1,0.3,0.1,0.5,0l1.3-0.8c0.1,0,0.1,0,0.1,0L11.8,9.6z
             	 M12.2,2.9C12.2,2.9,12.2,3,12.2,2.9l0.1,5.5c0,0,0,0.1-0.1,0.1c0,0,0,0,0,0c0,0-0.1,0-0.1,0L8.8,5c0,0,0-0.1,0-0.1c0,0,0-0.1,0-0.1
             	L12.2,2.9C12.1,2.9,12.2,2.9,12.2,2.9C12.2,2.9,12.2,2.9,12.2,2.9L12.2,2.9z M11.8,0c0.1,0,0.2,0,0.3,0.1c0.1,0.1,0.1,0.2,0.1,0.3
             	v1.2c0,0,0,0.1-0.1,0.1c0,0,0,0,0,0c-0.1,0-0.1,0-0.1,0.1L6.2,5.1c0,0,0,0-0.1,0c0,0,0,0-0.1,0l-6-3.4C0,1.8,0,1.7,0,1.7V0.4
-            	c0-0.1,0-0.2,0.1-0.3C0.2,0,0.3,0,0.4,0H11.8L11.8,0z"/>
-            </svg>
-            <span>PR Inquiries: <a href="mailto:press@rentcmo.com">press@rentcmo.com</a></span>
-          </div>
-          <div class="footer__socials">
-            <a href="" class="footer__social-link">
-              <img src="images/social-icons/insta.svg" alt="Instagram">
-            </a>
-            <a href="" class="footer__social-link">
-              <img src="images/social-icons/fb.svg" alt="Facebook">
-            </a>
-            <a href="" class="footer__social-link">
-              <img src="images/social-icons/LinkedIn.svg" alt="LinkedIn">
-            </a>
+            	c0-0.1,0-0.2,0.1-0.3C0.2,0,0.3,0,0.4,0H11.8L11.8,0z" />
+                </svg>
+                <span>PR Inquiries: <a href="mailto:press@rentcmo.com">press@rentcmo.com</a></span>
+              </div>
+              <div class="footer__socials">
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/insta.svg" alt="Instagram">
+                </a>
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/fb.svg" alt="Facebook">
+                </a>
+                <a href="" class="footer__social-link">
+                  <img src="images/social-icons/LinkedIn.svg" alt="LinkedIn">
+                </a>
+                <a href="" class="footer__social-link d-none">
+                  <img src="images/social-icons/twitter.svg" alt="Twitter">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="footer__copyrights">
-    <div class="container">
-      © 2018 Rent a CMO. All rights reserved.
-    </div>
-  </div>
-</footer>
+      <div class="footer__copyrights">
+        <div class="container">
+          © 2018 Rent a CMO. All rights reserved.
+        </div>
+      </div>
+    </footer>
 
-</div> <!-- </ .wrapper> -->
+  </div>
+  <!-- </ .wrapper> -->
 
-<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
-<script src="js/main.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>

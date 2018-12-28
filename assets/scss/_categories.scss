@@ -1,0 +1,14 @@
+.categories {
+  margin-bottom: rem(52);
+  font-size: rem(14);
+}
+
+.categories__item {
+  &:not(:last-child) {
+    margin-bottom: rem(5);
+  }
+}
+
+.categories__link {
+  color: $second-blue;
+}

@@ -38,11 +38,16 @@
 }
 
 .reviews-slider__img {
-  width: rem(83);
+  min-width: rem(83);
+  max-width: rem(83);
   margin-right: rem(24);
   @media (max-width: 600px) {
     margin-right: rem(11, 14);
     width: rem(83, 14);
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -58,8 +63,10 @@
 
 .reviews-slider__logo-img {
   min-width: rem(93);
+  max-width: rem(120);
   @media (max-width: 600px) {
     min-width: rem(93, 14);
+    max-width: rem(120, 14);
   }
 }
 

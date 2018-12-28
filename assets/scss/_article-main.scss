@@ -1,0 +1,115 @@
+.article-main {
+  margin-top: rem(30);
+  padding-bottom: rem(86);
+  h2 {
+    font: {
+      size: rem(22);
+      weight: normal;
+    }
+    text-align: left;
+    margin-bottom: rem(18);
+    @media (max-width: 600px) {
+      font: {
+        size: rem(18);
+      }
+    }
+  }
+  h1 {
+    @media (max-width: 600px) {
+      font: {
+        size: rem(24);
+        weight: 300;
+      }
+      margin-bottom: rem(20);
+    }
+  }
+  .container {
+    padding: {
+      left: rem(105);
+      right: rem(120);
+    }
+    @media (max-width: 800px) {
+      padding: {
+        left: rem($container-padding);
+        right: rem($container-padding);
+      }
+    }
+  }
+  hr {
+    max-width: rem(361);
+    margin: 0 auto;
+    & + p {
+      text-align: center;
+      margin-bottom: 0;
+      padding: {
+        top: rem(48);
+        bottom: rem(48);
+      }
+      @media (max-width: 600px) {
+        padding: {
+          top: rem(28, 14);
+          bottom: rem(28, 14);
+        }
+      }
+    }
+  }
+  p {
+    & + hr {
+      margin-bottom: rem(49);
+      @media (max-width: 600px) {
+        margin-bottom: rem(35, 14);
+      }
+    }
+  }
+  ul {
+    font-size: rem(18);
+    li {
+      &:before {
+        color: #000;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    padding-top: rem(54, 14);
+    margin-top: 0;
+  }
+}
+
+.article-main__header {
+  margin-bottom: rem(45);
+  @media (max-width: 600px) {
+    margin-bottom: rem(25, 14);
+  }
+}
+
+.article-main__header-img {
+  @media (max-width: 600px) {
+    height: rem(190, 14);
+    margin: 0 rem(-$container-padding);
+  }
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.article-main__article-img {
+  max-width: 70%;
+  margin-bottom: rem(50);
+  @media (max-width: 600px) {
+    max-width: 100%;
+    margin-bottom: rem(30, 14);
+  }
+}
+
+.article-main__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    .tag {
+      font-size: rem(14, 14);
+    }
+  }
+}

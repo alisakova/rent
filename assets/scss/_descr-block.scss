@@ -43,6 +43,9 @@
       @media (max-width: 900px) {
         max-width: 33%;
         min-width: 33%;
+        &_width-260 {
+          min-width: 23%;
+        }
       }
       @media (max-width: 600px) {
         max-width: none;
@@ -66,12 +69,14 @@
     }
     &:nth-child(odd) {
       flex-direction: row-reverse;
-      @media (max-width: 600px) {
-        flex-direction: column-reverse;
-      }
+    }
+    &:nth-child(even) {
+      flex-direction: row;
     }
     @media (max-width: 600px) {
-      flex-direction: column-reverse;
+      &:nth-child(n) {
+        flex-direction: column-reverse;
+      }
       &.descr-block_alt-reverse-mobile {
         flex-direction: column;
       }

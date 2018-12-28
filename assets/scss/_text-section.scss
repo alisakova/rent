@@ -22,6 +22,11 @@
       margin-top: rem(20, 14);
     }
   }
+  &_h3-margin {
+    h3 + h3 {
+      margin-top: rem(10);
+    }
+  }
   &_gray-bg {
     background: $section-bg;
   }

@@ -122,7 +122,10 @@
     }
     @media (max-width: 375px) {
       left: rem(-50);
-      width: rem(250, 15);
+      width: rem(330, 15);
+    }
+    @media (max-width: 350px) {
+      width: rem(270, 15);
     }
   }
   @media (max-width: 1300px) {

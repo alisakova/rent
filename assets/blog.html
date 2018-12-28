@@ -1,0 +1,17 @@
+@import "base_head.html"
+@import "header.html"
+
+<div class="container flex">
+  <main class="main">
+    <div class="breadcrumb">
+      <a href="index.html" class="breadcrumb__link">Home</a>
+      <span class="breadcrumb__divider">/</span>
+      <span class="breadcrumb__link">Blog</span>
+    </div>
+    @import "blog/article-list.html"
+  </main>
+  @import "blog/aside.html"
+</div>
+
+@import "footer.html"
+@import "base_foot.html"
