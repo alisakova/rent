@@ -2,19 +2,16 @@
 
 // mobile navigation
 let navLink = document.querySelector(".header__nav-link");
-let navMenu = document.querySelector(".navigation");
-let header = document.querySelector(".header");
+let navMenu = document.querySelector(".header + .navigation");
 
 function navOpen(el, target) {
   el.classList.add("active");
   target.classList.add("visible");
-  header.classList.add("not-sticky");
 }
 
 function navClose(el, target) {
   el.classList.remove("active");
   target.classList.remove("visible");
-  header.classList.remove("not-sticky");
 }
 
 navLink.addEventListener("click", e => {

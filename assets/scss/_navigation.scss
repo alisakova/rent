@@ -1,7 +1,6 @@
 .navigation {
   width: 100%;
   z-index: 10;
-  overflow-y: scroll;
 
   &.visible {
     opacity: 1;
@@ -121,15 +120,19 @@
 
 @media (max-width: $bp-desktop - 1) {
   .navigation {
-    background: $ui-second-color;
-    font-size: rem(16);
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    transition: $transition;
-    will-change: opacity, visibility;
+    display: none;
+    &_mobile {
+      display: block;
+      background: $ui-second-color;
+      font-size: rem(16);
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      left: 0;
+      top: rem(60);
+      transition: $transition;
+      will-change: opacity, visibility;
+    }
   }
 
   .navigation__item {
@@ -171,6 +174,9 @@
       top: 50%;
       transform: translateY(-50%);
       content: "";
+    }
+    &_mobile {
+      display: none;
     }
   }
 

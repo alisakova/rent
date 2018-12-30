@@ -976,11 +976,6 @@ hr {
   justify-content: space-between;
   align-items: center
 }
-.header.not-sticky {
-  position: absolute;
-  top: 0;
-  left: 0
-}
 .header__logo {
   width: 11.42857rem
 }
@@ -1286,8 +1281,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 .navigation {
   width: 100%;
-  z-index: 10;
-  overflow-y: scroll
+  z-index: 10
 }
 .navigation.visible {
   opacity: 1;
@@ -1396,13 +1390,17 @@ textarea:focus::-webkit-input-placeholder {
 }
 @media (max-width:1199px) {
   .navigation {
+    display: none
+  }
+  .navigation_mobile {
+    display: block;
     background: #0077bf;
     font-size: 1rem;
     opacity: 0;
     visibility: hidden;
     position: absolute;
     left: 0;
-    top: 100%;
+    top: 3.75rem;
     transition: .2s;
     will-change: opacity,visibility
   }
@@ -1444,6 +1442,9 @@ textarea:focus::-webkit-input-placeholder {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     content: ""
+  }
+  .navigation_mobile {
+    display: none
   }
   .navigation__list {
     display: flex
