@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     webserver = require('gulp-webserver'),
     htmlImport = require('gulp-html-import'),
-    uglify = require('gulp-uglify'),
+    // uglify = require('gulp-uglify'),
     prettify = require('gulp-html-prettify');
 
 var path = {
