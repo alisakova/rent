@@ -345,15 +345,6 @@ for (i = 0; i < accordionLink.length; i++) {
   //accordionLink[i].addEventListener('click', toggleItem, false);
 }
 
-let searchBtn = document.querySelector('.search-mobile__btn');
-let searchInput = document.querySelector('.search-mobile .search__input');
-
-if (searchBtn) {
-  searchBtn.addEventListener("click", function(e) {
-    searchInput.classList.add("active");
-  });
-}
-
 $("._submit-modal").click(function(event) {
   event.preventDefault();
   $("#submit-modal").modal();
@@ -385,6 +376,13 @@ $(document).ready(function() {
     $(".subscribe .form__input").removeClass("form__input_error");
     $(".subscribe .error").removeClass("active");
   });
+});
+
+let searchBtn = document.querySelector(".search-mobile__btn");
+let searchMobile = document.querySelector(".article-header__row_search");
+
+searchBtn.addEventListener("click", function() {
+  searchMobile.classList.toggle("active");
 });
 
 $(document).ready(function() {

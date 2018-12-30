@@ -1,12 +1,10 @@
 $border-article-color: rgba(#888888, 0.3);
 
 .article-header {
-  display: flex;
-  align-items: stretch;
   border-bottom: 1px solid $border-article-color;
   margin-bottom: rem(28);
   padding: rem(10 $container-padding);
-  height: 54px;
+  // height: 54px;
   @media (min-width: 601px) {
     display: none;
   }
@@ -62,6 +60,29 @@ $border-article-color: rgba(#888888, 0.3);
           }
         }
       }
+    }
+  }
+}
+
+.article-header__row {
+  &_main {
+    display: flex;
+    align-items: stretch;
+  }
+  &_search {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: all 250ms;
+    .search__input {
+      background: #fff;
+      padding-left: 0.9375rem;
+    }
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      height: auto;
+      margin-top: 10px;
     }
   }
 }
