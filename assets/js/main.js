@@ -2,7 +2,7 @@
 
 // mobile navigation
 let navLink = document.querySelector(".header__nav-link");
-let navMenu = document.querySelector(".header + .navigation");
+let navMenu = document.querySelector(".navigation");
 
 function navOpen(el, target) {
   el.classList.add("active");

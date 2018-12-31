@@ -339,6 +339,9 @@
     padding-bottom: 0;
     max-width: none;
     margin-bottom: 2.125rem;
+    &_margin-bottom-mobile-0 {
+      margin-bottom: 0;
+    }
   }
   &_max-width-55 {
     max-width: 55%;

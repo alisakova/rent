@@ -50,7 +50,16 @@
     border-bottom: 1px solid #c4c4c4;
     padding-bottom: rem(40);
     @media (max-width: 600px) {
-      padding-bottom: 0;
+      padding: 0;
+    }
+  }
+  &_border-bottom-0 {
+    padding-bottom: 2.28571rem;
+    .container {
+      border-bottom: none;
+      @media (min-width: 600px) {
+        padding-bottom: 0;
+      }
     }
   }
 }

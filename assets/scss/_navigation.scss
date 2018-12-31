@@ -5,6 +5,9 @@
   &.visible {
     opacity: 1;
     visibility: visible;
+    padding-bottom: rem(100);
+    max-height: 100vh;
+    overflow-y: scroll;
   }
 }
 
@@ -120,8 +123,6 @@
 
 @media (max-width: $bp-desktop - 1) {
   .navigation {
-    display: none;
-    &_mobile {
       display: block;
       background: $ui-second-color;
       font-size: rem(16);
@@ -132,7 +133,6 @@
       top: rem(60);
       transition: $transition;
       will-change: opacity, visibility;
-    }
   }
 
   .navigation__item {

@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     webserver = require('gulp-webserver'),
     htmlImport = require('gulp-html-import'),
-    // uglify = require('gulp-uglify'),
+    uglify = require('gulp-uglify'),
     prettify = require('gulp-html-prettify');
 
 var path = {
@@ -77,12 +77,13 @@ gulp.task('html:build', function () {
 
 
 
-/* собрать скрипты */
-gulp.task('js:build', function () {
-    gulp.src(path.src.js)
-        // .pipe(uglify())
-        .pipe(concat('main.js'))
-        .pipe(gulp.dest(path.build.js))
+gulp.task("js:build", function() {
+  gulp
+    .src(path.src.js)
+    // .pipe(uglify())
+    .on("error", log)
+    .pipe(concat("main.js"))
+    .pipe(gulp.dest(path.build.js))
 });
 // библиотеки
 // gulp.task('jsLibs:build', function () {

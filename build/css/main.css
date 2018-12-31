@@ -1285,7 +1285,10 @@ textarea:focus::-webkit-input-placeholder {
 }
 .navigation.visible {
   opacity: 1;
-  visibility: visible
+  visibility: visible;
+  padding-bottom: 6.25rem;
+  max-height: 100vh;
+  overflow-y: scroll
 }
 .navigation__list {
   display: block;
@@ -1390,9 +1393,6 @@ textarea:focus::-webkit-input-placeholder {
 }
 @media (max-width:1199px) {
   .navigation {
-    display: none
-  }
-  .navigation_mobile {
     display: block;
     background: #0077bf;
     font-size: 1rem;
@@ -1983,6 +1983,9 @@ textarea:focus::-webkit-input-placeholder {
     padding-bottom: 0;
     max-width: none;
     margin-bottom: 2.125rem
+  }
+  .intro__text_margin-bottom-mobile-0 {
+    margin-bottom: 0
   }
 }
 .intro__text_max-width-55 {
@@ -3169,6 +3172,17 @@ textarea:focus::-webkit-input-placeholder {
   border-bottom: 1px solid #c4c4c4;
   padding-bottom: 2.5rem
 }
+.contact-us_border-bottom-0 {
+  padding-bottom: 2.28571rem
+}
+.contact-us_border-bottom-0 .container {
+  border-bottom: none
+}
+@media (min-width:600px) {
+  .contact-us_border-bottom-0 .container {
+    padding-bottom: 0
+  }
+}
 .contact-us__container {
   display: flex;
   align-items: flex-start;
@@ -3203,7 +3217,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 @media (max-width:600px) {
   .contact-us .container {
-    padding-bottom: 0
+    padding: 0
   }
   .contact-us__container {
     flex-direction: column
@@ -3253,6 +3267,7 @@ textarea:focus::-webkit-input-placeholder {
     margin-top: 0
   }
   .contact-form {
+    border-radius: 0;
     padding: 2.64286rem 1.25rem 3.35714rem
   }
   .form-grid {
@@ -3320,6 +3335,7 @@ textarea:focus::-webkit-input-placeholder {
   color: #000
 }
 .footer .btn {
+  display: inline-block;
   padding-top: .75rem;
   padding-bottom: .6875rem;
   font-size: .875rem;
@@ -4934,7 +4950,8 @@ textarea:focus::-webkit-input-placeholder {
   margin-right: 2rem
 }
 .simple-page {
-  min-height: 100vh
+  min-height: 100vh;
+  border-bottom: 1px solid #c4c4c4
 }
 .simple-page h1 {
   font-size: 2.25rem;
