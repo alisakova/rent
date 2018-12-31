@@ -40,21 +40,17 @@
     }
   }
   @media (max-width: 600px) {
-    padding: rem(48 0 32, 14);
-    .container {
-      padding: 0;
-    }
+    padding: rem(48 0 0, 14);
   }
   &_white-bg {
     background: #fff;
     padding-bottom: 0;
-    .container {
-      border-bottom: 1px solid #c4c4c4;
-      padding-bottom: rem(40);
-      @media (max-width: 600px) {
-        border: none;
-        padding-bottom: 0;
-      }
+  }
+  .container {
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: rem(40);
+    @media (max-width: 600px) {
+      padding-bottom: 0;
     }
   }
 }

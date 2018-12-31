@@ -3158,17 +3158,14 @@ textarea:focus::-webkit-input-placeholder {
     margin-bottom: 3.14286rem
   }
   .contact-us {
-    padding: 3.42857rem 0 2.28571rem
-  }
-  .contact-us .container {
-    padding: 0
+    padding: 3.42857rem 0 0
   }
 }
 .contact-us_white-bg {
   background: #fff;
   padding-bottom: 0
 }
-.contact-us_white-bg .container {
+.contact-us .container {
   border-bottom: 1px solid #c4c4c4;
   padding-bottom: 2.5rem
 }
@@ -3176,15 +3173,6 @@ textarea:focus::-webkit-input-placeholder {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start
-}
-@media (max-width:600px) {
-  .contact-us_white-bg .container {
-    border: none;
-    padding-bottom: 0
-  }
-  .contact-us__container {
-    flex-direction: column
-  }
 }
 .contact-us__container h2 {
   text-align: left
@@ -3214,6 +3202,12 @@ textarea:focus::-webkit-input-placeholder {
   }
 }
 @media (max-width:600px) {
+  .contact-us .container {
+    padding-bottom: 0
+  }
+  .contact-us__container {
+    flex-direction: column
+  }
   .contact-us__form:before {
     border-radius: 0
   }
@@ -4847,7 +4841,7 @@ textarea:focus::-webkit-input-placeholder {
     font-size: 1.14286rem
   }
   .link-btn-container {
-    margin: 2.5rem 1.25rem 0
+    margin: 2.5rem 1.25rem
   }
 }
 .num-list {

@@ -385,7 +385,6 @@ if (searchBtn) {
   searchBtn.addEventListener("click", function() {
     searchMobile.classList.toggle("active");
   });
-
 }
 
 $(document).ready(function() {
