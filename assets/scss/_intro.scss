@@ -78,9 +78,9 @@
   }
   &_creative {
     padding-top: 0;
-    align-items: flex-end;
+    align-items: center;
     .intro__text {
-      padding-top: rem(80);
+      padding-top: rem(50);
       @media (max-width: 600px) {
         padding-top: rem(30, 14);
       }

@@ -1679,10 +1679,10 @@ textarea:focus::-webkit-input-placeholder {
 }
 .intro__wrap_creative {
   padding-top: 0;
-  align-items: flex-end
+  align-items: center
 }
 .intro__wrap_creative .intro__text {
-  padding-top: 5rem
+  padding-top: 3.125rem
 }
 .intro__wrap_padding-top-0 {
   padding-top: 0
