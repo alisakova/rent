@@ -175,7 +175,7 @@
         <form class="form comments-form">
           <div class="form__item form__item_margin-bottom-5">
             <textarea class="form__textarea" maxlength="2000" placeholder="Share your thoughts"></textarea>
-            <div class="form__counter">2000 symbols remain</div>
+            <div class="form__counter"><span class="_counter">2000</span> symbols remain</div>
           </div>
           <div class="comments-form__inputs-container">
             <div class="form__item">
@@ -240,7 +240,7 @@
                 </div>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
                 <div class="comments-item__actions">
-                  <button class="comments-item__link">Reply</button>
+                  <button class="comments-item__link _reply">Reply</button>
                   <button class="comments-item__link comments-item__link_with-icon">
                     <img src="images/blog/share.svg" alt="Share">Share
                   </button>
@@ -272,6 +272,43 @@
         </div>
       </div>
     </section>
+
+    <template class="comments-form-template" style="display: none">
+      <form class="comments-form comments-form_answer active">
+        <div>
+          <div class="form__item form__item_margin-bottom-5">
+            <textarea class="form__textarea" maxlength="2000" placeholder="Share your thoughts"></textarea>
+            <div class="form__counter">2000 symbols remain</div>
+          </div>
+          <div class="comments-form__inputs-container">
+            <div class="form__item">
+              <input type="text" id="name" class="form__input" placeholder="Name*" required>
+            </div>
+            <div class="form__item">
+              <input type="text" class="form__input" id="company-mail" placeholder="Email*" required>
+            </div>
+            <div class="form__item">
+              <input type="url" id="website" class="form__input" placeholder="Website">
+            </div>
+          </div>
+          <div class="comments-form__container">
+            <div class="form__item">
+              <label for="accept" class="form__label checkbox">Notify me of follow-up comments by email
+                <input id="accept" type="checkbox">
+                <span class="checkbox__checkmark"></span>
+              </label>
+            </div>
+            <div class="form__item">
+              <label for="accept-1" class="form__label checkbox">Notify me of new posts by email
+                <input id="accept-1" type="checkbox">
+                <span class="checkbox__checkmark"></span>
+              </label>
+            </div>
+            <button class="btn btn--success">Comment</button>
+          </div>
+        </div>
+      </form>
+    </template>
 
     <section class="recommended">
       <div class="container">

@@ -5637,18 +5637,18 @@ textarea:focus::-webkit-input-placeholder {
 .comments-item {
   margin-bottom: 2.1875rem
 }
-.comments-item_answer {
-  padding-left: 6.25rem
-}
 .comments-item_answer .comments-item__header {
   display: flex;
   align-items: center
+}
+.comments-item > .comments-item {
+  padding-left: 6.25rem
 }
 @media (max-width:600px) {
   .comments-item_answer .comments-item__header {
     flex-wrap: wrap
   }
-  .comments-item_answer {
+  .comments-item > .comments-item {
     padding-left: 1.875rem
   }
 }
@@ -5718,6 +5718,24 @@ textarea:focus::-webkit-input-placeholder {
 .comments-form .form__textarea {
   max-height: 7.3125rem;
   min-height: 7.3125rem
+}
+.comments-form_answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: 250ms;
+  will-change: height
+}
+.comments-form_answer .comments-form__container .form__item:first-child {
+  margin-right: 1.25rem
+}
+@media (max-width:700px) {
+  .comments-form_answer .comments-form__container .form__item {
+    width: 100%
+  }
+}
+.comments-form_answer.active {
+  margin-top: 1.25rem
 }
 .comments-form__inputs-container {
   display: flex;

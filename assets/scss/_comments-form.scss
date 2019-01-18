@@ -3,6 +3,26 @@
     max-height: rem(117);
     min-height: rem(117);
   }
+  &_answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: all 250ms ease;
+    will-change: height;
+    .comments-form__container {
+      .form__item {
+        &:first-child {
+          margin-right: rem(20);
+        }
+        @media (max-width: 700px) {
+          width: 100%;
+        }
+      }
+    }
+    &.active {
+      margin-top: rem(20);
+    }
+  }
 }
 .comments-form__inputs-container {
   display: flex;

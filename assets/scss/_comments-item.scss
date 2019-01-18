@@ -1,7 +1,7 @@
 .comments-item {
   margin-bottom: rem(35);
   &_answer {
-    padding-left: rem(100);
+    // padding-left: rem(100);
     .comments-item__header {
       display: flex;
       align-items: center;
@@ -9,6 +9,9 @@
         flex-wrap: wrap;
       }
     }
+  }
+  & > .comments-item {
+    padding-left: rem(100);
     @media (max-width: 600px) {
       padding-left: rem(30);
     }
