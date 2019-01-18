@@ -5,16 +5,27 @@ var newReplyForm = replyFormTemplate.cloneNode(true);
 replyBtn.forEach(function(btn) {
   btn.addEventListener("click", function(e) {
     let parentContainer = e.target.closest(".comments-item");
+    let container = parentContainer.querySelector(".comments-item__content");
+    replyBtn.forEach(function(btn) {
+      if (btn.classList.contains("active")) {
+        btn.classList.remove("active");
+        let form = document.querySelector(".comments-form_answer");
+        form.style.maxHeight = null;
+        setTimeout(function() {
+          container.removeChild(form);
+        }, 1000);
+      }
+    });
     if (btn.classList.contains("active")) {
       btn.classList.remove("active");
       let form = document.querySelector(".comments-form_answer");
       form.style.maxHeight = null;
       setTimeout(function() {
-        parentContainer.removeChild(form);
+        container.removeChild(form);
       }, 1000);
     } else {
       btn.classList.add("active");
-      parentContainer.appendChild(replyFormTemplate);
+      container.appendChild(replyFormTemplate);
       let targetHeight = replyFormTemplate.children[0].offsetHeight;
       let html = document.querySelector("html");
       let htmlFontSize = parseFloat(

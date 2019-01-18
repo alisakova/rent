@@ -5652,11 +5652,11 @@ textarea:focus::-webkit-input-placeholder {
     padding-left: 1.875rem
   }
 }
-.commets-item__container {
+.comments-item__container {
   display: flex;
   align-items: flex-start
 }
-.commets-item__container + .comments-item {
+.comments-item__container + .comments-item {
   margin-top: 2.1875rem
 }
 .comments-item__content {
