@@ -113,6 +113,16 @@
   display: block;
   color: #000;
   font-size: rem(14);
+  @media (max-width: 600px) {
+    font-size: rem(16, 14);
+    margin-bottom: rem(10, 14);
+  }
+  &:hover {
+    color: $ui-second-color;
+  }
+}
+
+.footer__item {
   &:not(:last-child) {
     margin-bottom: rem(12);
     @media (max-width: 600px) {
@@ -120,11 +130,7 @@
     }
   }
   @media (max-width: 600px) {
-    font-size: rem(16, 14);
     margin-bottom: rem(10, 14);
-  }
-  &:hover {
-    color: $ui-second-color;
   }
 }
 

@@ -3415,20 +3415,21 @@ textarea:focus::-webkit-input-placeholder {
   color: #000;
   font-size: .875rem
 }
-.footer__link:not(:last-child) {
+.footer__link:hover {
+  color: #0077bf
+}
+.footer__item:not(:last-child) {
   margin-bottom: .75rem
 }
 @media (max-width:600px) {
-  .footer__link:not(:last-child) {
-    margin-bottom: .71429rem
-  }
   .footer__link {
     font-size: 1.14286rem;
     margin-bottom: .71429rem
   }
-}
-.footer__link:hover {
-  color: #0077bf
+  .footer__item,
+  .footer__item:not(:last-child) {
+    margin-bottom: .71429rem
+  }
 }
 .footer__contact {
   margin-bottom: 1.125rem;
