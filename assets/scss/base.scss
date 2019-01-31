@@ -78,7 +78,7 @@ img {
   }
 }
 
-h1 {
+h1, .h1 {
   font-size: rem(46);
   font-weight: 300;
   margin: rem(0 0 37);
@@ -88,7 +88,7 @@ h1 {
   }
 }
 
-h2 {
+h2, .h2 {
   font-size: rem(36);
   font-weight: 300;
   margin: rem(0 0 20);
@@ -97,14 +97,14 @@ h2 {
   letter-spacing: 0.9px;
 }
 
-h3 {
+h3, .h3 {
   font-size: rem(22);
   font-weight: normal;
   margin: rem(0 0 18);
   line-height: 1.4444;
 }
 
-h4 {
+h4, .h4 {
   font: {
     size: rem(18);
     weight: 500;
@@ -114,18 +114,18 @@ h4 {
   color: #000;
 }
 
-p {
+p, .p {
   font-size: rem(18);
   margin-top: 0;
 }
 
-ul {
+ul, .ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
 
-ul:not([class]) {
+.list {
   li {
     padding-left: rem(15);
     position: relative;
@@ -189,7 +189,7 @@ button {
   font-style: italic;
 }
 
-hr {
+.hr {
   border: 1px solid  #d0d0d0;
   margin: 0;
 }
@@ -210,20 +210,20 @@ hr {
   html {
     font-size: 14px;
   }
-  h1 {
+  h1, .h1 {
     font-size: rem(30, 14);
     line-height: 1.27;
   }
-  h2 {
+  h2, .h2 {
     font-size: rem(24, 14);
   }
-  h3 {
+  h3, .h3 {
     font-size: rem(18, 14);
   }
-  h2, h3 {
+  h2, h3, .h2, .h3 {
     text-align: left;
   }
-  p {
+  p, .p {
     font-size: rem(16, 14);
   }
 }
